@@ -436,40 +436,20 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 .phone-nav { display: flex; justify-content: space-around; }
 .phone-nav span { width: 9px; height: 9px; border: 1px solid #a1b392; border-radius: 3px; }
 .phone-nav span:first-child { background: #a1b392; }
-/* Experience: an intimate, expandable career story */
-.experience-section { position: relative; overflow: clip; background: #171b27; color: #f7f3ee; }
-.experience-section::before { content: ""; position: absolute; right: -170px; top: -250px; width: 640px; height: 640px; border: 1px solid #cfc0ee0a; border-radius: 50%; box-shadow: 0 0 0 90px #cfc0ee02,0 0 0 180px #cfc0ee02; pointer-events: none; }
-.experience-section .chapter-label { color: #9097aa; }
-.timeline-label { border: 1px solid #ffffff20; border-radius: 999px; padding: 6px 10px; font-size: 9px; letter-spacing: .7px; font-weight: 400; }
-.experience-layout { display: grid; grid-template-columns: .85fr 1.35fr; align-items: start; gap: 95px; }
-.experience-intro { position: sticky; top: 110px; }
-.experience-intro .section-title { font-size: clamp(50px,5.5vw,78px); }
-.experience-intro .section-title em { color: #bc9bdc; }
-.experience-intro .body-copy { max-width: 325px; margin-top: 25px; color: #9697a8; }
-.career-doodle { position: relative; width: 280px; height: 150px; margin-block: 18px 25px; color: #9b84b9; }
-.career-doodle svg { display: block; width: 100%; height: 140px; }
-.career-doodle span { position: absolute; left: 110px; bottom: -5px; font-family: Kalam,cursive; font-size: 20px; line-height: 1.2; transform: rotate(-7deg); }
-.experience-link { color: #ddd1e6; border-color: #53445f; }
-.experience-timeline { position: relative; padding-left: 22px; }
-.experience-timeline::before { content: ""; position: absolute; left: 22px; top: 35px; bottom: 38px; width: 1px; background: #ffffff10; }
-.experience-entry { position: relative; margin-bottom: 23px; border-bottom: 1px solid #ffffff14; padding: 0 0 24px; }
-.experience-entry:last-child { margin-bottom: 0; }
-.experience-entry summary { position: relative; display: flex; align-items: center; gap: 25px; padding: 15px 0 15px 0; cursor: pointer; list-style: none; }
-.experience-entry summary::-webkit-details-marker { display: none; }
-.experience-entry summary:focus-visible { outline: 2px solid #bc9bdc; outline-offset: 6px; border-radius: 6px; }
-.job-mark { z-index: 1; display: grid; place-items: center; flex: 0 0 48px; height: 48px; border: 1px solid #ffffff1a; border-radius: 14px; background: #252738; color: #a68abd; font-family: Georgia,serif; font-size: 25px; transform: translateX(-23px); margin-right: -23px; }
-.current-job { background: #6e3f31; border-color: #a3654720; color: #efb58f; }
-.job-heading { display: flex; flex-direction: column; gap: 9px; }
-.job-heading small { color: #7f8395; font-size: 8px; letter-spacing: 1px; }
-.job-heading strong { color: #e4dbe6; font-size: 23px; font-weight: 400; letter-spacing: -.6px; line-height: 1.25; }
-.job-heading > span { color: #9597a8; font-size: 13px; }
-.job-toggle { display: grid; place-items: center; flex: 0 0 30px; height: 30px; margin-left: auto; border: 1px solid #ffffff16; border-radius: 50%; color: #b39bc8; font-size: 19px; transition: transform 250ms ease; }
-.experience-entry[open] .job-toggle { transform: rotate(45deg); }
-.job-body { margin-left: 50px; padding-block: 10px; }
-.job-body p { margin: 0; color: #9595a8; font-size: 14px; line-height: 1.85; }
-.skill-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-block: 18px; }
-.skill-tags span { border: 1px solid #a78cbf20; border-radius: 999px; padding: 6px 10px; color: #aa90bc; font-size: 9px; }
-.job-footnote { color: #73758a; font-size: 10px; line-height: 1.5; }
+/* Experience: simple role rows that match the landing page */
+.experience-section { background: #fff; }
+.career-list { border-top: 1px solid #e9e3dc; }
+.career-row { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 60px; border-bottom: 1px solid #e9e3dc; padding-block: 36px; }
+.career-role { display: flex; align-items: flex-start; gap: 22px; min-width: 0; }
+.company-icon { display: grid; place-items: center; flex: 0 0 52px; height: 52px; border: 1px solid #f0ddd0; border-radius: 15px; background: #fbefe5; color: #bc7752; font-family: Georgia,serif; font-size: 24px; }
+.career-row:nth-child(2) .company-icon { background: #f1ebf6; border-color: #e8deef; color: #9573aa; }
+.career-row:nth-child(3) .company-icon { background: #edf1e8; border-color: #e1e7d9; color: #789261; }
+.career-role h3 { margin: 0 0 8px; color: #29282d; font-size: 23px; font-weight: 500; line-height: 1.3; letter-spacing: -.5px; }
+.career-role p { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 0; color: #858078; font-size: 14px; }
+.role-status { color: #a79d95; font-size: 10px; }
+.career-description { max-width: 480px; margin: 0; color: #827c77; font-size: 14px; line-height: 1.85; }
+@media (max-width: 850px) { .career-row { gap: 28px; } .career-role { gap: 15px; } .career-role h3 { font-size: 21px; } }
+@media (max-width: 560px) { .career-row { grid-template-columns: 1fr; gap: 16px; padding-block: 28px; } .company-icon { flex-basis: 44px; height: 44px; border-radius: 12px; font-size: 21px; } .career-role h3 { font-size: 20px; } .career-role p { font-size: 13px; } .career-description { padding-left: 59px; font-size: 13px; } }
 /* Stack: orbiting tools with a focused inspector */
 .stack-section { background: #f9f7fb; }
 .stack-section .section-title em { color: #9675b5; }
@@ -524,19 +504,16 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
  .collage-note { animation: paper-float 8s ease-in-out infinite; }
  .curiosity-seal { animation: seal-rock 10s ease-in-out infinite; }
  .focus-orb,.orbit-center svg { animation: creative-turn 35s linear infinite; }
- .experience-entry[open] .job-body { animation: chapter-in 400ms ease; }
 }
 @keyframes paper-float { 0%,100% { transform: rotate(-9deg) translateY(0); } 50% { transform: rotate(-7deg) translateY(-6px); } }
 @keyframes seal-rock { 0%,100% { transform: rotate(-15deg); } 50% { transform: rotate(-5deg); } }
 @keyframes creative-turn { from { transform: rotate(0); } to { transform: rotate(360deg); } }
-@keyframes chapter-in { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
 @media (max-width: 1100px) {
  .about-grid { gap: 40px; }
  .about-collage { min-height: 480px; }
  .collage-note { width: 180px; font-size: 22px; }
  .curiosity-seal { width: 95px; height: 95px; bottom: 50px; }
  .collage-scribble { bottom: 35px; }
- .experience-layout { gap: 55px; }
  .stack-layout { gap: 45px; grid-template-columns: 1.2fr 1fr; }
  .tool-grid { --radius: 160px; width: 420px; height: 420px; }
  .tool-card { width: 80px; height: 80px; border-radius: 17px; gap: 4px; }
@@ -590,18 +567,6 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
  .market-copy .mock-pill { max-width: 110px; font-size: 7px; }
  .project-meta h3 { font-size: 21px; }
  .project-meta p:last-child { font-size: 11px; }
- .experience-layout { grid-template-columns: .8fr 1.2fr; gap: 45px; }
- .experience-intro .section-title { font-size: 54px; }
- .experience-intro .body-copy { font-size: 14px; }
- .career-doodle { width: 225px; max-width: 100%; }
- .experience-timeline { padding-left: 15px; }
- .experience-timeline::before { left: 15px; }
- .job-mark { flex-basis: 40px; height: 40px; transform: translateX(-16px); margin-right: -16px; border-radius: 12px; font-size: 20px; }
- .experience-entry summary { gap: 18px; }
- .job-heading strong { font-size: 19px; }
- .job-heading small { font-size: 7px; }
- .job-body { margin-left: 43px; }
- .job-body p { font-size: 12px; }
  .stack-layout { grid-template-columns: 1fr; gap: 25px; }
  .tool-grid { --radius: 215px; width: 550px; height: 550px; }
  .tool-card { width: 94px; height: 94px; gap: 8px; }
@@ -668,20 +633,6 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
  .project-meta h3 { font-size: 23px; }
  .project-meta p:last-child { font-size: 12px; }
  .portfolio-caption { font-size: 10px; line-height: 1.6; }
- .experience-layout { grid-template-columns: 1fr; gap: 35px; }
- .experience-intro { position: static; }
- .experience-intro .section-title { font-size: 61px; }
- .career-doodle { width: 250px; margin-bottom: 30px; }
- .experience-timeline { padding-left: 20px; }
- .experience-timeline::before { left: 20px; }
- .job-mark { flex-basis: 43px; height: 43px; transform: translateX(-21px); margin-right: -21px; }
- .job-heading strong { font-size: 20px; }
- .job-heading small { font-size: 7px; line-height: 1.6; }
- .job-heading > span { font-size: 12px; }
- .job-body { margin-left: 44px; }
- .job-body p { font-size: 13px; }
- .job-footnote { font-size: 9px; }
- .job-toggle { flex-basis: 26px; height: 26px; }
  .tool-grid { --radius: clamp(102px,32vw,166px); width: 100%; height: auto; aspect-ratio: 1; }
  .tool-card { width: 74px; height: 79px; border-radius: 16px; gap: 6px; }
  .tool-card .tool-mark { width: 33px; height: 33px; }
