@@ -54,3 +54,7 @@ This starter includes semantic sections, a single main heading, responsive style
 The contact section recreates the supplied screenshot with a three-line headline, pill-shaped email button, lavender contact icons, a handwritten note, arrow, and seated character illustration. `assets/images/contact-character.png` is a generated illustration based on the supplied reference. The layout stacks on mobile.
 
 The email address, city, and featured badge reproduce reference content and should be personalized before deployment. The email links open the user's mail application; they do not send messages automatically. LinkedIn and Resume open placeholder dialogs until real profile and resume destinations are supplied. The contact Resume button and header Resume button share the same dialog.
+
+## Footer
+
+The footer follows the supplied reference: a warm gray background, name and automatically updated copyright year, centered purple handwritten signature and smiley, and a circular Back to top control. On mobile, the signature moves to a second row. Back to top uses a native anchor to the hero, with smooth scrolling unless reduced motion is enabled.
