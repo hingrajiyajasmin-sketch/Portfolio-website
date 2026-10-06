@@ -76,12 +76,20 @@ function selectPhase(tab, focus = false) {
   document.getElementById("phase-output").textContent = phase.output;
   document.querySelector(".phase-visual").dataset.stage = tab.dataset.phase;
   const number = phaseTabs.indexOf(tab) + 1;
+  document.querySelector(".canvas-number").textContent = `0${number}`;
   document.getElementById("phase-count").textContent = `0${number} / 04`;
   const track = document.querySelector(".process-track");
   track.setAttribute("aria-valuenow", String(number * 25));
   track.querySelector("span").style.width = `${number * 25}%`;
+  const next = phaseTabs[number % phaseTabs.length];
+  document.getElementById("phase-next").textContent = number === phaseTabs.length
+    ? "Explore again →" : `Next: ${next.querySelector("b").textContent} →`;
   if (focus) tab.focus();
 }
+document.getElementById("phase-next").addEventListener("click", () => {
+  const current = phaseTabs.findIndex((tab) => tab.getAttribute("aria-selected") === "true");
+  selectPhase(phaseTabs[(current + 1) % phaseTabs.length]);
+});
 phaseTabs.forEach((tab, index) => {
   tab.addEventListener("click", () => selectPhase(tab));
   tab.addEventListener("keydown", (event) => {
@@ -96,6 +104,7 @@ phaseTabs.forEach((tab, index) => {
 
 const filterButtons = document.querySelectorAll("[data-filter]");
 filterButtons.forEach((button) => button.addEventListener("click", () => {
+  document.querySelector(".project-grid").classList.toggle("is-filtered", button.dataset.filter !== "all");
   filterButtons.forEach((item) => {
     item.classList.toggle("is-selected", item === button);
     item.setAttribute("aria-pressed", String(item === button));
@@ -140,7 +149,31 @@ document.querySelectorAll("[data-tool]").forEach((button) => button.addEventList
   });
   const [name, description] = tools[button.dataset.tool];
   const note = document.getElementById("tool-note");
-  note.replaceChildren();
-  const label = document.createElement("b"); label.textContent = name;
-  note.append(label, ` — ${description}`);
+  note.textContent = description;
+  document.getElementById("tool-name").textContent = name;
+  document.getElementById("tool-purpose").textContent = button.querySelector("small").textContent;
+  document.querySelector(".tool-inspector").dataset.selectedTool = button.dataset.tool;
+  document.getElementById("inspector-icon").replaceChildren(button.querySelector(".tool-mark").cloneNode(true));
 }));
+
+const initialTool = document.querySelector(".tool-card.is-selected .tool-mark");
+if (initialTool) document.getElementById("inspector-icon").replaceChildren(initialTool.cloneNode(true));
+
+// The preview cue follows a mouse without affecting keyboard or touch controls.
+const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+document.querySelectorAll(".project-preview").forEach((button) => {
+  button.addEventListener("pointermove", (event) => {
+    if (motionPreference.matches || event.pointerType !== "mouse") return;
+    const box = button.getBoundingClientRect();
+    const cue = button.querySelector(".cover-action");
+    cue.style.left = `${Math.min(box.width - 48, Math.max(48, event.clientX - box.left))}px`;
+    cue.style.top = `${Math.min(box.height - 48, Math.max(48, event.clientY - box.top))}px`;
+    cue.classList.add("follows-pointer");
+  });
+  button.addEventListener("pointerleave", () => {
+    const cue = button.querySelector(".cover-action");
+    cue.classList.remove("follows-pointer");
+    cue.style.removeProperty("left");
+    cue.style.removeProperty("top");
+  });
+});

@@ -63,10 +63,12 @@ The footer follows the supplied reference: a warm gray background, name and auto
 
 The complete page follows this order: header and animated hero, About, Progress, Portfolio, Job experience, Tech stack, Contact, and Footer.
 
-- About combines an editorial introduction with an illustrated inspiration board and subtle floating note.
-- Progress has four interactive stages. Click a stage, or use arrow keys, Home, and End when a tab is focused. The text, illustration state, and progress indicator update together.
-- Portfolio includes three clearly labeled concept projects with CSS-drawn interface previews, category filters, hover effects, and project detail dialogs. These are design concepts, not shipped client work or connected apps. Replace the preview markup and descriptions with real work when available.
-- Job experience uses a dark timeline with scroll reveals. The current Licious role follows the existing reference content; the other roles are explicit samples, with no invented employment dates or numerical results.
-- Tech stack offers eight sample tool descriptions. Click a tool to explore its role. Personalize the selection to reflect your actual skills.
+- About combines an editorial introduction with a layered Polaroid collage, a generated designer illustration, floating notes, and three design principles.
+- Progress connects four stages with numbered tabs and an animated exploration canvas. Click a stage or Next step; arrow keys, Home, and End also navigate the tabs. The copy, canvas, and progress indicator update together.
+- Portfolio features a full-width case study and two supporting cards with CSS-drawn interface previews, category filters, mouse-following preview cues, and project detail dialogs. Both the preview and arrow button open each project. These are design concepts, not shipped client work or connected apps. Replace the preview markup and descriptions with real work when available.
+- Job experience pairs a sticky editorial introduction with a dark timeline of expandable career chapters. Native accordions support keyboard navigation and keep one chapter open at a time. The current Licious role follows the existing reference content; the other roles are explicit samples, with no invented employment dates or numerical results.
+- Tech stack arranges eight sample tools around a circular creative playground. Click a tool to update the adjacent inspector with its icon, role, and description. Personalize the selection to reflect your actual skills.
 
 Animations respect reduced-motion preferences. Section content remains visible without JavaScript; interactive tabs, filters, dialogs, and toolkit selection require JavaScript. All illustrations, fonts, styles, and scripts are embedded in `index.html` by the existing sync script, so the page remains portable. No external asset requests or packages are required at runtime.
+
+The About illustration (`assets/images/about-designer.png`) was generated to match the character style of the contact section. Interaction behavior follows the [WAI tabs pattern](https://www.w3.org/WAI/ARIA/apg/patterns/tabs/) and [reduced-motion guidance](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion).
