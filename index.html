@@ -243,6 +243,361 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   .footer-name { font-size: 23px; }
   .footer-top { gap: 7px; }
 }
+
+/* Editorial landing-page sections */
+.content-shell { width: min(1240px, calc(100% - 12%)); margin-inline: auto; }
+.editorial-section { padding-block: 110px; }
+.chapter-label { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 52px; color: #68758b; font-size: 11px; font-weight: 700; letter-spacing: 1.7px; text-transform: uppercase; }
+.hand-note { color: #8052dc; font-family: Kalam, cursive; font-size: 21px; font-weight: 400; letter-spacing: 0; text-transform: none; transform: rotate(-5deg); }
+.small-label { font-size: 10px; font-weight: 400; letter-spacing: .5px; }
+.section-title { margin: 0; font-size: clamp(36px, 4.3vw, 64px); line-height: 1.1; letter-spacing: -2.5px; }
+.section-title em { color: var(--accent); font-family: Georgia, serif; font-weight: 400; }
+.section-lead { color: #30323a; font-size: 21px; line-height: 1.65; letter-spacing: -.4px; }
+.body-copy { color: #74747c; font-size: 16px; line-height: 1.9; }
+.sample-note { color: #737078; font-size: 11px; line-height: 1.6; }
+.text-link { display: inline-flex; align-items: center; gap: 22px; padding-block: 8px; border-bottom: 1px solid #d7d4d0; font-size: 13px; font-weight: 600; text-decoration: none; }
+.text-link span { transition: transform 180ms ease; }
+.text-link:hover span { transform: translate(3px,-3px); }
+.section-heading { display: grid; grid-template-columns: 1.2fr 1fr; align-items: end; gap: 80px; margin-bottom: 45px; }
+.section-heading .body-copy { max-width: 350px; justify-self: end; margin-bottom: 4px; }
+.reveal { opacity: 1; }
+@media (prefers-reduced-motion: no-preference) {
+  .motion-ready .reveal { opacity: 0; transform: translateY(24px); transition: opacity 700ms ease, transform 700ms cubic-bezier(.2,.7,.2,1); }
+  .motion-ready .reveal.is-visible { opacity: 1; transform: none; }
+}
+.about-section { border-top: 1px solid #f1efeb; background: #fff; }
+.about-grid { display: grid; grid-template-columns: 1.12fr 1fr; align-items: center; gap: 85px; }
+.about-copy .section-lead { margin-block: 25px 17px; max-width: 470px; }
+.about-copy .body-copy { max-width: 460px; }
+.about-copy .text-link { margin-top: 14px; }
+.idea-board { position: relative; min-height: 415px; border: 1px solid #eee9e2; border-radius: 22px; background: #f8f7f4; overflow: hidden; }
+.board-topline { display: flex; align-items: center; gap: 8px; margin: 22px; color: #8b8983; font-size: 11px; }
+.board-topline > span:last-child { margin-left: auto; }
+.board-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.sticky-note { position: absolute; z-index: 2; top: 88px; left: 28px; padding: 22px 24px; background: #e9ddff; color: #6943b4; font-family: Kalam,cursive; font-size: 24px; line-height: 1.3; transform: rotate(-9deg); box-shadow: 0 12px 22px #42236e09; }
+.sticky-note svg { display: block; margin-top: 6px; }
+.about-character { position: absolute; width: 255px; height: auto; right: 0; bottom: 22px; mix-blend-mode: multiply; }
+.board-caption { position: absolute; z-index: 2; right: 25px; top: 115px; font-family: Kalam,cursive; color: #898076; font-size: 18px; line-height: 1.3; transform: rotate(8deg); }
+.board-stamp { position: absolute; bottom: 28px; left: 28px; color: #879776; font-family: Kalam,cursive; font-size: 18px; line-height: 1.2; transform: rotate(-7deg); }
+.board-orbits { position: absolute; inset: 40px; display: grid; place-items: center; border: 1px dashed #d9d5cc; border-radius: 50%; transform: rotate(20deg); }
+.board-orbits span { position: absolute; left: 30%; top: 0; background: #f8f7f4; padding: 4px 9px; color: #aaa298; font-size: 10px; }
+.board-orbits span:last-child { left: auto; right: -15px; top: 47%; }
+.principles { display: grid; grid-template-columns: repeat(3,1fr); gap: 30px; margin-top: 60px; padding-top: 26px; border-top: 1px solid #eeeae5; font-size: 13px; color: #65656b; }
+.principles b { margin-right: 15px; color: var(--accent); font-size: 10px; }
+.process-section { background: #f8f7f5; }
+.process-workbench { border: 1px solid #e8e5df; border-radius: 20px; background: #fff; overflow: hidden; }
+.process-tabs { display: grid; grid-template-columns: repeat(4,1fr); border-bottom: 1px solid #ece9e4; }
+.process-tab { position: relative; display: flex; flex-direction: column; gap: 7px; border: 0; border-right: 1px solid #ece9e4; padding: 25px 30px; background: none; text-align: left; font-size: 18px; font-weight: 600; cursor: pointer; }
+.process-tab:last-child { border-right: 0; }
+.process-tab > span { color: #939198; font-size: 10px; font-weight: 400; }
+.process-tab small { color: #88858c; font-size: 11px; font-weight: 400; }
+.process-tab.is-selected { background: #fff5ef; }
+.process-tab.is-selected::after { content: ""; position: absolute; bottom: -1px; left: 0; right: 0; height: 3px; background: var(--accent); }
+.process-tab.is-selected > span { color: var(--accent); }
+.process-panel { display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 50px; padding: 48px; }
+.phase-kicker { color: #978b83; font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; }
+.phase-copy h3 { margin: 15px 0; font-size: 30px; font-weight: 600; letter-spacing: -1px; line-height: 1.2; }
+.phase-copy > p:not(.phase-kicker) { color: #77717a; font-size: 15px; line-height: 1.8; }
+.phase-output { display: inline-block; margin-top: 12px; padding: 9px 12px; border-radius: 6px; background: #f4f1fa; color: #71509c; font-size: 11px; line-height: 1.5; }
+.phase-visual { position: relative; min-height: 230px; border-radius: 12px; background-image: radial-gradient(#dfdcd5 1px,transparent 1px); background-size: 15px 15px; overflow: hidden; }
+.mini-note { position: absolute; z-index: 2; padding: 14px 20px; font-family: Kalam,cursive; font-size: 18px; line-height: 1.2; box-shadow: 0 6px 12px #00000008; transition: transform 600ms ease, opacity 600ms ease; }
+.note-one { top: 28px; left: 25px; background: #efe2ff; color: #825cb0; transform: rotate(-10deg); }
+.note-two { right: 30px; bottom: 15px; background: #ffe8cd; color: #c8793e; transform: rotate(8deg); }
+.sketch-window { position: absolute; top: 48px; left: 37%; width: 185px; height: 150px; padding: 12px 16px; border: 1px solid #ddd8d1; border-radius: 8px; background: white; transform: rotate(4deg); box-shadow: 0 10px 20px #00000005; transition: transform 600ms ease, border-color 600ms ease; }
+.sketch-dots { color: #ddd6cc; font-size: 6px; }
+.sketch-row { display: flex; gap: 10px; margin-top: 20px; }
+.sketch-row span { display: block; width: 26px; height: 26px; border-radius: 50%; background: #efedf8; }
+.sketch-row i { width: 80px; height: 9px; margin-top: 7px; border-radius: 3px; background: #f2eee8; }
+.sketch-lines { display: grid; gap: 7px; margin-top: 14px; }
+.sketch-lines i { display: block; height: 4px; background: #f2eee8; border-radius: 2px; }
+.sketch-lines i:last-child { width: 60%; }
+.sketch-action { width: 42px; height: 12px; margin-top: 12px; border-radius: 3px; background: #f4c9b6; }
+.sketch-spark { position: absolute; right: 24px; top: 15px; color: #ba9ddf; font-size: 32px; }
+.phase-visual[data-stage="define"] .note-one { transform: translate(20px,25px) rotate(2deg); }
+.phase-visual[data-stage="define"] .note-two { transform: translate(-35px,-15px) rotate(-4deg); }
+.phase-visual[data-stage="design"] .sketch-window { transform: scale(1.12) rotate(-2deg); border-color: #ac8ac8; }
+.phase-visual[data-stage="design"] .note-one { transform: translate(-15px,-8px) rotate(-15deg); }
+.phase-visual[data-stage="deliver"] .sketch-window { transform: scale(1.17) rotate(0); border-color: #9aab88; }
+.phase-visual[data-stage="deliver"] .mini-note { opacity: .35; }
+.phase-visual[data-stage="deliver"] .sketch-action { background: #a8c28e; }
+.process-bottom { display: flex; align-items: center; gap: 22px; padding: 20px 48px; border-top: 1px solid #f0ede8; color: #8f8a83; font-size: 10px; }
+.process-track { flex: 1; height: 3px; background: #efede9; border-radius: 3px; overflow: hidden; }
+.process-track span { display: block; width: 25%; height: 100%; border-radius: inherit; background: var(--accent); transition: width 700ms cubic-bezier(.2,.7,.2,1); }
+.project-filters { display: flex; flex-wrap: wrap; gap: 9px; margin: 0 0 32px; }
+.filter-button { border: 1px solid #e9e6e2; border-radius: 999px; padding: 10px 17px; background: white; color: #727077; font-size: 11px; cursor: pointer; transition: background 180ms ease,color 180ms ease; }
+.filter-button.is-selected { background: #17191e; border-color: #17191e; color: white; }
+.filter-button span { margin-left: 10px; opacity: .6; }
+.project-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 40px 30px; }
+.project-card { min-width: 0; }
+.project-card[hidden] { display: none !important; }
+.project-art { position: relative; height: 360px; border-radius: 17px; overflow: hidden; }
+.art-caption { position: absolute; top: 25px; left: 28px; font-size: 10px; letter-spacing: .6px; }
+.finance-art { background: #f5d6c7; color: #8a4e3f; }
+.finance-window { position: absolute; width: 90%; top: 90px; left: 13%; padding: 20px; border: 1px solid #fff9; border-radius: 12px; background: #fffaf7; color: #3e302a; transform: rotate(-6deg); box-shadow: 0 24px 45px #97543520; transition: transform 600ms ease; }
+.project-card:hover .finance-window { transform: rotate(-3deg) translate(-8px,-8px); }
+.mock-header { display: flex; align-items: center; gap: 15px; font-size: 7px; }
+.mock-header b { margin-right: auto; font-size: 20px; letter-spacing: -1px; }
+.mock-header b span { color: #df8768; font-size: 10px; margin-left: 5px; }
+.mock-header i { padding: 5px; border-radius: 50%; background: #e9dbd3; font-size: 8px; font-style: normal; }
+.finance-body { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 28px; }
+.finance-body small { color: #a39489; font-size: 8px; }
+.finance-body strong { display: block; margin-block: 7px 8px; font-size: 26px; letter-spacing: -1.5px; }
+.finance-body strong > span { color: #b8a294; font-size: 18px; }
+.mock-pill { display: inline-block; padding: 5px 8px; border-radius: 999px; background: #efe9e1; font-size: 7px; }
+.chart-bars { display: flex; align-items: end; gap: 8px; height: 55px; margin-top: 15px; }
+.chart-bars i { flex: 1; height: 40%; border-radius: 3px 3px 0 0; background: #f0c5af; }
+.chart-bars i:nth-child(2n) { height: 70%; }
+.chart-bars i:nth-child(3n) { height: 90%; background: #da8c6e; }
+.bank-card { display: flex; flex-direction: column; gap: 30px; padding: 18px; border-radius: 9px; background: #40352f; color: #f9e9dc; transform: rotate(8deg); }
+.bank-card > span { font-size: 10px; }
+.bank-card b { margin-top: auto; font-size: 16px; letter-spacing: 2px; }
+.bank-card small { color: #c8b4a3; }
+.floating-tag { position: absolute; bottom: 27px; left: 28px; color: #8a4e3f; font-family: Kalam,cursive; font-size: 20px; transform: rotate(-5deg); }
+.focus-art { background: #e9e2f8; color: #7c69a2; }
+.focus-window { position: absolute; width: 86%; top: 80px; left: 10%; padding: 23px; border-radius: 12px; background: #fffcff; transform: rotate(5deg); color: #524264; box-shadow: 0 22px 45px #6c4c9d15; transition: transform 600ms ease; }
+.project-card:hover .focus-window { transform: rotate(2deg) translateY(-8px); }
+.focus-window .mock-header b { font-size: 17px; }
+.focus-body { margin-top: 25px; }
+.focus-body .mock-pill { background: #f1ecf7; color: #9485a9; font-size: 6px; letter-spacing: .5px; }
+.focus-body h4 { margin: 10px 0 15px; font-size: 27px; font-family: Georgia,serif; font-weight: 400; line-height: 1.15; letter-spacing: -.7px; }
+.task-line { display: flex; align-items: center; gap: 9px; margin-top: 7px; padding: 9px; border: 1px solid #f1ebf5; border-radius: 5px; font-size: 8px; }
+.task-line i { width: 11px; height: 11px; border: 1px solid #c9b8df; border-radius: 3px; color: #926ebb; font-style: normal; font-size: 8px; }
+.task-line > span { margin-left: auto; color: #a997b6; font-size: 6px; }
+.focus-orb { position: absolute; right: -5px; bottom: -35px; color: #b9a0e5; font-size: 145px; line-height: 1; transform: rotate(12deg); }
+.project-meta { display: flex; justify-content: space-between; align-items: center; gap: 15px; padding: 20px 4px 0; }
+.project-type { margin: 0 0 8px; color: #8b8489; font-size: 9px; letter-spacing: 1px; text-transform: uppercase; }
+.project-meta h3 { margin: 0; font-size: 23px; font-weight: 600; line-height: 1.3; letter-spacing: -.8px; }
+.project-meta p:last-child { color: #87818a; font-size: 12px; margin: 8px 0 0; line-height: 1.6; }
+.project-open { flex: 0 0 45px; height: 45px; border: 1px solid #e7e2df; border-radius: 50%; background: #fff; font-size: 22px; cursor: pointer; transition: background 200ms ease,transform 200ms ease; }
+.project-open:hover { background: #f4eefa; transform: rotate(10deg); }
+.project-wide { grid-column: 1 / -1; }
+.market-art { height: 350px; background: #e5eddf; color: #557348; }
+.market-copy { position: absolute; left: 9%; top: 40px; }
+.market-copy .art-caption { position: static; }
+.market-copy h4 { margin: 32px 0 20px; font-family: Georgia,serif; font-size: 62px; font-weight: 400; line-height: 1.05; letter-spacing: -3px; }
+.market-copy .mock-pill { background: #d2dfc9; padding: 8px 13px; font-size: 9px; }
+.phone-mock { position: absolute; width: 205px; top: 28px; right: 19%; padding: 17px 14px; border: 6px solid #fff; border-radius: 30px; background: #fafcf6; color: #436138; transform: rotate(12deg); box-shadow: 10px 22px 40px #4e703322; transition: transform 600ms ease; }
+.project-card:hover .phone-mock { transform: rotate(7deg) translateY(-6px); }
+.phone-island { width: 45px; height: 9px; margin: -9px auto 18px; border-radius: 10px; background: #29322b; }
+.phone-header { display: flex; justify-content: space-between; font-size: 24px; font-weight: 700; letter-spacing: -1px; }
+.phone-header span { color: #acc693; }
+.phone-mock > small { display: block; margin-block: 6px 13px; font-size: 7px; }
+.fruit-illustration { position: relative; height: 86px; margin-bottom: 16px; border-radius: 7px; background: #e8f0dd; }
+.fruit-illustration span { position: absolute; width: 62px; height: 62px; top: 18px; left: 31px; border-radius: 50%; background: #edaf57; box-shadow: inset -8px -5px 0 #dfa045; }
+.fruit-illustration i { position: absolute; width: 27px; height: 13px; top: 8px; left: 60px; border-radius: 1px 100% 1px 100%; background: #6a9152; transform: rotate(-30deg); }
+.fruit-illustration b { position: absolute; width: 43px; height: 43px; top: 33px; right: 27px; border-radius: 50%; background: #d56848; box-shadow: inset -5px -5px 0 #c95c3c; }
+.phone-mock > strong { font-size: 10px; }
+.phone-products { display: flex; gap: 9px; margin-top: 10px; }
+.phone-products > div { flex: 1; border-radius: 6px; padding: 9px; background: #f0f3e8; }
+.phone-products span { display: block; font-size: 26px; color: #9db989; }
+.phone-products small { font-size: 6px; }
+.phone-nav { margin-top: 17px; font-size: 12px; text-align: center; }
+.market-doodle { position: absolute; right: 3%; top: 130px; font-family: Kalam,cursive; font-size: 20px; transform: rotate(8deg); }
+.portfolio-caption { margin: 35px 0 0; color: #918a8b; font-size: 11px; }
+.experience-section { position: relative; background: #151a25; color: #faf9f5; overflow: hidden; }
+.experience-section::before { content: ""; position: absolute; width: 650px; height: 650px; top: -300px; right: -250px; border: 1px solid #ffffff08; border-radius: 50%; box-shadow: 0 0 0 70px #ffffff02,0 0 0 140px #ffffff01; pointer-events: none; }
+.experience-section .chapter-label { color: #a4a8b8; }
+.timeline-label { border: 1px solid #ffffff20; padding: 6px 10px; border-radius: 999px; font-size: 9px; font-weight: 400; letter-spacing: 1px; }
+.experience-section .section-title em { color: #bb9ce9; }
+.experience-section .body-copy { color: #949baa; }
+.experience-timeline { margin-top: 65px; }
+.experience-row { position: relative; display: grid; grid-template-columns: .7fr 1fr 1.1fr; gap: 35px; padding: 32px 0; border-top: 1px solid #ffffff16; }
+.experience-period { position: relative; padding-left: 25px; color: #e1e4e9; font-size: 12px; }
+.timeline-dot { position: absolute; width: 8px; height: 8px; left: 0; top: 6px; border-radius: 50%; background: #b499d4; box-shadow: 0 0 0 4px #b499d412; }
+.experience-row:first-child .timeline-dot { background: #ef8152; box-shadow: 0 0 0 4px #ef815212; }
+.period-note { display: block; margin-top: 9px; color: #7c8494; font-size: 10px; }
+.experience-role h3 { margin: 0; font-size: 20px; font-weight: 500; line-height: 1.3; letter-spacing: -.5px; }
+.experience-role p { color: #b9bccc; font-size: 12px; }
+.experience-role p > span { color: #7c8494; font-size: 10px; }
+.experience-description p { margin: 0; color: #9da3b2; font-size: 12px; line-height: 1.9; }
+.skill-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; }
+.skill-tags span { border: 1px solid #ffffff18; border-radius: 999px; padding: 5px 9px; color: #bdafcf; font-size: 9px; }
+.experience-link { margin-top: 20px; border-color: #ffffff30; }
+.stack-section { background: #fdfcfb; }
+.tool-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 14px; }
+.tool-card { position: relative; display: flex; align-items: center; gap: 15px; min-width: 0; border: 1px solid #eae7e4; border-radius: 12px; padding: 23px 18px; background: #fff; text-align: left; cursor: pointer; transition: border-color 200ms ease,transform 200ms ease,box-shadow 200ms ease; }
+.tool-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px #35254607; }
+.tool-card.is-selected { border-color: #c8b3e0; background: #fbf9fe; }
+.tool-card b { display: block; font-size: 14px; font-weight: 600; line-height: 1.4; }
+.tool-card small { display: block; margin-top: 5px; color: #958d96; font-size: 9px; line-height: 1.4; }
+.tool-arrow { position: absolute; right: 12px; top: 9px; color: #c0b9c3; font-size: 12px; }
+.tool-mark { display: grid; place-items: center; flex: 0 0 42px; height: 42px; font-weight: 700; font-size: 22px; }
+.figma-mark { display: grid; grid-template-columns: 13px 13px; grid-template-rows: repeat(3,13px); justify-content: center; }
+.figma-mark i { width: 13px; height: 13px; background: #f24e1e; border-radius: 7px 0 0 7px; }
+.figma-mark i:nth-child(2) { background: #ff7262; border-radius: 0 7px 7px 0; }
+.figma-mark i:nth-child(3) { background: #a259ff; }
+.figma-mark i:nth-child(4) { background: #1abcfe; border-radius: 50%; }
+.figma-mark i:nth-child(5) { background: #0acf83; border-radius: 7px 0 7px 7px; }
+.webflow-mark { color: #3357ef; font-style: italic; font-size: 32px; }
+.illustrator-mark { border-radius: 8px; background: #352310; color: #ffa02a; font-weight: 500; }
+.notion-mark { width: 35px; height: 35px; flex-basis: 35px; margin-right: 7px; border: 2px solid #242325; border-radius: 5px; font-family: Georgia,serif; }
+.html-mark { color: #e87847; font-size: 20px; letter-spacing: -2px; }
+.js-mark { border-radius: 8px; background: #ffe992; color: #62521f; font-size: 18px; }
+.github-mark { color: #403847; font-size: 34px; }
+.tool-description { min-height: 32px; margin: 25px 0 0; color: #958a9e; font-size: 12px; line-height: 1.8; text-align: center; }
+.tool-description b { color: #765694; font-weight: 500; }
+.stack-signoff { display: flex; align-items: center; gap: 25px; margin-top: 70px; padding-top: 35px; border-top: 1px solid #e9e3e0; }
+.signoff-star { color: #af93cd; font-size: 60px; line-height: 1; }
+.stack-signoff p { margin: 0; font-size: 22px; line-height: 1.3; letter-spacing: -.5px; }
+.stack-signoff p em { font-family: Georgia,serif; color: #9f8cab; }
+.stack-signoff .text-link { margin-left: auto; }
+.case-study-dialog { width: min(620px,calc(100% - 32px)); max-width: 620px; padding: 35px; border-radius: 20px; }
+.case-study-top { display: flex; align-items: center; justify-content: space-between; }
+.case-study-close { width: 38px; height: 38px; border: 1px solid #e7e2e8; border-radius: 50%; background: white; font-size: 23px; cursor: pointer; }
+.case-study-dialog h2 { font-size: 36px; }
+.case-study-dialog h3 { margin: 26px 0 8px; font-size: 15px; }
+.case-study-dialog p { font-size: 14px; line-height: 1.8; }
+.case-study-dialog p.sample-note { font-size: 11px; }
+@media (max-width: 1100px) {
+  .about-grid { gap: 40px; }
+  .section-heading { gap: 40px; }
+  .idea-board { min-height: 370px; }
+  .about-character { width: 220px; }
+  .sticky-note { left: 20px; font-size: 20px; }
+  .board-caption { right: 14px; font-size: 15px; }
+  .tool-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .process-tab { padding-inline: 20px; }
+  .process-panel { padding: 30px; gap: 25px; }
+  .sketch-window { left: 30%; }
+  .finance-body { gap: 10px; }
+  .bank-card { padding: 13px; }
+  .finance-body strong { font-size: 22px; }
+  .market-doodle { right: 2%; font-size: 16px; }
+  .phone-mock { right: 16%; }
+}
+@media (max-width: 800px) {
+  .editorial-section { padding-block: 75px; }
+  .content-shell { width: calc(100% - 48px); }
+  .chapter-label { margin-bottom: 35px; }
+  .section-title { font-size: clamp(36px,5.5vw,48px); letter-spacing: -1.7px; }
+  .about-grid { grid-template-columns: 1fr; gap: 35px; }
+  .idea-board { min-height: 400px; }
+  .about-character { width: 285px; right: 8%; }
+  .sticky-note { left: 9%; font-size: 24px; }
+  .board-caption { right: 12%; top: 95px; font-size: 20px; }
+  .principles { gap: 15px; font-size: 11px; }
+  .principles b { display: block; margin: 0 0 7px; }
+  .section-heading { grid-template-columns: 1fr; gap: 20px; }
+  .section-heading .body-copy { justify-self: start; max-width: 500px; }
+  .process-tab { padding: 20px 15px; font-size: 15px; }
+  .process-tab small { font-size: 9px; }
+  .phase-visual { min-height: 220px; }
+  .process-panel { gap: 20px; }
+  .experience-row { grid-template-columns: .65fr 1fr; gap: 20px; }
+  .experience-description { grid-column: 2; }
+  .experience-role h3 { font-size: 19px; }
+  .project-art { height: 310px; }
+  .finance-window { padding: 14px; top: 95px; }
+  .finance-body { grid-template-columns: 1fr; }
+  .bank-card { display: none; }
+  .focus-window { padding: 16px; }
+  .mock-header > span { display: none; }
+  .focus-body h4 { font-size: 23px; }
+  .focus-orb { font-size: 105px; }
+  .market-copy h4 { font-size: 48px; }
+  .market-art { height: 350px; }
+  .market-doodle { display: none; }
+  .phone-mock { right: 7%; }
+  .project-meta h3 { font-size: 20px; }
+}
+@media (max-width: 560px) {
+  .content-shell { width: calc(100% - 40px); }
+  .editorial-section { padding-block: 62px; }
+  .chapter-label { font-size: 9px; gap: 10px; }
+  .hand-note { font-size: 15px; }
+  .small-label { display: none; }
+  .section-lead { font-size: 18px; }
+  .body-copy { font-size: 14px; }
+  .idea-board { min-height: 350px; }
+  .about-character { width: 230px; right: -10px; }
+  .board-caption { right: 14px; font-size: 16px; }
+  .sticky-note { left: 15px; top: 75px; font-size: 20px; }
+  .board-stamp { font-size: 16px; left: 20px; }
+  .principles { margin-top: 35px; font-size: 10px; line-height: 1.6; }
+  .process-tabs { grid-template-columns: repeat(2,1fr); }
+  .process-tab:nth-child(2) { border-right: 0; }
+  .process-tab:nth-child(-n+2) { border-bottom: 1px solid #ece9e4; }
+  .process-panel { grid-template-columns: 1fr; padding: 25px; }
+  .phase-copy h3 { font-size: 27px; }
+  .phase-copy > p:not(.phase-kicker) { font-size: 13px; }
+  .phase-visual { min-height: 210px; }
+  .mini-note { font-size: 15px; padding: 12px 15px; }
+  .note-one { left: 9px; }
+  .note-two { right: 8px; }
+  .sketch-window { width: 155px; left: 30%; }
+  .process-bottom { padding: 20px 25px; gap: 13px; font-size: 9px; }
+  .project-grid { grid-template-columns: 1fr; gap: 32px; }
+  .project-wide { grid-column: auto; }
+  .project-art { height: 320px; }
+  .finance-body { grid-template-columns: 1fr 1fr; }
+  .bank-card { display: flex; gap: 17px; }
+  .finance-body strong { font-size: 20px; }
+  .mock-header b { font-size: 18px; }
+  .bank-card b { font-size: 11px; }
+  .floating-tag { font-size: 18px; }
+  .project-meta h3 { font-size: 21px; }
+  .project-meta p:last-child { font-size: 11px; }
+  .market-art { height: 375px; }
+  .market-copy { top: 25px; left: 25px; }
+  .market-copy h4 { font-size: 38px; margin-top: 16px; }
+  .market-copy .mock-pill { font-size: 7px; max-width: 130px; border-radius: 8px; }
+  .phone-mock { width: 172px; right: 5%; top: 120px; transform: rotate(10deg); }
+  .phone-header { font-size: 19px; }
+  .fruit-illustration { height: 70px; }
+  .fruit-illustration span { width: 46px; height: 46px; left: 20px; }
+  .fruit-illustration b { width: 33px; height: 33px; right: 20px; }
+  .fruit-illustration i { left: 39px; }
+  .project-filters { gap: 7px; }
+  .filter-button { padding: 9px 12px; font-size: 10px; }
+  .experience-timeline { margin-top: 35px; }
+  .experience-row { grid-template-columns: 1fr; gap: 20px; padding-block: 28px; }
+  .experience-description { grid-column: auto; }
+  .experience-period { display: flex; align-items: center; gap: 14px; font-size: 11px; }
+  .period-note { margin: 0; font-size: 9px; }
+  .experience-role, .experience-description { padding-left: 25px; }
+  .tool-grid { gap: 10px; }
+  .tool-card { gap: 10px; padding: 19px 12px; }
+  .tool-mark { flex-basis: 29px; width: 29px; font-size: 20px; }
+  .notion-mark { flex-basis: 29px; height: 31px; margin-right: 0; }
+  .tool-card b { font-size: 12px; }
+  .tool-card small { font-size: 8px; }
+  .tool-description { text-align: left; font-size: 11px; min-height: 56px; }
+  .stack-signoff { flex-wrap: wrap; margin-top: 40px; gap: 20px; }
+  .stack-signoff .text-link { margin-left: 0; }
+  .stack-signoff p { font-size: 21px; }
+  .signoff-star { font-size: 47px; }
+}
+@media (max-width: 360px) {
+  .chapter-label .hand-note { max-width: 120px; text-align: right; }
+  .tool-grid { grid-template-columns: 1fr; }
+  .tool-card { padding: 17px 20px; }
+  .tool-card b { font-size: 14px; }
+  .tool-card small { font-size: 10px; }
+  .section-title { font-size: 33px; }
+  .project-art { height: 300px; }
+  .finance-window { left: 8%; width: 99%; }
+  .finance-body strong { font-size: 18px; }
+  .market-art { height: 365px; }
+}
+@media (max-width: 560px) {
+  nav a[href="#projects"] { display: none; }
+}
+.about-character { clip-path: inset(7px 0 0); mask-image: linear-gradient(to right,transparent,#000 6%,#000 96%,transparent),linear-gradient(to bottom,transparent,#000 8%,#000 94%,transparent); mask-composite: intersect; }
+.phone-nav { display: flex; justify-content: space-around; gap: 15px; }
+.phone-nav span { width: 9px; height: 9px; border: 1px solid #a5b59c; border-radius: 3px; }
+.phone-nav span:first-child { background: #97b085; border-color: #97b085; }
+.project-open { display: grid; place-items: center; }
+@media (prefers-reduced-motion: no-preference) {
+  .sticky-note { animation: note-drift 7s ease-in-out infinite; }
+  .sketch-spark { animation: spark-turn 8s ease-in-out infinite; }
+  .focus-orb { animation: blossom-turn 35s linear infinite; }
+  .signoff-star { animation: blossom-turn 30s linear infinite; }
+  .experience-row:first-child .timeline-dot::after { content: ""; position: absolute; inset: -4px; border: 1px solid #ef8152; border-radius: 50%; animation: timeline-pulse 3s ease-out infinite; }
+}
+@keyframes note-drift { 0%,100% { transform: rotate(-9deg) translateY(0); } 50% { transform: rotate(-6deg) translateY(-5px); } }
+@keyframes spark-turn { 0%,100% { transform: rotate(0) scale(1); } 50% { transform: rotate(25deg) scale(1.1); } }
+@keyframes blossom-turn { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+@keyframes timeline-pulse { from { transform: scale(.7); opacity: .6; } to { transform: scale(1.8); opacity: 0; } }
 </style>
   </head>
   <body>
@@ -252,6 +607,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
       <nav aria-label="Main navigation">
         <a class="nav-link is-active" href="#home" aria-current="location">Home</a>
         <a class="nav-link" href="#about">About me</a>
+        <a class="nav-link" href="#projects">Work</a>
         <button class="nav-link" type="button" id="resume-button">Resume</button>
       </nav>
     </header>
@@ -287,18 +643,102 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
         </div>
       </section>
 
-      <section id="about" class="section container" aria-labelledby="about-title">
-        <p class="eyebrow">01 / About</p>
-        <h2 id="about-title">A little about me.</h2>
-        <p>Add your introduction, experience, and interests here.</p>
+      <section id="about" class="editorial-section about-section" aria-labelledby="about-title">
+        <div class="content-shell">
+          <div class="chapter-label reveal"><span>01 / A little about me</span><span class="hand-note">curiosity comes first <svg aria-hidden="true" width=".85em" height=".85em" viewBox="0 0 24 24" fill="none" style="vertical-align:-.08em"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+          <div class="about-grid">
+            <div class="about-copy reveal">
+              <h2 id="about-title" class="section-title">Thoughtful by nature.<br>Designer by <em>choice.</em></h2>
+              <p class="section-lead">I connect the dots between what people need and what a product can become.</p>
+              <p class="body-copy">The best part of design? Turning an “okay, but why?” into something that just makes sense. I’m drawn to clear experiences, small details, and ideas that make everyday life a little easier.</p>
+              <p class="sample-note">Sample profile — ready for your story.</p>
+              <a class="text-link" href="#contact">Let’s make something meaningful <span aria-hidden="true"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+            </div>
+            <div class="idea-board reveal" aria-label="Design inspiration board">
+              <div class="board-topline"><span class="board-dot"></span> Inside my head <span><svg aria-hidden="true" width=".85em" height=".85em" viewBox="0 0 24 24" fill="none" style="vertical-align:-.08em"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+              <div class="sticky-note">People first.<br>Pixels second.<svg width="80" height="23" viewBox="0 0 80 23" fill="none" aria-hidden="true"><path d="M3 17c19-9 43-10 74-7M8 22c21-9 41-9 67-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
+              <div class="board-orbits" aria-hidden="true"><span>why?</span><span>what if?</span></div>
+              <img data-asset="assets/images/hero-writing.webp" class="about-character" src="data:image/webp;base64,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" width="278" height="236" alt="" loading="lazy">
+              <span class="board-caption">a little obsessed<br>with the details.</span>
+              <span class="board-stamp">Always<br>exploring ✦</span>
+            </div>
+          </div>
+          <div class="principles reveal"><span><b>01</b> Understand the human.</span><span><b>02</b> Simplify the complicated.</span><span><b>03</b> Make the details count.</span></div>
+        </div>
       </section>
 
-      <section id="projects" class="section container" aria-labelledby="projects-title">
-        <p class="eyebrow">02 / Projects</p>
-        <h2 id="projects-title">Selected work.</h2>
-        <div class="project-placeholder">
-          <p>Your projects will appear here.</p>
-          <p class="muted">Add a title, description, image, and link for each project.</p>
+      <section id="progress" class="editorial-section process-section" aria-labelledby="progress-title">
+        <div class="content-shell">
+          <div class="chapter-label reveal"><span>02 / Progress &amp; process</span><span class="small-label">A little messy. Always intentional.</span></div>
+          <div class="section-heading reveal"><h2 id="progress-title" class="section-title">From the first <em>why</em><br>to the final little detail.</h2><p class="body-copy">A thoughtful process makes room for questions, experiments, and the occasional “let’s try that again.”</p></div>
+          <div class="process-workbench reveal">
+            <div class="process-tabs" role="tablist" aria-label="Design process stages">
+              <button id="phase-discover" class="process-tab is-selected" type="button" role="tab" aria-selected="true" aria-controls="process-panel" data-phase="discover"><span>01</span>Discover<small>Ask better questions</small></button>
+              <button id="phase-define" class="process-tab" type="button" role="tab" aria-selected="false" aria-controls="process-panel" tabindex="-1" data-phase="define"><span>02</span>Define<small>Find the real problem</small></button>
+              <button id="phase-design" class="process-tab" type="button" role="tab" aria-selected="false" aria-controls="process-panel" tabindex="-1" data-phase="design"><span>03</span>Design<small>Make ideas tangible</small></button>
+              <button id="phase-deliver" class="process-tab" type="button" role="tab" aria-selected="false" aria-controls="process-panel" tabindex="-1" data-phase="deliver"><span>04</span>Deliver<small>Test. Learn. Refine.</small></button>
+            </div>
+            <div id="process-panel" class="process-panel" role="tabpanel" aria-labelledby="phase-discover" tabindex="0">
+              <div class="phase-copy"><p class="phase-kicker">The starting point</p><h3 id="phase-title">Listen before drawing.</h3><p id="phase-description">Talk to people, explore the context, and challenge assumptions. The right question is often more valuable than the first answer.</p><span id="phase-output" class="phase-output">The outcome: a clearer understanding of people.</span></div>
+              <div class="phase-visual" data-stage="discover" aria-hidden="true"><div class="mini-note note-one">What do<br>people need?</div><div class="mini-note note-two">What if<br>we tried…</div><div class="sketch-window"><div class="sketch-dots">● ● ●</div><div class="sketch-row"><span></span><i></i></div><div class="sketch-lines"><i></i><i></i><i></i></div><div class="sketch-action"></div></div><span class="sketch-spark">✦</span></div>
+            </div>
+            <div class="process-bottom"><span id="phase-count">01 / 04</span><div class="process-track" role="progressbar" aria-label="Selected design process stage" aria-valuemin="0" aria-valuemax="100" aria-valuenow="25"><span></span></div><span>Ideas → impact</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="editorial-section portfolio-section" aria-labelledby="projects-title">
+        <div class="content-shell">
+          <div class="chapter-label reveal"><span>03 / Selected portfolio</span><span class="hand-note">less talk, more making.</span></div>
+          <div class="section-heading reveal"><h2 id="projects-title" class="section-title">A few ideas.<br>A lot of <em>possibility.</em></h2><p class="body-copy">A collection of concept explorations. Different problems, one shared goal: make the experience feel effortless.</p></div>
+          <div class="project-filters reveal" role="group" aria-label="Filter concept projects"><button type="button" class="filter-button is-selected" aria-pressed="true" data-filter="all">All work <span>03</span></button><button type="button" class="filter-button" aria-pressed="false" data-filter="product">Product design</button><button type="button" class="filter-button" aria-pressed="false" data-filter="web">Web experiences</button><button type="button" class="filter-button" aria-pressed="false" data-filter="experiment">Experiments</button></div>
+          <div class="project-grid">
+            <article class="project-card reveal" data-category="product">
+              <div class="project-art finance-art" aria-hidden="true"><span class="art-caption">a clearer kind of banking.</span><div class="finance-window"><div class="mock-header"><b>flow<span>®</span></b><span>Overview · Wallet · Activity</span><i>ST</i></div><div class="finance-body"><div><small>Total balance</small><strong>₹24,850<span>.00</span></strong><span class="mock-pill"><svg aria-hidden="true" width=".85em" height=".85em" viewBox="0 0 24 24" fill="none" style="vertical-align:-.08em"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Your money, in motion</span><div class="chart-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="bank-card"><span>flow / everyday</span><b>•••• 2048</b><small>Designed for clarity.</small></div></div></div><span class="floating-tag">Clarity is a feature. <svg aria-hidden="true" width=".85em" height=".85em" viewBox="0 0 24 24" fill="none" style="vertical-align:-.08em"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+              <div class="project-meta"><div><p class="project-type">Product design / Concept</p><h3>Less friction. More flow.</h3><p>Making everyday finances feel a little more human.</p></div><button type="button" class="project-open" data-project="flow" aria-label="Explore Flow banking concept"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+            </article>
+            <article class="project-card reveal" data-category="web">
+              <div class="project-art focus-art" aria-hidden="true"><span class="art-caption">make room for what matters.</span><div class="focus-window"><div class="mock-header"><b>little space<span><svg aria-hidden="true" width="1em" height="1em" viewBox="0 0 80 80" fill="none"><path d="M40 8v64M8 40h64M17 17l46 46M17 63l46-46" stroke="currentColor" stroke-width="9" stroke-linecap="round"/></svg></span></b><span>Your day, thoughtfully.</span></div><div class="focus-body"><span class="mock-pill">MONDAY / A FRESH START</span><h4>A little less noise.<br>A little more focus.</h4><div class="task-line"><i>✓</i> Start with one good idea <span>Today</span></div><div class="task-line"><i></i> Make something meaningful <span>Next</span></div><div class="task-line"><i></i> Take a little break <span>Later</span></div></div></div><span class="focus-orb"><svg aria-hidden="true" width="1em" height="1em" viewBox="0 0 80 80" fill="none"><path d="M40 8v64M8 40h64M17 17l46 46M17 63l46-46" stroke="currentColor" stroke-width="9" stroke-linecap="round"/></svg></span></div>
+              <div class="project-meta"><div><p class="project-type">Web experience / Concept</p><h3>A little space to focus.</h3><p>A calmer home for ideas, priorities, and everyday work.</p></div><button type="button" class="project-open" data-project="space" aria-label="Explore Little Space workspace concept"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+            </article>
+            <article class="project-card project-wide reveal" data-category="experiment">
+              <div class="project-art market-art" aria-hidden="true"><div class="market-copy"><span class="art-caption">fresh thinking.</span><h4>Good food.<br>Good mood.</h4><span class="mock-pill">An everyday shopping experiment <svg aria-hidden="true" width=".85em" height=".85em" viewBox="0 0 24 24" fill="none" style="vertical-align:-.08em"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div class="phone-mock"><div class="phone-island"></div><div class="phone-header">daily<span><svg aria-hidden="true" width="1em" height="1em" viewBox="0 0 80 80" fill="none"><path d="M40 8v64M8 40h64M17 17l46 46M17 63l46-46" stroke="currentColor" stroke-width="9" stroke-linecap="round"/></svg></span></div><small>A little goodness, delivered.</small><div class="fruit-illustration"><span></span><i></i><b></b></div><strong>Fresh picks for you</strong><div class="phone-products"><div><span>◒</span><small>Seasonal fruit</small></div><div><span><svg aria-hidden="true" width="1em" height="1em" viewBox="0 0 80 80" fill="none"><path d="M40 8v64M8 40h64M17 17l46 46M17 63l46-46" stroke="currentColor" stroke-width="9" stroke-linecap="round"/></svg></span><small>Fresh greens</small></div></div><div class="phone-nav"><span></span><span></span><span></span><span></span></div></div><span class="market-doodle">a fresh perspective.</span></div>
+              <div class="project-meta"><div><p class="project-type">Interaction experiment / Concept</p><h3>Everyday, a little better.</h3><p>Exploring a playful, friendly way to discover fresh food.</p></div><button type="button" class="project-open" data-project="daily" aria-label="Explore Daily shopping concept"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button></div>
+            </article>
+          </div>
+          <p class="portfolio-caption">Concept work shown for illustration. Your real case studies belong here.</p>
+        </div>
+      </section>
+
+      <section id="experience" class="editorial-section experience-section" aria-labelledby="experience-title">
+        <div class="content-shell">
+          <div class="chapter-label reveal"><span>04 / Job experience</span><span class="timeline-label">Sample timeline</span></div>
+          <div class="section-heading reveal"><h2 id="experience-title" class="section-title">Every chapter.<br>A new <em>perspective.</em></h2><p class="body-copy">Great work comes from learning, collaborating, and getting a little better with every project.</p></div>
+          <div class="experience-timeline">
+            <article class="experience-row reveal"><div class="experience-period"><span class="timeline-dot"></span>Current chapter<span class="period-note">Reference role</span></div><div class="experience-role"><h3>Senior Product Designer</h3><p>Licious <span>· Product &amp; experience</span></p></div><div class="experience-description"><p>Connecting customer needs with thoughtful product experiences, from the big picture to the smallest interaction.</p><div class="skill-tags"><span>Product strategy</span><span>Design systems</span></div></div></article>
+            <article class="experience-row reveal"><div class="experience-period"><span class="timeline-dot"></span>Previous chapter<span class="period-note">Add company &amp; dates</span></div><div class="experience-role"><h3>Product Designer</h3><p>Your previous team <span>· Sample role</span></p></div><div class="experience-description"><p>A space for your work on research, interfaces, prototypes, and the people you collaborated with.</p><div class="skill-tags"><span>Interaction design</span><span>Prototyping</span></div></div></article>
+            <article class="experience-row reveal"><div class="experience-period"><span class="timeline-dot"></span>The first chapter<span class="period-note">Add company &amp; dates</span></div><div class="experience-role"><h3>Visual Designer</h3><p>Your first team <span>· Sample role</span></p></div><div class="experience-description"><p>The beginning of your story: finding a visual voice, learning the craft, and turning curiosity into practice.</p><div class="skill-tags"><span>Visual design</span><span>Creative thinking</span></div></div></article>
+          </div>
+          <a href="#contact" class="text-link experience-link reveal">Let’s write the next chapter <span aria-hidden="true"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        </div>
+      </section>
+
+      <section id="stack" class="editorial-section stack-section" aria-labelledby="stack-title">
+        <div class="content-shell">
+          <div class="chapter-label reveal"><span>05 / Tech stack</span><span class="hand-note">the tools behind the pixels.</span></div>
+          <div class="section-heading reveal"><h2 id="stack-title" class="section-title">A curious mind.<br>A handy little <em>toolkit.</em></h2><p class="body-copy">From the first sticky note to a working experience. A sample selection of tools for thinking, designing, and making.</p></div>
+          <div class="tool-grid reveal" role="group" aria-label="Explore the sample toolkit">
+            <button type="button" class="tool-card is-selected" aria-pressed="true" data-tool="figma"><span class="tool-mark figma-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span><b>Figma</b><small>Interfaces &amp; systems</small></span><span class="tool-arrow" aria-hidden="true"><svg aria-hidden="true" width=".85em" height=".85em" viewBox="0 0 24 24" fill="none" style="vertical-align:-.08em"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+            <button type="button" class="tool-card" aria-pressed="false" data-tool="framer"><span class="tool-mark framer-mark" aria-hidden="true"><svg width="30" height="38" viewBox="0 0 30 38"><path d="M0 0h30v13H15L0 0Zm0 13h15l15 13H15v12L0 26Z" fill="currentColor"/></svg></span><span><b>Framer</b><small>Web &amp; motion</small></span><span class="tool-arrow" aria-hidden="true"><svg aria-hidden="true" width=".85em" height=".85em" viewBox="0 0 24 24" fill="none" style="vertical-align:-.08em"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+            <button type="button" class="tool-card" aria-pressed="false" data-tool="webflow"><span class="tool-mark webflow-mark" aria-hidden="true">W</span><span><b>Webflow</b><small>Visual development</small></span><span class="tool-arrow" aria-hidden="true"><svg aria-hidden="true" width=".85em" height=".85em" viewBox="0 0 24 24" fill="none" style="vertical-align:-.08em"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+            <button type="button" class="tool-card" aria-pressed="false" data-tool="illustrator"><span class="tool-mark illustrator-mark" aria-hidden="true">Ai</span><span><b>Illustrator</b><small>Visual storytelling</small></span><span class="tool-arrow" aria-hidden="true"><svg aria-hidden="true" width=".85em" height=".85em" viewBox="0 0 24 24" fill="none" style="vertical-align:-.08em"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+            <button type="button" class="tool-card" aria-pressed="false" data-tool="notion"><span class="tool-mark notion-mark" aria-hidden="true">N</span><span><b>Notion</b><small>Ideas &amp; organization</small></span><span class="tool-arrow" aria-hidden="true"><svg aria-hidden="true" width=".85em" height=".85em" viewBox="0 0 24 24" fill="none" style="vertical-align:-.08em"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+            <button type="button" class="tool-card" aria-pressed="false" data-tool="html"><span class="tool-mark html-mark" aria-hidden="true">&lt;/&gt;</span><span><b>HTML &amp; CSS</b><small>Structure &amp; style</small></span><span class="tool-arrow" aria-hidden="true"><svg aria-hidden="true" width=".85em" height=".85em" viewBox="0 0 24 24" fill="none" style="vertical-align:-.08em"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+            <button type="button" class="tool-card" aria-pressed="false" data-tool="javascript"><span class="tool-mark js-mark" aria-hidden="true">JS</span><span><b>JavaScript</b><small>Interactions &amp; logic</small></span><span class="tool-arrow" aria-hidden="true"><svg aria-hidden="true" width=".85em" height=".85em" viewBox="0 0 24 24" fill="none" style="vertical-align:-.08em"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+            <button type="button" class="tool-card" aria-pressed="false" data-tool="github"><span class="tool-mark github-mark" aria-hidden="true"><svg width="34" height="34" viewBox="0 0 24 24" fill="none"><path d="M9 19c-4 1-4-2-6-3m12 6v-3.6c0-1-.3-1.6-.8-2 2.6-.3 5.3-1.3 5.3-5.8 0-1.3-.4-2.3-1.2-3.2.1-.3.5-1.5-.1-3.2 0 0-1-.3-3.3 1.2a11 11 0 0 0-6 0C6.6 3.9 5.6 4.2 5.6 4.2c-.6 1.7-.2 2.9-.1 3.2-.8.9-1.2 1.9-1.2 3.2 0 4.5 2.7 5.5 5.3 5.8-.5.4-.8 1-.8 2V22" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>GitHub</b><small>Versions &amp; collaboration</small></span><span class="tool-arrow" aria-hidden="true"><svg aria-hidden="true" width=".85em" height=".85em" viewBox="0 0 24 24" fill="none" style="vertical-align:-.08em"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>
+          </div>
+          <p id="tool-note" class="tool-description" aria-live="polite"><b>Figma</b> — A space to explore interfaces, build reusable components, and connect the details.</p>
+          <div class="stack-signoff reveal"><span class="signoff-star" aria-hidden="true"><svg aria-hidden="true" width="1em" height="1em" viewBox="0 0 80 80" fill="none"><path d="M40 8v64M8 40h64M17 17l46 46M17 63l46-46" stroke="currentColor" stroke-width="9" stroke-linecap="round"/></svg></span><p>Tools change.<br><em>Curiosity stays.</em></p><a class="text-link" href="#contact">Have something in mind? <span aria-hidden="true"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a></div>
         </div>
       </section>
 
@@ -347,6 +787,15 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
         </div>
       </section>
     </main>
+
+    <dialog id="project-dialog" class="case-study-dialog" aria-labelledby="case-study-title">
+      <div class="case-study-top"><span class="project-type">Concept exploration</span><form method="dialog"><button class="case-study-close" aria-label="Close project details">×</button></form></div>
+      <h2 id="case-study-title"></h2><p id="case-study-summary" class="section-lead"></p>
+      <h3>The idea</h3><p id="case-study-idea"></p>
+      <h3>The design direction</h3><p id="case-study-direction"></p>
+      <p class="sample-note">This is a concept, not a shipped client project. Replace it with your real case study.</p>
+      <a class="text-link" id="case-study-contact" href="#contact">Discuss a similar project <svg aria-hidden="true" width=".85em" height=".85em" viewBox="0 0 24 24" fill="none" style="vertical-align:-.08em"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </dialog>
 
     <dialog id="resume-dialog" aria-labelledby="resume-title">
       <h2 id="resume-title">Resume</h2>
@@ -415,6 +864,112 @@ if ("IntersectionObserver" in window) {
   }, { rootMargin: "-20% 0px -50% 0px" });
   sections.forEach((section) => observer.observe(section));
 }
+
+// Reveal progressively: all content stays visible without JavaScript or motion.
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
+  document.body.classList.add("motion-ready");
+}
+
+const phases = {
+  discover: { kicker: "The starting point", title: "Listen before drawing.", description: "Talk to people, explore the context, and challenge assumptions. The right question is often more valuable than the first answer.", output: "The outcome: a clearer understanding of people." },
+  define: { kicker: "Making sense of the messy", title: "Find the problem worth solving.", description: "Connect patterns, map the journey, and turn observations into a focused direction. A shared understanding keeps the work intentional.", output: "The outcome: a focused brief and a clear direction." },
+  design: { kicker: "From possibility to prototype", title: "Give the idea a little life.", description: "Sketch broadly, explore alternatives, and build something people can try. The details matter, but the experience comes first.", output: "The outcome: a tangible, testable prototype." },
+  deliver: { kicker: "A beginning, not an ending", title: "Make it work. Then make it better.", description: "Test with people, refine the interactions, and collaborate on the final experience. Keep learning after the first version ships.", output: "The outcome: a considered experience, ready to evolve." }
+};
+const phaseTabs = [...document.querySelectorAll(".process-tab")];
+function selectPhase(tab, focus = false) {
+  const phase = phases[tab.dataset.phase];
+  if (!phase) return;
+  phaseTabs.forEach((item) => {
+    const selected = item === tab;
+    item.setAttribute("aria-selected", String(selected));
+    item.tabIndex = selected ? 0 : -1;
+    item.classList.toggle("is-selected", selected);
+  });
+  document.getElementById("process-panel").setAttribute("aria-labelledby", tab.id);
+  document.querySelector(".phase-kicker").textContent = phase.kicker;
+  document.getElementById("phase-title").textContent = phase.title;
+  document.getElementById("phase-description").textContent = phase.description;
+  document.getElementById("phase-output").textContent = phase.output;
+  document.querySelector(".phase-visual").dataset.stage = tab.dataset.phase;
+  const number = phaseTabs.indexOf(tab) + 1;
+  document.getElementById("phase-count").textContent = `0${number} / 04`;
+  const track = document.querySelector(".process-track");
+  track.setAttribute("aria-valuenow", String(number * 25));
+  track.querySelector("span").style.width = `${number * 25}%`;
+  if (focus) tab.focus();
+}
+phaseTabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => selectPhase(tab));
+  tab.addEventListener("keydown", (event) => {
+    let target;
+    if (event.key === "ArrowRight" || event.key === "ArrowDown") target = (index + 1) % phaseTabs.length;
+    if (event.key === "ArrowLeft" || event.key === "ArrowUp") target = (index - 1 + phaseTabs.length) % phaseTabs.length;
+    if (event.key === "Home") target = 0;
+    if (event.key === "End") target = phaseTabs.length - 1;
+    if (target !== undefined) { event.preventDefault(); selectPhase(phaseTabs[target], true); }
+  });
+});
+
+const filterButtons = document.querySelectorAll("[data-filter]");
+filterButtons.forEach((button) => button.addEventListener("click", () => {
+  filterButtons.forEach((item) => {
+    item.classList.toggle("is-selected", item === button);
+    item.setAttribute("aria-pressed", String(item === button));
+  });
+  document.querySelectorAll(".project-card").forEach((card) => {
+    card.hidden = button.dataset.filter !== "all" && card.dataset.category !== button.dataset.filter;
+  });
+}));
+
+const concepts = {
+  flow: { title: "Less friction. More flow.", summary: "A concept for a clearer, more human everyday banking experience.", idea: "Give people one calm place to understand their balance, see recent activity, and make everyday decisions without unnecessary friction.", direction: "Warm neutrals, a clear visual hierarchy, and a simplified dashboard put the essentials first. The preview explores information design rather than a live banking service." },
+  space: { title: "A little space to focus.", summary: "A concept workspace that helps the day feel less crowded.", idea: "Bring ideas and priorities into a quiet, approachable interface that encourages one meaningful next step.", direction: "Soft lavender, generous spacing, and restrained task states create a calmer visual rhythm. The preview is a design exploration rather than a working task manager." },
+  daily: { title: "Everyday, a little better.", summary: "An interaction concept for discovering fresh food with a little more personality.", idea: "Make everyday shopping feel welcoming, with seasonal discoveries and a friendly path from browsing to a clear choice.", direction: "Sage green, playful produce illustrations, and compact mobile layouts explore a lighter shopping experience. No checkout or ordering service is connected." }
+};
+const projectDialog = document.getElementById("project-dialog");
+if (projectDialog) {
+  document.querySelectorAll("[data-project]").forEach((button) => button.addEventListener("click", () => {
+    const project = concepts[button.dataset.project];
+    document.getElementById("case-study-title").textContent = project.title;
+    document.getElementById("case-study-summary").textContent = project.summary;
+    document.getElementById("case-study-idea").textContent = project.idea;
+    document.getElementById("case-study-direction").textContent = project.direction;
+    projectDialog.showModal();
+  }));
+  document.getElementById("case-study-contact").addEventListener("click", () => projectDialog.close());
+}
+
+const tools = {
+  figma: ["Figma", "A space to explore interfaces, build reusable components, and connect the details."],
+  framer: ["Framer", "Bring interfaces to life with motion, responsive layouts, and interactive prototypes."],
+  webflow: ["Webflow", "Turn visual ideas into responsive web experiences with a visual development workflow."],
+  illustrator: ["Illustrator", "Explore identities, vector illustrations, and the little details that give a project character."],
+  notion: ["Notion", "Keep research, notes, decisions, and project direction in one thoughtful workspace."],
+  html: ["HTML & CSS", "Shape accessible structure and responsive presentation for the web."],
+  javascript: ["JavaScript", "Connect the interface with meaningful interactions and responsive behavior."],
+  github: ["GitHub", "Track changes, collaborate on the code, and give each idea room to evolve."]
+};
+document.querySelectorAll("[data-tool]").forEach((button) => button.addEventListener("click", () => {
+  document.querySelectorAll("[data-tool]").forEach((item) => {
+    item.classList.toggle("is-selected", item === button);
+    item.setAttribute("aria-pressed", String(item === button));
+  });
+  const [name, description] = tools[button.dataset.tool];
+  const note = document.getElementById("tool-note");
+  note.replaceChildren();
+  const label = document.createElement("b"); label.textContent = name;
+  note.append(label, ` — ${description}`);
+}));
 </script>
   </body>
 </html>

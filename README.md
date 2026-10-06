@@ -38,7 +38,7 @@ Then reload the page. No third-party packages are needed. The sync script is opt
 
 ## Before publishing
 
-- Replace the placeholder About, Projects, and Contact content with your information.
+- Personalize the sample About copy, concept projects, work timeline, toolkit, and reference contact information.
 - Update the page title, description, and matching Open Graph and Twitter metadata.
 - Add a canonical link in the head using your actual public URL.
 - Replace `https://example.com/` in `sitemap.xml` with your public URL and add its sitemap URL to `robots.txt`.
@@ -58,3 +58,15 @@ The email address, city, and featured badge reproduce reference content and shou
 ## Footer
 
 The footer follows the supplied reference: a warm gray background, name and automatically updated copyright year, centered purple handwritten signature and smiley, and a circular Back to top control. On mobile, the signature moves to a second row. Back to top uses a native anchor to the hero, with smooth scrolling unless reduced motion is enabled.
+
+## Landing-page sections
+
+The complete page follows this order: header and animated hero, About, Progress, Portfolio, Job experience, Tech stack, Contact, and Footer.
+
+- About combines an editorial introduction with an illustrated inspiration board and subtle floating note.
+- Progress has four interactive stages. Click a stage, or use arrow keys, Home, and End when a tab is focused. The text, illustration state, and progress indicator update together.
+- Portfolio includes three clearly labeled concept projects with CSS-drawn interface previews, category filters, hover effects, and project detail dialogs. These are design concepts, not shipped client work or connected apps. Replace the preview markup and descriptions with real work when available.
+- Job experience uses a dark timeline with scroll reveals. The current Licious role follows the existing reference content; the other roles are explicit samples, with no invented employment dates or numerical results.
+- Tech stack offers eight sample tool descriptions. Click a tool to explore its role. Personalize the selection to reflect your actual skills.
+
+Animations respect reduced-motion preferences. Section content remains visible without JavaScript; interactive tabs, filters, dialogs, and toolkit selection require JavaScript. All illustrations, fonts, styles, and scripts are embedded in `index.html` by the existing sync script, so the page remains portable. No external asset requests or packages are required at runtime.
