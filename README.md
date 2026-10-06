@@ -63,7 +63,7 @@ The footer follows the supplied reference: a warm gray background, name and auto
 
 The complete page follows this order: header and animated hero, About, Progress, Portfolio, Job experience, Tech stack, Contact, and Footer.
 
-- About combines an editorial introduction with a layered Polaroid collage, a generated designer illustration, floating notes, and three design principles.
+- About combines an editorial introduction with a layered Polaroid collage, a generated designer illustration, and floating notes.
 - The way I work shows four simple steps together: Research & Discovery, Prototype, UI Design, and Delivery. Each has its own icon, title, and short description. The layout uses four columns on desktop, two on tablet, and a compact vertical list on mobile.
 - Portfolio features a full-width case study and two supporting cards with CSS-drawn interface previews, mouse-following preview cues, and project detail dialogs. All three projects stay visible without category tabs. Both the preview and arrow button open each project; View portfolio opens a collection dialog where visitors can choose a project. These are design concepts, not shipped client work or connected apps. Replace the preview markup and descriptions with real work when available.
 - Job experience pairs a sticky editorial introduction with a dark timeline of expandable career chapters. Native accordions support keyboard navigation and keep one chapter open at a time. The current Licious role follows the existing reference content; the other roles are explicit samples, with no invented employment dates or numerical results.
