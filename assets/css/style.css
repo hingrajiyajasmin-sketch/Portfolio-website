@@ -31,29 +31,73 @@ h1 span { color: var(--accent); }
 .orbit-dot { position: absolute; width: 8px; height: 8px; top: 50%; left: 0; border-radius: 50%; background: #729459; box-shadow: 0 0 0 4px #e8eee1, 0 0 14px #e3ebdc; transform: translate(-50%, -50%); }
 @keyframes orbit { from { transform: rotate(-42deg); } to { transform: rotate(318deg); } }
 .hero-characters { position: absolute; z-index: 1; inset: 0; pointer-events: none; }
-.character { position: absolute; width: 330px; margin: 0; mix-blend-mode: multiply; opacity: 0; animation: character-sequence 16s ease-in-out infinite both; }
+.character { position: absolute; width: 330px; margin: 0; mix-blend-mode: multiply; opacity: 0; animation: character-thinking-sequence 24s ease-in-out infinite both; }
 .character img { display: block; width: 240px; height: auto; mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent), linear-gradient(to bottom, transparent, #000 5%, #000 95%, transparent); mask-composite: intersect; }
 .character figcaption { position: absolute; font-family: Kalam, "Comic Sans MS", cursive; font-size: 15px; font-weight: 400; line-height: 1.4; text-align: center; transform: rotate(-6deg); }
 .note-line { display: block; width: 30px; height: 2px; margin: 5px 0 0 auto; }
 .note-purple { background: #a38cce; }
 .note-green { background: #7fa763; }
 .note-orange { background: var(--accent); }
-.character-thinking { top: 1%; left: calc(50% - 550px); animation-delay: 0s; }
+.character-thinking { top: 1%; left: calc(50% - 550px); animation-name: character-thinking-sequence; }
 .character-thinking figcaption { left: 255px; top: 118px; }
-.character-writing { bottom: 8%; left: calc(50% - 520px); animation-delay: 4s; }
+.character-writing { bottom: 8%; left: calc(50% - 520px); animation-name: character-writing-sequence; }
 .character-writing img { width: 260px; }
 .character-writing figcaption { left: 275px; top: 120px; }
-.character-laptop { top: 4%; right: calc(50% - 550px); animation-delay: 8s; }
+.character-laptop { top: 4%; right: calc(50% - 550px); animation-name: character-laptop-sequence; }
 .character-laptop img { margin-left: auto; }
 .character-laptop figcaption { right: 250px; top: 115px; }
-.character-detail { bottom: 3%; right: calc(50% - 495px); animation-delay: 12s; }
+.character-detail { bottom: 3%; right: calc(50% - 495px); animation-name: character-detail-sequence; }
 .character-detail img { margin-left: auto; width: 225px; }
 .character-detail figcaption { right: 255px; top: 150px; }
-/* Each 4-second slot: 0.4s fade in, 2.2s hold, 0.4s fade out, 1s gap. */
-@keyframes character-sequence {
+/* Shared 24-second timeline: four solos, then two diagonal pairs.
+   Every appearance includes a 0.4s fade in, 2.2s hold, 0.4s fade out,
+   and a 1s empty gap before the next solo or pair. */
+@keyframes character-thinking-sequence {
   0% { opacity: 0; transform: translate3d(0,12px,0); }
-  2.5%, 16.25% { opacity: 1; transform: translate3d(0,0,0); }
-  18.75%, 100% { opacity: 0; transform: translate3d(0,12px,0); }
+  1.666667% { opacity: 1; transform: translate3d(0,0px,0); }
+  10.833333% { opacity: 1; transform: translate3d(0,0px,0); }
+  12.5% { opacity: 0; transform: translate3d(0,12px,0); }
+  66.666667% { opacity: 0; transform: translate3d(0,12px,0); }
+  68.333333% { opacity: 1; transform: translate3d(0,0px,0); }
+  77.5% { opacity: 1; transform: translate3d(0,0px,0); }
+  79.166667% { opacity: 0; transform: translate3d(0,12px,0); }
+  100% { opacity: 0; transform: translate3d(0,12px,0); }
+}
+@keyframes character-writing-sequence {
+  0% { opacity: 0; transform: translate3d(0,12px,0); }
+  16.666667% { opacity: 0; transform: translate3d(0,12px,0); }
+  18.333333% { opacity: 1; transform: translate3d(0,0px,0); }
+  27.5% { opacity: 1; transform: translate3d(0,0px,0); }
+  29.166667% { opacity: 0; transform: translate3d(0,12px,0); }
+  83.333333% { opacity: 0; transform: translate3d(0,12px,0); }
+  85% { opacity: 1; transform: translate3d(0,0px,0); }
+  94.166667% { opacity: 1; transform: translate3d(0,0px,0); }
+  95.833333% { opacity: 0; transform: translate3d(0,12px,0); }
+  100% { opacity: 0; transform: translate3d(0,12px,0); }
+}
+@keyframes character-laptop-sequence {
+  0% { opacity: 0; transform: translate3d(0,12px,0); }
+  33.333333% { opacity: 0; transform: translate3d(0,12px,0); }
+  35% { opacity: 1; transform: translate3d(0,0px,0); }
+  44.166667% { opacity: 1; transform: translate3d(0,0px,0); }
+  45.833333% { opacity: 0; transform: translate3d(0,12px,0); }
+  83.333333% { opacity: 0; transform: translate3d(0,12px,0); }
+  85% { opacity: 1; transform: translate3d(0,0px,0); }
+  94.166667% { opacity: 1; transform: translate3d(0,0px,0); }
+  95.833333% { opacity: 0; transform: translate3d(0,12px,0); }
+  100% { opacity: 0; transform: translate3d(0,12px,0); }
+}
+@keyframes character-detail-sequence {
+  0% { opacity: 0; transform: translate3d(0,12px,0); }
+  50% { opacity: 0; transform: translate3d(0,12px,0); }
+  51.666667% { opacity: 1; transform: translate3d(0,0px,0); }
+  60.833333% { opacity: 1; transform: translate3d(0,0px,0); }
+  62.5% { opacity: 0; transform: translate3d(0,12px,0); }
+  66.666667% { opacity: 0; transform: translate3d(0,12px,0); }
+  68.333333% { opacity: 1; transform: translate3d(0,0px,0); }
+  77.5% { opacity: 1; transform: translate3d(0,0px,0); }
+  79.166667% { opacity: 0; transform: translate3d(0,12px,0); }
+  100% { opacity: 0; transform: translate3d(0,12px,0); }
 }
 .hero.is-motion-paused .character, .hero.is-motion-paused .orbit-sweep { animation-play-state: paused; }
 .eyebrow { color: var(--accent); font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
