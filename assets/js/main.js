@@ -58,11 +58,6 @@ const concepts = {
   space: { title: "A little space to focus.", summary: "A concept workspace that helps the day feel less crowded.", idea: "Bring ideas and priorities into a quiet, approachable interface that encourages one meaningful next step.", direction: "Soft lavender, generous spacing, and restrained task states create a calmer visual rhythm. The preview is a design exploration rather than a working task manager." },
   daily: { title: "Everyday, a little better.", summary: "An interaction concept for discovering fresh food with a little more personality.", idea: "Make everyday shopping feel welcoming, with seasonal discoveries and a friendly path from browsing to a clear choice.", direction: "Sage green, playful produce illustrations, and compact mobile layouts explore a lighter shopping experience. No checkout or ordering service is connected." }
 };
-const portfolioDialog = document.getElementById("portfolio-dialog");
-const portfolioButton = document.getElementById("view-portfolio");
-if (portfolioDialog && portfolioButton) {
-  portfolioButton.addEventListener("click", () => portfolioDialog.showModal());
-}
 const projectDialog = document.getElementById("project-dialog");
 if (projectDialog) {
   document.querySelectorAll("[data-project]").forEach((button) => button.addEventListener("click", () => {
@@ -71,7 +66,6 @@ if (projectDialog) {
     document.getElementById("case-study-summary").textContent = project.summary;
     document.getElementById("case-study-idea").textContent = project.idea;
     document.getElementById("case-study-direction").textContent = project.direction;
-    if (portfolioDialog && portfolioDialog.open) portfolioDialog.close();
     projectDialog.showModal();
   }));
   document.getElementById("case-study-contact").addEventListener("click", () => projectDialog.close());

@@ -7,6 +7,7 @@ A simple responsive portfolio starter using plain HTML, CSS, and JavaScript. No 
 ```text
 Portfolio-website/
 ├── index.html
+├── portfolio.html
 ├── robots.txt
 ├── sitemap.xml
 ├── assets/
@@ -26,7 +27,7 @@ From the repository root:
 python3 -m http.server 8000 --bind 0.0.0.0
 ```
 
-`index.html` is self-contained: styles, JavaScript, the handwritten font, and illustrations are embedded so it also works when opened directly or when a preview cannot load sibling asset files.
+`index.html` and `portfolio.html` are self-contained: styles, JavaScript, the handwritten font, and illustrations are embedded so it also works when opened directly or when a preview cannot load sibling asset files.
 
 Edit the HTML normally. After editing `assets/css/style.css`, `assets/js/main.js`, or illustration files, refresh the embedded copies:
 
@@ -65,10 +66,16 @@ The complete page follows this order: header and animated hero, About, Progress,
 
 - About combines an editorial introduction with a layered Polaroid collage, a generated designer illustration, and floating notes.
 - The way I work shows four simple steps together: Research & Discovery, Prototype, UI Design, and Delivery. Each has its own icon, title, and short description. The layout uses four columns on desktop, two on tablet, and a compact vertical list on mobile.
-- Portfolio features a full-width case study and two supporting cards with CSS-drawn interface previews, mouse-following preview cues, and project detail dialogs. All three projects stay visible without category tabs. Both the preview and arrow button open each project; View portfolio opens a collection dialog where visitors can choose a project. These are design concepts, not shipped client work or connected apps. Replace the preview markup and descriptions with real work when available.
+- Portfolio features a full-width case study and two supporting cards with CSS-drawn interface previews, mouse-following preview cues, and project detail dialogs. All three projects stay visible without category tabs. Both the preview and arrow button open each project; View portfolio opens the dedicated `portfolio.html` page. These are design concepts, not shipped client work or connected apps. Replace the preview markup and descriptions with real work when available.
 - Job experience uses a light section with three simple role rows, subtle dividers, pastel company initials, and visible descriptions. Reference and sample roles remain labeled; replace them with your actual companies, dates, and contributions.
 - Tech stack arranges eight sample tools around a circular creative playground. Click a tool to update the adjacent inspector with its icon, role, and description. Personalize the selection to reflect your actual skills.
 
-Animations respect reduced-motion preferences. Section content remains visible without JavaScript; project dialogs and toolkit selection require JavaScript. All illustrations, fonts, styles, and scripts are embedded in `index.html` by the existing sync script, so the page remains portable. No external asset requests or packages are required at runtime.
+Animations respect reduced-motion preferences. Section content remains visible without JavaScript; project dialogs and toolkit selection require JavaScript. All illustrations, fonts, styles, and scripts are embedded in both HTML pages by the existing sync script, so the page remains portable. No external asset requests or packages are required at runtime.
 
 The About illustration (`assets/images/about-designer.png`) was generated to match the character style of the contact section. Animation behavior follows [reduced-motion guidance](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion).
+
+## Portfolio page
+
+`portfolio.html` presents the same three concepts in a separate, simple gallery: an editorial heading, alternating artwork and project descriptions, subtle hover motion, project dialogs, a contact link, and the shared footer. Cards stack on mobile. The landing page’s View portfolio button links here, and Home and Contact navigate back to the landing page. No tabs or filters are used.
+
+The sync script updates both HTML pages. Keep the complete folder when downloading so navigation between the pages works; each page embeds its own styles, font, and script.
