@@ -3,6 +3,7 @@ from pathlib import Path
 import base64
 import mimetypes
 import re
+from portfolio_catalog import render_catalog
 
 ROOT = Path(__file__).resolve().parents[1]
 css = (ROOT / "assets/css/style.css").read_text()
@@ -27,6 +28,8 @@ favicon = base64.b64encode((ROOT / "assets/images/favicon.svg").read_bytes()).de
 for name in ("index.html", "portfolio.html"):
     page = ROOT / name
     html = page.read_text()
+    if name == "portfolio.html":
+        html = render_catalog(html, ROOT)
     if '<style id="portfolio-styles">' in html:
         html = re.sub(r'<style id="portfolio-styles">.*?</style>', lambda _: style, html, flags=re.S)
     else:

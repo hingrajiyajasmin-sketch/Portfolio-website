@@ -76,6 +76,16 @@ The About illustration (`assets/images/about-designer.png`) was generated to mat
 
 ## Portfolio page
 
-`portfolio.html` presents the same three concepts in a separate, simple gallery: an editorial heading, alternating artwork and project descriptions, subtle hover motion, project dialogs, a contact link, and the shared footer. Cards stack on mobile. The landing page’s View portfolio button links here, and Home and Contact navigate back to the landing page. No tabs or filters are used.
+`portfolio.html` is designed for a large project collection across industries. It uses two cards per row with an 88px vertical offset on the right, a one-column layout on mobile, industry filters with counts, project search, an empty state, and Load more. JavaScript shows 12 projects initially and loads 12 more at a time. Without JavaScript, every preview remains visible. Filtering recalculates the stagger without changing the document or keyboard order.
 
-The sync script updates both HTML pages. Keep the complete folder when downloading so navigation between the pages works; each page embeds its own styles, font, and script.
+The current collection contains **24 clearly labeled demo concepts across 8 sample industries** to preview the layout. These are not claims about real client work. Replace them with your actual projects and industries in `assets/data/portfolio-projects.json`; every entry has a unique `id`, `brand`, `title`, `industry`, `discipline`, `summary`, `idea`, `direction`, `sample`, and `art`. Industry filters and counts are generated from the data, so you can add more industries and projects without editing the filter markup. Set `sample` to false only when an entry describes actual work. An optional `image` field takes a local path (for example `assets/images/project-cover.webp`); it replaces the drawn preview and is embedded by the sync script.
+
+After editing the data, CSS, JS, or images, run:
+
+```sh
+python3 scripts/sync-inline-assets.py
+```
+
+`scripts/portfolio_catalog.py` renders the gallery and embeds the JSON catalog for dialog content. The sync script updates both HTML pages, with no runtime network request or package dependency. Keep the complete folder when downloading so navigation between pages works.
+
+The landing page's View portfolio button opens this page. Home and Contact navigate back to the landing page. The layout preserves source order according to [MDN grid accessibility guidance](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Accessibility), and industry buttons expose selection with `aria-pressed` following the [WAI button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/).
