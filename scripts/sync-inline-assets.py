@@ -1,6 +1,7 @@
 """Keep index.html portable while preserving editable CSS, JS, and asset files."""
 from pathlib import Path
 import base64
+import mimetypes
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -31,7 +32,8 @@ def embed_image(match):
         path = re.search(r'src="([^"]+)"', tag).group(1)
         tag = tag.replace('<img ', '<img data-asset="' + path + '" ', 1)
     encoded = base64.b64encode((ROOT / path).read_bytes()).decode()
-    return re.sub(r'src="[^"]+"', lambda _: 'src="data:image/webp;base64,' + encoded + '"', tag)
+    mime = mimetypes.guess_type(path)[0] or 'application/octet-stream'
+    return re.sub(r'src="[^"]+"', lambda _: 'src="data:' + mime + ';base64,' + encoded + '"', tag)
 
 html = re.sub(r'<img\b[^>]+>', embed_image, html)
 favicon = base64.b64encode((ROOT / "assets/images/favicon.svg").read_bytes()).decode()

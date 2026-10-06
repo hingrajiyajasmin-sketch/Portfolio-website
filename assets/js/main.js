@@ -3,16 +3,23 @@
 const year = document.getElementById("year");
 if (year) year.textContent = String(new Date().getFullYear());
 
-const resumeButton = document.getElementById("resume-button");
 const resumeDialog = document.getElementById("resume-dialog");
-if (resumeButton && resumeDialog) {
-  resumeButton.addEventListener("click", () => resumeDialog.showModal());
+if (resumeDialog) {
+  document.querySelectorAll("#resume-button, [data-open-resume]").forEach((button) => {
+    button.addEventListener("click", () => resumeDialog.showModal());
+  });
   resumeDialog.addEventListener("click", (event) => {
     if (event.target !== resumeDialog) return;
     const bounds = resumeDialog.getBoundingClientRect();
     if (event.clientX < bounds.left || event.clientX > bounds.right ||
         event.clientY < bounds.top || event.clientY > bounds.bottom) resumeDialog.close();
   });
+}
+
+const linkedInButton = document.getElementById("linkedin-button");
+const linkedInDialog = document.getElementById("linkedin-dialog");
+if (linkedInButton && linkedInDialog) {
+  linkedInButton.addEventListener("click", () => linkedInDialog.showModal());
 }
 
 const navigationLinks = document.querySelectorAll("nav a[href^='#']");

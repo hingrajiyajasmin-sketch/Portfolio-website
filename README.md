@@ -48,3 +48,9 @@ Then reload the page. No third-party packages are needed. The sync script is opt
 The header and hero follow the supplied Sai Tharun reference video: centered typography, orange accents, a rotating green orbit, and fading character illustrations. The four WebP illustrations were cropped from the supplied recording; replace them with original high-resolution assets if available. The reference name and job title are sample content to personalize. The Resume button opens a placeholder dialog until a resume is supplied.
 
 This starter includes semantic sections, a single main heading, responsive styles, keyboard focus states, a skip link, and reduced-motion support.
+
+## Contact section
+
+The contact section recreates the supplied screenshot with a three-line headline, pill-shaped email button, lavender contact icons, a handwritten note, arrow, and seated character illustration. `assets/images/contact-character.png` is a generated illustration based on the supplied reference. The layout stacks on mobile.
+
+The email address, city, and featured badge reproduce reference content and should be personalized before deployment. The email links open the user's mail application; they do not send messages automatically. LinkedIn and Resume open placeholder dialogs until real profile and resume destinations are supplied. The contact Resume button and header Resume button share the same dialog.
