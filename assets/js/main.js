@@ -53,72 +53,16 @@ if ("IntersectionObserver" in window) {
   document.body.classList.add("motion-ready");
 }
 
-const phases = {
-  discover: { kicker: "The starting point", title: "Listen before drawing.", description: "Talk to people, explore the context, and challenge assumptions. The right question is often more valuable than the first answer.", output: "The outcome: a clearer understanding of people." },
-  define: { kicker: "Making sense of the messy", title: "Find the problem worth solving.", description: "Connect patterns, map the journey, and turn observations into a focused direction. A shared understanding keeps the work intentional.", output: "The outcome: a focused brief and a clear direction." },
-  design: { kicker: "From possibility to prototype", title: "Give the idea a little life.", description: "Sketch broadly, explore alternatives, and build something people can try. The details matter, but the experience comes first.", output: "The outcome: a tangible, testable prototype." },
-  deliver: { kicker: "A beginning, not an ending", title: "Make it work. Then make it better.", description: "Test with people, refine the interactions, and collaborate on the final experience. Keep learning after the first version ships.", output: "The outcome: a considered experience, ready to evolve." }
-};
-const phaseTabs = [...document.querySelectorAll(".process-tab")];
-function selectPhase(tab, focus = false) {
-  const phase = phases[tab.dataset.phase];
-  if (!phase) return;
-  phaseTabs.forEach((item) => {
-    const selected = item === tab;
-    item.setAttribute("aria-selected", String(selected));
-    item.tabIndex = selected ? 0 : -1;
-    item.classList.toggle("is-selected", selected);
-  });
-  document.getElementById("process-panel").setAttribute("aria-labelledby", tab.id);
-  document.querySelector(".phase-kicker").textContent = phase.kicker;
-  document.getElementById("phase-title").textContent = phase.title;
-  document.getElementById("phase-description").textContent = phase.description;
-  document.getElementById("phase-output").textContent = phase.output;
-  document.querySelector(".phase-visual").dataset.stage = tab.dataset.phase;
-  const number = phaseTabs.indexOf(tab) + 1;
-  document.querySelector(".canvas-number").textContent = `0${number}`;
-  document.getElementById("phase-count").textContent = `0${number} / 04`;
-  const track = document.querySelector(".process-track");
-  track.setAttribute("aria-valuenow", String(number * 25));
-  track.querySelector("span").style.width = `${number * 25}%`;
-  const next = phaseTabs[number % phaseTabs.length];
-  document.getElementById("phase-next").textContent = number === phaseTabs.length
-    ? "Explore again →" : `Next: ${next.querySelector("b").textContent} →`;
-  if (focus) tab.focus();
-}
-document.getElementById("phase-next").addEventListener("click", () => {
-  const current = phaseTabs.findIndex((tab) => tab.getAttribute("aria-selected") === "true");
-  selectPhase(phaseTabs[(current + 1) % phaseTabs.length]);
-});
-phaseTabs.forEach((tab, index) => {
-  tab.addEventListener("click", () => selectPhase(tab));
-  tab.addEventListener("keydown", (event) => {
-    let target;
-    if (event.key === "ArrowRight" || event.key === "ArrowDown") target = (index + 1) % phaseTabs.length;
-    if (event.key === "ArrowLeft" || event.key === "ArrowUp") target = (index - 1 + phaseTabs.length) % phaseTabs.length;
-    if (event.key === "Home") target = 0;
-    if (event.key === "End") target = phaseTabs.length - 1;
-    if (target !== undefined) { event.preventDefault(); selectPhase(phaseTabs[target], true); }
-  });
-});
-
-const filterButtons = document.querySelectorAll("[data-filter]");
-filterButtons.forEach((button) => button.addEventListener("click", () => {
-  document.querySelector(".project-grid").classList.toggle("is-filtered", button.dataset.filter !== "all");
-  filterButtons.forEach((item) => {
-    item.classList.toggle("is-selected", item === button);
-    item.setAttribute("aria-pressed", String(item === button));
-  });
-  document.querySelectorAll(".project-card").forEach((card) => {
-    card.hidden = button.dataset.filter !== "all" && card.dataset.category !== button.dataset.filter;
-  });
-}));
-
 const concepts = {
   flow: { title: "Less friction. More flow.", summary: "A concept for a clearer, more human everyday banking experience.", idea: "Give people one calm place to understand their balance, see recent activity, and make everyday decisions without unnecessary friction.", direction: "Warm neutrals, a clear visual hierarchy, and a simplified dashboard put the essentials first. The preview explores information design rather than a live banking service." },
   space: { title: "A little space to focus.", summary: "A concept workspace that helps the day feel less crowded.", idea: "Bring ideas and priorities into a quiet, approachable interface that encourages one meaningful next step.", direction: "Soft lavender, generous spacing, and restrained task states create a calmer visual rhythm. The preview is a design exploration rather than a working task manager." },
   daily: { title: "Everyday, a little better.", summary: "An interaction concept for discovering fresh food with a little more personality.", idea: "Make everyday shopping feel welcoming, with seasonal discoveries and a friendly path from browsing to a clear choice.", direction: "Sage green, playful produce illustrations, and compact mobile layouts explore a lighter shopping experience. No checkout or ordering service is connected." }
 };
+const portfolioDialog = document.getElementById("portfolio-dialog");
+const portfolioButton = document.getElementById("view-portfolio");
+if (portfolioDialog && portfolioButton) {
+  portfolioButton.addEventListener("click", () => portfolioDialog.showModal());
+}
 const projectDialog = document.getElementById("project-dialog");
 if (projectDialog) {
   document.querySelectorAll("[data-project]").forEach((button) => button.addEventListener("click", () => {
@@ -127,6 +71,7 @@ if (projectDialog) {
     document.getElementById("case-study-summary").textContent = project.summary;
     document.getElementById("case-study-idea").textContent = project.idea;
     document.getElementById("case-study-direction").textContent = project.direction;
+    if (portfolioDialog && portfolioDialog.open) portfolioDialog.close();
     projectDialog.showModal();
   }));
   document.getElementById("case-study-contact").addEventListener("click", () => projectDialog.close());
@@ -177,3 +122,15 @@ document.querySelectorAll(".project-preview").forEach((button) => {
     cue.style.removeProperty("top");
   });
 });
+
+// Pause the banner off screen or in a hidden tab; resume without resetting it.
+const hero = document.getElementById("home");
+if (hero && "IntersectionObserver" in window) {
+  let heroVisible = true;
+  const updateHeroMotion = () => hero.classList.toggle("is-motion-paused", !heroVisible || document.hidden);
+  new IntersectionObserver(([entry]) => {
+    heroVisible = entry.isIntersecting;
+    updateHeroMotion();
+  }, { threshold: 0 }).observe(hero);
+  document.addEventListener("visibilitychange", updateHeroMotion);
+}
