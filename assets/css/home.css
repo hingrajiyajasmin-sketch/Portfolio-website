@@ -1174,7 +1174,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   flex: 1;
   margin: 0 0 30px;
   color: #867b72;
-  font-size: 14px;
+  font-size: var(--text-base);
   line-height: 1.8;
 }
 
@@ -1273,7 +1273,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 
   .work-step > p {
     margin-bottom: 22px;
-    font-size: 15px;
+    font-size: var(--text-base);
   }
 }
 
@@ -1455,7 +1455,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 .featured-project .project-meta p:last-child {
   max-width: 240px;
   margin-top: 20px;
-  font-size: 15px;
+  font-size: var(--text-base);
   line-height: 1.7;
   color: rgb(147, 131, 119);
 }
@@ -1951,7 +1951,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 
 .project-meta p:last-child {
   color: rgb(146, 132, 138);
-  font-size: 13px;
+  font-size: var(--text-base);
 }
 
 .project-open {
@@ -2053,7 +2053,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   max-width: 480px;
   margin: 0px;
   color: rgb(130, 124, 119);
-  font-size: 15px;
+  font-size: var(--text-base);
   line-height: 1.8;
 }
 
@@ -2099,7 +2099,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   
   .career-description {
     padding-left: 59px;
-    font-size: 15px;
+    font-size: var(--text-base);
     line-height: 1.8;
   }
 }
@@ -2607,7 +2607,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   }
   
   .featured-project .project-meta p:last-child {
-    font-size: 13px;
+    font-size: var(--text-base);
   }
   
   .finance-body {
@@ -2685,7 +2685,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   }
   
   .project-meta p:last-child {
-    font-size: 11px;
+    font-size: var(--text-base);
   }
   
   .stack-layout {
@@ -2877,7 +2877,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   .featured-project .project-meta p:last-child {
     max-width: 225px;
     margin-top: 15px;
-    font-size: 12px;
+    font-size: var(--text-base);
   }
   
   .featured-project .project-open {
@@ -2985,7 +2985,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   }
   
   .project-meta p:last-child {
-    font-size: 12px;
+    font-size: var(--text-base);
   }
   
   .tool-grid {
@@ -3195,7 +3195,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   gap: 9px 22px;
   margin: -12px 0px 26px;
   color: rgb(153, 139, 126);
-  font-size: var(--text-xs);
+  font-size: var(--text-base);
 }
 
 .hero-profile-details span + span {
@@ -3210,7 +3210,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 
 @media (max-width: 560px) {
   .hero-profile-details {
-    font-size: var(--text-xs);
+    font-size: var(--text-base);
     gap: 9px 16px;
   }
   
