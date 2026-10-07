@@ -1143,7 +1143,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   border-top: 1px solid #eee6dd;
   padding-top: 17px;
   color: var(--step-color);
-  font-size: 11px;
+  font-size: var(--text-sm);
   font-weight: 500;
 }
 
@@ -1182,7 +1182,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   }
 
   .step-outcome {
-    font-size: 10px;
+    font-size: var(--text-sm);
   }
 }
 
@@ -1201,7 +1201,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   }
 
   .step-outcome {
-    font-size: 12px;
+    font-size: var(--text-sm);
   }
 }
 
