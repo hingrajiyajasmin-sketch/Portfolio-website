@@ -1,28 +1,10 @@
 "use strict";
 
 (() => {
-  function initializeNavigation() {
-    if (!("IntersectionObserver" in window)) return;
-    const links = [...document.querySelectorAll("nav a[href^='#']")];
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(({ target, isIntersecting }) => {
-        if (!isIntersecting) return;
-        links.forEach((link) => {
-          const active = link.getAttribute("href") === `#${target.id}`;
-          link.classList.toggle("is-active", active);
-          if (active) link.setAttribute("aria-current", "location");
-          else link.removeAttribute("aria-current");
-        });
-      });
-    }, { rootMargin: "-20% 0px -50% 0px" });
-
-    document.querySelectorAll("main > section[id]").forEach((section) => observer.observe(section));
-  }
-
   function initializeResume() {
     const dialog = document.getElementById("resume-dialog");
     if (!dialog) return;
-    document.querySelectorAll("#resume-button, [data-open-resume]").forEach((button) => {
+    document.querySelectorAll("[data-open-resume]").forEach((button) => {
       button.addEventListener("click", () => dialog.showModal());
     });
   }
@@ -90,7 +72,6 @@
     select(buttons.find((button) => button.classList.contains("is-selected")) || buttons[0]);
   }
 
-  initializeNavigation();
   initializeResume();
   initializeBanner();
   initializeToolkit();

@@ -2613,12 +2613,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 }
 
 @media (max-width: 560px) {
-  nav a[href="#projects"],
-  nav #resume-button {
-    display: none;
-  }
-  
-  .editorial-section {
+.editorial-section {
     padding-block: 62px;
   }
   
