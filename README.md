@@ -7,15 +7,17 @@ A responsive portfolio built with plain HTML, CSS, and JavaScript. No package in
 ```text
 index.html                      Landing page
 portfolio.html                  Industry portfolio gallery
+contact.html                    Contact page with LinkedIn and project prompts
 assets/
   css/
     global.css                  Shared foundations and components
     home.css                    Landing-page sections and banner motion
     portfolio.css               Gallery, filters, and project artwork
+    contact.css                 Contact page layout and illustration
   js/
     global.js                   Reveals, dialogs, preview cues, and year
     home.js                     Navigation, banner, resume, and toolkit
-    portfolio.js                Industry filtering, search, and pagination
+    portfolio.js                Industry filtering and pagination
   data/
     portfolio-projects.json      Editable project catalog
     toolkit.json                Sample software descriptions
@@ -51,7 +53,7 @@ python3 scripts/build.py
 
 Every project needs a unique `id`, `brand`, `title`, `industry`, `discipline`, `summary`, `idea`, `direction`, `sample`, and `art`. An optional `image` field can point to a local project cover, such as `assets/images/project-cover.webp`. It replaces the CSS-drawn preview. Industry filters and counts are generated automatically from the catalog.
 
-The gallery shows two staggered cards per row on desktop and one per row on mobile. It initially displays 12 projects; Load more adds another 12. Industry filtering, search, reset, dialogs, and keyboard focus work together. Without JavaScript, all project previews remain visible.
+The gallery shows two staggered cards per row on desktop and one per row on mobile. It initially displays 12 projects; Load more adds another 12. Industry filtering, reset, dialogs, and keyboard focus work together. Without JavaScript, all project previews remain visible.
 
 The current catalog contains **24 labeled demo concepts across 8 sample industries**, pending real project content. Set `sample` to false only for actual work. The landing page's featured project IDs must also exist in the catalog. Project markup and dialog data are generated together, so runtime JavaScript never fetches a data file.
 
@@ -84,3 +86,5 @@ The four process cards stay visible without tabs. Their progress bars fill seque
 - Deploy the repository root to a static host using HTTPS.
 
 Typography uses locally hosted DM Sans for all site text, with regular and italic variable faces. The global stylesheet defines the body, caption, and heading size tokens; page styles apply them responsively. No external font service is required.
+
+The Contact page links to the provided LinkedIn profile and suggests useful project details to share. No contact email or form backend has been supplied.

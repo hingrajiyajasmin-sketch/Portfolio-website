@@ -41,25 +41,6 @@ h1 span {
   letter-spacing: -0.5px;
 }
 
-.work-link {
-  display: inline-flex;
-  gap: 12px;
-  align-items: center;
-  padding: 0px 0px 4px;
-  border-bottom: 1.5px solid var(--accent);
-  font-size: 13px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.work-link svg {
-  transition: transform 180ms;
-}
-
-.work-link:hover svg {
-  transform: translate(2px, 2px);
-}
-
 .hero-characters {
   position: absolute;
   z-index: 1;
@@ -2632,7 +2613,8 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 }
 
 @media (max-width: 560px) {
-  nav a[href="#projects"] {
+  nav a[href="#projects"],
+  nav #resume-button {
     display: none;
   }
   

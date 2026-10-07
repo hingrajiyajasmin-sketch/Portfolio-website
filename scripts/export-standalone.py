@@ -15,7 +15,7 @@ def data_url(path):
 
 def export(output):
     output.mkdir(parents=True, exist_ok=True)
-    for name in ('index.html', 'portfolio.html'):
+    for name in ('index.html', 'portfolio.html', 'contact.html'):
         html = (ROOT / name).read_text()
         html = re.sub(r'\s*<link rel="preload" href="assets/fonts/[^"]+"[^>]*>', '', html)
 
