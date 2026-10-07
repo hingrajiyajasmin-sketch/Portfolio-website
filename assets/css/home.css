@@ -1245,7 +1245,8 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 }
 
 /* Featured project gallery */
-.portfolio-section {
+.editorial-section.portfolio-section {
+  padding-bottom: clamp(36px, 4vw, 56px);
   background: rgb(255, 255, 255);
 }
 
@@ -1844,7 +1845,8 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 }
 
 /* Experience rows */
-.experience-section {
+.editorial-section.experience-section {
+  padding-top: clamp(36px, 4vw, 56px);
   background: rgb(255, 255, 255);
 }
 
