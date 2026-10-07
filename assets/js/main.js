@@ -16,12 +16,6 @@ if (resumeDialog) {
   });
 }
 
-const linkedInButton = document.getElementById("linkedin-button");
-const linkedInDialog = document.getElementById("linkedin-dialog");
-if (linkedInButton && linkedInDialog) {
-  linkedInButton.addEventListener("click", () => linkedInDialog.showModal());
-}
-
 const navigationLinks = document.querySelectorAll("nav a[href^='#']");
 const sections = document.querySelectorAll("main > section[id]");
 if ("IntersectionObserver" in window) {

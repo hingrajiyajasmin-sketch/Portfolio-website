@@ -949,3 +949,9 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 
 .preview-head i svg { display: inline-block; width: 13px; height: 13px; vertical-align: -1px; }
 .preview-care > span:last-child svg { width: 12px; height: 12px; }
+
+/* Personal identity fits the reference layout on small screens. */
+.personalized-hero h1 { font-size: clamp(42px,4.8vw,69px); }
+.footer-identity { min-width: 0; }
+@media (max-width: 700px) { .personalized-hero h1 { font-size: clamp(40px,9vw,60px); } }
+@media (max-width: 560px) { .brand-lastname { display: none; } .footer-name { display: block; max-width: 160px; font-size: 23px; line-height: 1.25; } }

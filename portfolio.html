@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Selected work | Sai Tharun</title>
+    <title>Selected work | Jasmin Hingrajiya</title>
     <meta name="description" content="Explore product, web, and app design projects by industry in a staggered portfolio gallery.">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#ffffff">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Selected work | Sai Tharun">
+    <meta property="og:title" content="Selected work | Jasmin Hingrajiya">
     <meta property="og:description" content="Explore thoughtful product, web, and interaction design concepts.">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Selected work | Sai Tharun">
+    <meta name="twitter:title" content="Selected work | Jasmin Hingrajiya">
     <meta name="twitter:description" content="Explore thoughtful product, web, and interaction design concepts.">
     <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMyMDI1MWYiLz4KICA8cGF0aCBkPSJNMjMgNDdWMTdoMTJjOCAwIDEyIDQgMTIgMTBzLTQgMTAtMTIgMTBoLTV2MTB6bTctMTdoNWMzIDAgNS0xIDUtM3MtMi0zLTUtM2gtNXoiIGZpbGw9IiNmN2Y3ZjIiLz4KPC9zdmc+Cg==" type="image/svg+xml">
     <style id="portfolio-styles">
@@ -966,12 +966,18 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 
 .preview-head i svg { display: inline-block; width: 13px; height: 13px; vertical-align: -1px; }
 .preview-care > span:last-child svg { width: 12px; height: 12px; }
+
+/* Personal identity fits the reference layout on small screens. */
+.personalized-hero h1 { font-size: clamp(42px,4.8vw,69px); }
+.footer-identity { min-width: 0; }
+@media (max-width: 700px) { .personalized-hero h1 { font-size: clamp(40px,9vw,60px); } }
+@media (max-width: 560px) { .brand-lastname { display: none; } .footer-name { display: block; max-width: 160px; font-size: 23px; line-height: 1.25; } }
 </style>
   </head>
   <body class="portfolio-page" id="top">
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Sai Tharun home">Sai Tharun</a>
+      <a class="brand" href="index.html" aria-label="Jasmin Hingrajiya home">Jasmin<span class="brand-lastname"> Hingrajiya</span></a>
       <nav aria-label="Main navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link is-active" href="portfolio.html" aria-current="page">Portfolio</a><a class="nav-link" href="index.html#contact">Contact</a></nav>
     </header>
     <main id="main-content">
@@ -1102,7 +1108,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
     <footer class="site-footer">
       <div class="footer-inner">
         <div class="footer-identity">
-          <a class="footer-name" href="#top">Sai Tharun</a>
+          <a class="footer-name" href="#top">Jasmin Hingrajiya</a>
           <p class="footer-copyright">© <span id="year">2026</span></p>
         </div>
         <p class="footer-signature">Design. Play. Repeat.
@@ -1139,12 +1145,6 @@ if (resumeDialog) {
     if (event.clientX < bounds.left || event.clientX > bounds.right ||
         event.clientY < bounds.top || event.clientY > bounds.bottom) resumeDialog.close();
   });
-}
-
-const linkedInButton = document.getElementById("linkedin-button");
-const linkedInDialog = document.getElementById("linkedin-dialog");
-if (linkedInButton && linkedInDialog) {
-  linkedInButton.addEventListener("click", () => linkedInDialog.showModal());
 }
 
 const navigationLinks = document.querySelectorAll("nav a[href^='#']");
