@@ -30,7 +30,7 @@
           <p class="contact-kicker">LET’S CONNECT</p>
           <h1 id="contact-title">Good things start<br>with a <em>conversation.</em></h1>
           <p class="contact-lead">Have a product to shape, a website to refine, or an idea to explore? Let’s talk about what we can create together.</p>
-          <a class="portfolio-button" href="https://www.linkedin.com/in/hingrajiya-jasmin-17271a164/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <a class="portfolio-button" href="#contact-form">Tell me about your project <svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           <div class="contact-facts"><span>Ahmedabad, India</span><span>Senior UI/UX &amp; Web Designer</span></div>
         </div>
         <figure class="contact-portrait reveal">
@@ -39,13 +39,26 @@
         </figure>
       </section>
       <section class="contact-start content-shell" aria-labelledby="start-title">
-        <div class="contact-start-heading reveal"><p class="contact-kicker">A GOOD PLACE TO START</p><h2 id="start-title">Tell me a little about<br>your <em>next idea.</em></h2><p>A few details can help us start a useful conversation.</p></div>
-        <div class="contact-prompts">
-          <article class="contact-prompt reveal"><span aria-hidden="true">01</span><h3>What are you building?</h3><p>Share your product, website, or early idea and the people it’s for.</p></article>
-          <article class="contact-prompt reveal"><span aria-hidden="true">02</span><h3>Where do you need clarity?</h3><p>Tell me what you’d like to improve, from user flows to the visual details.</p></article>
-          <article class="contact-prompt reveal"><span aria-hidden="true">03</span><h3>What does success look like?</h3><p>Describe your goals, the scope you have in mind, and your timeline.</p></article>
+        <div class="contact-form-layout">
+          <div class="contact-start-heading reveal">
+            <p class="contact-kicker">A GOOD PLACE TO START</p>
+            <h2 id="start-title">Tell me a little about<br>your <em>next idea.</em></h2>
+            <p>Share what you have in mind. A few details can help us start a useful conversation.</p>
+            <a class="contact-message-link" href="https://www.linkedin.com/in/hingrajiya-jasmin-17271a164/" target="_blank" rel="noopener noreferrer">Prefer LinkedIn? Let’s connect <svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+          <form id="contact-form" class="contact-form reveal" aria-labelledby="start-title">
+            <div class="form-field-row">
+              <div class="form-field"><label for="contact-name">Your name <span aria-hidden="true">*</span></label><input id="contact-name" name="name" type="text" autocomplete="name" placeholder="Your name" required maxlength="100"></div>
+              <div class="form-field"><label for="contact-email">Email address <span aria-hidden="true">*</span></label><input id="contact-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required maxlength="254"></div>
+            </div>
+            <div class="form-field"><label for="contact-project">What can I help with? <span aria-hidden="true">*</span></label><select id="contact-project" name="project" required><option value="" disabled selected>Select a project type</option>UI/UX design</option><option>Website design</option><option>Product design</option><option>Design system</option><option>Something else</option></select></div>
+            <div class="form-field"><label for="contact-message">Tell me about your project <span aria-hidden="true">*</span></label><textarea id="contact-message" name="message" rows="6" placeholder="Your idea, goals, and timeline…" required minlength="10" maxlength="3000"></textarea></div>
+            <p id="contact-delivery-note" class="form-note">Copy your message, then send it to me on LinkedIn.</p>
+            <button id="contact-submit" class="portfolio-button" type="submit" disabled>Copy message <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <p id="contact-form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+            <noscript><p class="form-note">Please use the LinkedIn link above to get in touch.</p></noscript>
+          </form>
         </div>
-        <a class="contact-message-link" href="https://www.linkedin.com/in/hingrajiya-jasmin-17271a164/" target="_blank" rel="noopener noreferrer">Start the conversation on LinkedIn <svg width="21" height="21" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </section>
     </main>
     <footer class="site-footer">
@@ -62,6 +75,13 @@
         </a>
       </div>
     </footer>
+    <script id="contact-settings" type="application/json">
+{
+  "email": "",
+  "endpoint": ""
+}
+    </script>
     <script src="assets/js/global.js" defer></script>
+    <script src="assets/js/contact.js" defer></script>
   </body>
 </html>

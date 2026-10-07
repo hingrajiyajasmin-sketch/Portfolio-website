@@ -21,10 +21,13 @@ def write_json_script(html, element_id, data):
 def main():
     projects = json.loads((ROOT / 'assets/data/portfolio-projects.json').read_text())
     toolkit = json.loads((ROOT / 'assets/data/toolkit.json').read_text())
-    for name in ('index.html', 'portfolio.html'):
+    for name in ('index.html', 'portfolio.html', 'contact.html'):
         page = ROOT / name
         html = page.read_text()
-        if name == 'portfolio.html':
+        if name == 'contact.html':
+            settings = json.loads((ROOT / 'assets/data/contact.json').read_text())
+            html = write_json_script(html, 'contact-settings', settings)
+        elif name == 'portfolio.html':
             html = render_catalog(html, ROOT)
         else:
             featured_ids = set(re.findall(r'data-project="([^"]+)"', html))
