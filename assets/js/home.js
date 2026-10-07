@@ -40,6 +40,26 @@
     document.addEventListener("visibilitychange", update);
   }
 
+  function initializeProcess() {
+    const board = document.querySelector(".process-board");
+    if (!board || !("IntersectionObserver" in window)) return;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let visible = false;
+
+    function update() {
+      board.classList.toggle("motion-enabled", !reducedMotion.matches);
+      board.classList.toggle("is-process-running", visible && !document.hidden && !reducedMotion.matches);
+    }
+
+    new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting;
+      update();
+    }, { threshold: 0.12 }).observe(board);
+    document.addEventListener("visibilitychange", update);
+    reducedMotion.addEventListener("change", update);
+    update();
+  }
+
   function initializeToolkit() {
     const data = document.getElementById("toolkit-data");
     const buttons = [...document.querySelectorAll("[data-tool]")];
@@ -74,4 +94,5 @@
   initializeResume();
   initializeBanner();
   initializeToolkit();
+  initializeProcess();
 })();
