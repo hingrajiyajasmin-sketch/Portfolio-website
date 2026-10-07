@@ -1,0 +1,34 @@
+{
+  "figma": {
+    "name": "Figma",
+    "description": "A space to explore interfaces, build reusable components, and connect the details."
+  },
+  "framer": {
+    "name": "Framer",
+    "description": "Bring interfaces to life with motion, responsive layouts, and interactive prototypes."
+  },
+  "webflow": {
+    "name": "Webflow",
+    "description": "Turn visual ideas into responsive web experiences with a visual development workflow."
+  },
+  "illustrator": {
+    "name": "Illustrator",
+    "description": "Explore identities, vector illustrations, and the little details that give a project character."
+  },
+  "notion": {
+    "name": "Notion",
+    "description": "Keep research, notes, decisions, and project direction in one thoughtful workspace."
+  },
+  "html": {
+    "name": "HTML & CSS",
+    "description": "Shape accessible structure and responsive presentation for the web."
+  },
+  "javascript": {
+    "name": "JavaScript",
+    "description": "Connect the interface with meaningful interactions and responsive behavior."
+  },
+  "github": {
+    "name": "GitHub",
+    "description": "Track changes, collaborate on the code, and give each idea room to evolve."
+  }
+}

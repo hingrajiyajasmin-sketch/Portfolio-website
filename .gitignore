@@ -8,3 +8,6 @@ Thumbs.db
 # Python helper caches
 __pycache__/
 *.pyc
+
+# Generated standalone previews
+dist/

@@ -1,91 +1,82 @@
-# Portfolio website
+# Jasmin Hingrajiya — Portfolio
 
-A simple responsive portfolio starter using plain HTML, CSS, and JavaScript. No build step or package installation is required.
+A responsive portfolio built with plain HTML, CSS, and JavaScript. No package installation or framework is required.
 
 ## Structure
 
 ```text
-Portfolio-website/
-├── index.html
-├── portfolio.html
-├── robots.txt
-├── sitemap.xml
-├── assets/
-│   ├── css/style.css
-│   ├── js/main.js
-│   ├── images/favicon.svg
-│   └── fonts/
-├── .gitignore
-└── README.md
+index.html                      Landing page
+portfolio.html                  Industry portfolio gallery
+assets/
+  css/
+    global.css                  Shared foundations and components
+    home.css                    Landing-page sections and banner motion
+    portfolio.css               Gallery, filters, and project artwork
+  js/
+    global.js                   Reveals, dialogs, preview cues, and year
+    home.js                     Navigation, banner, resume, and toolkit
+    portfolio.js                Industry filtering, search, and pagination
+  data/
+    portfolio-projects.json      Editable project catalog
+    toolkit.json                Sample software descriptions
+  fonts/                        Local Kalam font and license
+  images/                       Local illustrations and favicon
+scripts/
+  build.py                      Refresh project markup and JSON data
+  portfolio_catalog.py          Catalog renderer
+  export-standalone.py           Optional self-contained preview export
 ```
+
+Each page loads `global.css` and `global.js`, followed by only its own CSS and JavaScript. Scripts use `defer`, scoped initialization functions, and native buttons/dialogs. Styles contain the current design's required selectors and responsive states; retired section styles and overridden declarations have been removed. HTML references local images and fonts instead of embedding large asset copies.
 
 ## Run locally
 
-From the repository root:
+From the repository folder:
 
 ```sh
 python3 -m http.server 8000 --bind 0.0.0.0
 ```
 
-`index.html` and `portfolio.html` are self-contained: styles, JavaScript, the handwritten font, and illustrations are embedded so it also works when opened directly or when a preview cannot load sibling asset files.
+Open `index.html` or `portfolio.html` through your local server. The complete downloaded folder can also be opened directly in a browser. Keep both HTML pages and the `assets` folder together.
 
-Edit the HTML normally. After editing `assets/css/style.css`, `assets/js/main.js`, or illustration files, refresh the embedded copies:
+Edit CSS and JavaScript directly and reload the browser. No synchronization or build is needed for those changes.
+
+## Edit portfolio content
+
+Update `assets/data/portfolio-projects.json`, then run:
 
 ```sh
-python3 scripts/sync-inline-assets.py
+python3 scripts/build.py
 ```
 
-Then reload the page. No third-party packages are needed. The sync script is optional when only editing HTML text.
+Every project needs a unique `id`, `brand`, `title`, `industry`, `discipline`, `summary`, `idea`, `direction`, `sample`, and `art`. An optional `image` field can point to a local project cover, such as `assets/images/project-cover.webp`. It replaces the CSS-drawn preview. Industry filters and counts are generated automatically from the catalog.
+
+The gallery shows two staggered cards per row on desktop and one per row on mobile. It initially displays 12 projects; Load more adds another 12. Industry filtering, search, reset, dialogs, and keyboard focus work together. Without JavaScript, all project previews remain visible.
+
+The current catalog contains **24 labeled demo concepts across 8 sample industries**, pending real project content. Set `sample` to false only for actual work. The landing page's featured project IDs must also exist in the catalog. Project markup and dialog data are generated together, so runtime JavaScript never fetches a data file.
+
+Edit `assets/data/toolkit.json` and run the same command to refresh software descriptions. The toolkit remains a sample until the tool list is confirmed.
+
+## Standalone previews
+
+Generate self-contained copies without changing the source pages:
+
+```sh
+python3 scripts/export-standalone.py
+```
+
+Outputs go to the ignored `dist/standalone/` folder. Keep both exported pages together for navigation. To choose another output folder, pass `--output /path/to/folder`.
+
+## Profile and interactions
+
+The user supplied Jasmin Hingrajiya's bio, Senior UI/UX & Web Designer title, 7+ years of experience, Ahmedabad location, and [LinkedIn profile](https://www.linkedin.com/in/hingrajiya-jasmin-17271a164/). These details appear in the banner, About, experience summary, contact, and SEO metadata. No company names, employment dates, email address, or software proficiency were invented. Resume remains a placeholder until a file is supplied. Reference-style illustrations are decorative artwork.
+
+The banner repeats four individual appearances followed by two diagonal pairs over 24 seconds, with a one-second gap between appearances. It pauses off screen and in hidden browser tabs. Animations respect reduced-motion preferences. Sections remain visible without JavaScript.
 
 ## Before publishing
 
-- Personalize the sample About copy, concept projects, work timeline, toolkit, and reference contact information.
-- Update the page title, description, and matching Open Graph and Twitter metadata.
-- Add a canonical link in the head using your actual public URL.
-- Replace `https://example.com/` in `sitemap.xml` with your public URL and add its sitemap URL to `robots.txt`.
-- Add absolute `og:url`, `og:image`, and `twitter:image` metadata once your domain and social preview image are available.
-- Deploy the repository root to a static hosting provider using HTTPS.
-
-The header and hero follow the supplied Sai Tharun reference video: centered typography, orange accents, a rotating green orbit, and sequential character fades. The four illustrations appear one at a time in this order: thinking, writing, laptop, detail. Each gets a 4-second slot: 0.4 seconds fading in, 2.2 seconds fully visible, 0.4 seconds fading out, and a 1-second empty gap. After the four individual appearances, the diagonal pairs appear: thinking with detail (top left + bottom right), then writing with laptop (bottom left + top right). Each pair uses the same timing and 1-second gap. This full 24-second sequence repeats, returning to individual appearances, with subtle vertical movement and an aligned orbit trail. Banner motion pauses off screen and when the browser tab is hidden; reduced-motion preferences show only the thinking illustration in a static composition. The four WebP illustrations were cropped from the supplied recording; replace them with original high-resolution assets if available. The name has been personalized to Jasmin Hingrajiya. The public LinkedIn URL was supplied by the user; the user subsequently supplied the profile bio, professional title (Senior UI/UX & Web Designer), 7+ years of experience, and Ahmedabad location. These verified details now appear in the hero, About, experience summary, contact location, and SEO metadata. The Resume button opens a placeholder dialog until a resume is supplied.
-
-This starter includes semantic sections, a single main heading, responsive styles, keyboard focus states, a skip link, and reduced-motion support.
-
-## Contact section
-
-The contact section recreates the supplied screenshot with a three-line headline, pill-shaped email button, lavender contact icons, a handwritten note, arrow, and seated character illustration. `assets/images/contact-character.png` is a generated illustration based on the supplied reference. The layout stacks on mobile.
-
-The contact CTA and LinkedIn link open the supplied public profile: https://www.linkedin.com/in/hingrajiya-jasmin-17271a164/. The reference person's email address and Bengaluru location were removed because they are not verified details for Jasmin. Resume remains a placeholder until a resume is supplied. The supplied bio and professional experience summary are personalized. Company names and employment dates were not provided, so the experience section describes verified work areas rather than inventing an employment timeline. The software toolkit and project catalog remain labeled samples until confirmed. The reference-style illustrations are decorative artwork, not a portrait claim.
-
-## Footer
-
-The footer follows the supplied reference: a warm gray background, name and automatically updated copyright year, centered purple handwritten signature and smiley, and a circular Back to top control. On mobile, the signature moves to a second row. Back to top uses a native anchor to the hero, with smooth scrolling unless reduced motion is enabled.
-
-## Landing-page sections
-
-The complete page follows this order: header and animated hero, About, Progress, Portfolio, Job experience, Tech stack, Contact, and Footer.
-
-- About combines an editorial introduction with a layered Polaroid collage, a generated designer illustration, and floating notes.
-- The way I work shows four simple steps together: Research & Discovery, Prototype, UI Design, and Delivery. Each has its own icon, title, and short description. The layout uses four columns on desktop, two on tablet, and a compact vertical list on mobile.
-- Portfolio features a full-width case study and two supporting cards with CSS-drawn interface previews, mouse-following preview cues, and project detail dialogs. All three projects stay visible without category tabs. Both the preview and arrow button open each project; View portfolio opens the dedicated `portfolio.html` page. These are design concepts, not shipped client work or connected apps. Replace the preview markup and descriptions with real work when available.
-- Job experience uses a light section with three simple role rows, subtle dividers, pastel company initials, and visible descriptions. The rows summarize the supplied senior designer role, digital product work, and eCommerce collaboration without inventing companies or dates.
-- Tech stack arranges eight sample tools around a circular creative playground. Click a tool to update the adjacent inspector with its icon, role, and description. Personalize the selection to reflect your actual skills.
-
-Animations respect reduced-motion preferences. Section content remains visible without JavaScript; project dialogs and toolkit selection require JavaScript. All illustrations, fonts, styles, and scripts are embedded in both HTML pages by the existing sync script, so the page remains portable. No external asset requests or packages are required at runtime.
-
-The About illustration (`assets/images/about-designer.png`) was generated to match the character style of the contact section. Animation behavior follows [reduced-motion guidance](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion).
-
-## Portfolio page
-
-`portfolio.html` is designed for a large project collection across industries. It uses two cards per row with an 88px vertical offset on the right, a one-column layout on mobile, industry filters with counts, project search, an empty state, and Load more. JavaScript shows 12 projects initially and loads 12 more at a time. Without JavaScript, every preview remains visible. Filtering recalculates the stagger without changing the document or keyboard order.
-
-The current collection contains **24 clearly labeled demo concepts across 8 sample industries** to preview the layout. These are not claims about real client work. Replace them with your actual projects and industries in `assets/data/portfolio-projects.json`; every entry has a unique `id`, `brand`, `title`, `industry`, `discipline`, `summary`, `idea`, `direction`, `sample`, and `art`. Industry filters and counts are generated from the data, so you can add more industries and projects without editing the filter markup. Set `sample` to false only when an entry describes actual work. An optional `image` field takes a local path (for example `assets/images/project-cover.webp`); it replaces the drawn preview and is embedded by the sync script.
-
-After editing the data, CSS, JS, or images, run:
-
-```sh
-python3 scripts/sync-inline-assets.py
-```
-
-`scripts/portfolio_catalog.py` renders the gallery and embeds the JSON catalog for dialog content. The sync script updates both HTML pages, with no runtime network request or package dependency. Keep the complete folder when downloading so navigation between pages works.
-
-The landing page's View portfolio button opens this page. Home and Contact navigate back to the landing page. The layout preserves source order according to [MDN grid accessibility guidance](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Grid_layout/Accessibility), and industry buttons expose selection with `aria-pressed` following the [WAI button pattern](https://www.w3.org/WAI/ARIA/apg/patterns/button/).
+- Replace demo projects and confirm the software toolkit.
+- Add your resume and any public contact email you want displayed.
+- Replace `https://example.com/` in `sitemap.xml` with your domain; add the sitemap URL to `robots.txt`.
+- Add canonical URLs and absolute social preview image URLs after choosing a domain.
+- Deploy the repository root to a static host using HTTPS.
