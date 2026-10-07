@@ -584,3 +584,6 @@ dialog p {
   .site-header nav { width: 100%; justify-content: space-between; gap: 12px; }
   .resume-download { padding: 9px 14px; }
 }
+
+/* Keep anchor destinations below the sticky header on every screen size. */
+main section[id] { scroll-margin-top: 110px; }

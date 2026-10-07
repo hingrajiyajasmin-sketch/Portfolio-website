@@ -16,7 +16,7 @@ assets/
     contact.css                 Contact page layout and illustration
   js/
     global.js                   Reveals, dialogs, preview cues, and year
-    home.js                     Banner, resume dialog, process, and toolkit
+    home.js                     Banner, process, and toolkit
     portfolio.js                Industry filtering and pagination
     contact.js                  Form validation, message copy, and delivery settings
   data/
@@ -92,3 +92,5 @@ Typography uses locally hosted DM Sans for all site text, with regular and itali
 The Contact page includes a project enquiry form with required name, email, project type, and message fields. The home contact button opens `contact.html#contact-form`. With no destination configured, the form copies a message for sending on LinkedIn; it does not claim to send it. Set `email` in `assets/data/contact.json` to open a prefilled email draft, or set `endpoint` to your HTTPS form service URL for native POST submissions. Run `python3 scripts/build.py` after changing these settings. The site itself has no mail server. Without JavaScript, visitors can use the LinkedIn link.
 
 Headers use page links for Home, Portfolio, and Contact. Add your PDF as `assets/documents/jasmin-hingrajiya-resume.pdf`, then run `python3 scripts/build.py` to enable the header’s native download link on all pages. Until that file exists, the Resume button is disabled.
+
+Project enquiry links open the Contact page at its form. Footer name links return Home; Back to top stays on the current page. Resume controls throughout the site use the same PDF when supplied.

@@ -3315,3 +3315,5 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
     transform: rotate(360deg);
   }
 }
+
+.contact-link:disabled { opacity: .6; cursor: not-allowed; }

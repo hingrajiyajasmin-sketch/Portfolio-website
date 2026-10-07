@@ -1,14 +1,6 @@
 "use strict";
 
 (() => {
-  function initializeResume() {
-    const dialog = document.getElementById("resume-dialog");
-    if (!dialog) return;
-    document.querySelectorAll("[data-open-resume]").forEach((button) => {
-      button.addEventListener("click", () => dialog.showModal());
-    });
-  }
-
   function initializeBanner() {
     const hero = document.getElementById("home");
     if (!hero || !("IntersectionObserver" in window)) return;
@@ -72,7 +64,6 @@
     select(buttons.find((button) => button.classList.contains("is-selected")) || buttons[0]);
   }
 
-  initializeResume();
   initializeBanner();
   initializeToolkit();
   initializeProcess();

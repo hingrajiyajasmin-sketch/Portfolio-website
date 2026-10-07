@@ -47,6 +47,16 @@ def main():
                 r'<(?:button|a) class="resume-download"[^>]*>(.*?)</(?:button|a)>',
                 lambda match: '<button class="resume-download" type="button" disabled title="Resume PDF has not been added yet" aria-label="Resume download unavailable until PDF is added">' + match[1] + '</button>',
                 html, flags=re.S)
+        if resume.is_file():
+            html = re.sub(
+                r'<(?:button|a) class="contact-link"[^>]*data-resume-download[^>]*>(.*?)</(?:button|a)>',
+                lambda match: '<a class="contact-link" data-resume-download href="assets/documents/jasmin-hingrajiya-resume.pdf" download="Jasmin-Hingrajiya-Resume.pdf">' + match[1] + '</a>',
+                html, flags=re.S)
+        else:
+            html = re.sub(
+                r'<(?:button|a) class="contact-link"[^>]*data-resume-download[^>]*>(.*?)</(?:button|a)>',
+                lambda match: '<button class="contact-link" data-resume-download type="button" disabled title="Resume PDF has not been added yet" aria-label="Resume download unavailable until PDF is added">' + match[1] + '</button>',
+                html, flags=re.S)
         page.write_text(html)
         print(f'Updated {name} project data.')
 
