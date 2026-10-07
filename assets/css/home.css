@@ -861,7 +861,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   max-width: 355px;
   justify-self: end;
   margin-bottom: 4px;
-  font-size: var(--text-base);
+  font-size: 18px;
   line-height: 1.8;
 }
 
@@ -2560,7 +2560,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   }
   
   .section-heading .body-copy {
-    font-size: var(--text-base);
+    font-size: 18px;
     line-height: 1.8;
   }
   
@@ -2776,7 +2776,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   .section-heading .body-copy {
     justify-self: start;
     max-width: 100%;
-    font-size: var(--text-base);
+    font-size: 18px;
     line-height: 1.8;
   }
   
