@@ -19,7 +19,7 @@ assets/
   data/
     portfolio-projects.json      Editable project catalog
     toolkit.json                Sample software descriptions
-  fonts/                        Local Kalam font and license
+  fonts/                        Local DM Sans variable fonts and license
   images/                       Local illustrations and favicon
 scripts/
   build.py                      Refresh project markup and JSON data
@@ -80,3 +80,5 @@ The banner repeats four individual appearances followed by two diagonal pairs ov
 - Replace `https://example.com/` in `sitemap.xml` with your domain; add the sitemap URL to `robots.txt`.
 - Add canonical URLs and absolute social preview image URLs after choosing a domain.
 - Deploy the repository root to a static host using HTTPS.
+
+Typography uses locally hosted DM Sans for all site text, with regular and italic variable faces. The global stylesheet defines the body, caption, and heading size tokens; page styles apply them responsively. No external font service is required.

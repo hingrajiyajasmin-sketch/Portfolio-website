@@ -27,15 +27,14 @@
 }
 
 .collection-heading h1 {
-  font-size: clamp(55px, 5.3vw, 76px);
-  line-height: 1.08;
-  letter-spacing: -3.7px;
+  font-size: clamp(40px, 5.2vw, 74px);
+  line-height: 1.1;
+  letter-spacing: -0.045em;
 }
 
 .collection-heading em, .collection-contact em {
   color: rgb(239, 112, 69);
-  font-family: Georgia, serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .collection-description {
@@ -47,16 +46,17 @@
   display: block;
   margin: 0px 0px 20px;
   color: rgb(152, 120, 184);
-  font-family: Kalam, cursive;
-  font-size: 23px;
+  font-size: clamp(18px, 1.6vw, 22px);
   line-height: 1.4;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .collection-description p {
   margin: 0px;
   color: rgb(128, 121, 128);
-  font-size: 15px;
-  line-height: 1.85;
+  font-size: var(--text-base);
+  line-height: 1.8;
 }
 
 .collection-index {
@@ -70,8 +70,8 @@
 
 .collection-index > span {
   color: rgb(161, 143, 128);
-  font-size: 10px;
-  letter-spacing: 1.7px;
+  font-size: var(--text-xs);
+  letter-spacing: 0.03em;
 }
 
 .collection-index a {
@@ -126,12 +126,14 @@
   }
   
   .collection-heading h1 {
-    font-size: 58px;
-    letter-spacing: -2.7px;
+    font-size: clamp(40px, 5.2vw, 74px);
+    letter-spacing: -0.045em;
+    line-height: 1.1;
   }
   
   .collection-description p {
-    font-size: 13px;
+    font-size: var(--text-base);
+    line-height: 1.8;
   }
 }
 
@@ -143,8 +145,9 @@
   }
   
   .collection-heading h1 {
-    font-size: clamp(47px, 12vw, 64px);
-    letter-spacing: -2.7px;
+    font-size: clamp(40px, 5.2vw, 74px);
+    letter-spacing: -0.045em;
+    line-height: 1.1;
   }
   
   .collection-description {
@@ -153,11 +156,14 @@
   
   .collection-note {
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: clamp(18px, 1.6vw, 22px);
+    font-weight: 500;
+    font-style: italic;
   }
   
   .collection-description p {
-    font-size: 14px;
+    font-size: var(--text-base);
+    line-height: 1.8;
   }
   
   .collection-index {
@@ -167,9 +173,9 @@
   
   .collection-index > span {
     max-width: 115px;
-    font-size: 8px;
+    font-size: var(--text-xs);
     line-height: 1.6;
-    letter-spacing: 1px;
+    letter-spacing: 0.03em;
   }
   
   .collection-index a {
@@ -252,7 +258,7 @@
   font-feature-settings: inherit;
   font-variation-settings: inherit;
   font-language-override: inherit;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .portfolio-search input::placeholder {
@@ -275,14 +281,14 @@
   padding: 10px 17px;
   background: rgb(255, 255, 255);
   color: rgb(140, 129, 122);
-  font-size: 11px;
+  font-size: 13px;
   cursor: pointer;
   transition: background 200ms, color 200ms, border-color 200ms;
   white-space: nowrap;
 }
 
 .industry-filter span {
-  font-size: 9px;
+  font-size: 11px;
   opacity: 0.6;
 }
 
@@ -304,7 +310,7 @@
   border-top: 1px solid rgb(238, 231, 225);
   padding-block: 23px 30px;
   color: rgb(163, 147, 137);
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .gallery-status p {
@@ -357,8 +363,8 @@
   border-radius: 999px;
   padding: 4px 9px;
   color: var(--ink);
-  font-size: 8px;
-  letter-spacing: 0.5px;
+  font-size: var(--text-xs);
+  letter-spacing: 0.03em;
   background: rgba(255, 255, 255, 0.125);
 }
 
@@ -377,7 +383,8 @@
 .catalog-category {
   margin: 0px 0px 10px;
   color: rgb(161, 140, 128);
-  font-size: 10px;
+  font-size: var(--text-xs);
+  letter-spacing: 0.03em;
 }
 
 .catalog-category span {
@@ -387,17 +394,17 @@
 .catalog-meta h2 {
   margin: 0px;
   max-width: 420px;
-  font-size: clamp(22px, 2vw, 29px);
-  font-weight: 500;
+  font-size: var(--heading-md);
+  font-weight: 600;
   line-height: 1.3;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.025em;
   color: rgb(40, 37, 45);
 }
 
 .catalog-summary {
   margin: 11px 0px 0px;
   color: rgb(146, 133, 138);
-  font-size: 12px;
+  font-size: var(--text-sm);
   line-height: 1.75;
 }
 
@@ -552,7 +559,6 @@
 }
 
 .catalog-art h4 {
-  font-family: Georgia, serif;
   font-size: 31px;
   font-weight: 400;
   letter-spacing: -1px;
@@ -1118,7 +1124,7 @@
 .portfolio-pagination p {
   margin: 0px;
   color: rgb(172, 155, 142);
-  font-size: 11px;
+  font-size: var(--text-xs);
 }
 
 @media (max-width: 1100px) {
@@ -1183,11 +1189,15 @@
   }
   
   .catalog-meta h2 {
-    font-size: 23px;
+    font-size: var(--heading-md);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.3;
   }
   
   .catalog-category {
-    font-size: 9px;
+    font-size: var(--text-xs);
+    letter-spacing: 0.03em;
   }
   
   .catalog-category span {
@@ -1311,10 +1321,12 @@
   .industry-filter {
     flex-shrink: 0;
     padding: 10px 15px;
+    font-size: 13px;
   }
   
   .gallery-status {
     padding-block: 20px 25px;
+    font-size: 13px;
   }
   
   .portfolio-gallery {
@@ -1331,11 +1343,15 @@
   }
   
   .catalog-meta h2 {
-    font-size: 25px;
+    font-size: var(--heading-md);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.3;
   }
   
   .catalog-category {
-    font-size: 10px;
+    font-size: var(--text-xs);
+    letter-spacing: 0.03em;
   }
   
   .catalog-category span {
@@ -1479,7 +1495,10 @@
   }
   
   .catalog-meta h2 {
-    font-size: 23px;
+    font-size: var(--heading-md);
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.3;
   }
   
   .preview-books {
@@ -1512,9 +1531,7 @@
   height: 12px;
 }
 
-/* Runtime visibility and uploaded project covers. */
-.portfolio-controls[hidden],
-.portfolio-pagination button[hidden] {
+.portfolio-controls[hidden], .portfolio-pagination button[hidden] {
   display: none !important;
 }
 
@@ -1523,7 +1540,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 500ms ease;
+  transition: transform 500ms;
 }
 
 .catalog-card:hover .catalog-image {
