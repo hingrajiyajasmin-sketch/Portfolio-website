@@ -955,3 +955,8 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 .footer-identity { min-width: 0; }
 @media (max-width: 700px) { .personalized-hero h1 { font-size: clamp(40px,9vw,60px); } }
 @media (max-width: 560px) { .brand-lastname { display: none; } .footer-name { display: block; max-width: 160px; font-size: 23px; line-height: 1.25; } }
+
+.hero-profile-details { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 9px 22px; margin: -12px 0 26px; color: #998b7e; font-size: 11px; }
+.hero-profile-details span + span { padding-left: 22px; border-left: 1px solid #e1d6cd; }
+.personalized-hero .intro { max-width: 510px; margin-inline: auto; }
+@media (max-width: 560px) { .hero-profile-details { font-size: 10px; gap: 9px 16px; } .hero-profile-details span + span { padding-left: 16px; } }
