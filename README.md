@@ -73,7 +73,7 @@ The user supplied Jasmin Hingrajiya's bio, Senior UI/UX & Web Designer title, 7+
 
 The banner repeats four individual appearances followed by two diagonal pairs over 24 seconds, with a one-second gap between appearances. It pauses off screen and in hidden browser tabs. Animations respect reduced-motion preferences. Sections remain visible without JavaScript.
 
-The four process cards stay visible without tabs. Their progress bars fill sequentially over a 16-second loop, with a connected progress line and a soft highlight on the current step. The animation pauses off screen and in hidden tabs; reduced-motion preferences display static completed bars.
+The four process cards stay visible without tabs. Their progress bars fill sequentially over a 16-second loop, with a soft highlight on the current step. The animation pauses off screen and in hidden tabs; reduced-motion preferences display static completed bars.
 
 ## Before publishing
 
