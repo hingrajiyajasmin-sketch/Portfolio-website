@@ -60,56 +60,6 @@ h1 span {
   transform: translate(2px, 2px);
 }
 
-.hero-orbit {
-  position: absolute;
-  z-index: 0;
-  top: 50%;
-  left: 50%;
-  width: min(460px, 72vw);
-  aspect-ratio: 1 / 1;
-  border: 1px solid rgba(98, 123, 81, 0.09);
-  border-radius: 50%;
-  transform: translate(-50%, -54%);
-}
-
-.hero-orbit::before {
-  content: "";
-  position: absolute;
-  inset: -45px;
-  border: 1px dashed rgba(98, 123, 81, 0.043);
-  border-radius: 50%;
-}
-
-.orbit-sweep {
-  position: absolute;
-  inset: 0px;
-  border-radius: 50%;
-  background: conic-gradient(from 180deg, transparent 0deg, rgba(117, 151, 94, 0.016) 65deg, rgba(117, 151, 94, 0.12) 90deg, transparent 90.4deg);
-  animation: 18s linear 0s infinite normal none running orbit;
-}
-
-.orbit-sweep::after {
-  content: "";
-  position: absolute;
-  width: 50%;
-  height: 1px;
-  left: 0px;
-  top: 50%;
-  background: linear-gradient(90deg, rgba(104, 135, 84, 0.5), transparent);
-}
-
-.orbit-dot {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  top: 50%;
-  left: 0px;
-  border-radius: 50%;
-  background: rgb(114, 148, 89);
-  box-shadow: rgb(232, 238, 225) 0px 0px 0px 4px, rgb(227, 235, 220) 0px 0px 14px;
-  transform: translate(-50%, -50%);
-}
-
 .hero-characters {
   position: absolute;
   z-index: 1;
@@ -219,7 +169,7 @@ h1 span {
   top: 150px;
 }
 
-.hero.is-motion-paused .character, .hero.is-motion-paused .orbit-sweep {
+.hero.is-motion-paused .character {
   animation-play-state: paused;
 }
 
@@ -316,10 +266,6 @@ h1 span {
     margin: 16px auto 26px;
     font-size: 16px;
     letter-spacing: -0.3px;
-  }
-  
-  .hero-orbit {
-    width: min(390px, 85vw);
   }
   
   .character {
@@ -3160,16 +3106,6 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 }
 
 /* Banner and section animation keyframes */
-@keyframes orbit {
-  0% {
-    transform: rotate(-42deg);
-  }
-  
-  100% {
-    transform: rotate(318deg);
-  }
-}
-
 @keyframes character-thinking-sequence {
   0% {
     opacity: 0;
