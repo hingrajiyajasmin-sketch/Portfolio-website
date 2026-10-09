@@ -3319,3 +3319,17 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 }
 
 .contact-link:disabled { opacity: .6; cursor: not-allowed; }
+
+/* Rotating banner headlines keep a stable height across each phrase. */
+.hero-headline-wrap { position: relative; }
+.headline-accessible { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.headline-phrases { display: grid; color: var(--text); }
+.headline-phrase { grid-area: 1 / 1; color: var(--text); opacity: 0; transform: translateY(12px); pointer-events: none; }
+.headline-phrase em { color: var(--accent); font-weight: 500; font-style: italic; }
+.headline-phrase.is-current { opacity: 1; transform: translateY(0); }
+.headline-toggle { position: absolute; right: 0; top: 0; display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 1px solid #e8e2da; border-radius: 50%; color: #8a807a; background: #fff; cursor: pointer; }
+.headline-toggle[hidden], .headline-play-icon { display: none; }
+.headline-toggle.is-paused .headline-pause-icon { display: none; }
+.headline-toggle.is-paused .headline-play-icon { display: block; }
+@media (prefers-reduced-motion: no-preference) { .headline-phrase { transition: opacity 450ms ease, transform 450ms ease; } }
+@media (max-width: 560px) { .personalized-hero .rotating-headline { font-size: clamp(30px, 8vw, 42px); } .headline-toggle { top: -30px; width: 24px; height: 24px; } }

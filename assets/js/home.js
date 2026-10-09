@@ -14,6 +14,41 @@
     document.addEventListener("visibilitychange", update);
   }
 
+  function initializeHeadlines() {
+    const hero = document.getElementById("home");
+    const phrases = [...document.querySelectorAll(".headline-phrase")];
+    const toggle = document.querySelector(".headline-toggle");
+    if (!hero || phrases.length < 2 || !toggle) return;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let visible = true;
+    let paused = false;
+    let current = 0;
+    let timer;
+
+    function update() {
+      clearInterval(timer);
+      toggle.hidden = reducedMotion.matches;
+      toggle.classList.toggle("is-paused", paused);
+      const label = paused ? "Resume changing headline" : "Pause changing headline";
+      toggle.setAttribute("aria-label", label);
+      toggle.title = label;
+      if (!visible || document.hidden || paused || reducedMotion.matches) return;
+      timer = setInterval(() => {
+        phrases[current].classList.remove("is-current");
+        current = (current + 1) % phrases.length;
+        phrases[current].classList.add("is-current");
+      }, 4000);
+    }
+
+    toggle.addEventListener("click", () => { paused = !paused; update(); });
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; update(); }).observe(hero);
+    }
+    document.addEventListener("visibilitychange", update);
+    reducedMotion.addEventListener("change", update);
+    update();
+  }
+
   function initializeProcess() {
     const board = document.querySelector(".process-board");
     if (!board || !("IntersectionObserver" in window)) return;
@@ -65,6 +100,7 @@
   }
 
   initializeBanner();
+  initializeHeadlines();
   initializeToolkit();
   initializeProcess();
 })();

@@ -94,3 +94,5 @@ The Contact page includes a project enquiry form with required name, email, proj
 Headers use page links for Home, Portfolio, and Contact. Add your PDF as `assets/documents/jasmin-hingrajiya-resume.pdf`, then run `python3 scripts/build.py` to enable the header’s native download link on all pages. Until that file exists, the Resume button is disabled.
 
 Project enquiry links open the Contact page at its form. Footer name links return Home; Back to top stays on the current page. Resume controls throughout the site use the same PDF when supplied.
+
+The banner headline rotates through four creative phrases every four seconds, with a stable text area and a pause/resume control. Rotation pauses off screen and in hidden tabs; reduced-motion preferences and no-JavaScript viewing keep a static headline.
