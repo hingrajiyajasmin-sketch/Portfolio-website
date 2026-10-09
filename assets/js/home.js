@@ -123,8 +123,30 @@
     select(buttons.find((button) => button.classList.contains("is-selected")) || buttons[0]);
   }
 
+  function initializeExperienceDurations() {
+    const now = new Date();
+    const currentMonth = now.getFullYear() * 12 + now.getMonth();
+    const monthIndex = (value) => {
+      const [year, month] = value.split("-").map(Number);
+      return year * 12 + month - 1;
+    };
+    document.querySelectorAll("[data-duration-start]").forEach((duration) => {
+      const start = monthIndex(duration.dataset.durationStart);
+      const end = duration.dataset.durationEnd ? monthIndex(duration.dataset.durationEnd) : currentMonth;
+      // Include both start and end months, matching the employment date ranges.
+      const totalMonths = Math.max(0, end - start + 1);
+      const years = Math.floor(totalMonths / 12);
+      const months = totalMonths % 12;
+      const parts = [];
+      if (years) parts.push(`${years} ${years === 1 ? "yr" : "yrs"}`);
+      if (months || !years) parts.push(`${months} ${months === 1 ? "mo" : "mos"}`);
+      duration.textContent = `· ${parts.join(" ")}`;
+    });
+  }
+
   initializeBanner();
   initializeHeadlines();
   initializeToolkit();
   initializeProcess();
+  initializeExperienceDurations();
 })();
