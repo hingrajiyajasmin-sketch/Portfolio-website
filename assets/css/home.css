@@ -1633,14 +1633,6 @@
   line-height: 1.8;
 }
 
-.inspector-hint {
-  display: block;
-  margin-top: 35px;
-  padding-top: 20px;
-  border-top: 1px solid rgb(231, 220, 233);
-  color: rgb(177, 155, 185);
-  font-size: 18px;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .collage-note {
@@ -1973,10 +1965,6 @@
     margin-inline: auto;
   }
   
-  .inspector-hint {
-    max-width: 350px;
-    margin-inline: auto;
-  }
 }
 
 @media (max-width: 560px) {
@@ -2277,9 +2265,6 @@
     font-size: 14px;
   }
   
-  .inspector-hint {
-    font-size: 16px;
-  }
 }
 
 @media (max-width: 360px) {
