@@ -162,6 +162,8 @@
   gap: 70px;
 }
 
+.about-copy { width: 490px; max-width: 100%; }
+
 .about-copy .section-title {
   font-size: var(--heading-lg);
   line-height: 1.12;
@@ -169,12 +171,12 @@
 }
 
 .about-copy .section-lead {
-  max-width: 460px;
+  max-width: 490px;
   margin-block: 28px 18px;
 }
 
 .about-copy .body-copy {
-  max-width: 440px;
+  max-width: 490px;
 }
 
 .about-copy .text-link {
