@@ -95,4 +95,4 @@ Headers use page links for Home, Portfolio, and Contact. Add your PDF as `assets
 
 Project enquiry links open the Contact page at its form. Footer name links return Home; Back to top stays on the current page. Resume controls throughout the site use the same PDF when supplied.
 
-The banner headline rotates through four creative phrases every four seconds, with a stable text area and a pause/resume control. Rotation pauses off screen and in hidden tabs; reduced-motion preferences and no-JavaScript viewing keep a static headline.
+The banner types and erases four design roles, holding each completed role for 2.2 seconds. A measured text area prevents layout shifts, with a pause/resume control. Typing pauses off screen and in hidden tabs; reduced-motion preferences and no-JavaScript viewing keep a complete static role.

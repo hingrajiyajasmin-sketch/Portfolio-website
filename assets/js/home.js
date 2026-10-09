@@ -16,37 +16,59 @@
 
   function initializeHeadlines() {
     const hero = document.getElementById("home");
-    const phrases = [...document.querySelectorAll(".headline-phrase")];
+    const text = document.querySelector(".headline-role");
     const toggle = document.querySelector(".headline-toggle");
-    if (!hero || phrases.length < 2 || !toggle) return;
+    if (!hero || !text || !toggle) return;
+    const roles = JSON.parse(text.dataset.roles);
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     let visible = true;
     let paused = false;
     let current = 0;
+    let length = roles[0].length;
+    let deleting = true;
     let timer;
+    let delay = 2200;
 
-    function update() {
-      clearInterval(timer);
+    function schedule() {
+      clearTimeout(timer);
       toggle.hidden = reducedMotion.matches;
       toggle.classList.toggle("is-paused", paused);
       const label = paused ? "Resume changing headline" : "Pause changing headline";
       toggle.setAttribute("aria-label", label);
       toggle.title = label;
-      if (!visible || document.hidden || paused || reducedMotion.matches) return;
-      timer = setInterval(() => {
-        phrases[current].classList.remove("is-current");
-        current = (current + 1) % phrases.length;
-        phrases[current].classList.add("is-current");
-      }, 4000);
+      const running = visible && !document.hidden && !paused && !reducedMotion.matches;
+      text.classList.toggle("is-typing", running);
+      if (reducedMotion.matches) {
+        text.textContent = roles[current];
+        length = roles[current].length;
+        deleting = true;
+        delay = 2200;
+      }
+      if (running) timer = setTimeout(tick, delay);
     }
 
-    toggle.addEventListener("click", () => { paused = !paused; update(); });
-    if ("IntersectionObserver" in window) {
-      new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; update(); }).observe(hero);
+    function tick() {
+      length += deleting ? -1 : 1;
+      text.textContent = roles[current].slice(0, length);
+      delay = deleting ? 45 : 85;
+      if (deleting && length === 0) {
+        current = (current + 1) % roles.length;
+        deleting = false;
+        delay = 300;
+      } else if (!deleting && length === roles[current].length) {
+        deleting = true;
+        delay = 2200;
+      }
+      schedule();
     }
-    document.addEventListener("visibilitychange", update);
-    reducedMotion.addEventListener("change", update);
-    update();
+
+    toggle.addEventListener("click", () => { paused = !paused; schedule(); });
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; schedule(); }).observe(hero);
+    }
+    document.addEventListener("visibilitychange", schedule);
+    reducedMotion.addEventListener("change", schedule);
+    schedule();
   }
 
   function initializeProcess() {

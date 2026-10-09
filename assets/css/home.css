@@ -3320,16 +3320,21 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 
 .contact-link:disabled { opacity: .6; cursor: not-allowed; }
 
-/* Rotating banner headlines keep a stable height across each phrase. */
+/* Typed role headline reserves space for the longest role. */
 .hero-headline-wrap { position: relative; }
 .headline-accessible { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
-.headline-phrases { display: grid; color: var(--text); }
-.headline-phrase { grid-area: 1 / 1; color: var(--text); opacity: 0; transform: translateY(12px); pointer-events: none; }
-.headline-phrase em { color: var(--accent); font-weight: 500; font-style: italic; }
-.headline-phrase.is-current { opacity: 1; transform: translateY(0); }
+.headline-phrases { display: block; color: var(--text); }
+.headline-role-slot { display: grid; color: var(--accent); }
+.headline-role-measure { grid-area: 1 / 1; visibility: hidden; pointer-events: none; font-style: italic; font-weight: 500; }
+.headline-role-measure { display: grid; }
+.headline-role-measure > span { grid-area: 1 / 1; color: inherit; }
+.headline-role { grid-area: 1 / 1; min-height: 1.1em; color: var(--accent); font-weight: 500; font-style: italic; }
+.headline-role::after { content: ""; display: inline-block; width: 2px; height: .75em; margin-left: 6px; background: currentColor; vertical-align: baseline; opacity: 0; }
+.headline-role.is-typing::after { opacity: 1; animation: headline-caret 900ms step-end infinite; }
 .headline-toggle { position: absolute; right: 0; top: 0; display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 1px solid #e8e2da; border-radius: 50%; color: #8a807a; background: #fff; cursor: pointer; }
 .headline-toggle[hidden], .headline-play-icon { display: none; }
 .headline-toggle.is-paused .headline-pause-icon { display: none; }
 .headline-toggle.is-paused .headline-play-icon { display: block; }
-@media (prefers-reduced-motion: no-preference) { .headline-phrase { transition: opacity 450ms ease, transform 450ms ease; } }
-@media (max-width: 560px) { .personalized-hero .rotating-headline { font-size: clamp(30px, 8vw, 42px); } .headline-toggle { top: -30px; width: 24px; height: 24px; } }
+@keyframes headline-caret { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .headline-role::after { display: none; } }
+@media (max-width: 560px) { .personalized-hero .rotating-headline { font-size: clamp(28px, 7.4vw, 40px); } .headline-toggle { top: -30px; width: 24px; height: 24px; } }
