@@ -147,7 +147,7 @@ nav {
   border-radius: 999px;
   padding: 11px 20px;
   background: var(--accent);
-  color: var(--text);
+  color: #fff;
   font: inherit;
   font-size: 16px;
   font-weight: 600;
