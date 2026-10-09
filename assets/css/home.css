@@ -111,7 +111,7 @@
   font-size: var(--heading-lg);
   font-weight: 600;
   line-height: 1.12;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.025em;
 }
 
 .section-title em {
@@ -167,7 +167,7 @@
 .about-copy .section-title {
   font-size: var(--heading-lg);
   line-height: 1.12;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.025em;
 }
 
 .about-copy .section-lead {
@@ -1783,7 +1783,7 @@
   
   .section-title {
     font-size: var(--heading-lg);
-    letter-spacing: -0.045em;
+    letter-spacing: -0.025em;
     line-height: 1.12;
   }
   
@@ -1800,7 +1800,7 @@
   .about-copy .section-title {
     font-size: var(--heading-lg);
     line-height: 1.12;
-    letter-spacing: -0.045em;
+    letter-spacing: -0.025em;
   }
   
   .about-collage {
@@ -2006,7 +2006,7 @@
   
   .section-title, .about-copy .section-title {
     font-size: var(--heading-lg);
-    letter-spacing: -0.045em;
+    letter-spacing: -0.025em;
     line-height: 1.12;
   }
   
@@ -2280,7 +2280,7 @@
   .section-title, .about-copy .section-title {
     font-size: var(--heading-lg);
     line-height: 1.12;
-    letter-spacing: -0.045em;
+    letter-spacing: -0.025em;
   }
   
   .about-collage {
