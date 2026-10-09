@@ -15,10 +15,6 @@
     "name": "Illustrator",
     "description": "Explore identities, vector illustrations, and the little details that give a project character."
   },
-  "notion": {
-    "name": "Notion",
-    "description": "Keep research, notes, decisions, and project direction in one thoughtful workspace."
-  },
   "html": {
     "name": "HTML & CSS",
     "description": "Shape accessible structure and responsive presentation for the web."
@@ -30,5 +26,13 @@
   "github": {
     "name": "GitHub",
     "description": "Track changes, collaborate on the code, and give each idea room to evolve."
+  },
+  "wordpress": {
+    "name": "WordPress",
+    "description": "Build and manage adaptable websites, from thoughtful page layouts to everyday content publishing."
+  },
+  "photoshop": {
+    "name": "Photoshop",
+    "description": "Refine images, compose website visuals, and give every detail a polished finish."
   }
 }
