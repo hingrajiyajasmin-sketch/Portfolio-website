@@ -1275,20 +1275,20 @@
 
 .role-status {
   color: rgb(167, 157, 149);
-  font-size: var(--text-xs);
+  font-size: 14px;
 }
 
 .career-description {
   max-width: 480px;
   margin: 0px;
   color: rgb(130, 124, 119);
-  font-size: var(--text-base);
+  font-size: 14px;
   line-height: 1.8;
 }
 
-.career-period { margin: 0 0 4px; color: #514e53; font-size: 16px; font-weight: 500; }
+.career-period { margin: 0 0 4px; color: #514e53; font-size: 14px; font-weight: 500; }
 .career-location { margin: 0; font-size: 14px; }
-.career-summary { margin: 12px 0 0; font-size: 16px; line-height: 1.7; }
+.career-summary { margin: 12px 0 0; font-size: 14px; line-height: 1.7; }
 .career-row:nth-child(4) .company-icon { background: #e8eff5; border-color: #dce6ef; color: #6588a3; }
 .career-row:nth-child(5) .company-icon { background: #f4ebe7; border-color: #ecddd6; color: #ac7a64; }
 
@@ -1329,12 +1329,12 @@
   }
   
   .career-role p {
-    font-size: 13px;
+    font-size: 14px;
   }
   
   .career-description {
     padding-left: 59px;
-    font-size: var(--text-base);
+    font-size: 14px;
     line-height: 1.8;
   }
 }
