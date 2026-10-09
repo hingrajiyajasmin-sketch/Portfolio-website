@@ -416,28 +416,23 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 
 .contact-link:disabled { opacity: .6; cursor: not-allowed; }
 
-/* Keep the four contact options together in one row. */
-.contact-socials {
-  flex-wrap: nowrap;
-  gap: clamp(12px, 1.2vw, 24px);
+/* Icon-only contact links stay together at every screen size. */
+.contact-socials { display: flex; flex-wrap: nowrap; gap: 18px; }
+.contact-socials .contact-link { flex: 0 0 auto; gap: 0; border-radius: 20px; }
+.contact-socials .contact-icon { flex: 0 0 64px; width: 64px; height: 64px; border-radius: 20px; border: 1px solid #e8e0f3; transition: transform 180ms, background 180ms, box-shadow 180ms; }
+.contact-socials .contact-icon svg { width: 30px; height: 30px; stroke: none; fill: currentColor; }
+.contact-socials .contact-link-email svg { fill: none; stroke: currentColor; }
+.contact-link-linkedin { color: #0a66c2; }
+.contact-link-whatsapp { color: #169c50; }
+.contact-link-behance { color: #1769ff; }
+.contact-link-email { color: #655080; }
+.contact-socials a:hover .contact-icon { transform: translateY(-3px); background: #eae3f5; box-shadow: 0 8px 20px rgba(101,80,128,.1); }
+.contact-socials .contact-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+@media (max-width: 560px) {
+  .contact-socials { gap: 16px; }
+  .contact-socials .contact-icon { flex-basis: 56px; width: 56px; height: 56px; border-radius: 18px; }
+  .contact-socials .contact-icon svg { width: 28px; height: 28px; }
 }
-.contact-socials .contact-link {
-  flex: 0 0 auto;
-  gap: 8px;
-  font-size: 16px;
-  white-space: nowrap;
-}
-.contact-socials .contact-icon {
-  flex-basis: 40px;
-  width: 40px;
-  height: 40px;
-  border-radius: 13px;
-}
-@media (max-width: 1100px) {
-  .contact-socials { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
-  .contact-socials .contact-link { flex-direction: column; gap: 8px; font-size: 14px; text-align: center; }
-}
-@media (max-width: 380px) {
-  .contact-socials { gap: 4px; }
-  .contact-socials .contact-link { font-size: 12px; }
+@media (prefers-reduced-motion: reduce) {
+  .contact-socials .contact-icon { transition: none; }
 }
