@@ -1,10 +1,22 @@
 /* Portfolio collection, artwork, filters, and responsive gallery. */
 
-/* A simple text-only banner in the site's warm accent palette. */
-.collection-intro { padding-block: 64px 58px; margin-bottom: 40px; background: #fff4ed; border-bottom: 1px solid #f4e2d5; }
-.collection-heading h1 { max-width: 900px; font-size: clamp(44px, 5vw, 76px); line-height: 1.08; letter-spacing: -.045em; }
+/* Portfolio banner and a lightweight animated pen-tool illustration. */
+.collection-intro { padding-block: 56px; background: #fff4ed; border-bottom: 1px solid #f4e2d5; }
+.collection-heading { display: grid; grid-template-columns: 1.45fr 1fr; align-items: center; gap: 48px; }
+.collection-heading h1 { font-size: clamp(42px, 4.7vw, 72px); line-height: 1.08; letter-spacing: -.045em; }
 .collection-heading em { color: var(--accent); font-weight: 500; }
-.collection-description { max-width: 620px; margin: 26px 0 0; color: var(--muted); font-size: 18px; line-height: 1.75; }
+.collection-description { max-width: 600px; margin: 26px 0 0; color: var(--muted); font-size: 18px; line-height: 1.75; }
+.design-tool { width: 100%; max-width: 380px; justify-self: end; }
+.design-tool-vector { display: block; width: 100%; height: auto; overflow: visible; }
+.tool-curve { stroke-dasharray: 1; animation: tool-draw 6s ease-in-out infinite; }
+.tool-pen { animation: tool-hover 6s ease-in-out infinite; }
+.tool-palette { animation: tool-palette-float 6s ease-in-out infinite; }
+.tool-spark { transform-box: fill-box; transform-origin: center; animation: tool-spark-turn 12s ease-in-out infinite; }
+@keyframes tool-draw { 0%, 12% { stroke-dashoffset: 1; } 55%, 90% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
+@keyframes tool-hover { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-5px, -7px); } }
+@keyframes tool-palette-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+@keyframes tool-spark-turn { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(90deg); } }
+@media (prefers-reduced-motion: reduce) { .tool-curve, .tool-pen, .tool-palette, .tool-spark { animation: none; } }
 
 .collection-contact em { color: rgb(239, 112, 69); font-weight: 500; }
 .collection-note { display: block; margin: 0 0 20px; color: #9878b8; font-size: 22px; line-height: 1.4; font-weight: 500; font-style: italic; }
@@ -15,7 +27,7 @@
   justify-content: space-between;
   gap: 40px;
   border-top: 1px solid rgb(233, 225, 216);
-  padding-block: 65px 80px;
+  padding-block: 56px;
 }
 
 .collection-contact .collection-note {
@@ -36,13 +48,18 @@
 }
 
 @media (max-width: 850px) {
-  .collection-intro { padding-block: 48px; margin-bottom: 32px; }
+  .collection-intro { padding-block: 40px; }
+  .collection-heading { grid-template-columns: 1fr; gap: 28px; }
+  .design-tool { justify-self: center; max-width: 320px; }
+  .portfolio-browser { padding-top: 36px; }
 }
 @media (max-width: 560px) {
-  .collection-intro { padding-block: 38px 40px; margin-bottom: 28px; }
+  .collection-intro { padding-block: 36px; }
+  .design-tool { max-width: 270px; }
+  .portfolio-browser { padding-top: 32px; }
   .collection-heading h1 { font-size: clamp(36px, 9vw, 48px); }
   .collection-description { margin-top: 20px; }
-  .collection-contact { align-items: flex-start; flex-direction: column; gap: 25px; padding-block: 40px 50px; }
+  .collection-contact { align-items: flex-start; flex-direction: column; gap: 25px; padding-block: 36px; }
   .collection-contact h2 { font-size: 35px; }
   .collection-contact .collection-note { font-size: 17px; }
 }
@@ -50,6 +67,7 @@
 /* Project-type filters */
 .portfolio-browser {
   scroll-margin-top: 95px;
+  padding-top: 48px;
 }
 
 .portfolio-empty[hidden], .catalog-card[hidden] {
@@ -62,7 +80,7 @@
   width: 100%;
   gap: 12px;
   overflow-x: auto;
-  padding-block: 4px 25px;
+  padding-block: 4px 32px;
   scrollbar-width: thin;
   scrollbar-color: #d7c8ba transparent;
 }
@@ -102,7 +120,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(0px, 1fr));
   align-items: start;
-  gap: 40px 38px;
+  gap: 56px 36px;
   padding-bottom: 20px;
 }
 
@@ -897,7 +915,7 @@
   display: grid;
   justify-items: center;
   gap: 16px;
-  padding-block: 45px 70px;
+  padding-block: 40px 56px;
 }
 
 .portfolio-pagination p {
@@ -1069,7 +1087,7 @@
 }
 
 @media (max-width: 560px) {
-  .portfolio-filters { gap: 8px; padding-bottom: 20px; }
+  .portfolio-filters { gap: 8px; padding-bottom: 24px; }
   .portfolio-filter { padding-inline: 18px; }
 
 .portfolio-gallery {
@@ -1181,7 +1199,7 @@
   }
   
   .portfolio-pagination {
-    padding-block: 35px 45px;
+    padding-block: 32px 36px;
   }
 }
 
