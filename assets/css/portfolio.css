@@ -8,66 +8,39 @@
 .collection-description { max-width: 600px; margin: 26px 0 0; color: var(--muted); font-size: 18px; line-height: 1.75; }
 .design-tool { width: 100%; max-width: 380px; justify-self: end; }
 .design-tool-vector { display: block; width: 100%; height: auto; overflow: visible; }
-.tool-curve { stroke-dasharray: 1; animation: tool-draw 6s ease-in-out infinite; }
-.tool-pen { animation: tool-hover 6s ease-in-out infinite; }
-.tool-palette { animation: tool-palette-float 6s ease-in-out infinite; }
-.tool-spark { transform-box: fill-box; transform-origin: center; animation: tool-spark-turn 12s ease-in-out infinite; }
-@keyframes tool-draw { 0%, 12% { stroke-dashoffset: 1; } 55%, 90% { stroke-dashoffset: 0; } 100% { stroke-dashoffset: 1; } }
-@keyframes tool-hover { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-5px, -7px); } }
-@keyframes tool-palette-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
-@keyframes tool-spark-turn { 0%, 100% { transform: rotate(0); } 50% { transform: rotate(90deg); } }
-@media (prefers-reduced-motion: reduce) { .tool-curve, .tool-pen, .tool-palette, .tool-spark { animation: none; } }
-
-.collection-contact em { color: rgb(239, 112, 69); font-weight: 500; }
-.collection-note { display: block; margin: 0 0 20px; color: #9878b8; font-size: 22px; line-height: 1.4; font-weight: 500; font-style: italic; }
-
-.collection-contact {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-  border-top: 1px solid rgb(233, 225, 216);
-  padding-block: 56px;
-}
-
-.collection-contact .collection-note {
-  margin-bottom: 15px;
-  font-size: 19px;
-}
-
-.collection-contact h2 {
-  max-width: 690px;
-  margin: 0px;
-  font-size: clamp(33px, 3.5vw, 48px);
-  line-height: 1.2;
-  letter-spacing: -1.5px;
-}
-
-.collection-contact .portfolio-button {
-  flex-shrink: 0;
-}
+.app-phone { animation: app-phone-float 7s ease-in-out infinite; }
+.ai-badge { animation: ai-float 6s ease-in-out infinite; }
+.ai-gemini { animation-delay: -2s; }
+.ai-claude { animation-delay: -4s; }
+.ai-link { animation: ai-flow 4s linear infinite; }
+.app-component { animation: app-build 9s ease-in-out infinite; }
+.app-task { animation-delay: 1s; }
+.app-task-second { animation-delay: 2s; }
+.app-cursor { animation: app-cursor-move 9s ease-in-out infinite; }
+@keyframes app-phone-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+@keyframes ai-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@keyframes ai-flow { to { stroke-dashoffset: -40; } }
+@keyframes app-build { 0%, 8% { opacity: .2; transform: translateY(5px); } 22%, 90% { opacity: 1; transform: translateY(0); } 100% { opacity: .2; transform: translateY(5px); } }
+@keyframes app-cursor-move { 0%, 100% { transform: translate(0, 0); } 35% { transform: translate(-36px, -32px); } 65% { transform: translate(-8px, 54px); } }
+@media (prefers-reduced-motion: reduce) { .app-phone, .ai-badge, .ai-link, .app-component, .app-cursor { animation: none; } }
+.portfolio-page .contact-section { background: rgb(245, 244, 242); }
 
 @media (max-width: 850px) {
   .collection-intro { padding-block: 40px; }
   .collection-heading { grid-template-columns: 1fr; gap: 28px; }
   .design-tool { justify-self: center; max-width: 320px; }
-  .portfolio-browser { padding-top: 36px; }
 }
 @media (max-width: 560px) {
   .collection-intro { padding-block: 36px; }
   .design-tool { max-width: 270px; }
-  .portfolio-browser { padding-top: 32px; }
   .collection-heading h1 { font-size: clamp(36px, 9vw, 48px); }
   .collection-description { margin-top: 20px; }
-  .collection-contact { align-items: flex-start; flex-direction: column; gap: 25px; padding-block: 36px; }
-  .collection-contact h2 { font-size: 35px; }
-  .collection-contact .collection-note { font-size: 17px; }
 }
 
 /* Project-type filters */
 .portfolio-browser {
   scroll-margin-top: 95px;
-  padding-top: 48px;
+  padding-block: 110px;
 }
 
 .portfolio-empty[hidden], .catalog-card[hidden] {
@@ -121,7 +94,7 @@
   grid-template-columns: repeat(2, minmax(0px, 1fr));
   align-items: start;
   gap: 56px 36px;
-  padding-bottom: 20px;
+  padding-bottom: 0;
 }
 
 .catalog-card {
@@ -914,15 +887,9 @@
 .portfolio-pagination {
   display: grid;
   justify-items: center;
-  gap: 16px;
-  padding-block: 40px 56px;
+  padding-top: 40px;
 }
 
-.portfolio-pagination p {
-  margin: 0px;
-  color: rgb(172, 155, 142);
-  font-size: var(--text-xs);
-}
 
 @media (max-width: 1100px) {
   .catalog-window {
@@ -1199,7 +1166,7 @@
   }
   
   .portfolio-pagination {
-    padding-block: 32px 36px;
+    padding-top: 32px;
   }
 }
 
@@ -1292,7 +1259,7 @@
   height: 12px;
 }
 
-.portfolio-controls[hidden], .portfolio-pagination button[hidden] {
+.portfolio-controls[hidden], .portfolio-pagination[hidden], .portfolio-pagination button[hidden] {
   display: none !important;
 }
 

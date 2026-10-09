@@ -26,7 +26,7 @@
       });
       document.getElementById("portfolio-empty").hidden = matched.length !== 0;
       more.hidden = visible.length >= matched.length;
-      document.getElementById("portfolio-pagination-note").textContent = matched.length && more.hidden ? "You’ve reached the end of this collection." : "";
+      more.parentElement.hidden = more.hidden;
       return visible;
     }
     filters.forEach(button => button.addEventListener("click", () => {
