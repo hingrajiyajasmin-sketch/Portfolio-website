@@ -13,7 +13,7 @@
 }
 .hero-content { position: relative; z-index: 2; width: min(920px, calc(100% - 64px)); padding: 0; text-align: center; }
 .hero-eyebrow { margin: 0 0 20px; color: var(--muted); font-size: 12px; font-weight: 600; line-height: 1.5; letter-spacing: .14em; text-transform: uppercase; }
-.personalized-hero h1 { font-size: clamp(38px, 4.8vw, 74px); line-height: 1.18; letter-spacing: -.045em; }
+.personalized-hero h1 { font-size: clamp(38px, 4.8vw, 74px); line-height: 1.18; letter-spacing: -.035em; }
 .headline-greeting { display: block; margin-bottom: 8px; color: var(--text); font-size: clamp(24px, 2.3vw, 32px); font-weight: 500; letter-spacing: -.025em; }
 .personalized-hero .intro { max-width: 520px; margin: 24px auto 22px; color: var(--muted); font-size: 18px; line-height: 1.75; letter-spacing: -.015em; }
 .hero-profile-details { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px 20px; margin: 0 0 28px; color: #998b7e; font-size: 16px; line-height: 1.6; }
@@ -674,10 +674,10 @@
 }
 
 .featured-project .project-meta h3 {
-  font-size: clamp(36px, 3.5vw, 49px);
+  font-size: clamp(36px, 3.5vw, 40px);
   line-height: 1.1;
   font-weight: 500;
-  letter-spacing: -2px;
+  letter-spacing: -0.025em;
 }
 
 .featured-project .project-meta p:last-child {

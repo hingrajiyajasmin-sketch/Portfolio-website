@@ -3,7 +3,7 @@
 /* Portfolio banner and a lightweight animated pen-tool illustration. */
 .collection-intro { padding-block: 56px; background: var(--footer-background); border-bottom: 1px solid #eae3db; }
 .collection-heading { display: grid; grid-template-columns: 1.45fr 1fr; align-items: center; gap: 48px; }
-.collection-heading h1 { font-size: clamp(42px, 4.7vw, 72px); line-height: 1.08; letter-spacing: -.045em; }
+.collection-heading h1 { font-size: clamp(42px, 4.7vw, 72px); line-height: 1.08; letter-spacing: -.035em; }
 .collection-heading em { color: var(--accent); font-weight: 500; }
 .collection-description { max-width: 600px; margin: 26px 0 0; color: var(--muted); font-size: 18px; line-height: 1.75; }
 .design-tool { width: 100%; max-width: 380px; justify-self: end; }

@@ -33,10 +33,10 @@
 .contact-content h2 {
   margin: 0px;
   color: rgb(16, 17, 20);
-  font-size: clamp(54px, 4.75vw, 90px);
+  font-size: clamp(54px, 4.5vw, 90px);
   font-weight: 700;
   line-height: 1.04;
-  letter-spacing: -2.8px;
+  letter-spacing: -0.025em;
 }
 
 .contact-cta {
