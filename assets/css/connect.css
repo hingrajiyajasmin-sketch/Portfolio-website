@@ -415,3 +415,29 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 
 
 .contact-link:disabled { opacity: .6; cursor: not-allowed; }
+
+/* Keep the four contact options together in one row. */
+.contact-socials {
+  flex-wrap: nowrap;
+  gap: clamp(12px, 1.2vw, 24px);
+}
+.contact-socials .contact-link {
+  flex: 0 0 auto;
+  gap: 8px;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.contact-socials .contact-icon {
+  flex-basis: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 13px;
+}
+@media (max-width: 1100px) {
+  .contact-socials { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+  .contact-socials .contact-link { flex-direction: column; gap: 8px; font-size: 14px; text-align: center; }
+}
+@media (max-width: 380px) {
+  .contact-socials { gap: 4px; }
+  .contact-socials .contact-link { font-size: 12px; }
+}
