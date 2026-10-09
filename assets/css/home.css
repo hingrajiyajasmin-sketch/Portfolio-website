@@ -1398,35 +1398,31 @@
 }
 
 .tool-card:nth-child(2) {
-  --angle: 40deg;
+  --angle: 45deg;
 }
 
 .tool-card:nth-child(3) {
-  --angle: 80deg;
+  --angle: 90deg;
 }
 
 .tool-card:nth-child(4) {
-  --angle: 120deg;
+  --angle: 135deg;
 }
 
 .tool-card:nth-child(5) {
-  --angle: 160deg;
+  --angle: 180deg;
 }
 
 .tool-card:nth-child(6) {
-  --angle: 200deg;
+  --angle: 225deg;
 }
 
 .tool-card:nth-child(7) {
-  --angle: 240deg;
+  --angle: 270deg;
 }
 
 .tool-card:nth-child(8) {
-  --angle: 280deg;
-}
-
-.tool-card:nth-child(9) {
-  --angle: 320deg;
+  --angle: 315deg;
 }
 
 .tool-card b {
@@ -2517,14 +2513,6 @@
   .character-writing figcaption, .character-detail figcaption { top: 195px; }
 }
 
-/* Nine tools keep their orbit without colliding on narrow screens. */
-@media (max-width: 560px) {
-  .tool-card { width: 64px; height: 68px; gap: 4px; }
-  .tool-card b { font-size: 11px; }
-}
 @media (max-width: 360px) {
-  .tool-grid { --radius: 106px; }
-  .tool-card { width: 52px; height: 60px; }
-  .tool-card .tool-mark { width: 29px; height: 29px; }
-  .tool-card b { font-size: 10px; }
+  .tool-card { height: 68px; }
 }

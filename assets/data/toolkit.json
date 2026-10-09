@@ -3,17 +3,21 @@
     "name": "Figma",
     "description": "A space to explore interfaces, build reusable components, and connect the details."
   },
-  "framer": {
-    "name": "Framer",
-    "description": "Bring interfaces to life with motion, responsive layouts, and interactive prototypes."
+  "photoshop": {
+    "name": "Photoshop",
+    "description": "Refine images, compose website visuals, and give every detail a polished finish."
+  },
+  "illustrator": {
+    "name": "Illustrator",
+    "description": "Explore identities, vector illustrations, and the little details that give a project character."
   },
   "webflow": {
     "name": "Webflow",
     "description": "Turn visual ideas into responsive web experiences with a visual development workflow."
   },
-  "illustrator": {
-    "name": "Illustrator",
-    "description": "Explore identities, vector illustrations, and the little details that give a project character."
+  "wordpress": {
+    "name": "WordPress",
+    "description": "Build and manage adaptable websites, from thoughtful page layouts to everyday content publishing."
   },
   "html": {
     "name": "HTML & CSS",
@@ -23,16 +27,8 @@
     "name": "JavaScript",
     "description": "Connect the interface with meaningful interactions and responsive behavior."
   },
-  "github": {
-    "name": "GitHub",
-    "description": "Track changes, collaborate on the code, and give each idea room to evolve."
-  },
-  "wordpress": {
-    "name": "WordPress",
-    "description": "Build and manage adaptable websites, from thoughtful page layouts to everyday content publishing."
-  },
-  "photoshop": {
-    "name": "Photoshop",
-    "description": "Refine images, compose website visuals, and give every detail a polished finish."
+  "figjam": {
+    "name": "FigJam",
+    "description": "Map user journeys, sketch possibilities, and shape a clear direction before moving into interface design."
   }
 }
