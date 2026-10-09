@@ -140,20 +140,28 @@ nav {
 .resume-download {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  border: 0;
+  justify-content: center;
+  gap: 12px;
+  min-height: 44px;
+  border: 1px solid transparent;
   border-radius: 999px;
-  padding: 11px 18px;
-  background: #171b27;
-  color: #fff;
+  padding: 11px 20px;
+  background: var(--accent);
+  color: var(--text);
   font: inherit;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
   text-decoration: none;
   white-space: nowrap;
+  box-shadow: 0 4px 12px #f04f161a;
+  transition: background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
 }
-.resume-download:not(:disabled):hover { background: #36304a; }
-.resume-download:disabled { cursor: not-allowed; opacity: .65; }
+.resume-download svg { width: 18px; height: 18px; flex: 0 0 auto; }
+.resume-download:not(:disabled):hover { background: #ff632d; transform: translateY(-1px); box-shadow: 0 6px 16px #f04f1626; }
+.resume-download:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.resume-download:disabled { cursor: not-allowed; opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .resume-download { transition: none; } }
 
 h1 {
   margin: 0px;
@@ -583,6 +591,11 @@ dialog p {
   .site-header { height: auto; flex-wrap: wrap; gap: 8px; padding-block: 12px; }
   .site-header nav { width: 100%; justify-content: space-between; gap: 12px; }
   .resume-download { padding: 9px 14px; }
+}
+
+@media (max-width: 360px) {
+  .site-header nav { gap: 6px; }
+  .resume-download { padding-inline: 12px; }
 }
 
 /* Keep anchor destinations below the sticky header on every screen size. */
