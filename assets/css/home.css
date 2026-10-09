@@ -1257,7 +1257,7 @@
 .career-role h3 {
   margin: 0px 0px 8px;
   color: rgb(41, 40, 45);
-  font-size: clamp(20px, 1.7vw, 24px);
+  font-size: clamp(20px, 1.55vw, 23px);
   font-weight: 600;
   line-height: 1.3;
   letter-spacing: -0.025em;
@@ -1282,13 +1282,13 @@
   max-width: 514px;
   margin: 0px;
   color: rgb(130, 124, 119);
-  font-size: 14px;
+  font-size: var(--text-base);
   line-height: 1.8;
 }
 
 .career-period { margin: 0 0 4px; color: #514e53; font-size: 15px; font-weight: 600; }
 .career-location { margin: 0; font-size: 14px; }
-.career-summary { margin: 12px 0 0; font-size: 14px; line-height: 1.7; }
+.career-summary { margin: 12px 0 0; font-size: var(--text-base); line-height: 1.7; }
 .career-row:nth-child(4) .company-icon { background: #e8eff5; border-color: #dce6ef; color: #6588a3; }
 .career-row:nth-child(5) .company-icon { background: #f4ebe7; border-color: #ecddd6; color: #ac7a64; }
 
@@ -1302,7 +1302,7 @@
   }
   
   .career-role h3 {
-    font-size: clamp(20px, 1.7vw, 24px);
+    font-size: clamp(20px, 1.55vw, 23px);
     font-weight: 600;
     letter-spacing: -0.025em;
   }
@@ -1323,7 +1323,7 @@
   }
   
   .career-role h3 {
-    font-size: clamp(20px, 1.7vw, 24px);
+    font-size: 22px;
     font-weight: 600;
     letter-spacing: -0.025em;
   }
@@ -1334,7 +1334,7 @@
   
   .career-description {
     padding-left: 59px;
-    font-size: 14px;
+    font-size: var(--text-base);
     line-height: 1.8;
   }
 }
