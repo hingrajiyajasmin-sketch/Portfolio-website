@@ -41,11 +41,10 @@ def render_catalog(html, root):
         label = escape(category, quote=True)
         filters.append(f'<button class="portfolio-filter" type="button" aria-pressed="false" data-category="{label}">{label}</button>')
     cards = []
-    for index, project in enumerate(projects):
+    for project in projects:
         e = lambda key: escape(str(project[key]), quote=True)
-        stagger = ' is-staggered' if index % 2 else ''
         badge = 'Demo concept' if project.get('sample') else e('discipline')
-        cards.append(f'''<article class="catalog-card reveal{stagger}" data-category="{e('category')}" data-search="{escape(' '.join(str(project[k]) for k in ('title','brand','industry','discipline','summary')).casefold(), quote=True)}" id="project-{e('id')}">
+        cards.append(f'''<article class="catalog-card reveal" data-category="{e('category')}" data-search="{escape(' '.join(str(project[k]) for k in ('title','brand','industry','discipline','summary')).casefold(), quote=True)}" id="project-{e('id')}">
           <div class="catalog-art art-{e('art')}" aria-label="{e('brand')} project preview"><div class="catalog-artwork" aria-hidden="true">{artwork(project)}</div><span class="catalog-demo">{badge}</span><button class="project-preview" type="button" data-project="{e('id')}" aria-label="Explore {e('brand')} project"><span class="cover-action" aria-hidden="true">Explore<br>project {ARROW}</span></button></div>
           <div class="catalog-meta"><div><p class="catalog-category">{e('industry')} <span> / {e('discipline')}</span></p><h2>{e('title')}</h2><p class="catalog-summary">{e('summary')}</p></div><button class="catalog-open" type="button" data-project="{e('id')}" aria-label="Read {e('brand')} project details">{ARROW}</button></div>
         </article>''')

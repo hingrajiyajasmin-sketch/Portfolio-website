@@ -16,9 +16,7 @@
       const visibleCards = new Set(visible);
       cards.forEach(card => {
         card.hidden = !visibleCards.has(card);
-        card.classList.remove("is-staggered");
       });
-      visible.forEach((card, index) => card.classList.toggle("is-staggered", index % 2 === 1));
       filters.forEach(button => {
         const selected = button.dataset.category === activeCategory;
         button.classList.toggle("is-selected", selected);
