@@ -817,7 +817,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 }
 
 .work-step h3 {
-  min-height: 56px;
+  min-height: auto;
   margin: 0 0 15px;
   color: #30292f;
   font-size: clamp(20px, 1.55vw, 23px);
@@ -892,7 +892,7 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   }
 
   .work-step h3 {
-    min-height: 0;
+    min-height: auto;
   }
 
   .work-step {
