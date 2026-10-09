@@ -2525,3 +2525,20 @@
 @media (max-width: 360px) {
   .tool-card { height: 68px; }
 }
+
+.ai-companions { margin-top: 40px; }
+.ai-companions-label { margin: 0 0 20px; color: #84658f; font-size: 16px; font-weight: 500; }
+.ai-companions-list { display: flex; flex-wrap: wrap; gap: 16px 12px; margin: 0; padding: 0; list-style: none; }
+.ai-companion { display: flex; align-items: center; gap: 9px; padding: 12px 14px; border: 1px solid #e8dfed; border-radius: 16px; background: rgba(255,255,255,.75); box-shadow: 0 6px 18px rgba(108,65,119,.035); }
+.ai-companion b { display: block; color: #65536f; font-size: 14px; font-weight: 500; }
+.ai-companion small { display: block; margin-top: 3px; color: #8d7b97; font-size: 11px; }
+.ai-companion-icon { display: grid; place-items: center; flex: 0 0 26px; width: 26px; height: 26px; }
+.ai-companion-icon svg { width: 24px; height: 24px; }
+.ai-companion-gpt { color: #458570; transform: rotate(-3deg); }
+.ai-companion-gemini { color: #7088cc; transform: translateY(8px) rotate(2deg); }
+.ai-companion-claude { color: #c67d58; transform: rotate(-2deg); }
+@media (max-width: 560px) {
+  .ai-companions { margin-top: 32px; }
+  .ai-companions-list { gap: 16px 10px; }
+  .ai-companion { padding: 10px 12px; }
+}
