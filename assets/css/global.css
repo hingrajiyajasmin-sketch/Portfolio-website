@@ -19,6 +19,7 @@
 :root {
   color-scheme: light;
   --background: #fff;
+  --footer-background: #f5f4f2;
   --text: #111;
   --muted: #6b6b67;
   --accent: #f04f16;
@@ -246,7 +247,7 @@ dialog p {
 
 /* Shared footer */
 .site-footer {
-  background: rgb(245, 244, 242);
+  background: var(--footer-background);
 }
 
 .footer-inner {

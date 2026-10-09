@@ -1,7 +1,8 @@
 /* Contact page: shared typography and components come from global.css. */
 .contact-page { background: #fffdfb; }
-.contact-hero { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 60px; padding-block: 80px 65px; }
-.contact-intro { min-width: 0; }
+.contact-hero { padding-block: 56px; background: var(--footer-background); }
+.contact-hero-layout { display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 60px; }
+.contact-intro { min-width: 0; align-self: center; }
 .contact-kicker { margin: 0 0 24px; color: #8c8078; font-size: 12px; font-weight: 600; letter-spacing: .16em; }
 .contact-intro h1 { font-size: clamp(42px, 4.7vw, 68px); line-height: 1.12; letter-spacing: -.045em; }
 .contact-intro em, .contact-start-heading em { color: var(--accent); font-weight: 500; }
@@ -19,10 +20,11 @@
 .contact-message-link svg { flex-shrink: 0; transition: transform 180ms ease; }
 .contact-message-link:hover svg { transform: translate(2px, -2px); }
 @media (max-width: 1000px) {
-  .contact-hero { gap: 28px; }
+  .contact-hero-layout { gap: 28px; }
 }
 @media (max-width: 850px) {
-  .contact-hero { grid-template-columns: 1fr; gap: 45px; padding-block: 55px; }
+  .contact-hero { padding-block: 40px; }
+  .contact-hero-layout { grid-template-columns: 1fr; gap: 40px; }
   .contact-intro h1 { font-size: clamp(38px, 8vw, 54px); }
   .contact-portrait { width: min(400px, 100%); justify-self: center; }
   .contact-portrait img { max-height: 510px; }
