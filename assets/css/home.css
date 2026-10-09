@@ -20,7 +20,7 @@
 .hero-profile-details span + span { padding-left: 20px; border-left: 1px solid #e1d6cd; }
 .hero .portfolio-button { font-size: 16px; }
 .hero-characters { position: absolute; z-index: 1; inset: 0; pointer-events: none; }
-.character { position: absolute; width: 466px; margin: 0; mix-blend-mode: multiply; opacity: 0; animation: 24s ease-in-out infinite both character-thinking-sequence; }
+.character { position: absolute; width: 466px; margin: 0; mix-blend-mode: multiply; opacity: 0; animation: 30s ease-in-out infinite both character-thinking-sequence; }
 .character img { display: block; width: 285px; height: auto; mask-image: linear-gradient(#000 92%, transparent); }
 .character figcaption { position: absolute; width: 190px; font-size: 18px; font-weight: 500; color: var(--caption-color); line-height: 1.55; white-space: nowrap; text-align: center; transform: rotate(-5deg); }
 .note-line { display: block; width: 32px; height: 2px; margin: 7px auto 0; background: currentColor; }
@@ -2811,207 +2811,57 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 }
 
 /* Banner and section animation keyframes */
+/* Each appearance: 1.5s fade in, 1s hold, 1.5s fade out, then 1s gap. */
+
 @keyframes character-thinking-sequence {
-  0% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  4.16667% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  8.33333% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  12.5% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  66.6667% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  70.8333% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  75% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  79.1667% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  100% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
+  0% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  5% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  8.333333% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  13.333333% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  66.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  71.666667% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  75% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  80% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  100% { opacity: 0; transform: translate3d(0, 12px, 0); }
 }
 
 @keyframes character-writing-sequence {
-  0% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  16.6667% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  20.8333% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  25% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  29.1667% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  83.3333% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  87.5% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  91.6667% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  95.8333% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  100% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
+  0% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  16.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  21.666667% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  25% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  30% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  83.333333% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  88.333333% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  91.666667% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  96.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  100% { opacity: 0; transform: translate3d(0, 12px, 0); }
 }
 
 @keyframes character-laptop-sequence {
-  0% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  33.3333% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  37.5% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  41.6667% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  45.8333% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  83.3333% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  87.5% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  91.6667% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  95.8333% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  100% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
+  0% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  33.333333% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  38.333333% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  41.666667% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  46.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  83.333333% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  88.333333% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  91.666667% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  96.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  100% { opacity: 0; transform: translate3d(0, 12px, 0); }
 }
 
 @keyframes character-detail-sequence {
-  0% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  50% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  54.1667% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  58.3333% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  62.5% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  66.6667% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  70.8333% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  75% {
-    opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-  }
-  
-  79.1667% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
-  
-  100% {
-    opacity: 0;
-    transform: translate3d(0px, 12px, 0px);
-  }
+  0% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  50% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  55% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  58.333333% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  63.333333% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  66.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  71.666667% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  75% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  80% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  100% { opacity: 0; transform: translate3d(0, 12px, 0); }
 }
 
 @keyframes paper-float {
