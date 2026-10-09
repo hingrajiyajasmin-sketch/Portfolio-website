@@ -20,6 +20,16 @@
     const toggle = document.querySelector(".headline-toggle");
     if (!hero || !text || !toggle) return;
     const roles = JSON.parse(text.dataset.roles);
+    const prefix = text.querySelector(".headline-role-prefix");
+    const title = text.querySelector(".headline-role-title");
+    const separator = [...text.childNodes].find(node => node.nodeType === Node.TEXT_NODE);
+
+    function render(value) {
+      const split = value.indexOf(" ");
+      prefix.textContent = split < 0 ? value : value.slice(0, split);
+      separator.textContent = split < 0 ? "" : " ";
+      title.textContent = split < 0 ? "" : value.slice(split + 1);
+    }
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     let visible = true;
     let paused = false;
@@ -39,7 +49,7 @@
       const running = visible && !document.hidden && !paused && !reducedMotion.matches;
       text.classList.toggle("is-typing", running);
       if (reducedMotion.matches) {
-        text.textContent = roles[current];
+        render(roles[current]);
         length = roles[current].length;
         deleting = true;
         delay = 2200;
@@ -49,7 +59,7 @@
 
     function tick() {
       length += deleting ? -1 : 1;
-      text.textContent = roles[current].slice(0, length);
+      render(roles[current].slice(0, length));
       delay = deleting ? 45 : 85;
       if (deleting && length === 0) {
         current = (current + 1) % roles.length;
