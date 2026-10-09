@@ -1270,7 +1270,7 @@
   gap: 12px;
   margin: 0px;
   color: rgb(133, 128, 120);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .role-status {
@@ -1329,7 +1329,7 @@
   }
   
   .career-role p {
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .career-description {
