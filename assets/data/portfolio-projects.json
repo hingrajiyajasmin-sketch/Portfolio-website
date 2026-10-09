@@ -9,7 +9,8 @@
     "idea": "A demo exploration of a clearer, more welcoming fintech experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "finance"
+    "art": "finance",
+    "category": "Website Design"
   },
   {
     "id": "space",
@@ -21,7 +22,8 @@
     "idea": "A demo exploration of a clearer, more welcoming saas experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "focus"
+    "art": "focus",
+    "category": "Website Design"
   },
   {
     "id": "care",
@@ -33,7 +35,8 @@
     "idea": "A demo exploration of a clearer, more welcoming healthcare experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "health"
+    "art": "health",
+    "category": "Website Design"
   },
   {
     "id": "daily",
@@ -45,7 +48,8 @@
     "idea": "A demo exploration of a clearer, more welcoming food & beverage experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "food"
+    "art": "food",
+    "category": "Website Design"
   },
   {
     "id": "haven",
@@ -57,7 +61,8 @@
     "idea": "A demo exploration of a clearer, more welcoming real estate experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "home"
+    "art": "home",
+    "category": "Website Design"
   },
   {
     "id": "object",
@@ -69,7 +74,8 @@
     "idea": "A demo exploration of a clearer, more welcoming e-commerce experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "shop"
+    "art": "shop",
+    "category": "Website Design"
   },
   {
     "id": "class",
@@ -81,7 +87,8 @@
     "idea": "A demo exploration of a clearer, more welcoming education experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "learn"
+    "art": "learn",
+    "category": "Website Design"
   },
   {
     "id": "roam",
@@ -93,7 +100,8 @@
     "idea": "A demo exploration of a clearer, more welcoming travel & hospitality experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "travel"
+    "art": "travel",
+    "category": "Website Design"
   },
   {
     "id": "ledger",
@@ -105,7 +113,8 @@
     "idea": "A demo exploration of a clearer, more welcoming fintech experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "finance"
+    "art": "finance",
+    "category": "Website Design"
   },
   {
     "id": "desk",
@@ -117,7 +126,8 @@
     "idea": "A demo exploration of a clearer, more welcoming saas experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "focus"
+    "art": "focus",
+    "category": "Website Design"
   },
   {
     "id": "well",
@@ -129,7 +139,8 @@
     "idea": "A demo exploration of a clearer, more welcoming healthcare experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "health"
+    "art": "health",
+    "category": "Website Design"
   },
   {
     "id": "harvest",
@@ -141,7 +152,8 @@
     "idea": "A demo exploration of a clearer, more welcoming food & beverage experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "food"
+    "art": "food",
+    "category": "Website Design"
   },
   {
     "id": "loft",
@@ -153,7 +165,8 @@
     "idea": "A demo exploration of a clearer, more welcoming real estate experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "home"
+    "art": "home",
+    "category": "Website Design"
   },
   {
     "id": "aura",
@@ -165,7 +178,8 @@
     "idea": "A demo exploration of a clearer, more welcoming e-commerce experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "shop"
+    "art": "shop",
+    "category": "Website Design"
   },
   {
     "id": "learn",
@@ -177,7 +191,8 @@
     "idea": "A demo exploration of a clearer, more welcoming education experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "learn"
+    "art": "learn",
+    "category": "Website Design"
   },
   {
     "id": "stay",
@@ -189,7 +204,8 @@
     "idea": "A demo exploration of a clearer, more welcoming travel & hospitality experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "travel"
+    "art": "travel",
+    "category": "Website Design"
   },
   {
     "id": "mint",
@@ -201,7 +217,8 @@
     "idea": "A demo exploration of a clearer, more welcoming fintech experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "finance"
+    "art": "finance",
+    "category": "Mobile App"
   },
   {
     "id": "orbit",
@@ -213,7 +230,8 @@
     "idea": "A demo exploration of a clearer, more welcoming saas experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "focus"
+    "art": "focus",
+    "category": "Mobile App"
   },
   {
     "id": "nova",
@@ -225,7 +243,8 @@
     "idea": "A demo exploration of a clearer, more welcoming healthcare experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "health"
+    "art": "health",
+    "category": "Mobile App"
   },
   {
     "id": "table",
@@ -237,7 +256,8 @@
     "idea": "A demo exploration of a clearer, more welcoming food & beverage experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "food"
+    "art": "food",
+    "category": "Mobile App"
   },
   {
     "id": "neighbour",
@@ -249,7 +269,8 @@
     "idea": "A demo exploration of a clearer, more welcoming real estate experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "home"
+    "art": "home",
+    "category": "Mobile App"
   },
   {
     "id": "market",
@@ -261,7 +282,8 @@
     "idea": "A demo exploration of a clearer, more welcoming e-commerce experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "shop"
+    "art": "shop",
+    "category": "Mobile App"
   },
   {
     "id": "field",
@@ -273,7 +295,8 @@
     "idea": "A demo exploration of a clearer, more welcoming education experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "learn"
+    "art": "learn",
+    "category": "Mobile App"
   },
   {
     "id": "trail",
@@ -285,6 +308,7 @@
     "idea": "A demo exploration of a clearer, more welcoming travel & hospitality experience. Replace this entry with your own project story.",
     "direction": "A simple hierarchy, a considered palette, and useful interactions. The artwork is a layout preview, ready for your actual project visuals.",
     "sample": true,
-    "art": "travel"
+    "art": "travel",
+    "category": "Mobile App"
   }
 ]

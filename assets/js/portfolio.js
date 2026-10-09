@@ -5,13 +5,13 @@
   const portfolioGrid = document.getElementById("portfolio-grid");
   if (portfolioGrid) {
     const cards = [...portfolioGrid.querySelectorAll(".catalog-card")];
-    const filters = [...document.querySelectorAll(".industry-filter")];
+    const filters = [...document.querySelectorAll(".portfolio-filter")];
     const more = document.getElementById("load-projects");
     const pageSize = 12;
-    let activeIndustry = "all";
+    let activeCategory = "all";
     let limit = pageSize;
     function updateCollection() {
-      const matched = cards.filter(card => activeIndustry === "all" || card.dataset.industry === activeIndustry);
+      const matched = cards.filter(card => activeCategory === "all" || card.dataset.category === activeCategory);
       const visible = matched.slice(0, limit);
       const visibleCards = new Set(visible);
       cards.forEach(card => {
@@ -20,7 +20,7 @@
       });
       visible.forEach((card, index) => card.classList.toggle("is-staggered", index % 2 === 1));
       filters.forEach(button => {
-        const selected = button.dataset.industry === activeIndustry;
+        const selected = button.dataset.category === activeCategory;
         button.classList.toggle("is-selected", selected);
         button.setAttribute("aria-pressed", String(selected));
       });
@@ -30,7 +30,7 @@
       return visible;
     }
     filters.forEach(button => button.addEventListener("click", () => {
-      activeIndustry = button.dataset.industry;
+      activeCategory = button.dataset.category;
       limit = pageSize;
       updateCollection();
     }));
@@ -42,10 +42,10 @@
       if (firstNew) firstNew.querySelector(".project-preview").focus();
     });
     document.getElementById("reset-portfolio").addEventListener("click", () => {
-      activeIndustry = "all";
+      activeCategory = "all";
       limit = pageSize;
       updateCollection();
-      filters.find(button => button.dataset.industry === "all")?.focus();
+      filters.find(button => button.dataset.category === "all")?.focus();
     });
     document.getElementById("portfolio-controls").hidden = false;
     updateCollection();

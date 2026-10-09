@@ -1,5 +1,4 @@
 """Render the editable project catalog into portable, accessible HTML."""
-from collections import Counter
 from html import escape
 import json
 import re
@@ -34,21 +33,23 @@ def render_catalog(html, root):
     ids = [project['id'] for project in projects]
     if len(ids) != len(set(ids)):
         raise ValueError('Project IDs must be unique.')
-    counts = Counter(project['industry'] for project in projects)
-    filters = [f'<button class="industry-filter is-selected" type="button" aria-pressed="true" data-industry="all">All work <span>{len(projects):02}</span></button>']
-    for industry, count in counts.items():
-        label = escape(industry, quote=True)
-        filters.append(f'<button class="industry-filter" type="button" aria-pressed="false" data-industry="{label}">{label} <span>{count:02}</span></button>')
+    categories = ('Mobile App', 'Website Design', 'Web Development', 'Logo Design')
+    if any(project['category'] not in categories for project in projects):
+        raise ValueError('Unknown portfolio category.')
+    filters = ['<button class="portfolio-filter is-selected" type="button" aria-pressed="true" data-category="all">All</button>']
+    for category in categories:
+        label = escape(category, quote=True)
+        filters.append(f'<button class="portfolio-filter" type="button" aria-pressed="false" data-category="{label}">{label}</button>')
     cards = []
     for index, project in enumerate(projects):
         e = lambda key: escape(str(project[key]), quote=True)
         stagger = ' is-staggered' if index % 2 else ''
         badge = 'Demo concept' if project.get('sample') else e('discipline')
-        cards.append(f'''<article class="catalog-card reveal{stagger}" data-industry="{e('industry')}" data-search="{escape(' '.join(str(project[k]) for k in ('title','brand','industry','discipline','summary')).casefold(), quote=True)}" id="project-{e('id')}">
+        cards.append(f'''<article class="catalog-card reveal{stagger}" data-category="{e('category')}" data-search="{escape(' '.join(str(project[k]) for k in ('title','brand','industry','discipline','summary')).casefold(), quote=True)}" id="project-{e('id')}">
           <div class="catalog-art art-{e('art')}" aria-label="{e('brand')} project preview"><div class="catalog-artwork" aria-hidden="true">{artwork(project)}</div><span class="catalog-demo">{badge}</span><button class="project-preview" type="button" data-project="{e('id')}" aria-label="Explore {e('brand')} project"><span class="cover-action" aria-hidden="true">Explore<br>project {ARROW}</span></button></div>
           <div class="catalog-meta"><div><p class="catalog-category">{e('industry')} <span> / {e('discipline')}</span></p><h2>{e('title')}</h2><p class="catalog-summary">{e('summary')}</p></div><button class="catalog-open" type="button" data-project="{e('id')}" aria-label="Read {e('brand')} project details">{ARROW}</button></div>
         </article>''')
-    html = re.sub(r'(<div id="industry-filters"[^>]*>).*?(</div>)', lambda m: m[1] + '\n' + '\n'.join(filters) + '\n' + m[2], html, count=1, flags=re.S)
+    html = re.sub(r'(<div id="portfolio-filters"[^>]*>).*?(</div>)', lambda m: m[1] + '\n' + '\n'.join(filters) + '\n' + m[2], html, count=1, flags=re.S)
     html = re.sub(r'(<div id="portfolio-grid"[^>]*>).*?(</div>\s*<div id="portfolio-empty")', lambda m: m[1] + '\n' + '\n'.join(cards) + '\n' + m[2], html, count=1, flags=re.S)
     payload = json.dumps(projects,ensure_ascii=False).replace('<', r'\u003c').replace('>', r'\u003e')
     return re.sub(r'(<script id="portfolio-catalog"[^>]*>).*?(</script>)', lambda m: m[1] + payload + m[2], html, count=1, flags=re.S)

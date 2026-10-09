@@ -47,7 +47,7 @@
   .collection-contact .collection-note { font-size: 17px; }
 }
 
-/* Industry filters */
+/* Project-type filters */
 .portfolio-browser {
   scroll-margin-top: 95px;
 }
@@ -56,39 +56,42 @@
   display: none !important;
 }
 
-.industry-filters {
+.portfolio-filters {
   display: flex;
-  flex-wrap: wrap;
-  gap: 9px;
-  padding-block: 0px 25px;
+  flex-wrap: nowrap;
+  width: 100%;
+  gap: 12px;
+  overflow-x: auto;
+  padding-block: 4px 25px;
+  scrollbar-width: thin;
+  scrollbar-color: #d7c8ba transparent;
 }
 
-.industry-filter {
+.portfolio-filter {
   display: inline-flex;
+  flex: 1 0 auto;
   align-items: center;
-  gap: 14px;
-  border: 1px solid rgb(232, 225, 219);
+  justify-content: center;
+  min-height: 48px;
+  border: 1px solid #e8e1db;
   border-radius: 999px;
-  padding: 10px 17px;
-  background: rgb(255, 255, 255);
-  color: rgb(140, 129, 122);
-  font-size: 13px;
+  padding: 12px 22px;
+  background: #fff;
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
   cursor: pointer;
   transition: background 200ms, color 200ms, border-color 200ms;
   white-space: nowrap;
 }
 
-.industry-filter span {
-  font-size: 11px;
-  opacity: 0.6;
-}
-
-.industry-filter:hover {
+.portfolio-filter:hover {
   border-color: rgb(201, 178, 163);
   color: rgb(104, 83, 74);
 }
 
-.industry-filter.is-selected {
+.portfolio-filter.is-selected {
   border-color: rgb(32, 33, 43);
   background: rgb(32, 33, 43);
   color: white;
@@ -1066,21 +1069,9 @@
 }
 
 @media (max-width: 560px) {
-.industry-filters {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    max-width: 100%;
-    padding: 5px 4px 16px;
-    scrollbar-width: thin;
-    scrollbar-color: rgb(215, 200, 186) transparent;
-  }
-  
-  .industry-filter {
-    flex-shrink: 0;
-    padding: 10px 15px;
-    font-size: 13px;
-  }
-  
+  .portfolio-filters { gap: 8px; padding-bottom: 20px; }
+  .portfolio-filter { padding-inline: 18px; }
+
 .portfolio-gallery {
     grid-template-columns: 1fr;
     gap: 35px;
