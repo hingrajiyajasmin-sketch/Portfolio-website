@@ -20,6 +20,7 @@
   color-scheme: light;
   --background: #fff;
   --footer-background: #f5f4f2;
+  --header-height: 64px;
   --text: #111;
   --muted: #6b6b67;
   --accent: #f04f16;
@@ -90,7 +91,7 @@ a:focus-visible, button:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-  height: 64px;
+  height: var(--header-height);
   padding-inline: 3.25%;
   background: rgba(255, 255, 255, 0.96);
 }
