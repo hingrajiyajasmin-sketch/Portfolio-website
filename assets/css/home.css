@@ -2533,3 +2533,6 @@
   .ai-companions-list { gap: 16px 10px; }
   .ai-companion { padding: 10px 12px; }
 }
+
+.career-period-current { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.career-present { flex-shrink: 0; color: var(--accent); }
