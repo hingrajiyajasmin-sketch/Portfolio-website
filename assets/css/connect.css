@@ -421,7 +421,6 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 .contact-socials .contact-link { flex: 0 0 auto; gap: 0; border-radius: 20px; }
 .contact-socials .contact-icon { flex: 0 0 64px; width: 64px; height: 64px; border-radius: 20px; border: 1px solid #e8e0f3; transition: transform 180ms, background 180ms, box-shadow 180ms; }
 .contact-socials .contact-icon svg { width: 30px; height: 30px; stroke: none; fill: currentColor; }
-.contact-socials .contact-link-email svg { fill: none; stroke: currentColor; }
 .contact-link-linkedin { color: #0a66c2; }
 .contact-link-whatsapp { color: #169c50; }
 .contact-link-behance { color: #1769ff; }
