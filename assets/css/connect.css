@@ -435,3 +435,6 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 @media (prefers-reduced-motion: reduce) {
   .contact-socials .contact-icon { transition: none; }
 }
+
+.contact-socials .contact-link-whatsapp .contact-icon > svg { width: 40px; height: 40px; }
+.contact-socials .contact-link-email .contact-icon > svg { width: 34px; height: 28px; }
