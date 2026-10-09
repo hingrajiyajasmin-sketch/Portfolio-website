@@ -2811,17 +2811,17 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 }
 
 /* Banner and section animation keyframes */
-/* Each appearance: 1s fade in, 1s hold, 1s fade out, then 2s gap. */
+/* Each appearance: 1s fade in, 2s fully visible, 1s fade out, then 1s gap. */
 
 @keyframes character-thinking-sequence {
   0% { opacity: 0; transform: translate3d(0, 12px, 0); }
   3.333333% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  6.666667% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  10% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  10% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  13.333333% { opacity: 0; transform: translate3d(0, 12px, 0); }
   66.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
   70% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  73.333333% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  76.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  76.666667% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  80% { opacity: 0; transform: translate3d(0, 12px, 0); }
   100% { opacity: 0; transform: translate3d(0, 12px, 0); }
 }
 
@@ -2829,12 +2829,12 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   0% { opacity: 0; transform: translate3d(0, 12px, 0); }
   16.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
   20% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  23.333333% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  26.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  26.666667% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  30% { opacity: 0; transform: translate3d(0, 12px, 0); }
   83.333333% { opacity: 0; transform: translate3d(0, 12px, 0); }
   86.666667% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  90% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  93.333333% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  93.333333% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  96.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
   100% { opacity: 0; transform: translate3d(0, 12px, 0); }
 }
 
@@ -2842,12 +2842,12 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   0% { opacity: 0; transform: translate3d(0, 12px, 0); }
   33.333333% { opacity: 0; transform: translate3d(0, 12px, 0); }
   36.666667% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  40% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  43.333333% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  43.333333% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  46.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
   83.333333% { opacity: 0; transform: translate3d(0, 12px, 0); }
   86.666667% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  90% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  93.333333% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  93.333333% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  96.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
   100% { opacity: 0; transform: translate3d(0, 12px, 0); }
 }
 
@@ -2855,12 +2855,12 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
   0% { opacity: 0; transform: translate3d(0, 12px, 0); }
   50% { opacity: 0; transform: translate3d(0, 12px, 0); }
   53.333333% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  56.666667% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  60% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  60% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  63.333333% { opacity: 0; transform: translate3d(0, 12px, 0); }
   66.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
   70% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  73.333333% { opacity: 1; transform: translate3d(0, 0px, 0); }
-  76.666667% { opacity: 0; transform: translate3d(0, 12px, 0); }
+  76.666667% { opacity: 1; transform: translate3d(0, 0px, 0); }
+  80% { opacity: 0; transform: translate3d(0, 12px, 0); }
   100% { opacity: 0; transform: translate3d(0, 12px, 0); }
 }
 
