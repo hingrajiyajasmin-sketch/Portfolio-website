@@ -1,50 +1,10 @@
 /* Portfolio collection, artwork, filters, and responsive gallery. */
 
-/* A compact editorial banner with a layered interface sketch. */
-.collection-intro { padding-block: 72px 58px; }
-.collection-heading { display: grid; grid-template-columns: 1.35fr 1fr; align-items: center; gap: 48px; }
-.collection-heading h1 { font-size: clamp(44px, 5vw, 76px); line-height: 1.08; letter-spacing: -.045em; }
+/* A simple text-only banner in the site's warm accent palette. */
+.collection-intro { padding-block: 64px 58px; margin-bottom: 40px; background: #fff4ed; border-bottom: 1px solid #f4e2d5; }
+.collection-heading h1 { max-width: 900px; font-size: clamp(44px, 5vw, 76px); line-height: 1.08; letter-spacing: -.045em; }
 .collection-heading em { color: var(--accent); font-weight: 500; }
-.collection-description { max-width: 470px; margin: 28px 0 0; color: var(--muted); font-size: 18px; line-height: 1.75; }
-.collection-disciplines { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 24px 0 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
-.collection-disciplines span { color: var(--accent); }
-.collection-sketches { position: relative; width: 100%; max-width: 440px; height: 350px; justify-self: end; }
-.sketch-grid { position: absolute; inset: 25px 0 24px; border-radius: 38px; background: radial-gradient(ellipse, #fff0e3, #fff9f4 55%, transparent 73%); }
-.sketch-browser, .sketch-phone { position: absolute; box-shadow: 0 16px 35px #44312612; animation: sketch-drift 7s ease-in-out infinite; }
-.sketch-browser { --sketch-angle: -9deg; top: 45px; left: 5%; width: 73%; height: 210px; border: 1px solid #e9ded4; border-radius: 16px; background: #fff; transform: rotate(var(--sketch-angle)); }
-.sketch-chrome { display: flex; align-items: center; gap: 5px; height: 32px; padding: 0 14px; border-bottom: 1px solid #f1ede8; }
-.sketch-chrome i { width: 5px; height: 5px; border-radius: 50%; background: #e5ddd5; }
-.sketch-chrome span { width: 35%; height: 5px; margin-left: 16px; border-radius: 3px; background: #f1ece7; }
-.sketch-interface { display: flex; height: calc(100% - 32px); }
-.sketch-sidebar { width: 19%; padding: 18px 12px; border-right: 1px solid #f1ede8; }
-.sketch-sidebar b { display: block; width: 15px; height: 15px; margin-bottom: 22px; border-radius: 5px; background: var(--accent); }
-.sketch-sidebar i { display: block; height: 5px; margin-bottom: 12px; border-radius: 3px; background: #e7e0da; }
-.sketch-main { flex: 1; min-width: 0; padding: 20px; }
-.sketch-line { display: block; width: 65%; height: 8px; border-radius: 4px; background: #272727; }
-.sketch-line.short { width: 42%; height: 5px; margin-top: 8px; background: #ded7d0; }
-.sketch-tiles { display: flex; gap: 8px; margin-block: 18px 12px; }
-.sketch-tiles i { flex: 1; height: 28px; border: 1px solid #f1e4d8; border-radius: 6px; background: #fff7ee; }
-.sketch-tiles i:nth-child(2) { background: #f1edf8; border-color: #e7dfef; }
-.sketch-tiles i:nth-child(3) { background: #eef3e9; border-color: #e1e7da; }
-.sketch-chart { display: flex; align-items: end; gap: 9px; height: 43px; }
-.sketch-chart i { flex: 1; height: 45%; border-radius: 4px 4px 0 0; background: #ffd3b9; }
-.sketch-chart i:nth-child(2n) { height: 70%; }
-.sketch-chart i:nth-child(3n) { height: 100%; background: var(--accent); }
-.sketch-phone { --sketch-angle: 10deg; top: 110px; right: 3%; width: 116px; height: 210px; padding: 15px 13px; border: 5px solid #fff; border-radius: 23px; background: #f04f16; transform: rotate(var(--sketch-angle)); animation-delay: -3.5s; }
-.sketch-camera { display: block; width: 25px; height: 4px; margin: -7px auto 16px; border-radius: 8px; background: #111; }
-.sketch-phone-mark { color: #fff; font-size: 29px; line-height: 1; }
-.sketch-phone-line { display: block; width: 90%; height: 6px; margin-top: 10px; border-radius: 4px; background: #fff; }
-.sketch-phone-line.short { width: 62%; height: 4px; margin-top: 6px; opacity: .65; }
-.sketch-phone-card { margin-top: 16px; padding: 10px; border-radius: 10px; background: #fff4eb; }
-.sketch-phone-card i { display: block; width: 18px; height: 18px; margin-bottom: 8px; border-radius: 6px; background: #f6c4a7; }
-.sketch-phone-card span { display: block; height: 4px; margin-top: 4px; border-radius: 4px; background: #d6baaa; }
-.sketch-phone-card span:last-child { width: 65%; }
-.sketch-phone-action { display: block; height: 13px; margin-top: 12px; border-radius: 8px; background: #111; }
-.sketch-cursor { position: absolute; top: 228px; left: 52%; transform: rotate(-12deg); }
-.sketch-spark { position: absolute; top: 15px; right: 6%; color: var(--accent); }
-.sketch-note { position: absolute; bottom: 0; left: 8%; color: #8e7665; font-size: 14px; font-style: italic; transform: rotate(-4deg); }
-@keyframes sketch-drift { 0%, 100% { transform: translateY(0) rotate(var(--sketch-angle)); } 50% { transform: translateY(-7px) rotate(var(--sketch-angle)); } }
-@media (prefers-reduced-motion: reduce) { .sketch-browser, .sketch-phone { animation: none; } }
+.collection-description { max-width: 620px; margin: 26px 0 0; color: var(--muted); font-size: 18px; line-height: 1.75; }
 
 .collection-contact em { color: rgb(239, 112, 69); font-weight: 500; }
 .collection-note { display: block; margin: 0 0 20px; color: #9878b8; font-size: 22px; line-height: 1.4; font-weight: 500; font-style: italic; }
@@ -75,30 +35,13 @@
   flex-shrink: 0;
 }
 
-@media (max-width: 1100px) {
-  .collection-heading { gap: 24px; }
-  .collection-heading h1 { font-size: clamp(42px, 5vw, 64px); }
-}
 @media (max-width: 850px) {
-  .collection-intro { padding-block: 44px 40px; }
-  .collection-heading { grid-template-columns: 1fr; gap: 24px; }
-  .collection-copy { max-width: 600px; }
-  .collection-sketches { justify-self: center; height: 340px; }
+  .collection-intro { padding-block: 48px; margin-bottom: 32px; }
 }
 @media (max-width: 560px) {
+  .collection-intro { padding-block: 38px 40px; margin-bottom: 28px; }
   .collection-heading h1 { font-size: clamp(36px, 9vw, 48px); }
-  .collection-description { margin-top: 20px; font-size: 18px; }
-  .collection-disciplines { margin-top: 18px; font-size: 12px; gap: 6px; }
-  .collection-sketches { height: 290px; }
-  .sketch-browser { top: 35px; height: 185px; }
-  .sketch-main { padding: 15px; }
-  .sketch-sidebar { padding-inline: 9px; }
-  .sketch-phone { top: 88px; width: 104px; height: 190px; padding: 12px 10px; }
-  .sketch-phone-card { margin-top: 12px; padding: 8px; }
-  .sketch-camera { margin-bottom: 12px; }
-  .sketch-cursor { top: 204px; width: 35px; }
-  .sketch-note { bottom: -2px; left: 4%; font-size: 12px; }
-  .sketch-spark { width: 34px; height: 34px; top: 0; }
+  .collection-description { margin-top: 20px; }
   .collection-contact { align-items: flex-start; flex-direction: column; gap: 25px; padding-block: 40px 50px; }
   .collection-contact h2 { font-size: 35px; }
   .collection-contact .collection-note { font-size: 17px; }
