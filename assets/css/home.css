@@ -391,8 +391,9 @@
 }
 
 .step-icon svg {
-  width: 27px;
-  height: 27px;
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 
 .step-number {
