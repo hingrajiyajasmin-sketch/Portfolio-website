@@ -17,8 +17,7 @@
   function initializeHeadlines() {
     const hero = document.getElementById("home");
     const text = document.querySelector(".headline-role");
-    const toggle = document.querySelector(".headline-toggle");
-    if (!hero || !text || !toggle) return;
+    if (!hero || !text) return;
     const roles = JSON.parse(text.dataset.roles);
     const prefix = text.querySelector(".headline-role-prefix");
     const title = text.querySelector(".headline-role-title");
@@ -32,7 +31,6 @@
     }
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
     let visible = true;
-    let paused = false;
     let current = 0;
     let length = roles[0].length;
     let deleting = true;
@@ -41,12 +39,7 @@
 
     function schedule() {
       clearTimeout(timer);
-      toggle.hidden = reducedMotion.matches;
-      toggle.classList.toggle("is-paused", paused);
-      const label = paused ? "Resume changing headline" : "Pause changing headline";
-      toggle.setAttribute("aria-label", label);
-      toggle.title = label;
-      const running = visible && !document.hidden && !paused && !reducedMotion.matches;
+      const running = visible && !document.hidden && !reducedMotion.matches;
       text.classList.toggle("is-typing", running);
       if (reducedMotion.matches) {
         render(roles[current]);
@@ -72,7 +65,6 @@
       schedule();
     }
 
-    toggle.addEventListener("click", () => { paused = !paused; schedule(); });
     if ("IntersectionObserver" in window) {
       new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; schedule(); }).observe(hero);
     }

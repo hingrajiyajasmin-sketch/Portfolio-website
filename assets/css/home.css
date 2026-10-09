@@ -2817,12 +2817,12 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
     transform: translate3d(0px, 12px, 0px);
   }
   
-  1.66667% {
+  4.16667% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
   
-  10.8333% {
+  8.33333% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
@@ -2837,12 +2837,12 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
     transform: translate3d(0px, 12px, 0px);
   }
   
-  68.3333% {
+  70.8333% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
   
-  77.5% {
+  75% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
@@ -2869,12 +2869,12 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
     transform: translate3d(0px, 12px, 0px);
   }
   
-  18.3333% {
+  20.8333% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
   
-  27.5% {
+  25% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
@@ -2889,12 +2889,12 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
     transform: translate3d(0px, 12px, 0px);
   }
   
-  85% {
+  87.5% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
   
-  94.1667% {
+  91.6667% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
@@ -2921,12 +2921,12 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
     transform: translate3d(0px, 12px, 0px);
   }
   
-  35% {
+  37.5% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
   
-  44.1667% {
+  41.6667% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
@@ -2941,12 +2941,12 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
     transform: translate3d(0px, 12px, 0px);
   }
   
-  85% {
+  87.5% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
   
-  94.1667% {
+  91.6667% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
@@ -2973,12 +2973,12 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
     transform: translate3d(0px, 12px, 0px);
   }
   
-  51.6667% {
+  54.1667% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
   
-  60.8333% {
+  58.3333% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
@@ -2993,12 +2993,12 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
     transform: translate3d(0px, 12px, 0px);
   }
   
-  68.3333% {
+  70.8333% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
   
-  77.5% {
+  75% {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
@@ -3051,7 +3051,6 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 .headline-accessible { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .headline-phrases { display: block; color: var(--text); }
 .headline-role-slot { position: relative; isolation: isolate; display: grid; color: var(--accent); word-spacing: .08em; }
-.headline-role-slot::before { content: ""; position: absolute; z-index: -1; inset: 57% 10% 3%; border-radius: 18px; background: linear-gradient(90deg, transparent, #ffe4cc 20%, #ffe4cc 80%, transparent); transform: rotate(-1deg); }
 .headline-role-measure { grid-area: 1 / 1; visibility: hidden; pointer-events: none; font-style: italic; font-weight: 600; }
 .headline-role-measure { display: grid; }
 .headline-role-measure > span { grid-area: 1 / 1; color: inherit; }
@@ -3060,13 +3059,8 @@ a.contact-link:hover > span:last-child, button.contact-link:hover > span:last-ch
 .headline-role-title { color: var(--text); }
 .headline-role::after { content: ""; display: inline-block; width: 2px; height: .75em; margin-left: 6px; background: currentColor; vertical-align: baseline; opacity: 0; }
 .headline-role.is-typing::after { opacity: 1; animation: headline-caret 900ms step-end infinite; }
-.headline-toggle { position: absolute; right: 0; top: 0; display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 1px solid #e8e2da; border-radius: 50%; color: #8a807a; background: #fff; cursor: pointer; }
-.headline-toggle[hidden], .headline-play-icon { display: none; }
-.headline-toggle.is-paused .headline-pause-icon { display: none; }
-.headline-toggle.is-paused .headline-play-icon { display: block; }
 @keyframes headline-caret { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 @media (prefers-reduced-motion: reduce) { .headline-role::after { display: none; } }
-@media (max-width: 700px) { .headline-toggle { top: 0; width: 24px; height: 24px; } }
 
 /* Keep both character rows in view on shorter laptop displays. */
 @media (min-width: 701px) and (max-height: 800px) {
