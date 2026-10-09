@@ -1286,7 +1286,7 @@
   line-height: 1.8;
 }
 
-.career-period { margin: 0 0 4px; color: #514e53; font-size: 15px; font-weight: 600; }
+.career-period { margin: 0 0 4px; color: #514e53; font-size: 16px; font-weight: 600; }
 .career-location { margin: 0; font-size: 14px; }
 .career-summary { margin: 12px 0 0; font-size: var(--text-base); line-height: 1.7; }
 .career-row:nth-child(4) .company-icon { background: #e8eff5; border-color: #dce6ef; color: #6588a3; }
