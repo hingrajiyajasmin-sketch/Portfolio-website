@@ -11,7 +11,7 @@
 .contact-portrait { position: relative; isolation: isolate; margin: 0; padding-top: 55px; }
 .contact-portrait::before { content: ""; position: absolute; z-index: -1; inset: 20% 0 0; background: radial-gradient(ellipse, #ece6fa 0%, #f4effa88 42%, transparent 70%); }
 .contact-portrait img { display: block; width: 100%; height: auto; max-height: 610px; object-fit: contain; }
-.contact-portrait figcaption { position: absolute; top: 40px; right: -24px; color: #9574cf; font-size: 23px; line-height: 1.35; font-style: italic; text-align: center; transform: rotate(-8deg); }
+.contact-portrait figcaption { position: absolute; top: 40px; right: -40px; color: #9574cf; font-size: 23px; line-height: 1.35; font-style: italic; text-align: center; transform: rotate(-8deg); }
 .contact-start { padding-block: 90px; border-top: 1px solid #eae3db; }
 .contact-start-heading { max-width: 540px; }
 .contact-start-heading h2 { margin: 0 0 20px; font-size: clamp(32px, 3.3vw, 46px); line-height: 1.18; letter-spacing: -.04em; }
