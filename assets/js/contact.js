@@ -27,7 +27,7 @@
         status.textContent = "Please add your name and at least 10 characters about your project.";
         return;
       }
-      data.set("_subject", `Portfolio enquiry: ${data.get("project")}`);
+      data.set("_subject", `Client enquiry: ${data.get("project")}`);
       sending = true;
       submit.disabled = true;
       submit.firstChild.textContent = "Sending… ";
