@@ -63,3 +63,10 @@
 @media (max-width: 1000px) { .contact-form-layout { gap: 35px; } }
 @media (max-width: 850px) { .contact-form-layout { grid-template-columns: 1fr; } }
 @media (max-width: 560px) { .contact-form { padding: 24px; border-radius: 20px; } .form-field-row { grid-template-columns: 1fr; gap: 0; } .form-field { margin-bottom: 20px; } }
+
+.form-honeypot { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.form-status[data-state="success"] { color: #32734a; }
+.form-status[data-state="error"] { color: #a33e29; }
+@media (max-width: 560px) {
+  .contact-portrait figcaption { right: 0; }
+}
