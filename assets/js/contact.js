@@ -45,15 +45,21 @@
           signal: controller.signal
         });
         const result = await response.json();
+        const needsActivation = /activat|confirm[^.]*email|check[^.]*inbox/i.test(String(result.message || ""));
+        if (needsActivation) {
+          throw new Error("activation-required");
+        }
         if (!response.ok || (result.success !== true && result.success !== "true")) {
           throw new Error("Submission was not accepted");
         }
         form.reset();
         status.dataset.state = "success";
         status.textContent = "Thanks for reaching out! Your message has been submitted. I’ll get back to you soon.";
-      } catch {
+      } catch (error) {
         status.dataset.state = "error";
-        status.textContent = "Your message couldn’t be sent. Please try again or ";
+        status.textContent = error.message === "activation-required"
+          ? "Email delivery is awaiting activation. Please "
+          : "Your message couldn’t be sent. Please try again or ";
         const fallback = document.createElement("a");
         fallback.href = `mailto:${email}`;
         fallback.textContent = "email me directly";
