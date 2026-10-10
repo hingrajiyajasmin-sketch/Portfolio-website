@@ -19,12 +19,12 @@
       if (sending || !form.reportValidity()) return;
       const data = new FormData(form);
       if (String(data.get("_honey") || "").trim()) return;
-      const fields = ["name", "email", "message"];
+      const fields = ["name", "email", "project", "message"];
       fields.forEach((field) => data.set(field, String(data.get(field) || "").trim()));
-      if (!data.get("name") || String(data.get("message")).length < 10) {
+      if (!data.get("name") || !data.get("project") || String(data.get("message")).length < 10) {
         status.hidden = false;
         status.dataset.state = "error";
-        status.textContent = "Please add your name and at least 10 characters about your project.";
+        status.textContent = "Please add your name, project idea, and at least 10 characters about your project.";
         return;
       }
       data.set("_subject", `Client enquiry: ${data.get("project")}`);
