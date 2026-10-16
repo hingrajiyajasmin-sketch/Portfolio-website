@@ -63,6 +63,12 @@
         image.removeAttribute("src");
         image.alt = "";
       }
+      const designImage = document.getElementById("case-study-scroll-image");
+      if (project.originalDesign && project.deviceScreen) {
+        designImage.width = project.deviceScreen.sourceWidth;
+        designImage.height = project.deviceScreen.sourceHeight;
+        designImage.src = project.originalDesign;
+      } else designImage.removeAttribute("src");
       const scope = document.getElementById("case-study-scope");
       scope.replaceChildren();
       (project.scope || []).forEach((item) => {

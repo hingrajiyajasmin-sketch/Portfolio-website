@@ -20,13 +20,13 @@ The owner supplied `tinified (1).zip` containing eleven complete website-design 
 
 ## Artwork
 
-Each `assets/images/projects/<id>-cover.webp` is an AI-generated device presentation based on the corresponding supplied website screenshot. The website screen is the subject; backgrounds and device photography are presentation artwork. Each `<id>-full.webp` preserves the supplied full-page layout, optimized as WebP. Previews offer a link to this full-page design so the exact original work can be examined.
+`assets/images/projects/desktop-monitor.webp` is a shared, lossless WebP studio photograph generated for this presentation. The front-facing desktop display uses the same geometry, lighting, and scale across all eleven projects. Each `<id>-original.jpg` is a byte-for-byte copy of its supplied JPEG. The browser displays that actual design inside the screen; website text is never generated or perspective-warped. The full-page link opens that same source image. Sharpness remains limited by the resolution and compression of the supplied originals.
 
 The complete collection replaces the earlier demo catalog. The home page features DevsTree, Mint & Oak, and EasyProps. Other portfolio tabs remain available but show an empty state until matching mobile-app, development, or logo work is supplied.
 
 ## Content and layout
 
-The aligned two-column gallery remains intact. Project content describes the visible design challenge, visual direction, scope, and focus rather than unverified research or results. Physical laptop and monitor scenes use a restrained studio style with project-specific palettes. Cover images are lazy-loaded and originals are opened only when requested.
+The aligned two-column gallery remains intact. Project content describes the visible design challenge, visual direction, scope, and focus rather than unverified research or results. A consistent desktop monitor and neutral studio setting keep attention on the work. The shared monitor asset is downloaded once and reused. Both the monitor and the original screen images are lazy-loaded. Category chips sit on the desk area, clear of the website screen.
 
 Behance and external research sites were blocked from this environment. These presentation choices use established portfolio principles; no fresh market-research claim is made. The supplied exports are the authoritative project references.
 
@@ -36,8 +36,10 @@ Edit `assets/data/portfolio-projects.json`, then run `python3 scripts/build.py`.
 
 ## Scrolling device previews
 
-All eleven covers retain their original image files. `deviceScreen` contains the inner display quadrilateral in the 1536 × 1024 reference image, plus an optional camera-notch mask. `assets/js/device-previews.js` maps the supplied full-page export into that quadrilateral with a projective CSS transform. ResizeObserver keeps the layer aligned with the cover’s `object-fit: contain` geometry.
+The original JPEG sits in a clipped, front-facing screen window in both server-rendered cards and project dialogs. The screen rectangle is left 188, top 86, right 1350, bottom 710 in a 1536 × 1024 reference frame. CSS percentages preserve alignment as the monitor resizes. The image keeps its natural aspect ratio; it is not stretched, rasterized through a canvas, or re-encoded. Without JavaScript or with reduced motion, the actual original page remains visible at the top.
 
-Only the webpage moves. It pauses at the top and bottom, scrolls down slowly, and returns smoothly. A global preview control and a modal control let visitors pause/resume; the preference persists for the current browser session. Hover/focus, offscreen previews, background tabs, and underlying cards while a project dialog is open also pause motion. The original static cover is retained if motion is reduced, image loading fails, or the required browser capabilities are unavailable. Reduced-motion visitors do not fetch the full-page animation assets.
+Only the webpage moves. All previews travel at one visible screenful every four seconds, with 1.2-second acceleration/deceleration ramps and 2.5-second holds at either end. Different page lengths therefore have different cycle durations but the same perceived speed. ResizeObserver measures fractional rendered dimensions to avoid gaps at the bottom of a page. Web Animations moves the image using a transform.
 
-When changing a cover, update its four `deviceScreen.corners` points to match the new inner display. Keep screenshots paired with the correct original design. Source project classifications, content, and mockup images are otherwise unchanged.
+Global and dialog controls pause/resume motion, with the preference retained for the browser session. Hover/focus, offscreen previews, background tabs, and underlying cards while a project dialog is open pause the relevant animation. Reduced-motion changes cancel animations and show static original designs.
+
+When replacing the monitor photograph, update the shared screen CSS rectangle and the catalog's deviceScreen metadata together. Keep each original paired with its correct project.

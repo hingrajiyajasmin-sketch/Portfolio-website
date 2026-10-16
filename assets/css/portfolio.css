@@ -1280,3 +1280,6 @@
 
 /* Preserve the complete device compositions in the project covers. */
 .catalog-art.art-devices { aspect-ratio: 3 / 2; }
+
+/* Keep the category chip on the desk, clear of the actual website screen. */
+.art-devices .catalog-demo { top: auto; right: auto; bottom: 14px; left: 14px; }

@@ -16,7 +16,7 @@ assets/
     contact.css                 Contact page layout and illustration
   js/
     global.js                   Reveals, dialogs, preview cues, and year
-    device-previews.js          Perspective-mapped scrolling inside device covers
+    device-previews.js          Original-design scrolling inside desktop monitors
     home.js                     Banner, process, and toolkit
     portfolio.js                Category filtering and pagination
     contact.js                  Form validation, message copy, and delivery settings
@@ -56,7 +56,7 @@ python3 scripts/build.py
 
 Every project needs a unique `id`, `brand`, `title`, `industry`, `discipline`, `summary`, `idea`, `direction`, `sample`, `art`, and `category`. The `image` field points to a local device cover, `imageAlt` describes the presentation, and `originalDesign` links to the full-page supplied design. Optional `scope` and `outcome` fields provide project-specific context in the preview. Only add a `website` URL when the project’s live address is confirmed.
 
-The gallery uses a simple aligned two-column layout on desktop and one column on mobile. The current catalog contains **11 website-design projects from the owner’s uploaded ZIP**, replacing all demo concepts and the earlier personal-site example. They appear under All and Website Design. Other category tabs retain their empty state until matching work is supplied. The home page features DevsTree, Mint & Oak, and EasyProps. Device covers are AI-generated presentations based on the supplied website screens; the original full-page designs remain available from each project preview. The original covers stay fixed while full-page exports scroll inside their mapped display areas, with pause controls, visibility pausing, and reduced-motion support.
+The gallery uses a simple aligned two-column layout on desktop and one column on mobile. The current catalog contains **11 website-design projects from the owner’s uploaded ZIP**, replacing all demo concepts and the earlier personal-site example. They appear under All and Website Design. Other category tabs retain their empty state until matching work is supplied. The home page features DevsTree, Mint & Oak, and EasyProps. All projects use a consistent front-facing desktop monitor presentation with the exact supplied JPEG displayed inside the screen. The shared device photograph is generated artwork; the website designs are the original uploaded pixels. Screens scroll at one visible screenful per four seconds, with eased endpoints, pause controls, visibility pausing, and static original screens for reduced motion or disabled JavaScript. Full-page source links remain available from each preview. See `docs/portfolio-presentation.md` for geometry and maintenance details.
 
 The gallery initially displays up to 12 projects; Load more appears only when the collection exceeds that number. Category filtering, reset, accessible project previews, and keyboard focus work together. Without JavaScript, all projects remain visible.
 

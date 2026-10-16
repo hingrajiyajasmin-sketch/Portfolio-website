@@ -18,35 +18,32 @@
     "label": "Website design",
     "art": "devices",
     "category": "Website Design",
-    "image": "assets/images/projects/devstree-cover.webp",
-    "imageAlt": "DevsTree website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/devstree-full.webp",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "DevsTree website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/devstree-original.jpg",
     "deviceScreen": {
       "referenceWidth": 1536,
       "referenceHeight": 1024,
       "corners": [
         [
-          321,
-          121
+          188,
+          86
         ],
         [
-          1159,
-          114
+          1350,
+          86
         ],
         [
-          1185,
-          722
+          1350,
+          710
         ],
         [
-          326,
-          742
+          188,
+          710
         ]
       ],
-      "notch": [
-        0.44,
-        0.52,
-        0.02
-      ]
+      "sourceWidth": 1248,
+      "sourceHeight": 6011
     }
   },
   {
@@ -68,30 +65,32 @@
     "label": "Website design",
     "art": "devices",
     "category": "Website Design",
-    "image": "assets/images/projects/easyprops-cover.webp",
-    "imageAlt": "EasyProps website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/easyprops-full.webp",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "EasyProps website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/easyprops-original.jpg",
     "deviceScreen": {
       "referenceWidth": 1536,
       "referenceHeight": 1024,
       "corners": [
         [
-          363,
-          140
+          188,
+          86
         ],
         [
-          1267,
-          104
+          1350,
+          86
         ],
         [
-          1261,
-          791
+          1350,
+          710
         ],
         [
-          333,
-          760
+          188,
+          710
         ]
-      ]
+      ],
+      "sourceWidth": 936,
+      "sourceHeight": 7906
     }
   },
   {
@@ -113,35 +112,32 @@
     "label": "Website design",
     "art": "devices",
     "category": "Website Design",
-    "image": "assets/images/projects/mint-and-oak-cover.webp",
-    "imageAlt": "Mint & Oak website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/mint-and-oak-full.webp",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "Mint & Oak website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/mint-and-oak-original.jpg",
     "deviceScreen": {
       "referenceWidth": 1536,
       "referenceHeight": 1024,
       "corners": [
         [
-          384,
-          157
+          188,
+          86
         ],
         [
-          1198,
-          143
+          1350,
+          86
         ],
         [
-          1190,
-          743
+          1350,
+          710
         ],
         [
-          360,
-          715
+          188,
+          710
         ]
       ],
-      "notch": [
-        0.44,
-        0.52,
-        0.02
-      ]
+      "sourceWidth": 1248,
+      "sourceHeight": 5987
     }
   },
   {
@@ -163,30 +159,32 @@
     "label": "Website design",
     "art": "devices",
     "category": "Website Design",
-    "image": "assets/images/projects/muss-montessori-cover.webp",
-    "imageAlt": "Muss Montessori website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/muss-montessori-full.webp",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "Muss Montessori website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/muss-montessori-original.jpg",
     "deviceScreen": {
       "referenceWidth": 1536,
       "referenceHeight": 1024,
       "corners": [
         [
-          309,
-          111
+          188,
+          86
         ],
         [
-          1262,
-          110
+          1350,
+          86
         ],
         [
-          1262,
-          715
+          1350,
+          710
         ],
         [
-          291,
-          705
+          188,
+          710
         ]
-      ]
+      ],
+      "sourceWidth": 1248,
+      "sourceHeight": 6918
     }
   },
   {
@@ -208,35 +206,32 @@
     "label": "Website design",
     "art": "devices",
     "category": "Website Design",
-    "image": "assets/images/projects/hypp-cover.webp",
-    "imageAlt": "HYYPP website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/hypp-full.webp",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "HYYPP website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/hypp-original.jpg",
     "deviceScreen": {
       "referenceWidth": 1536,
       "referenceHeight": 1024,
       "corners": [
         [
-          362,
-          127
+          188,
+          86
         ],
         [
-          1242,
-          103
+          1350,
+          86
         ],
         [
-          1218,
-          729
+          1350,
+          710
         ],
         [
-          334,
-          729
+          188,
+          710
         ]
       ],
-      "notch": [
-        0.44,
-        0.52,
-        0.02
-      ]
+      "sourceWidth": 1248,
+      "sourceHeight": 4441
     }
   },
   {
@@ -258,30 +253,32 @@
     "label": "Website design",
     "art": "devices",
     "category": "Website Design",
-    "image": "assets/images/projects/mississauga-convention-centre-cover.webp",
-    "imageAlt": "Mississauga Convention Centre website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/mississauga-convention-centre-full.webp",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "Mississauga Convention Centre website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/mississauga-convention-centre-original.jpg",
     "deviceScreen": {
       "referenceWidth": 1536,
       "referenceHeight": 1024,
       "corners": [
         [
-          263,
-          100
+          188,
+          86
         ],
         [
-          1105,
-          140
+          1350,
+          86
         ],
         [
-          1187,
-          740
+          1350,
+          710
         ],
         [
-          312,
-          771
+          188,
+          710
         ]
-      ]
+      ],
+      "sourceWidth": 1248,
+      "sourceHeight": 7719
     }
   },
   {
@@ -303,35 +300,32 @@
     "label": "Website design",
     "art": "devices",
     "category": "Website Design",
-    "image": "assets/images/projects/dawdle-cover.webp",
-    "imageAlt": "Dawdle website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/dawdle-full.webp",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "Dawdle website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/dawdle-original.jpg",
     "deviceScreen": {
       "referenceWidth": 1536,
       "referenceHeight": 1024,
       "corners": [
         [
-          382,
-          158
+          188,
+          86
         ],
         [
-          1172,
-          139
+          1350,
+          86
         ],
         [
-          1213,
-          699
+          1350,
+          710
         ],
         [
-          398,
-          726
+          188,
+          710
         ]
       ],
-      "notch": [
-        0.44,
-        0.52,
-        0.02
-      ]
+      "sourceWidth": 1248,
+      "sourceHeight": 6423
     }
   },
   {
@@ -353,35 +347,32 @@
     "label": "Website design",
     "art": "devices",
     "category": "Website Design",
-    "image": "assets/images/projects/sutraa-ai-cover.webp",
-    "imageAlt": "SUTRAAai website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/sutraa-ai-full.webp",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "SUTRAAai website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/sutraa-ai-original.jpg",
     "deviceScreen": {
       "referenceWidth": 1536,
       "referenceHeight": 1024,
       "corners": [
         [
-          315,
-          133
+          188,
+          86
         ],
         [
-          1200,
-          113
+          1350,
+          86
         ],
         [
-          1236,
-          727
+          1350,
+          710
         ],
         [
-          339,
-          746
+          188,
+          710
         ]
       ],
-      "notch": [
-        0.44,
-        0.52,
-        0.02
-      ]
+      "sourceWidth": 1248,
+      "sourceHeight": 4969
     }
   },
   {
@@ -403,30 +394,32 @@
     "label": "Website design",
     "art": "devices",
     "category": "Website Design",
-    "image": "assets/images/projects/pride-of-africa-cover.webp",
-    "imageAlt": "Pride of Africa website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/pride-of-africa-full.webp",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "Pride of Africa website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/pride-of-africa-original.jpg",
     "deviceScreen": {
       "referenceWidth": 1536,
       "referenceHeight": 1024,
       "corners": [
         [
-          300,
-          153
+          188,
+          86
         ],
         [
-          1157,
-          128
+          1350,
+          86
         ],
         [
-          1199,
-          703
+          1350,
+          710
         ],
         [
-          328,
-          741
+          188,
+          710
         ]
-      ]
+      ],
+      "sourceWidth": 1248,
+      "sourceHeight": 5604
     }
   },
   {
@@ -448,30 +441,32 @@
     "label": "Website design",
     "art": "devices",
     "category": "Website Design",
-    "image": "assets/images/projects/cuu-long-fish-cover.webp",
-    "imageAlt": "Cuu Long Fish website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/cuu-long-fish-full.webp",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "Cuu Long Fish website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/cuu-long-fish-original.jpg",
     "deviceScreen": {
       "referenceWidth": 1536,
       "referenceHeight": 1024,
       "corners": [
         [
-          293,
-          69
+          188,
+          86
         ],
         [
-          1253,
-          93
+          1350,
+          86
         ],
         [
-          1255,
-          758
+          1350,
+          710
         ],
         [
-          293,
-          760
+          188,
+          710
         ]
-      ]
+      ],
+      "sourceWidth": 1248,
+      "sourceHeight": 5020
     }
   },
   {
@@ -493,30 +488,32 @@
     "label": "Website design",
     "art": "devices",
     "category": "Website Design",
-    "image": "assets/images/projects/fairplay-giveaways-cover.webp",
-    "imageAlt": "FairPlay Giveaways website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/fairplay-giveaways-full.webp",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "FairPlay Giveaways website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/fairplay-giveaways-original.jpg",
     "deviceScreen": {
       "referenceWidth": 1536,
       "referenceHeight": 1024,
       "corners": [
         [
-          277,
-          83
+          188,
+          86
         ],
         [
-          1227,
-          125
+          1350,
+          86
         ],
         [
-          1237,
-          786
+          1350,
+          710
         ],
         [
-          283,
-          815
+          188,
+          710
         ]
-      ]
+      ],
+      "sourceWidth": 1248,
+      "sourceHeight": 6880
     }
   }
 ]

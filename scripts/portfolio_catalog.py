@@ -7,8 +7,17 @@ STAR = '<svg viewBox="0 0 80 80" fill="none" aria-hidden="true"><path d="M40 8v6
 
 ARROW = '<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M6 5h13v13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 
+def device_markup(project, cover_class='catalog-image', cover_alt=''):
+    e = lambda value: escape(str(value), quote=True)
+    screen = project['deviceScreen']
+    return (f'<div class="device-preview-frame">'
+            f'<img class="{e(cover_class)}" src="{e(project["image"])}" alt="{e(cover_alt)}" width="1536" height="1024" loading="lazy" decoding="async">'
+            f'<div class="device-scroll-window" aria-hidden="true"><img class="device-scroll-content" src="{e(project["originalDesign"])}" alt="" width="{screen["sourceWidth"]}" height="{screen["sourceHeight"]}" loading="lazy" decoding="async"></div></div>')
+
 def artwork(project):
     brand = escape(project['brand'])
+    if project.get('deviceScreen'):
+        return device_markup(project)
     if project.get('image'):
         return '<img class="catalog-image" src="' + escape(project['image'], quote=True) + '" alt="" loading="lazy">'
     art = project['art']
