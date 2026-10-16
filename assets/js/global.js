@@ -85,7 +85,9 @@
       if (project.website) website.href = project.website;
       else website.removeAttribute("href");
       dialog.querySelector(".sample-note").hidden = project.sample === false;
+      document.getElementById("case-study-device-preview").hidden = !project.image;
       dialog.showModal();
+      document.dispatchEvent(new CustomEvent("project-preview-open", { detail: { project } }));
     });
 
     document.getElementById("case-study-contact").addEventListener("click", () => dialog.close());

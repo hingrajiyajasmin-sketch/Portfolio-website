@@ -619,3 +619,22 @@ main section[id] { scroll-margin-top: 110px; }
 .case-study-dialog [hidden] { display: none !important; }
 
 #case-study-original { margin: 12px 24px 8px 0; }
+
+/* The original device photography remains fixed; only the webpage layer moves. */
+.device-preview-host { position: relative; }
+.device-scroll-layer { position: absolute; z-index: 1; pointer-events: none; transform-origin: 0 0; }
+.device-scroll-window { position: absolute; left: 0; top: 0; transform-origin: 0 0; overflow: hidden; border-radius: 5px; background: #fff; backface-visibility: hidden; }
+.device-scroll-content { display: block; width: 100%; height: auto; margin: 0; will-change: transform; }
+.catalog-card:hover .device-preview-host > .catalog-image { transform: none; }
+.case-study-device-preview { position: relative; overflow: hidden; border-radius: 16px; margin-bottom: 24px; }
+.case-study-device-preview .case-study-image { margin: 0; border-radius: inherit; }
+.device-preview-toolbar { display: flex; justify-content: flex-end; margin-bottom: 24px; }
+.device-preview-toolbar[hidden] { display: none !important; }
+.device-motion-toggle { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 8px 14px; border: 1px solid #e8dfd7; border-radius: 999px; background: #fff; color: #655c62; font-size: 14px; cursor: pointer; }
+.device-motion-toggle:hover { border-color: var(--accent); color: var(--accent); }
+@media (prefers-reduced-motion: reduce) { .device-scroll-layer { display: none !important; } }
+
+.case-study-top .project-type { margin-right: auto; }
+.case-study-top .device-motion-toggle { flex: 0 0 40px; justify-content: center; padding: 8px; }
+.case-study-top .device-motion-toggle span { display: none; }
+.device-motion-toggle[hidden] { display: none !important; }

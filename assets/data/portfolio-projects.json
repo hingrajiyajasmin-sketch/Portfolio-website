@@ -20,7 +20,34 @@
     "category": "Website Design",
     "image": "assets/images/projects/devstree-cover.webp",
     "imageAlt": "DevsTree website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/devstree-full.webp"
+    "originalDesign": "assets/images/projects/devstree-full.webp",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          321,
+          121
+        ],
+        [
+          1159,
+          114
+        ],
+        [
+          1185,
+          722
+        ],
+        [
+          326,
+          742
+        ]
+      ],
+      "notch": [
+        0.44,
+        0.52,
+        0.02
+      ]
+    }
   },
   {
     "id": "easyprops",
@@ -43,7 +70,29 @@
     "category": "Website Design",
     "image": "assets/images/projects/easyprops-cover.webp",
     "imageAlt": "EasyProps website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/easyprops-full.webp"
+    "originalDesign": "assets/images/projects/easyprops-full.webp",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          363,
+          140
+        ],
+        [
+          1267,
+          104
+        ],
+        [
+          1261,
+          791
+        ],
+        [
+          333,
+          760
+        ]
+      ]
+    }
   },
   {
     "id": "mint-and-oak",
@@ -66,7 +115,34 @@
     "category": "Website Design",
     "image": "assets/images/projects/mint-and-oak-cover.webp",
     "imageAlt": "Mint & Oak website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/mint-and-oak-full.webp"
+    "originalDesign": "assets/images/projects/mint-and-oak-full.webp",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          384,
+          157
+        ],
+        [
+          1198,
+          143
+        ],
+        [
+          1190,
+          743
+        ],
+        [
+          360,
+          715
+        ]
+      ],
+      "notch": [
+        0.44,
+        0.52,
+        0.02
+      ]
+    }
   },
   {
     "id": "muss-montessori",
@@ -89,7 +165,29 @@
     "category": "Website Design",
     "image": "assets/images/projects/muss-montessori-cover.webp",
     "imageAlt": "Muss Montessori website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/muss-montessori-full.webp"
+    "originalDesign": "assets/images/projects/muss-montessori-full.webp",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          309,
+          111
+        ],
+        [
+          1262,
+          110
+        ],
+        [
+          1262,
+          715
+        ],
+        [
+          291,
+          705
+        ]
+      ]
+    }
   },
   {
     "id": "hypp",
@@ -112,7 +210,34 @@
     "category": "Website Design",
     "image": "assets/images/projects/hypp-cover.webp",
     "imageAlt": "HYYPP website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/hypp-full.webp"
+    "originalDesign": "assets/images/projects/hypp-full.webp",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          362,
+          127
+        ],
+        [
+          1242,
+          103
+        ],
+        [
+          1218,
+          729
+        ],
+        [
+          334,
+          729
+        ]
+      ],
+      "notch": [
+        0.44,
+        0.52,
+        0.02
+      ]
+    }
   },
   {
     "id": "mississauga-convention-centre",
@@ -135,7 +260,29 @@
     "category": "Website Design",
     "image": "assets/images/projects/mississauga-convention-centre-cover.webp",
     "imageAlt": "Mississauga Convention Centre website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/mississauga-convention-centre-full.webp"
+    "originalDesign": "assets/images/projects/mississauga-convention-centre-full.webp",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          263,
+          100
+        ],
+        [
+          1105,
+          140
+        ],
+        [
+          1187,
+          740
+        ],
+        [
+          312,
+          771
+        ]
+      ]
+    }
   },
   {
     "id": "dawdle",
@@ -158,7 +305,34 @@
     "category": "Website Design",
     "image": "assets/images/projects/dawdle-cover.webp",
     "imageAlt": "Dawdle website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/dawdle-full.webp"
+    "originalDesign": "assets/images/projects/dawdle-full.webp",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          382,
+          158
+        ],
+        [
+          1172,
+          139
+        ],
+        [
+          1213,
+          699
+        ],
+        [
+          398,
+          726
+        ]
+      ],
+      "notch": [
+        0.44,
+        0.52,
+        0.02
+      ]
+    }
   },
   {
     "id": "sutraa-ai",
@@ -181,7 +355,34 @@
     "category": "Website Design",
     "image": "assets/images/projects/sutraa-ai-cover.webp",
     "imageAlt": "SUTRAAai website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/sutraa-ai-full.webp"
+    "originalDesign": "assets/images/projects/sutraa-ai-full.webp",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          315,
+          133
+        ],
+        [
+          1200,
+          113
+        ],
+        [
+          1236,
+          727
+        ],
+        [
+          339,
+          746
+        ]
+      ],
+      "notch": [
+        0.44,
+        0.52,
+        0.02
+      ]
+    }
   },
   {
     "id": "pride-of-africa",
@@ -204,7 +405,29 @@
     "category": "Website Design",
     "image": "assets/images/projects/pride-of-africa-cover.webp",
     "imageAlt": "Pride of Africa website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/pride-of-africa-full.webp"
+    "originalDesign": "assets/images/projects/pride-of-africa-full.webp",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          300,
+          153
+        ],
+        [
+          1157,
+          128
+        ],
+        [
+          1199,
+          703
+        ],
+        [
+          328,
+          741
+        ]
+      ]
+    }
   },
   {
     "id": "cuu-long-fish",
@@ -227,7 +450,29 @@
     "category": "Website Design",
     "image": "assets/images/projects/cuu-long-fish-cover.webp",
     "imageAlt": "Cuu Long Fish website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/cuu-long-fish-full.webp"
+    "originalDesign": "assets/images/projects/cuu-long-fish-full.webp",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          293,
+          69
+        ],
+        [
+          1253,
+          93
+        ],
+        [
+          1255,
+          758
+        ],
+        [
+          293,
+          760
+        ]
+      ]
+    }
   },
   {
     "id": "fairplay-giveaways",
@@ -250,6 +495,28 @@
     "category": "Website Design",
     "image": "assets/images/projects/fairplay-giveaways-cover.webp",
     "imageAlt": "FairPlay Giveaways website presented on a realistic device.",
-    "originalDesign": "assets/images/projects/fairplay-giveaways-full.webp"
+    "originalDesign": "assets/images/projects/fairplay-giveaways-full.webp",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          277,
+          83
+        ],
+        [
+          1227,
+          125
+        ],
+        [
+          1237,
+          786
+        ],
+        [
+          283,
+          815
+        ]
+      ]
+    }
   }
 ]

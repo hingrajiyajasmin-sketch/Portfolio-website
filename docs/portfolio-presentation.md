@@ -33,3 +33,11 @@ Behance and external research sites were blocked from this environment. These pr
 ## Maintenance
 
 Edit `assets/data/portfolio-projects.json`, then run `python3 scripts/build.py`. Category must be one of the existing tab categories. Update home featured-card markup separately when changing featured projects. The standalone exporter embeds both covers and original-design links.
+
+## Scrolling device previews
+
+All eleven covers retain their original image files. `deviceScreen` contains the inner display quadrilateral in the 1536 × 1024 reference image, plus an optional camera-notch mask. `assets/js/device-previews.js` maps the supplied full-page export into that quadrilateral with a projective CSS transform. ResizeObserver keeps the layer aligned with the cover’s `object-fit: contain` geometry.
+
+Only the webpage moves. It pauses at the top and bottom, scrolls down slowly, and returns smoothly. A global preview control and a modal control let visitors pause/resume; the preference persists for the current browser session. Hover/focus, offscreen previews, background tabs, and underlying cards while a project dialog is open also pause motion. The original static cover is retained if motion is reduced, image loading fails, or the required browser capabilities are unavailable. Reduced-motion visitors do not fetch the full-page animation assets.
+
+When changing a cover, update its four `deviceScreen.corners` points to match the new inner display. Keep screenshots paired with the correct original design. Source project classifications, content, and mockup images are otherwise unchanged.
