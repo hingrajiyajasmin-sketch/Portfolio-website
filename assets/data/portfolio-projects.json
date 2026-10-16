@@ -1,5 +1,28 @@
 [
   {
+    "id": "jasmin-portfolio",
+    "brand": "Jasmin Hingrajiya",
+    "title": "A personal website. A clear next step.",
+    "industry": "Personal portfolio",
+    "discipline": "Responsive web design",
+    "summary": "A portfolio with personality, considered details, and a clear path from first impression to project enquiry.",
+    "idea": "Help prospective clients understand the designer, explore the work, and start a useful conversation without hunting for the next step. This is my personal portfolio website.",
+    "direction": "A restrained orange-and-black identity, expressive character illustrations, and responsive layouts bring personality to the work. Clear page navigation, project categories, and a direct contact form keep the experience practical.",
+    "outcome": "A working three-page website with responsive layouts, filterable project previews, reduced-motion support, and an email-connected enquiry form.",
+    "scope": [
+      "UI/UX design",
+      "Responsive web design",
+      "Frontend implementation"
+    ],
+    "sample": false,
+    "label": "Personal project",
+    "art": "devices",
+    "category": "Website Design",
+    "image": "assets/images/projects/jasmin-portfolio-devices.webp",
+    "imageAlt": "Jasmin Hingrajiya’s portfolio website presented on a laptop and phone.",
+    "website": "index.html"
+  },
+  {
     "id": "flow",
     "brand": "Flow",
     "title": "Less friction. More flow.",

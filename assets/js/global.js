@@ -53,6 +53,31 @@
       Object.entries(fields).forEach(([key, element]) => {
         element.textContent = project[key];
       });
+      document.getElementById("case-study-kind").textContent = project.sample ? "Design concept" : (project.label || project.discipline);
+      const image = document.getElementById("case-study-image");
+      image.hidden = !project.image;
+      if (project.image) {
+        image.src = project.image;
+        image.alt = project.imageAlt || `${project.brand} project preview`;
+      } else {
+        image.removeAttribute("src");
+        image.alt = "";
+      }
+      const scope = document.getElementById("case-study-scope");
+      scope.replaceChildren();
+      (project.scope || []).forEach((item) => {
+        const tag = document.createElement("li");
+        tag.textContent = item;
+        scope.append(tag);
+      });
+      scope.hidden = !scope.children.length;
+      const outcome = document.getElementById("case-study-outcome");
+      outcome.hidden = !project.outcome;
+      outcome.querySelector("p").textContent = project.outcome || "";
+      const website = document.getElementById("case-study-website");
+      website.hidden = !project.website;
+      if (project.website) website.href = project.website;
+      else website.removeAttribute("href");
       dialog.querySelector(".sample-note").hidden = project.sample === false;
       dialog.showModal();
     });

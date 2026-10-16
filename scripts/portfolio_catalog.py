@@ -43,7 +43,7 @@ def render_catalog(html, root):
     cards = []
     for project in projects:
         e = lambda key: escape(str(project[key]), quote=True)
-        badge = 'Demo concept' if project.get('sample') else e('discipline')
+        badge = 'Demo concept' if project.get('sample') else escape(project.get('label', project['discipline']))
         cards.append(f'''<article class="catalog-card reveal" data-category="{e('category')}" data-search="{escape(' '.join(str(project[k]) for k in ('title','brand','industry','discipline','summary')).casefold(), quote=True)}" id="project-{e('id')}">
           <div class="catalog-art art-{e('art')}" aria-label="{e('brand')} project preview"><div class="catalog-artwork" aria-hidden="true">{artwork(project)}</div><span class="catalog-demo">{badge}</span><button class="project-preview" type="button" data-project="{e('id')}" aria-label="Explore {e('brand')} project"><span class="cover-action" aria-hidden="true">Explore<br>project {ARROW}</span></button></div>
           <div class="catalog-meta"><div><p class="catalog-category">{e('industry')} <span> / {e('discipline')}</span></p><h2>{e('title')}</h2><p class="catalog-summary">{e('summary')}</p></div><button class="catalog-open" type="button" data-project="{e('id')}" aria-label="Read {e('brand')} project details">{ARROW}</button></div>

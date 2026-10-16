@@ -1271,3 +1271,9 @@
 .catalog-card:hover .catalog-image {
   transform: scale(1.035);
 }
+
+.art-devices { --ink: #78482e; background: #f6ddc8; }
+.art-devices .catalog-image { object-fit: contain; }
+.art-devices .catalog-demo { background: #fff9f1ed; border-color: #fff9f1; }
+
+.collection-behance { display: flex; justify-content: center; margin-top: 48px; }
