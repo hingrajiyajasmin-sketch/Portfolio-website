@@ -6,7 +6,7 @@ A responsive portfolio built with plain HTML, CSS, and JavaScript. No package in
 
 ```text
 index.html                      Landing page
-portfolio.html                  Industry portfolio gallery
+portfolio.html                  Website design project gallery
 contact.html                    Contact page with LinkedIn and project prompts
 assets/
   css/
@@ -17,7 +17,7 @@ assets/
   js/
     global.js                   Reveals, dialogs, preview cues, and year
     home.js                     Banner, process, and toolkit
-    portfolio.js                Industry filtering and pagination
+    portfolio.js                Category filtering and pagination
     contact.js                  Form validation, message copy, and delivery settings
   data/
     portfolio-projects.json      Editable project catalog
@@ -53,11 +53,11 @@ Update `assets/data/portfolio-projects.json`, then run:
 python3 scripts/build.py
 ```
 
-Every project needs a unique `id`, `brand`, `title`, `industry`, `discipline`, `summary`, `idea`, `direction`, `sample`, and `art`. An optional `image` field can point to a local project cover, such as `assets/images/project-cover.webp`. It replaces the CSS-drawn preview. Industry filters and counts are generated automatically from the catalog.
+Every project needs a unique `id`, `brand`, `title`, `industry`, `discipline`, `summary`, `idea`, `direction`, `sample`, `art`, and `category`. The `image` field points to a local device cover, `imageAlt` describes the presentation, and `originalDesign` links to the full-page supplied design. Optional `scope` and `outcome` fields provide project-specific context in the preview. Only add a `website` URL when the project’s live address is confirmed.
 
-The gallery shows two staggered cards per row on desktop and one per row on mobile. It initially displays 12 projects; Load more adds another 12. Industry filtering, reset, dialogs, and keyboard focus work together. Without JavaScript, all project previews remain visible.
+The gallery uses a simple aligned two-column layout on desktop and one column on mobile. The current catalog contains **11 website-design projects from the owner’s uploaded ZIP**, replacing all demo concepts and the earlier personal-site example. They appear under All and Website Design. Other category tabs retain their empty state until matching work is supplied. The home page features DevsTree, Mint & Oak, and EasyProps. Device covers are AI-generated presentations based on the supplied website screens; the original full-page designs remain available from each project preview.
 
-The current catalog contains **24 labeled demo concepts across 8 sample industries**, pending real project content. Set `sample` to false only for actual work. The landing page's featured project IDs must also exist in the catalog. Project markup and dialog data are generated together, so runtime JavaScript never fetches a data file.
+The gallery initially displays up to 12 projects; Load more appears only when the collection exceeds that number. Category filtering, reset, accessible project previews, and keyboard focus work together. Without JavaScript, all projects remain visible.
 
 Edit `assets/data/toolkit.json` and run the same command to refresh software descriptions. The toolkit remains a sample until the tool list is confirmed.
 

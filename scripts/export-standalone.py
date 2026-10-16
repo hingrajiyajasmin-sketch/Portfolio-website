@@ -32,7 +32,7 @@ def export(output):
         html = re.sub(r'(<img\b[^>]*\bsrc=")([^"]+)(")',
                       lambda m: m[1] + data_url(ROOT / m[2]) + m[3], html)
         # The project modal loads its image from the inline JSON catalog.
-        html = re.sub(r'("image"\s*:\s*")([^"\n]+)(")',
+        html = re.sub(r'("(?:image|originalDesign)"\s*:\s*")([^"\n]+)(")',
                       lambda m: m[1] + data_url(ROOT / m[2]) + m[3], html)
         html = html.replace('href="assets/images/favicon.svg"',
                             f'href="{data_url(ROOT / "assets/images/favicon.svg")}"')

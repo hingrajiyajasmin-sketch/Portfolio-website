@@ -1,20 +1,35 @@
-# Portfolio presentation refresh
+# Eleven-project portfolio collection
 
-## Material used
+## Source material
 
-- Actual desktop and mobile screenshots of this repository’s personal portfolio.
-- AI-generated laptop-and-phone presentation based on those screens, deployed as `assets/images/projects/jasmin-portfolio-devices.webp`.
-- Confirmed 7+ years of experience retained. No 10+ years claim, invented clients, or unverified performance metrics added.
-- Behance profile: https://www.behance.net/hingrajjasmin
+The owner supplied `tinified (1).zip` containing eleven complete website-design exports. Names and project descriptions were derived from the visible screen content. The website retains the owner’s confirmed 7+ years of experience; it does not claim 10+ years or invent project results, client relationships, implementation responsibilities, or live project URLs.
 
-## Presentation decisions
+| Project | Supplied file | Category |
+|---|---|---|
+| DevsTree | `Devstree.com.jpg` | Website Design |
+| EasyProps | `EasyProps.jpg` | Website Design |
+| Mint & Oak | `Frame 2085670661.jpg` | Website Design |
+| Muss Montessori | `Muss Montessori New Website.jpg` | Website Design |
+| HYYPP | `Landing page  2.jpg` | Website Design |
+| Mississauga Convention Centre | `Events website.jpg` | Website Design |
+| Dawdle | `Home page.jpg` | Website Design |
+| SUTRAAai | `Home-1.jpg` | Website Design |
+| Pride of Africa | `Pride Of Africa.jpg` | Website Design |
+| Cuu Long Fish | `Frame 2.jpg` | Website Design |
+| FairPlay Giveaways | `Home.jpg` | Website Design |
 
-Show the responsive website on realistic devices, keep the screen identity recognisable, and use the existing orange/black palette. Explain the project purpose, design decisions, scope, and implemented experience. Label the portfolio as a personal project and retain explicit concept labels for the sample catalog. Keep the aligned two-column gallery and existing project filters.
+## Artwork
 
-## Source limitations
+Each `assets/images/projects/<id>-cover.webp` is an AI-generated device presentation based on the corresponding supplied website screenshot. The website screen is the subject; backgrounds and device photography are presentation artwork. Each `<id>-full.webp` preserves the supplied full-page layout, optimized as WebP. Previews offer a link to this full-page design so the exact original work can be examined.
 
-Behance and external research pages returned network access denials in this environment. No claim of a completed Behance audit or fresh market research is made. The other catalog entries remain demo concepts. To replace them with actual work, supply exported Behance covers/screens and the project names, role, brief, and public project URLs.
+The complete collection replaces the earlier demo catalog. The home page features DevsTree, Mint & Oak, and EasyProps. Other portfolio tabs remain available but show an empty state until matching mobile-app, development, or logo work is supplied.
 
-## Adding actual projects
+## Content and layout
 
-Add a local image path, descriptive `imageAlt`, accurate `idea` and `direction`, optional `scope` and `outcome`, and an optional `website` link in `assets/data/portfolio-projects.json`. Use `sample: false` only for verified work and `label` to identify personal, client, or independent work accurately. Set one of the existing categories. Run `python3 scripts/build.py` to refresh the rendered portfolio; the home featured card markup is edited separately.
+The aligned two-column gallery remains intact. Project content describes the visible design challenge, visual direction, scope, and focus rather than unverified research or results. Physical laptop and monitor scenes use a restrained studio style with project-specific palettes. Cover images are lazy-loaded and originals are opened only when requested.
+
+Behance and external research sites were blocked from this environment. These presentation choices use established portfolio principles; no fresh market-research claim is made. The supplied exports are the authoritative project references.
+
+## Maintenance
+
+Edit `assets/data/portfolio-projects.json`, then run `python3 scripts/build.py`. Category must be one of the existing tab categories. Update home featured-card markup separately when changing featured projects. The standalone exporter embeds both covers and original-design links.

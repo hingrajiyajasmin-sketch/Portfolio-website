@@ -617,3 +617,5 @@ main section[id] { scroll-margin-top: 110px; }
 .case-study-scope li { padding: 6px 12px; border: 1px solid #eadfd5; border-radius: 999px; background: #fff9f4; color: #795f4d; font-size: 13px; }
 #case-study-website { margin: 12px 24px 8px 0; }
 .case-study-dialog [hidden] { display: none !important; }
+
+#case-study-original { margin: 12px 24px 8px 0; }

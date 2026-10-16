@@ -74,6 +74,12 @@
       const outcome = document.getElementById("case-study-outcome");
       outcome.hidden = !project.outcome;
       outcome.querySelector("p").textContent = project.outcome || "";
+      const original = document.getElementById("case-study-original");
+      original.hidden = !project.originalDesign;
+      if (project.originalDesign) {
+        original.href = project.originalDesign;
+        original.setAttribute("aria-label", `View ${project.brand} full-page design`);
+      } else original.removeAttribute("href");
       const website = document.getElementById("case-study-website");
       website.hidden = !project.website;
       if (project.website) website.href = project.website;

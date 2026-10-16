@@ -1277,3 +1277,6 @@
 .art-devices .catalog-demo { background: #fff9f1ed; border-color: #fff9f1; }
 
 .collection-behance { display: flex; justify-content: center; margin-top: 48px; }
+
+/* Preserve the complete device compositions in the project covers. */
+.catalog-art.art-devices { aspect-ratio: 3 / 2; }

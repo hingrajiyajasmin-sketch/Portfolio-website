@@ -2539,3 +2539,5 @@
 
 .portfolio-device-art { background: #f6ddc8; }
 .portfolio-device-cover { display: block; width: 100%; height: 100%; object-fit: contain; }
+
+.project-card:not(.featured-project) .portfolio-device-art { height: auto; aspect-ratio: 3 / 2; }
