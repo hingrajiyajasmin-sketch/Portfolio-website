@@ -77,15 +77,14 @@
 }
 
 .portfolio-filter:hover {
-  border-color: var(--accent);
-  background: var(--accent-soft);
-  color: var(--text);
+  border-color: rgb(201, 178, 163);
+  color: rgb(104, 83, 74);
 }
 
 .portfolio-filter.is-selected {
-  border-color: var(--accent);
-  background: var(--accent);
-  color: var(--on-accent);
+  border-color: rgb(32, 33, 43);
+  background: rgb(32, 33, 43);
+  color: white;
 }
 
 /* Simple aligned project grid */
@@ -196,9 +195,9 @@
 }
 
 .catalog-open:hover {
-  border-color: var(--accent);
-  background: var(--accent);
-  color: var(--on-accent);
+  border-color: var(--button-accent);
+  background: var(--button-accent);
+  color: #fff;
   transform: rotate(8deg);
 }
 

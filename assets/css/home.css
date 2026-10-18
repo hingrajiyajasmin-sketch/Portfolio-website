@@ -1443,9 +1443,9 @@
 }
 
 .tool-card:hover, .tool-card.is-selected {
-  border-color: var(--accent);
+  border-color: rgb(185, 151, 202);
   background: rgb(255, 255, 255);
-  box-shadow: 0 12px 30px var(--accent-shadow);
+  box-shadow: rgba(135, 100, 155, 0.08) 0px 12px 30px;
 }
 
 .tool-card.is-selected::after {
@@ -1456,7 +1456,7 @@
   height: 6px;
   border: 3px solid rgb(249, 247, 251);
   border-radius: 50%;
-  background: var(--accent);
+  background: rgb(162, 122, 186);
   box-sizing: content-box;
 }
 

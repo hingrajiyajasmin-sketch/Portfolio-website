@@ -24,11 +24,8 @@
   --text: #111;
   --muted: #6b6b67;
   --accent: #8052dc;
-  --accent-hover: #6d3dc5;
   --accent-soft: #f3edfc;
-  --accent-shadow: #8052dc1a;
-  --accent-shadow-hover: #8052dc26;
-  --on-accent: #fff;
+  --button-accent: #f04f16;
   --border: #eeeeea;
   --font-sans: "DM Sans", Arial, sans-serif;
   --text-xs: 0.75rem;
@@ -71,6 +68,10 @@ button {
 a:focus-visible, button:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 6px;
+}
+
+button:focus-visible, .portfolio-button:focus-visible, .contact-cta:focus-visible {
+  outline-color: var(--button-accent);
 }
 
 .skip-link {
@@ -158,20 +159,20 @@ nav {
   border: 1px solid transparent;
   border-radius: 999px;
   padding: 11px 20px;
-  background: var(--accent);
-  color: var(--on-accent);
+  background: var(--button-accent);
+  color: #fff;
   font: inherit;
   font-size: 16px;
   font-weight: 600;
   line-height: 1.25;
   text-decoration: none;
   white-space: nowrap;
-  box-shadow: 0 4px 12px var(--accent-shadow);
+  box-shadow: 0 4px 12px #f04f161a;
   transition: background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
 }
 .resume-download svg { width: 18px; height: 18px; flex: 0 0 auto; }
-.resume-download:not(:disabled):hover { background: var(--accent-hover); transform: translateY(-1px); box-shadow: 0 6px 16px var(--accent-shadow-hover); }
-.resume-download:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.resume-download:not(:disabled):hover { background: #ff632d; transform: translateY(-1px); box-shadow: 0 6px 16px #f04f1626; }
+.resume-download:focus-visible { outline: 2px solid var(--button-accent); outline-offset: 4px; }
 .resume-download:disabled { cursor: not-allowed; opacity: 1; }
 @media (prefers-reduced-motion: reduce) { .resume-download { transition: none; } }
 
@@ -566,14 +567,14 @@ dialog p {
   border: 0px;
   border-radius: 999px;
   padding: 17px 28px;
-  background: var(--accent);
-  color: var(--on-accent);
+  background: rgb(23, 27, 39);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   transition: background 200ms, transform 200ms;
 }
 
 .portfolio-button:hover {
-  background: var(--accent-hover);
+  background: rgb(54, 48, 74);
   transform: translateY(-2px);
 }
 
@@ -642,7 +643,7 @@ main section[id] { scroll-margin-top: 110px; }
 .device-preview-toolbar { display: flex; justify-content: flex-end; margin-bottom: 24px; }
 .device-preview-toolbar[hidden] { display: none !important; }
 .device-motion-toggle { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 8px 14px; border: 1px solid #e8dfd7; border-radius: 999px; background: #fff; color: #655c62; font-size: 14px; cursor: pointer; }
-.device-motion-toggle:hover { border-color: var(--accent); color: var(--accent); }
+.device-motion-toggle:hover { border-color: var(--button-accent); color: var(--button-accent); }
 @media (prefers-reduced-motion: reduce) { .device-scroll-content { transform: none !important; } }
 
 .case-study-top .project-type { margin-right: auto; }
