@@ -88,8 +88,13 @@
       } else original.removeAttribute("href");
       const website = document.getElementById("case-study-website");
       website.hidden = !project.website;
-      if (project.website) website.href = project.website;
-      else website.removeAttribute("href");
+      if (project.website) {
+        website.href = project.website;
+        website.setAttribute("aria-label", `Visit ${project.brand} website (opens in a new tab)`);
+      } else {
+        website.removeAttribute("href");
+        website.removeAttribute("aria-label");
+      }
       dialog.querySelector(".sample-note").hidden = project.sample === false;
       document.getElementById("case-study-device-preview").hidden = !project.image;
       dialog.showModal();

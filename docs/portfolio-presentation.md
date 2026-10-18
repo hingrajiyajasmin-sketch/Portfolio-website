@@ -28,7 +28,19 @@ The complete collection replaces the earlier demo catalog. The home page feature
 
 The aligned two-column gallery remains intact. Project content describes the visible design challenge, visual direction, scope, and focus rather than unverified research or results. A consistent desktop monitor and neutral studio setting keep attention on the work. The shared monitor asset is downloaded once and reused. Both the monitor and the original screen images are lazy-loaded. Category chips sit on the desk area, clear of the website screen.
 
-Behance and external research sites were blocked from this environment. These presentation choices use established portfolio principles; no fresh market-research claim is made. The supplied exports are the authoritative project references.
+The supplied exports are the authoritative visual project references. The live websites below were checked separately; published websites can change independently of the archived designs. A matching company website does not establish a commissioned relationship or implementation credit.
+
+## Live project links
+
+Checked on 2026-10-19 using HTTPS requests with certificate verification. Each confirmed homepage returned HTTP 200. These URLs are stored in the project catalog and appear as **Visit live website** in project previews, opening in a new tab.
+
+| Project | Confirmed website | Matching evidence |
+|---|---|---|
+| DevsTree | https://www.devstree.com/ | The original export is named `Devstree.com.jpg`; the live site matches the DevsTree identity, phone number, and Ganesh Glory address in the supplied design. |
+| EasyProps | https://www.easyprops.com/ | The supplied design includes `easyprops.com`; the live homepage identifies EasyProps as an Ahmedabad property platform. |
+| Mississauga Convention Centre | https://mississaugaconvention.com/ | The supplied design lists this contact-email domain; the live venue site matches the company identity and 75 Derry Road West address. |
+
+Mint & Oak, Muss Montessori, HYYPP, Dawdle, SUTRAAai, Pride of Africa, Cuu Long Fish, and FairPlay Giveaways remain unconfirmed. Searches did not establish a reliable matching live website, so their previews omit the live-site link. This does not establish that those projects are offline. Placeholder domains in the artwork are excluded.
 
 ## Maintenance
 
