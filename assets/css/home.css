@@ -1345,7 +1345,7 @@
 }
 
 .stack-section .section-title em {
-  color: rgb(150, 117, 181);
+  color: var(--accent);
 }
 
 .stack-layout {

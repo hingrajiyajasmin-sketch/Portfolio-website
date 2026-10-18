@@ -97,11 +97,16 @@ a:focus-visible, button:focus-visible {
 }
 
 .brand {
+  color: var(--accent);
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.7px;
   text-decoration: none;
   white-space: nowrap;
+}
+
+.brand-lastname {
+  color: var(--text);
 }
 
 nav {
