@@ -23,8 +23,8 @@
   --header-height: 64px;
   --text: #111;
   --muted: #6b6b67;
-  --accent: #8052dc;
-  --accent-soft: #f3edfc;
+  --accent: #f04f16;
+  --accent-soft: #fff1eb;
   --button-accent: #f04f16;
   --border: #eeeeea;
   --font-sans: "DM Sans", Arial, sans-serif;
@@ -167,11 +167,11 @@ nav {
   line-height: 1.25;
   text-decoration: none;
   white-space: nowrap;
-  box-shadow: 0 4px 12px #8052dc1a;
+  box-shadow: 0 4px 12px #f04f161a;
   transition: background 180ms ease, transform 180ms ease, box-shadow 180ms ease;
 }
 .resume-download svg { width: 18px; height: 18px; flex: 0 0 auto; }
-.resume-download:not(:disabled):hover { background: #6d3dc5; transform: translateY(-1px); box-shadow: 0 6px 16px #8052dc26; }
+.resume-download:not(:disabled):hover { background: #ff632d; transform: translateY(-1px); box-shadow: 0 6px 16px #f04f1626; }
 .resume-download:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 .resume-download:disabled { cursor: not-allowed; opacity: 1; }
 @media (prefers-reduced-motion: reduce) { .resume-download { transition: none; } }
