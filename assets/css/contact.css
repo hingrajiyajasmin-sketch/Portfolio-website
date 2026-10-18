@@ -11,7 +11,7 @@
 .contact-portrait { position: relative; isolation: isolate; margin: 0; padding-top: 55px; }
 .contact-portrait::before { content: ""; position: absolute; z-index: -1; inset: 20% 0 0; background: radial-gradient(ellipse, #ece6fa 0%, #f4effa88 42%, transparent 70%); }
 .contact-portrait img { display: block; width: 100%; height: auto; max-height: 610px; object-fit: contain; }
-.contact-portrait figcaption { position: absolute; top: 40px; right: -40px; color: #9574cf; font-size: 23px; line-height: 1.35; font-style: italic; text-align: center; transform: rotate(-8deg); }
+.contact-portrait figcaption { position: absolute; top: 40px; right: -40px; color: var(--accent); font-size: 23px; line-height: 1.35; font-style: italic; text-align: center; transform: rotate(-8deg); }
 .contact-start { padding-block: 90px; border-top: 1px solid #eae3db; }
 .contact-start-heading { max-width: 540px; }
 .contact-start-heading h2 { margin: 0 0 20px; font-size: clamp(32px, 3.3vw, 46px); line-height: 1.18; letter-spacing: -.04em; }
@@ -36,7 +36,8 @@
   .contact-hero { padding-block: 40px; }
   .contact-hero-layout { grid-template-columns: 1fr; gap: 40px; }
   .contact-intro h1 { font-size: clamp(38px, 8vw, 54px); }
-  .contact-portrait { width: min(400px, 100%); justify-self: center; }
+  .contact-portrait { width: min(400px, 100%); justify-self: center; padding-top: 110px; }
+  .contact-portrait figcaption { top: 0; right: 0; }
   .contact-portrait img { max-height: 510px; }
   .contact-start { padding-block: 65px; }
 }
@@ -56,7 +57,7 @@
 .form-field input, .form-field select, .form-field textarea { width: 100%; min-width: 0; border: 1px solid #e7ded7; border-radius: 12px; padding: 14px 16px; background: #fdfbf9; color: var(--text); font: inherit; font-size: 16px; line-height: 1.6; transition: border-color 180ms ease, box-shadow 180ms ease; }
 .form-field textarea { resize: vertical; min-height: 165px; }
 .form-field input::placeholder, .form-field textarea::placeholder { color: #a1948c; }
-.form-field input:focus, .form-field select:focus, .form-field textarea:focus { outline: 2px solid #ec9877; outline-offset: 2px; border-color: #ec9877; }
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus { outline: 2px solid var(--accent); outline-offset: 2px; border-color: var(--accent); }
 .form-note { margin: 0 0 22px; color: #857a73; font-size: 14px; line-height: 1.7; }
 .form-status { margin: 22px 0 0; color: #665183; font-size: 14px; }
 .form-status textarea { width: 100%; min-height: 180px; margin-top: 12px; font: inherit; }
