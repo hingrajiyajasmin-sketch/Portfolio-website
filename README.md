@@ -78,7 +78,7 @@ Outputs go to the ignored `dist/standalone/` folder. Keep both exported pages to
 
 ## Profile and interactions
 
-The user supplied Jasmin Hingrajiya's bio, Senior UI/UX & Web Designer title, 7+ years of experience, Ahmedabad location, and [LinkedIn profile](https://www.linkedin.com/in/hingrajiya-jasmin-17271a164/). These details appear in the banner, About, experience summary, contact, and SEO metadata. No company names, employment dates, email address, or software proficiency were invented. The redesigned two-page resume is available from all header Resume links. Reference-style illustrations are decorative artwork.
+The user supplied Jasmin Hingrajiya's bio, Senior UI/UX & Web Designer title, 7+ years of experience, Ahmedabad location, and [LinkedIn profile](https://www.linkedin.com/in/hingrajiya-jasmin-17271a164/). These details appear in the banner, About, experience summary, contact, and SEO metadata. No company names, employment dates, email address, or software proficiency were invented. The redesigned one-page resume is available from all header Resume links. Reference-style illustrations are decorative artwork.
 
 The banner repeats four individual appearances followed by two diagonal pairs over 24 seconds, with a one-second gap between appearances. It pauses off screen and in hidden browser tabs. Animations respect reduced-motion preferences. Sections remain visible without JavaScript.
 
@@ -98,7 +98,7 @@ The Contact page sends enquiries to `hingrajiyajasmin@gmail.com` through FormSub
 
 Contact destinations are configured in `assets/data/contact.json`: `endpoint` is the native HTTPS submission URL, `ajaxEndpoint` enables in-page JSON POST submission, and `email` supplies the direct-email fallback. Run `python3 scripts/build.py` after changing them. The home contact button opens `contact.html#contact-form`.
 
-Headers use page links for Home, Portfolio, and Contact. Their Resume links download `assets/documents/jasmin-hingrajiya-resume.pdf` as `Jasmin-Hingrajiya-Resume.pdf` using the browser's native download behavior, including without JavaScript. The supplied CV uses a professional monochrome layout with readable DM Sans text and clear experience, skills, project, and education sections. Decorative statistics and promotional headings were removed at the owner's request; WebPixel Technologies remains excluded and no photo was added. To replace the PDF, keep the same path and run `python3 scripts/build.py`; if that file is absent, the generator disables the Resume button.
+Headers use page links for Home, Portfolio, and Contact. Their Resume links download `assets/documents/jasmin-hingrajiya-resume.pdf` as `Jasmin-Hingrajiya-Resume.pdf` using the browser's native download behavior, including without JavaScript. The supplied CV follows the owner's uploaded reference concept: a one-page layout with an orange first name, purple role title, compact contact row, experience timeline on the left, and skills/education sidebar on the right. It retains the owner's employment dates and project links. Decorative statistics remain removed, WebPixel Technologies remains excluded, and no photo was added. To replace the PDF, keep the same path and run `python3 scripts/build.py`; if that file is absent, the generator disables the Resume button.
 
 Project enquiry links open the Contact page at its form. Footer name links return Home; Back to top stays on the current page. Resume controls throughout the site use the same PDF when supplied.
 
