@@ -50,7 +50,7 @@ def main():
             for project in projects:
                 page.evaluate('project => document.body.replaceChildren(MobileProjectPresentation.renderCover(project))', project)
                 page.evaluate('Promise.all([...document.images].map(image => image.decode()))')
-                # Each interface is downsampled from the supplied PNG, never enlarged.
+                # Each interface is downsampled from its source, never enlarged.
                 geometry = page.locator('.mobile-hardware').evaluate_all('''devices => devices.map(device => ({
                     native: Number(device.dataset.nativeWidth),
                     rendered: device.querySelector('.mobile-screen-window').getBoundingClientRect().width,
@@ -61,7 +61,7 @@ def main():
                 output = ROOT / project['image']
                 output.parent.mkdir(parents=True, exist_ok=True)
                 page.locator('.mobile-cover').screenshot(path=str(output), animations='disabled')
-                print(f'Exported {project["id"]}: 1200 × 800, original screen pixels retained.')
+                print(f'Exported {project["id"]}: 1200 × 800, screen sources rendered without enlargement.')
             browser.close()
     finally:
         server.shutdown()

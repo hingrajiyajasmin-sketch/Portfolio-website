@@ -1542,7 +1542,7 @@
     "art": "mobile",
     "category": "Games",
     "image": "assets/images/projects/games/housie-game-cover.png",
-    "imageAlt": "Housie original game screens presented in landscape graphite smartphone frames.",
+    "imageAlt": "Housie game screens in landscape graphite smartphone frames, with an enhanced room-selection screen.",
     "originalDesign": "assets/images/projects/games/housie-game-original.png",
     "mobilePresentation": {
       "sourceFile": "Housie Game.png",
@@ -1569,7 +1569,14 @@
             812,
             375
           ],
-          "viewportHeight": 375
+          "viewportHeight": 375,
+          "enhancedSource": {
+            "image": "assets/images/projects/games/housie-lobby-enhanced.png",
+            "width": 1844,
+            "height": 853,
+            "sha256": "e87c096a668a8d97d9c1996e34461897577e29b4fcc59cbf2342b3fd3ef9ab15",
+            "method": "AI-assisted clarity and color enhancement; original supplied montage retained."
+          }
         },
         {
           "label": "Live housie board",

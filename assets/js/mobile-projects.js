@@ -1,10 +1,11 @@
 "use strict";
 
 (() => {
-  // The source PNG stays intact. These windows reveal its original screen pixels.
+  // Original montages stay intact; an optional enhanced screen can replace one crop.
   function device(project, screen, interactive = false) {
     const presentation = project.mobilePresentation;
     const [x, y, width, height] = screen.rect;
+    const enhancement = screen.enhancedSource;
     const hardware = document.createElement("div");
     hardware.className = `mobile-hardware mobile-hardware--${presentation.device}`;
     hardware.dataset.screenLabel = screen.label;
@@ -26,16 +27,16 @@
     crop.className = "mobile-screen-crop";
     crop.style.aspectRatio = `${width} / ${height}`;
     const image = document.createElement("img");
-    image.src = project.originalDesign;
-    image.alt = interactive ? `${project.brand}: ${screen.label}, original supplied interface.` : "";
-    image.width = presentation.sourceWidth;
-    image.height = presentation.sourceHeight;
+    image.src = enhancement ? enhancement.image : project.originalDesign;
+    image.alt = interactive ? `${project.brand}: ${screen.label}, ${enhancement ? "enhanced interface" : "original supplied interface"}.` : "";
+    image.width = enhancement ? enhancement.width : presentation.sourceWidth;
+    image.height = enhancement ? enhancement.height : presentation.sourceHeight;
     image.decoding = "async";
     image.loading = interactive ? "lazy" : "eager";
     image.draggable = false;
-    image.style.width = `${presentation.sourceWidth / width * 100}%`;
-    image.style.left = `${-x / width * 100}%`;
-    image.style.top = `${-y / height * 100}%`;
+    image.style.width = enhancement ? "100%" : `${presentation.sourceWidth / width * 100}%`;
+    image.style.left = enhancement ? "0" : `${-x / width * 100}%`;
+    image.style.top = enhancement ? "0" : `${-y / height * 100}%`;
     crop.append(image);
     window.append(crop);
     hardware.append(sideKeys, window);
@@ -84,7 +85,9 @@
     if (!project.mobilePresentation) return;
     const introduction = document.createElement("p");
     introduction.className = "mobile-study-note";
-    introduction.textContent = project.mobilePresentation.device === "landscape-phone"
+    introduction.textContent = project.mobilePresentation.screens.some(screen => screen.enhancedSource)
+      ? "Explore the refined lobby alongside the original gameplay and results screens. Swipe across on a small screen, or view the original supplied design."
+      : project.mobilePresentation.device === "landscape-phone"
       ? "Explore the original landscape game screens. Swipe across on a small screen, or open the original design for a larger view."
       : "Explore the original screens. Scroll inside a device for longer views; swipe across on a small screen.";
     const gallery = document.createElement("div");
