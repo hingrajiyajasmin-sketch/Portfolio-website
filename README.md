@@ -78,7 +78,7 @@ Outputs go to the ignored `dist/standalone/` folder. Keep both exported pages to
 
 ## Profile and interactions
 
-The user supplied Jasmin Hingrajiya's bio, Senior UI/UX & Web Designer title, 7+ years of experience, Ahmedabad location, and [LinkedIn profile](https://www.linkedin.com/in/hingrajiya-jasmin-17271a164/). These details appear in the banner, About, experience summary, contact, and SEO metadata. No company names, employment dates, email address, or software proficiency were invented. Resume remains a placeholder until a file is supplied. Reference-style illustrations are decorative artwork.
+The user supplied Jasmin Hingrajiya's bio, Senior UI/UX & Web Designer title, 7+ years of experience, Ahmedabad location, and [LinkedIn profile](https://www.linkedin.com/in/hingrajiya-jasmin-17271a164/). These details appear in the banner, About, experience summary, contact, and SEO metadata. No company names, employment dates, email address, or software proficiency were invented. The redesigned two-page resume is available from all header Resume links. Reference-style illustrations are decorative artwork.
 
 The banner repeats four individual appearances followed by two diagonal pairs over 24 seconds, with a one-second gap between appearances. It pauses off screen and in hidden browser tabs. Animations respect reduced-motion preferences. Sections remain visible without JavaScript.
 
@@ -87,7 +87,7 @@ The four process cards stay visible without tabs. Their progress bars fill seque
 ## Before publishing
 
 - Replace demo projects and confirm the software toolkit.
-- Add your resume and any public contact email you want displayed.
+- Review the supplied resume and public contact details before replacing them.
 - Replace `https://example.com/` in `sitemap.xml` with your domain; add the sitemap URL to `robots.txt`.
 - Add canonical URLs and absolute social preview image URLs after choosing a domain.
 - Deploy the repository root to a static host using HTTPS.
@@ -98,7 +98,7 @@ The Contact page sends enquiries to `hingrajiyajasmin@gmail.com` through FormSub
 
 Contact destinations are configured in `assets/data/contact.json`: `endpoint` is the native HTTPS submission URL, `ajaxEndpoint` enables in-page JSON POST submission, and `email` supplies the direct-email fallback. Run `python3 scripts/build.py` after changing them. The home contact button opens `contact.html#contact-form`.
 
-Headers use page links for Home, Portfolio, and Contact. Add your PDF as `assets/documents/jasmin-hingrajiya-resume.pdf`, then run `python3 scripts/build.py` to enable the header’s native download link on all pages. Until that file exists, the Resume button is disabled.
+Headers use page links for Home, Portfolio, and Contact. Their Resume links download `assets/documents/jasmin-hingrajiya-resume.pdf` as `Jasmin-Hingrajiya-Resume.pdf` using the browser's native download behavior, including without JavaScript. The supplied CV was redesigned to match the site's orange and DM Sans style, with WebPixel Technologies removed and no photo added. To replace the PDF, keep the same path and run `python3 scripts/build.py`; if that file is absent, the generator disables the Resume button.
 
 Project enquiry links open the Contact page at its form. Footer name links return Home; Back to top stays on the current page. Resume controls throughout the site use the same PDF when supplied.
 
