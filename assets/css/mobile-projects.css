@@ -1,0 +1,102 @@
+/* Native source pixels in front-facing graphite device frames. */
+.mobile-hardware {
+  position: relative;
+  isolation: isolate;
+  flex: 0 0 auto;
+  width: 225px;
+  padding: 9px;
+  border: 1px solid #83868a;
+  border-radius: 34px;
+  background: linear-gradient(110deg, #e5e5e3 0%, #51545a 2%, #17191c 5%, #090a0c 48%, #26292d 95%, #a6a7a9 99%, #35373b 100%);
+  box-shadow: 0 2px 2px #ffffff91 inset, 0 -2px 2px #000000b3 inset, 0 22px 34px -15px #16222059, 0 3px 6px #00000033;
+}
+
+.mobile-hardware::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 42%;
+  width: 16%;
+  height: 2px;
+  border-radius: 2px;
+  background: #111316;
+  box-shadow: 0 1px 0 #9da0a350;
+}
+
+.mobile-hardware-keys::before, .mobile-hardware-keys::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #777b80, #c8c9cb, #34373c);
+}
+
+.mobile-hardware-keys::before { left: -3px; top: 23%; height: 12%; }
+.mobile-hardware-keys::after { right: -3px; top: 30%; height: 10%; }
+.mobile-screen-window { position: relative; isolation: isolate; overflow: hidden; width: 100%; border-radius: 25px; background: #090a0c; }
+.mobile-screen-crop { position: relative; width: 100%; overflow: hidden; }
+.mobile-screen-crop > img { position: absolute; display: block; max-width: none; height: auto; margin: 0; border: 0; border-radius: 0; }
+.mobile-screen-window.is-scrollable { overflow-y: auto; overscroll-behavior: contain; scrollbar-width: none; }
+.mobile-screen-window.is-scrollable::-webkit-scrollbar { display: none; }
+.mobile-screen-window:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+.mobile-hardware--tablet { width: 450px; padding: 12px; border-radius: 26px; }
+.mobile-hardware--tablet .mobile-screen-window { border-radius: 15px; }
+.mobile-hardware--tablet::after { left: 4px; top: 48%; width: 4px; height: 4px; border-radius: 50%; }
+
+/* Exported at a native 1200 × 800. Hardware is rendered, interfaces are not redrawn. */
+.mobile-export-page { margin: 0; width: 1200px; background: #fff; }
+.mobile-cover {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: 1200px;
+  height: 800px;
+  color: var(--app-ink);
+  background: radial-gradient(ellipse at 50% 72%, #ffffff96, transparent 62%), var(--app-background);
+  font-family: var(--font-sans, "DM Sans", Arial, sans-serif);
+}
+
+.mobile-cover::before { content: ""; position: absolute; z-index: -1; width: 900px; height: 900px; left: 150px; top: 260px; border: 1px solid #ffffff70; border-radius: 50%; }
+.mobile-cover-header { position: relative; padding: 34px 52px 0; }
+.mobile-cover-brand { margin: 0; font-size: 23px; line-height: 1.25; font-weight: 700; letter-spacing: -.8px; }
+.mobile-cover-category { margin: 7px 0 0; font-size: 11px; line-height: 1.4; font-weight: 600; letter-spacing: 1.7px; text-transform: uppercase; opacity: .72; }
+.mobile-cover-header h1 { max-width: 980px; margin: 18px 0 0; font-size: 37px; line-height: 1.15; font-weight: 600; letter-spacing: -1.2px; }
+.mobile-cover-number { position: absolute; right: 52px; top: 42px; font-size: 10px; font-weight: 600; line-height: 1.5; letter-spacing: 2px; opacity: .65; }
+.mobile-cover-devices { position: absolute; top: 200px; bottom: 58px; left: 60px; right: 60px; display: flex; justify-content: center; align-items: flex-start; gap: 54px; }
+.mobile-cover-devices > .mobile-hardware { margin-top: 28px; }
+.mobile-cover-devices[data-device-count="3"] > .mobile-hardware:nth-child(2) { width: 245px; margin-top: 0; z-index: 2; }
+.mobile-cover-devices[data-device-count="2"] { gap: 94px; }
+.mobile-cover-devices[data-device-count="2"] > .mobile-hardware { width: 245px; margin-top: 12px; }
+.mobile-cover-devices[data-device-count="2"] > .mobile-hardware:nth-child(2) { margin-top: 0; }
+.mobile-cover-footer { position: absolute; left: 52px; right: 52px; bottom: 28px; display: flex; justify-content: center; gap: 26px; font-size: 11px; line-height: 1.5; font-weight: 500; letter-spacing: .2px; }
+.mobile-cover-footer span + span::before { content: "·"; margin-right: 26px; opacity: .5; }
+.mobile-cover--tablet .mobile-cover-devices { top: 250px; align-items: center; gap: 42px; }
+.mobile-cover--tablet .mobile-cover-devices > .mobile-hardware { width: 450px; margin-top: 30px; }
+.mobile-cover--tablet .mobile-cover-devices > .mobile-hardware:nth-child(2) { width: 480px; margin-top: -30px; }
+
+/* The gallery uses the finished lossless artwork; no hover zoom on interface text. */
+.catalog-art.art-mobile { aspect-ratio: 3 / 2; background: #f3f3f0; }
+.art-mobile .catalog-image { object-fit: contain; }
+.art-mobile .catalog-demo { display: none; }
+.catalog-card:hover .art-mobile .catalog-image { transform: none; }
+
+/* Every supplied screen remains available in the project detail. */
+.mobile-study { margin: 24px 0 32px; padding: 22px; border: 1px solid var(--border); border-radius: 18px; background: #f6f6f3; }
+.case-study-dialog .mobile-study-note { margin: 0 0 20px; color: #626360; font-size: 13px; line-height: 1.6; }
+.mobile-study-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); align-items: start; gap: 28px 20px; padding: 6px 4px 24px; }
+.mobile-study-screen { min-width: 0; margin: 0; }
+.mobile-study-screen figcaption { min-height: 40px; margin-bottom: 12px; color: #535552; font-size: 12px; line-height: 1.5; }
+.mobile-study .mobile-hardware { width: min(100%, 225px, calc(var(--native-screen-width) * .5 + 16px)); margin-inline: auto; padding: 7px; border-radius: 29px; }
+.mobile-study .mobile-screen-window { border-radius: 22px; }
+.mobile-study[data-device="tablet"] .mobile-study-gallery { grid-template-columns: 1fr; }
+.mobile-study .mobile-hardware--tablet { width: min(100%, 620px, calc(var(--native-screen-width) * .5 + 26px)); padding: 12px; border-radius: 26px; }
+.mobile-study .mobile-hardware--tablet .mobile-screen-window { border-radius: 15px; }
+.mobile-study-gallery:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; border-radius: 8px; }
+
+@media (max-width: 560px) {
+  .mobile-study { margin-inline: -6px; padding: 18px 12px; }
+  .mobile-study-gallery { display: flex; gap: 28px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; padding: 6px 8px 24px; }
+  .mobile-study-screen { flex: 0 0 min(225px, 100%); scroll-snap-align: center; }
+  .mobile-study[data-device="tablet"] .mobile-study-screen { flex-basis: 100%; }
+}

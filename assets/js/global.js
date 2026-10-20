@@ -49,6 +49,7 @@
       if (!button) return;
       const project = projects.get(button.dataset.project);
       if (!project) return;
+      dialog.dataset.projectType = project.mobilePresentation ? "mobile" : "website";
 
       Object.entries(fields).forEach(([key, element]) => {
         element.textContent = project[key];
@@ -84,7 +85,8 @@
       original.hidden = !project.originalDesign;
       if (project.originalDesign) {
         original.href = project.originalDesign;
-        original.setAttribute("aria-label", `View ${project.brand} full-page design`);
+        original.textContent = project.mobilePresentation ? "View original app screens ↗" : "View full-page design ↗";
+        original.setAttribute("aria-label", `View ${project.brand} original design`);
       } else original.removeAttribute("href");
       const website = document.getElementById("case-study-website");
       website.hidden = !project.website;
@@ -96,7 +98,7 @@
         website.removeAttribute("aria-label");
       }
       dialog.querySelector(".sample-note").hidden = project.sample === false;
-      document.getElementById("case-study-device-preview").hidden = !project.image;
+      document.getElementById("case-study-device-preview").hidden = !project.image || Boolean(project.mobilePresentation);
       dialog.showModal();
       document.dispatchEvent(new CustomEvent("project-preview-open", { detail: { project } }));
     });

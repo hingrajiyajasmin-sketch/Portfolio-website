@@ -16,6 +16,9 @@ def device_markup(project, cover_class='catalog-image', cover_alt=''):
 
 def artwork(project):
     brand = escape(project['brand'])
+    if project.get('mobilePresentation'):
+        return ('<img class="catalog-image" src="' + escape(project['image'], quote=True) +
+                '" alt="" width="1200" height="800" loading="lazy" decoding="async">')
     if project.get('deviceScreen'):
         return device_markup(project)
     if project.get('image'):
@@ -48,7 +51,9 @@ def render_catalog(html, root):
     filters = ['<button class="portfolio-filter is-selected" type="button" aria-pressed="true" data-category="all">All</button>']
     for category in categories:
         label = escape(category, quote=True)
-        filters.append(f'<button class="portfolio-filter" type="button" aria-pressed="false" data-category="{label}">{label}</button>')
+        count = sum(project['category'] == category for project in projects)
+        count_label = f' <span class="portfolio-filter-count">{count}</span>' if count else ''
+        filters.append(f'<button class="portfolio-filter" type="button" aria-pressed="false" data-category="{label}">{label}{count_label}</button>')
     cards = []
     for project in projects:
         e = lambda key: escape(str(project[key]), quote=True)

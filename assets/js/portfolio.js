@@ -29,7 +29,10 @@
     }
     filters.forEach(button => button.addEventListener("click", () => {
       activeCategory = button.dataset.category;
-      limit = pageSize;
+      // All supplied app projects are immediately discoverable in their own tab.
+      limit = activeCategory === "Mobile App"
+        ? cards.filter(card => card.dataset.category === activeCategory).length
+        : pageSize;
       updateCollection();
     }));
     more.addEventListener("click", () => {

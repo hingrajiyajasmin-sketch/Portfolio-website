@@ -1,4 +1,4 @@
-# Eleven-project portfolio collection
+# Website-design portfolio collection
 
 ## Source material
 
@@ -22,7 +22,7 @@ The owner supplied `tinified (1).zip` containing eleven complete website-design 
 
 `assets/images/projects/desktop-monitor.webp` is a shared, lossless WebP studio photograph generated for this presentation. The front-facing desktop display uses the same geometry, lighting, and scale across all eleven projects. Each `<id>-original.jpg` is a byte-for-byte copy of its supplied JPEG. The browser displays that actual design inside the screen; website text is never generated or perspective-warped. The full-page link opens that same source image. Sharpness remains limited by the resolution and compression of the supplied originals.
 
-The complete collection replaces the earlier demo catalog. The home page features DevsTree, Mint & Oak, and EasyProps. Other portfolio tabs remain available but show an empty state until matching mobile-app, development, or logo work is supplied.
+The website collection replaces the earlier demo catalog. The home page features DevsTree, Mint & Oak, and EasyProps. Thirteen additional app projects appear in the Mobile App tab; see [Mobile app presentation](mobile-app-presentation.md). Development and logo tabs remain empty until matching work is supplied.
 
 ## Content and layout
 

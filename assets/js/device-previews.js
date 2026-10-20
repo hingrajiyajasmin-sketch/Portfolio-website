@@ -100,6 +100,7 @@
   document.addEventListener("project-preview-open", ({detail}) => {
     const host = document.getElementById("case-study-device-preview");
     if (host) register(host, detail.project);
+    updateControls();
     updateAll();
   });
   dialog?.addEventListener("close", updateAll);
@@ -108,7 +109,7 @@
   function updateControls() {
     document.querySelectorAll(".device-preview-toolbar").forEach(toolbar => toolbar.hidden = reduced.matches);
     document.querySelectorAll(".device-motion-toggle").forEach(button => {
-      button.hidden = reduced.matches;
+      button.hidden = reduced.matches || (button.closest("dialog") && dialog?.dataset.projectType === "mobile");
       button.setAttribute("aria-label", paused ? "Play scrolling previews" : "Pause scrolling previews");
       button.setAttribute("aria-pressed", String(paused));
       button.querySelector("span").textContent = paused ? "Play previews" : "Pause previews";

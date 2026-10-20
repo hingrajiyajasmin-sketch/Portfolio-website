@@ -518,5 +518,936 @@
       "sourceWidth": 1248,
       "sourceHeight": 6880
     }
+  },
+  {
+    "id": "box-booking",
+    "brand": "Box Booking",
+    "title": "Box Booking — More play. Less planning.",
+    "industry": "Sports & Recreation",
+    "discipline": "Mobile app design",
+    "summary": "A venue-booking experience that connects nearby sports grounds, transparent rates, and a clear booking confirmation.",
+    "idea": "Help players find a suitable venue, compare the available spaces, and understand exactly what they have booked.",
+    "direction": "A dark interface, vivid lime actions, venue photography, and a ticket-style confirmation connect discovery with a recognisable booking flow.",
+    "outcome": "Venue discovery, rate comparison, and a clear booking receipt.",
+    "scope": [
+      "Venue Discovery",
+      "Booking Flow",
+      "Confirmation Design"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/box-booking-cover.png",
+    "imageAlt": "Box Booking original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/box-booking-original.png",
+    "mobilePresentation": {
+      "sourceFile": "BoxBookiing.png",
+      "sourceWidth": 1433,
+      "sourceHeight": 1367,
+      "sourceSha256": "1341482e7c8372033b32c474fed9dc3300f86bd5ae7a7a08232e77d62c3e46d9",
+      "device": "phone",
+      "background": "#e9f0de",
+      "ink": "#263c20",
+      "headline": "More play. Less planning.",
+      "index": 1,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Find a venue",
+          "rect": [
+            100,
+            100,
+            375,
+            1035
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Explore the arena",
+          "rect": [
+            529,
+            100,
+            375,
+            1167
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Booking confirmation",
+          "rect": [
+            958,
+            100,
+            375,
+            812
+          ],
+          "viewportHeight": 812
+        }
+      ]
+    }
+  },
+  {
+    "id": "bucket",
+    "brand": "Bucket",
+    "title": "Bucket — Good places. Great plans.",
+    "industry": "Travel & Local Discovery",
+    "discipline": "Mobile app design",
+    "summary": "A place-saving app for collecting discoveries, organising personal buckets, and sharing plans with friends.",
+    "idea": "Turn scattered recommendations into useful collections that people can return to when they are ready to explore.",
+    "direction": "Warm cream surfaces, bright location markers, editorial photography, and clear visit states make discovery feel inviting and organised.",
+    "outcome": "Saved-place organisation, nearby discovery, and useful place details.",
+    "scope": [
+      "Place Discovery",
+      "Saved Collections",
+      "Place Details"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/bucket-cover.png",
+    "imageAlt": "Bucket original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/bucket-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Bucket List App.png",
+      "sourceWidth": 1584,
+      "sourceHeight": 1493,
+      "sourceSha256": "fd77e4df246343cb15216ee97567452f41c2f16ebc4e8816bbd5ee64a993de48",
+      "device": "phone",
+      "background": "#f8e9df",
+      "ink": "#8b3e27",
+      "headline": "Good places. Great plans.",
+      "index": 2,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Welcome to Bucket",
+          "rect": [
+            100,
+            104,
+            402,
+            874
+          ],
+          "viewportHeight": 870
+        },
+        {
+          "label": "Collections and nearby places",
+          "rect": [
+            591,
+            100,
+            402,
+            1293
+          ],
+          "viewportHeight": 870
+        },
+        {
+          "label": "Place details",
+          "rect": [
+            1082,
+            104,
+            402,
+            920
+          ],
+          "viewportHeight": 870
+        }
+      ]
+    }
+  },
+  {
+    "id": "famlee",
+    "brand": "Famlee",
+    "title": "Famlee — Little moments. Kept close.",
+    "industry": "Social & Shared Memories",
+    "discipline": "Mobile app design",
+    "summary": "A photo-led social experience for browsing memories by date and opening the stories behind a shared moment.",
+    "idea": "Give personal photos and their context a clear home, with an easy route from a dated memory to its full post.",
+    "direction": "A calm off-white canvas, bold pink creation controls, a date-based timeline, and large photographs keep people and their memories at the centre.",
+    "outcome": "A visible memory timeline, expressive photo browsing, and focused post details.",
+    "scope": [
+      "Memory Timeline",
+      "Photo Stories",
+      "Social Interactions"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/famlee-cover.png",
+    "imageAlt": "Famlee original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/famlee-original.png",
+    "mobilePresentation": {
+      "sourceFile": "famlee.png",
+      "sourceWidth": 1031,
+      "sourceHeight": 1044,
+      "sourceSha256": "1773f645d3e3c5ea7eac7ab85bbf2704887d182a15010cbc34a5c1b8a88b2bd8",
+      "device": "phone",
+      "background": "#f4e6ec",
+      "ink": "#7c334d",
+      "headline": "Little moments. Kept close.",
+      "index": 3,
+      "coverScreens": [
+        0,
+        1
+      ],
+      "screens": [
+        {
+          "label": "Memory timeline",
+          "rect": [
+            100,
+            100,
+            390,
+            844
+          ],
+          "viewportHeight": 844
+        },
+        {
+          "label": "A shared moment",
+          "rect": [
+            541,
+            100,
+            390,
+            844
+          ],
+          "viewportHeight": 844
+        }
+      ]
+    }
+  },
+  {
+    "id": "hello-date",
+    "brand": "hello.date",
+    "title": "hello.date — A first hello. A new possibility.",
+    "industry": "Dating & Social Discovery",
+    "discipline": "Mobile app design",
+    "summary": "A dating interface that combines profile discovery, expressive interaction controls, and clearly grouped account preferences.",
+    "idea": "Make the transition from a first impression to a possible connection clear, while giving people visible control over their preferences.",
+    "direction": "Dark surfaces, vivid pink accents, immersive profile photography, and distinct settings groups balance personality with interface structure.",
+    "outcome": "Profile discovery, recognisable connection actions, and clear preference controls.",
+    "scope": [
+      "Onboarding",
+      "Profile Discovery",
+      "Account Preferences"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/hello-date-cover.png",
+    "imageAlt": "hello.date original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/hello-date-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Hello.Date.png",
+      "sourceWidth": 1425,
+      "sourceHeight": 2665,
+      "sourceSha256": "2a3ddaada5394cbf3daa400b262b8fc8272d0e90d22cfb3e016f35063e3eca39",
+      "device": "phone",
+      "background": "#f6e2eb",
+      "ink": "#7d2349",
+      "headline": "A first hello. A new possibility.",
+      "index": 4,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "A first hello",
+          "rect": [
+            100,
+            100,
+            375,
+            812
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Discover profiles",
+          "rect": [
+            524,
+            100,
+            375,
+            812
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Preferences and settings",
+          "rect": [
+            950,
+            100,
+            375,
+            2465
+          ],
+          "viewportHeight": 812
+        }
+      ]
+    }
+  },
+  {
+    "id": "homeworth",
+    "brand": "HomeWorth",
+    "title": "HomeWorth — Property cases. Clearly in view.",
+    "industry": "Property Operations",
+    "discipline": "Tablet app design",
+    "summary": "A tablet-oriented property workspace for finding cases, monitoring submission stages, and opening the next operational task.",
+    "idea": "Help a property team scan a busy workload and distinguish today’s work, overdue items, and cases that need further attention.",
+    "direction": "A blue-and-white interface, grouped workload counters, familiar search, and colour-coded status cards organise a dense operational view.",
+    "outcome": "Workload visibility, case status scanning, and clear next actions.",
+    "scope": [
+      "Tablet Workspace",
+      "Case Management",
+      "Status Hierarchy"
+    ],
+    "sample": false,
+    "label": "Tablet app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/homeworth-cover.png",
+    "imageAlt": "HomeWorth original app screens presented in tablet frames.",
+    "originalDesign": "assets/images/projects/mobile/homeworth-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Home Worth.png",
+      "sourceWidth": 2660,
+      "sourceHeight": 1464,
+      "sourceSha256": "bd1210c215510becabd8713e3f36c56299901efee159113fd63b4ba8fd3970af",
+      "device": "tablet",
+      "background": "#e3edf5",
+      "ink": "#164663",
+      "headline": "Property cases. Clearly in view.",
+      "index": 5,
+      "coverScreens": [
+        0,
+        1
+      ],
+      "screens": [
+        {
+          "label": "HomeWorth launch",
+          "rect": [
+            100,
+            100,
+            1180,
+            820
+          ],
+          "viewportHeight": 820
+        },
+        {
+          "label": "Property case workspace",
+          "rect": [
+            1380,
+            100,
+            1180,
+            1264
+          ],
+          "viewportHeight": 820
+        }
+      ]
+    }
+  },
+  {
+    "id": "hyppe",
+    "brand": "Hyppe",
+    "title": "Hyppe — Great brands. The right creators.",
+    "industry": "Creator Economy",
+    "discipline": "Mobile app design",
+    "summary": "A creator-collaboration interface for discovering campaigns, browsing opportunities, and exploring model bookings.",
+    "idea": "Make varied brand opportunities easier to browse and give creators a clear way to recognise relevant collaborations.",
+    "direction": "Charcoal surfaces, warm gold accents, generous editorial type, and image-led campaign cards give the marketplace a considered visual identity.",
+    "outcome": "Opportunity discovery, campaign categories, and model-booking presentation.",
+    "scope": [
+      "Creator Marketplace",
+      "Campaign Discovery",
+      "Booking Categories"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/hyppe-cover.png",
+    "imageAlt": "Hyppe original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/hyppe-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Hyppe.png",
+      "sourceWidth": 1604,
+      "sourceHeight": 1126,
+      "sourceSha256": "a35b188049443e9c1761e0c3771ffb643d8556e078c5832d05fcbec217b60e3a",
+      "device": "phone",
+      "background": "#f1e8d6",
+      "ink": "#725321",
+      "headline": "Great brands. The right creators.",
+      "index": 6,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Creator introduction",
+          "rect": [
+            100,
+            100,
+            428,
+            926
+          ],
+          "viewportHeight": 926
+        },
+        {
+          "label": "Discover opportunities",
+          "rect": [
+            588,
+            100,
+            428,
+            926
+          ],
+          "viewportHeight": 926
+        },
+        {
+          "label": "Model bookings",
+          "rect": [
+            1076,
+            100,
+            428,
+            926
+          ],
+          "viewportHeight": 926
+        }
+      ]
+    }
+  },
+  {
+    "id": "klerdy",
+    "brand": "Klerdy",
+    "title": "Klerdy — Market signals. A clearer view.",
+    "industry": "Prediction Markets",
+    "discipline": "Mobile app design",
+    "summary": "A prediction-market interface that brings market browsing, probability displays, and a visible leaderboard into one dark visual system.",
+    "idea": "Give a dense market experience a clear hierarchy so people can distinguish categories, compare displayed probabilities, and explore rankings.",
+    "direction": "Electric green highlights, compact market cards, contrasting probability graphics, and a character-led introduction create a distinctive product language.",
+    "outcome": "Market scanning, probability hierarchy, and leaderboard presentation.",
+    "scope": [
+      "Market Browsing",
+      "Data Visualisation",
+      "Leaderboards"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/klerdy-cover.png",
+    "imageAlt": "Klerdy original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/klerdy-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Klerdy.png",
+      "sourceWidth": 1439,
+      "sourceHeight": 1450,
+      "sourceSha256": "b7bf2eb7b719250317ab669eb9330c41c10f983c5aa266daa9017efb7ceb6c03",
+      "device": "phone",
+      "background": "#e2eee3",
+      "ink": "#244d32",
+      "headline": "Market signals. A clearer view.",
+      "index": 7,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Welcome to Klerdy",
+          "rect": [
+            100,
+            100,
+            375,
+            812
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Browse markets",
+          "rect": [
+            532,
+            100,
+            375,
+            1250
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Global leaderboard",
+          "rect": [
+            964,
+            100,
+            375,
+            1109
+          ],
+          "viewportHeight": 812
+        }
+      ]
+    }
+  },
+  {
+    "id": "klub",
+    "brand": "Klub",
+    "title": "Klub — Find the night. Bring your people.",
+    "industry": "Nightlife & Events",
+    "discipline": "Mobile app design",
+    "summary": "A nightlife-booking journey that connects venue discovery, guest invitations, and a clear invitation confirmation.",
+    "idea": "Help a group move from choosing a place to inviting friends and understanding the next booking step.",
+    "direction": "Immersive nightlife photography, a dark map, and red-to-violet actions connect the atmosphere of an evening out with a practical group flow.",
+    "outcome": "Map-led discovery, guest selection, and invitation confirmation.",
+    "scope": [
+      "Venue Maps",
+      "Guest Invitations",
+      "Booking Journey"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/klub-cover.png",
+    "imageAlt": "Klub original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/klub-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Klub.png",
+      "sourceWidth": 1862,
+      "sourceHeight": 1012,
+      "sourceSha256": "a942abf4261d83d16ad567513253f46d8158823d7884e8d135a415eb40950bb4",
+      "device": "phone",
+      "background": "#eee4f0",
+      "ink": "#54345c",
+      "headline": "Find the night. Bring your people.",
+      "index": 8,
+      "coverScreens": [
+        0,
+        1,
+        3
+      ],
+      "screens": [
+        {
+          "label": "Start a night out",
+          "rect": [
+            100,
+            100,
+            375,
+            812
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Find a venue",
+          "rect": [
+            529,
+            100,
+            375,
+            812
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Invite friends",
+          "rect": [
+            958,
+            100,
+            375,
+            811
+          ],
+          "viewportHeight": 811
+        },
+        {
+          "label": "Invitations sent",
+          "rect": [
+            1387,
+            100,
+            375,
+            812
+          ],
+          "viewportHeight": 812
+        }
+      ]
+    }
+  },
+  {
+    "id": "mitgo",
+    "brand": "MitGo",
+    "title": "MitGo — Shared journeys. Open roads.",
+    "industry": "Shared Mobility",
+    "discipline": "Mobile app design",
+    "summary": "A shared-ride experience with distinct passenger and driver views, route discovery, and a visible booking-request overview.",
+    "idea": "Make it easy to recognise the two sides of a shared journey: finding a ride and offering seats on a planned route.",
+    "direction": "Swiss landscape photography, deep blue surfaces, and bright teal actions frame route inputs, ride cards, and driver responsibilities.",
+    "outcome": "Passenger search, driver publishing, and booking-request visibility.",
+    "scope": [
+      "Passenger Journey",
+      "Driver Dashboard",
+      "Route Discovery"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/mitgo-cover.png",
+    "imageAlt": "MitGo original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/mitgo-original.png",
+    "mobilePresentation": {
+      "sourceFile": "MitGo.png",
+      "sourceWidth": 1490,
+      "sourceHeight": 1333,
+      "sourceSha256": "f39bdfb44d6e0546e3d6087c951b4cbe7ab535d2f97e51a0747f75ff0c66ad66",
+      "device": "phone",
+      "background": "#e0eeed",
+      "ink": "#20534e",
+      "headline": "Shared journeys. Open roads.",
+      "index": 9,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Welcome to MitGo",
+          "rect": [
+            100,
+            100,
+            390,
+            844
+          ],
+          "viewportHeight": 844
+        },
+        {
+          "label": "Find a shared ride",
+          "rect": [
+            545,
+            100,
+            390,
+            955
+          ],
+          "viewportHeight": 844
+        },
+        {
+          "label": "Manage offered rides",
+          "rect": [
+            1000,
+            100,
+            390,
+            1133
+          ],
+          "viewportHeight": 844
+        }
+      ]
+    }
+  },
+  {
+    "id": "pwr",
+    "brand": "PWR",
+    "title": "PWR — Your next step. In focus.",
+    "industry": "Recruitment & Training",
+    "discipline": "Mobile app design",
+    "summary": "A recruitment and verification portal that makes application stages, training progress, and achievement systems visible.",
+    "idea": "Help candidates understand a multi-stage recruitment journey and recognise the tasks that need their attention next.",
+    "direction": "Dark panels, bright green progress indicators, a circular journey overview, and achievement cards give a complex process a consistent visual hierarchy.",
+    "outcome": "Application progress, next-step visibility, and training navigation.",
+    "scope": [
+      "Candidate Journey",
+      "Progress Dashboards",
+      "Training Experience"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/pwr-cover.png",
+    "imageAlt": "PWR original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/pwr-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Powerbak.png",
+      "sourceWidth": 1865,
+      "sourceHeight": 1884,
+      "sourceSha256": "34838995806784db3d4a79f71ae62df6c8f773ef7dadf97213451b69dcb04612",
+      "device": "phone",
+      "background": "#e4eee7",
+      "ink": "#285040",
+      "headline": "Your next step. In focus.",
+      "index": 10,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Start the journey",
+          "rect": [
+            100,
+            100,
+            390,
+            844
+          ],
+          "viewportHeight": 844
+        },
+        {
+          "label": "Candidate progress",
+          "rect": [
+            535,
+            100,
+            375,
+            1684
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Leaderboard",
+          "rect": [
+            955,
+            100,
+            390,
+            1238
+          ],
+          "viewportHeight": 844
+        },
+        {
+          "label": "Training and challenges",
+          "rect": [
+            1390,
+            100,
+            375,
+            1002
+          ],
+          "viewportHeight": 812
+        }
+      ]
+    }
+  },
+  {
+    "id": "salam-chat",
+    "brand": "Salam Chat",
+    "title": "Salam Chat — One community. More possibilities.",
+    "industry": "Social Commerce",
+    "discipline": "Mobile app design",
+    "summary": "A community-focused interface connecting a social feed, marketplace browsing, a wallet overview, and a creator profile.",
+    "idea": "Give several everyday product areas a recognisable shared structure while keeping each screen’s most useful actions easy to find.",
+    "direction": "Soft green surfaces, distinct card groups, large imagery, and consistent navigation connect social expression with commerce and account information.",
+    "outcome": "A coherent multi-feature experience across community, shopping, wallet, and profile screens.",
+    "scope": [
+      "Community Feed",
+      "Marketplace UI",
+      "Wallet & Profile"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/salam-chat-cover.png",
+    "imageAlt": "Salam Chat original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/salam-chat-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Salam Chat.png",
+      "sourceWidth": 1853,
+      "sourceHeight": 2043,
+      "sourceSha256": "cf8c17115debf2565e626145d176f50007506f7a706786dd3c137bd30560aeb0",
+      "device": "phone",
+      "background": "#e5f0e5",
+      "ink": "#315a38",
+      "headline": "One community. More possibilities.",
+      "index": 11,
+      "coverScreens": [
+        0,
+        2,
+        3
+      ],
+      "screens": [
+        {
+          "label": "Community feed",
+          "rect": [
+            100,
+            100,
+            375,
+            1843
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Explore the marketplace",
+          "rect": [
+            526,
+            100,
+            375,
+            1014
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Wallet overview",
+          "rect": [
+            952,
+            100,
+            375,
+            1092
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Creator profile",
+          "rect": [
+            1378,
+            100,
+            375,
+            954
+          ],
+          "viewportHeight": 812
+        }
+      ]
+    }
+  },
+  {
+    "id": "trustvault",
+    "brand": "Trustvault",
+    "title": "Trustvault — Your assets. A clearer outlook.",
+    "industry": "Digital Assets & Wallets",
+    "discipline": "Mobile app design",
+    "summary": "A digital-asset wallet interface with visible wallet options, token balances, and grouped account settings.",
+    "idea": "Give a technically dense product a clear starting point and an organised way to browse assets and manage account preferences.",
+    "direction": "Black surfaces, sharp lime accents, and carefully grouped token rows create a focused interface with clear primary actions.",
+    "outcome": "Wallet-option clarity, asset scanning, and organised settings.",
+    "scope": [
+      "Wallet Onboarding",
+      "Token Dashboard",
+      "Account Settings"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/trustvault-cover.png",
+    "imageAlt": "Trustvault original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/trustvault-original.png",
+    "mobilePresentation": {
+      "sourceFile": "trustvault.png",
+      "sourceWidth": 1461,
+      "sourceHeight": 1026,
+      "sourceSha256": "8e8a62a1269a14b9417d1780298eb6a3644c30437a8134c5437b358e4100644b",
+      "device": "phone",
+      "background": "#edf0da",
+      "ink": "#465125",
+      "headline": "Your assets. A clearer outlook.",
+      "index": 12,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Choose a wallet",
+          "rect": [
+            100,
+            114,
+            375,
+            812
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Token overview",
+          "rect": [
+            543,
+            100,
+            375,
+            826
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Wallet settings",
+          "rect": [
+            987,
+            107,
+            374,
+            812
+          ],
+          "viewportHeight": 809
+        }
+      ]
+    }
+  },
+  {
+    "id": "yomo",
+    "brand": "Yomo",
+    "title": "Yomo — Stay connected. Stay in control.",
+    "industry": "Telecom & Self Service",
+    "discipline": "Mobile app design",
+    "summary": "A telecom self-service experience for signing in, reviewing balances, and understanding bundle usage and history.",
+    "idea": "Make essential mobile-account information easy to scan and give people clear routes to recharge, review, and manage a plan.",
+    "direction": "Dark surfaces, green account highlights, separated balance cards, and a clear usage graphic organise practical everyday account tasks.",
+    "outcome": "Balance visibility, bundle usage, and straightforward recharge navigation.",
+    "scope": [
+      "Account Access",
+      "Balance Dashboard",
+      "Bundle Management"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/yomo-cover.png",
+    "imageAlt": "Yomo original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/yomo-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Yomo.png",
+      "sourceWidth": 1429,
+      "sourceHeight": 1455,
+      "sourceSha256": "1c728bcdc9e894eed674ea92dad5c300518bc925732c0275353ee7a69ddab1b0",
+      "device": "phone",
+      "background": "#e8eee0",
+      "ink": "#36552d",
+      "headline": "Stay connected. Stay in control.",
+      "index": 13,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Sign in to Yomo",
+          "rect": [
+            100,
+            100,
+            375,
+            820
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Balances and quick actions",
+          "rect": [
+            527,
+            100,
+            375,
+            1255
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Bundle usage and history",
+          "rect": [
+            954,
+            100,
+            375,
+            942
+          ],
+          "viewportHeight": 812
+        }
+      ]
+    }
   }
 ]
