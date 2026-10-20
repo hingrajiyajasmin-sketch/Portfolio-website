@@ -1,0 +1,30 @@
+/* Game covers retain the original UI and use the shared physical device renderer. */
+.mobile-cover--game {
+  background: radial-gradient(ellipse at 50% 76%, var(--app-glow, #b77d382b), transparent 64%), var(--app-background);
+}
+.mobile-cover--game::before { border-color: #ffffff12; }
+
+/* Housie was supplied in landscape. Keep its full native screen proportions. */
+.mobile-hardware--landscape-phone { width: 430px; padding: 10px 18px; border-radius: 28px; }
+.mobile-hardware--landscape-phone .mobile-screen-window { border-radius: 18px; }
+.mobile-hardware--landscape-phone::after { top: 43%; left: 5px; width: 2px; height: 14%; }
+.mobile-hardware--landscape-phone .mobile-hardware-keys::before { top: -3px; left: 24%; width: 10%; height: 3px; }
+.mobile-hardware--landscape-phone .mobile-hardware-keys::after { top: auto; right: 24%; bottom: -3px; width: 10%; height: 3px; }
+.mobile-cover--landscape-phone .mobile-cover-devices {
+  top: 194px;
+  bottom: 58px;
+  display: grid;
+  grid-template-columns: repeat(2, 430px);
+  grid-template-rows: 274px 208px;
+  align-content: start;
+  justify-content: center;
+  gap: 24px 40px;
+}
+.mobile-cover--landscape-phone .mobile-cover-devices > .mobile-hardware { width: 430px; margin: 0; }
+.mobile-cover--landscape-phone .mobile-cover-devices > .mobile-hardware:nth-child(2) { order: -1; grid-column: 1 / -1; justify-self: center; width: 570px; margin: 0; }
+.mobile-study[data-device="landscape-phone"] .mobile-study-gallery { grid-template-columns: 1fr; }
+.mobile-study .mobile-hardware--landscape-phone { width: min(100%, 620px, calc(var(--native-screen-width) * .5 + 30px)); padding: 8px 14px; border-radius: 26px; }
+.mobile-study .mobile-hardware--landscape-phone .mobile-screen-window { border-radius: 16px; }
+@media (max-width: 560px) {
+  .mobile-study[data-device="landscape-phone"] .mobile-study-screen { flex-basis: 100%; }
+}

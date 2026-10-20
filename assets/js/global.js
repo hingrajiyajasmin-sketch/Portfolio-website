@@ -85,7 +85,8 @@
       original.hidden = !project.originalDesign;
       if (project.originalDesign) {
         original.href = project.originalDesign;
-        original.textContent = project.mobilePresentation ? "View original app screens ↗" : "View full-page design ↗";
+        original.textContent = project.category === "Games" ? "View original game screens ↗"
+          : project.mobilePresentation ? "View original app screens ↗" : "View full-page design ↗";
         original.setAttribute("aria-label", `View ${project.brand} original design`);
       } else original.removeAttribute("href");
       const website = document.getElementById("case-study-website");

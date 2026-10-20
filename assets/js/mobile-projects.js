@@ -46,8 +46,10 @@
     const presentation = project.mobilePresentation;
     const cover = document.createElement("article");
     cover.className = `mobile-cover mobile-cover--${presentation.device}`;
+    cover.classList.toggle("mobile-cover--game", project.category === "Games");
     cover.style.setProperty("--app-background", presentation.background);
     cover.style.setProperty("--app-ink", presentation.ink);
+    if (presentation.glow) cover.style.setProperty("--app-glow", presentation.glow);
     const header = document.createElement("header");
     header.className = "mobile-cover-header";
     const brand = document.createElement("p");
@@ -60,7 +62,7 @@
     title.textContent = presentation.headline;
     const number = document.createElement("span");
     number.className = "mobile-cover-number";
-    number.textContent = `${String(presentation.index).padStart(2, "0")} / APP DESIGN`;
+    number.textContent = `${String(presentation.index).padStart(2, "0")} / ${project.category === "Games" ? "GAME UI" : "APP DESIGN"}`;
     header.append(brand, category, title, number);
     const devices = document.createElement("div");
     devices.className = "mobile-cover-devices";
@@ -82,11 +84,13 @@
     if (!project.mobilePresentation) return;
     const introduction = document.createElement("p");
     introduction.className = "mobile-study-note";
-    introduction.textContent = "Explore the original screens. Scroll inside a device for longer views; swipe across on a small screen.";
+    introduction.textContent = project.mobilePresentation.device === "landscape-phone"
+      ? "Explore the original landscape game screens. Swipe across on a small screen, or open the original design for a larger view."
+      : "Explore the original screens. Scroll inside a device for longer views; swipe across on a small screen.";
     const gallery = document.createElement("div");
     gallery.className = "mobile-study-gallery";
     gallery.setAttribute("role", "region");
-    gallery.setAttribute("aria-label", `${project.brand} app screens`);
+    gallery.setAttribute("aria-label", `${project.brand} ${project.category === "Games" ? "game" : "app"} screens`);
     gallery.tabIndex = 0;
     project.mobilePresentation.screens.forEach((screen, index) => {
       const figure = document.createElement("figure");

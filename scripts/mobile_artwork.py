@@ -1,4 +1,4 @@
-"""Export native app screens in device frames using the same renderer as the site.
+"""Export native app and game screens in device frames using the site's renderer.
 
 Requires the environment's Playwright and Chromium only when refreshing artwork.
 Normal development and scripts/build.py have no browser dependency.
@@ -21,9 +21,11 @@ class QuietHandler(SimpleHTTPRequestHandler):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--project', help='Export one project ID instead of all mobile projects.')
+    parser.add_argument('--category', choices=['Mobile App', 'Games'], help='Refresh artwork only in this category.')
     args = parser.parse_args()
     projects = [p for p in json.loads((ROOT / 'assets/data/portfolio-projects.json').read_text())
-                if p.get('mobilePresentation') and (not args.project or p['id'] == args.project)]
+                if p.get('mobilePresentation') and (not args.project or p['id'] == args.project)
+                and (not args.category or p['category'] == args.category)]
     if not projects:
         parser.error('No matching mobile projects.')
     from playwright.sync_api import sync_playwright
@@ -40,6 +42,7 @@ def main():
               <base href="http://127.0.0.1:{server.server_port}/">
               <link rel="stylesheet" href="assets/css/global.css">
               <link rel="stylesheet" href="assets/css/mobile-projects.css">
+              <link rel="stylesheet" href="assets/css/game-projects.css">
               <script src="assets/js/mobile-projects.js"></script>
               </head><body class="mobile-export-page"></body></html>''')
             page.wait_for_function('Boolean(window.MobileProjectPresentation)')

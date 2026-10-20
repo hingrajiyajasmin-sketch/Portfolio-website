@@ -1449,5 +1449,293 @@
         }
       ]
     }
+  },
+  {
+    "id": "bunny-trails",
+    "brand": "Bunny Trails",
+    "title": "Bunny Trails — A little care. A bigger adventure.",
+    "industry": "Casual & Character-led Games",
+    "discipline": "Mobile game UI design",
+    "summary": "A character-led casual-game interface that connects a welcoming lobby, pet-care actions, and a referral area through an expressive woodland world.",
+    "idea": "Give players a recognisable character to connect with and a clear visual route from starting a session to understanding the game’s care and progress screens.",
+    "direction": "Warm orange controls, dimensional lettering, a consistent woodland setting, and expressive bunny artwork carry the game identity across the lobby, care view, and referral screen.",
+    "outcome": "Character consistency, clear session entry, and readable care and progress controls.",
+    "scope": [
+      "Game Lobby",
+      "Character & Care UI",
+      "Progress & Referrals"
+    ],
+    "sample": false,
+    "label": "Mobile game UI",
+    "art": "mobile",
+    "category": "Games",
+    "image": "assets/images/projects/games/bunny-trails-cover.png",
+    "imageAlt": "Bunny Trails original game screens presented in portrait graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/games/bunny-trails-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Bunny Trails.png",
+      "sourceWidth": 1462,
+      "sourceHeight": 1041,
+      "sourceSha256": "9a18dd7754c016d600db02a73f4fd7092055f2ad58929d579d32469f6dd884e0",
+      "device": "phone",
+      "background": "#162b24",
+      "ink": "#fff3d9",
+      "glow": "#d8a14d28",
+      "headline": "A little care. A bigger adventure.",
+      "index": 1,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Welcome to Bunny Trails",
+          "rect": [
+            100,
+            100,
+            390,
+            841
+          ],
+          "viewportHeight": 841
+        },
+        {
+          "label": "Care and progress",
+          "rect": [
+            536,
+            100,
+            390,
+            841
+          ],
+          "viewportHeight": 841
+        },
+        {
+          "label": "Referral hub",
+          "rect": [
+            972,
+            100,
+            390,
+            841
+          ],
+          "viewportHeight": 841
+        }
+      ]
+    }
+  },
+  {
+    "id": "housie-game",
+    "brand": "Housie",
+    "title": "Housie — Every number. A shared moment.",
+    "industry": "Social Bingo & Party Games",
+    "discipline": "Mobile game UI design",
+    "summary": "A landscape social-housie interface with room discovery, a number-board play view, host interaction, and a celebratory results screen.",
+    "idea": "Make a social game easy to enter and follow by giving room selection, the active number board, and results their own clear visual roles.",
+    "direction": "A playful blue-to-violet palette, tactile lobby cards, a wide ticket board, and pink leaderboard highlights organise the supplied landscape screens without changing their proportions.",
+    "outcome": "Room selection, board readability, and a distinct results hierarchy.",
+    "scope": [
+      "Room Discovery",
+      "Landscape Gameplay",
+      "Results & Leaderboards"
+    ],
+    "sample": false,
+    "label": "Mobile game UI",
+    "art": "mobile",
+    "category": "Games",
+    "image": "assets/images/projects/games/housie-game-cover.png",
+    "imageAlt": "Housie original game screens presented in landscape graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/games/housie-game-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Housie Game.png",
+      "sourceWidth": 2738,
+      "sourceHeight": 575,
+      "sourceSha256": "0b7158c00c5f2ce1ac5f830c52b9622eea515e23b7213b1ab5be82138f18da4b",
+      "device": "landscape-phone",
+      "background": "#eee7f8",
+      "ink": "#4c3564",
+      "glow": "#d19def30",
+      "headline": "Every number. A shared moment.",
+      "index": 2,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Choose a game room",
+          "rect": [
+            100,
+            100,
+            812,
+            375
+          ],
+          "viewportHeight": 375
+        },
+        {
+          "label": "Live housie board",
+          "rect": [
+            963,
+            100,
+            812,
+            375
+          ],
+          "viewportHeight": 375
+        },
+        {
+          "label": "Results and leaderboard",
+          "rect": [
+            1826,
+            100,
+            812,
+            375
+          ],
+          "viewportHeight": 375
+        }
+      ]
+    }
+  },
+  {
+    "id": "inu-poker",
+    "brand": "INU Poker",
+    "title": "INU Poker — At the table. In the moment.",
+    "industry": "Social Card Games",
+    "discipline": "Mobile game UI design",
+    "summary": "A poker-interface study bringing lobby choices, an immersive multiplayer table, and a player-statistics view into one visual system.",
+    "idea": "Keep the route from choosing a table to reading the current hand clear, while giving player information and table actions recognisable places.",
+    "direction": "Deep green environments, warm gold accents, character portraits, and high-contrast cards create a club-like atmosphere while separating table state, player identities, and available actions.",
+    "outcome": "Lobby hierarchy, table-state readability, and clearly grouped player statistics.",
+    "scope": [
+      "Table Selection",
+      "Multiplayer Table UI",
+      "Player Statistics"
+    ],
+    "sample": false,
+    "label": "Mobile game UI",
+    "art": "mobile",
+    "category": "Games",
+    "image": "assets/images/projects/games/inu-poker-cover.png",
+    "imageAlt": "INU Poker original game screens presented in portrait graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/games/inu-poker-original.png",
+    "mobilePresentation": {
+      "sourceFile": "INU Poker.png",
+      "sourceWidth": 1476,
+      "sourceHeight": 1044,
+      "sourceSha256": "a5790065940097f8d25ab2116c14af58a1e39467a35def87aea3f0cd795fee6e",
+      "device": "phone",
+      "background": "#142a27",
+      "ink": "#f9efd3",
+      "glow": "#b8c77c24",
+      "headline": "At the table. In the moment.",
+      "index": 3,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Choose a poker table",
+          "rect": [
+            100,
+            100,
+            390,
+            844
+          ],
+          "viewportHeight": 844
+        },
+        {
+          "label": "Multiplayer table",
+          "rect": [
+            543,
+            100,
+            390,
+            844
+          ],
+          "viewportHeight": 844
+        },
+        {
+          "label": "Player profile and statistics",
+          "rect": [
+            986,
+            100,
+            390,
+            844
+          ],
+          "viewportHeight": 844
+        }
+      ]
+    }
+  },
+  {
+    "id": "jungle-treasures",
+    "brand": "Jungle Treasures",
+    "title": "Jungle Treasures — Enter the jungle. Follow the adventure.",
+    "industry": "Adventure & Arcade Games",
+    "discipline": "Mobile game UI design",
+    "summary": "An adventure-game interface with a character-rich session lobby, a focused play view, and a scrollable offers area in a shared jungle world.",
+    "idea": "Carry a strong adventure identity from the first screen into play, while keeping session entry, movement controls, and offer discovery visually distinct.",
+    "direction": "A midnight blue setting, layered jungle artwork, luminous gold controls, and a recurring character connect the supplied screens. The offers view uses grouped cards to structure a longer content area.",
+    "outcome": "World-building consistency, clear play controls, and organised offer discovery.",
+    "scope": [
+      "Adventure Lobby",
+      "Gameplay HUD",
+      "Offer Discovery"
+    ],
+    "sample": false,
+    "label": "Mobile game UI",
+    "art": "mobile",
+    "category": "Games",
+    "image": "assets/images/projects/games/jungle-treasures-cover.png",
+    "imageAlt": "Jungle Treasures original game screens presented in portrait graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/games/jungle-treasures-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Jungle Nova.png",
+      "sourceWidth": 1473,
+      "sourceHeight": 1404,
+      "sourceSha256": "4626da21b82103ca160c70dc01f41e016e82275208cb2227ca2b6281111cccad",
+      "device": "phone",
+      "background": "#151c33",
+      "ink": "#fff0d3",
+      "glow": "#ae75d62b",
+      "headline": "Enter the jungle. Follow the adventure.",
+      "index": 4,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Enter Jungle Treasures",
+          "rect": [
+            100,
+            100,
+            390,
+            841
+          ],
+          "viewportHeight": 841
+        },
+        {
+          "label": "Adventure play view",
+          "rect": [
+            541,
+            100,
+            390,
+            841
+          ],
+          "viewportHeight": 841
+        },
+        {
+          "label": "Offers and partners",
+          "rect": [
+            982,
+            100,
+            391,
+            1204
+          ],
+          "viewportHeight": 846
+        }
+      ]
+    }
   }
 ]
