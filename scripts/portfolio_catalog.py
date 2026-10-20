@@ -45,7 +45,7 @@ def render_catalog(html, root):
     ids = [project['id'] for project in projects]
     if len(ids) != len(set(ids)):
         raise ValueError('Project IDs must be unique.')
-    categories = ('Mobile App', 'Website Design', 'Web Development', 'Logo Design')
+    categories = ('Mobile App', 'Website Design', 'Games', 'Logo Design')
     if any(project['category'] not in categories for project in projects):
         raise ValueError('Unknown portfolio category.')
     filters = ['<button class="portfolio-filter is-selected" type="button" aria-pressed="true" data-category="all">All</button>']
