@@ -1,148 +1,5 @@
 [
   {
-    "id": "devstree",
-    "brand": "DevsTree",
-    "title": "DevsTree — Technology, made approachable.",
-    "industry": "Technology & IT Services",
-    "discipline": "Website design",
-    "summary": "A technology-services website that brings a broad offering into one clear, confident brand story.",
-    "idea": "Help prospective partners understand the company’s technology offering and find a clear route to exploring the work or starting a conversation.",
-    "direction": "A sculptural robotic-hand hero establishes the technology theme. A restrained red accent, floating navigation, and a visible process section create structure around a broad service offering.",
-    "outcome": "Brand presence, service discovery, and a clear first point of contact.",
-    "scope": [
-      "Website UI Design",
-      "Service Presentation",
-      "Visual Hierarchy"
-    ],
-    "sample": false,
-    "label": "Website design",
-    "art": "devices",
-    "category": "Website Design",
-    "image": "assets/images/projects/desktop-monitor.webp",
-    "imageAlt": "DevsTree website displayed inside a front-facing desktop monitor.",
-    "originalDesign": "assets/images/projects/devstree-original.jpg",
-    "deviceScreen": {
-      "referenceWidth": 1536,
-      "referenceHeight": 1024,
-      "corners": [
-        [
-          188,
-          86
-        ],
-        [
-          1350,
-          86
-        ],
-        [
-          1350,
-          710
-        ],
-        [
-          188,
-          710
-        ]
-      ],
-      "sourceWidth": 1248,
-      "sourceHeight": 6011
-    },
-    "website": "https://www.devstree.com/"
-  },
-  {
-    "id": "easyprops",
-    "brand": "EasyProps",
-    "title": "EasyProps — A clearer way home.",
-    "industry": "Real Estate",
-    "discipline": "Website design",
-    "summary": "A property-discovery interface built around useful search, scannable listings, and an easier first step.",
-    "idea": "Make a large property offering easier to approach by putting location, property type, and search at the centre of the experience.",
-    "direction": "Indigo navigation anchors the page while a prominent search module, illustrated property categories, and consistent listing cards give visitors several clear ways to browse.",
-    "outcome": "Search clarity, comparable property information, and organised listing discovery.",
-    "scope": [
-      "Website UI Design",
-      "Property Search",
-      "Listing Design"
-    ],
-    "sample": false,
-    "label": "Website design",
-    "art": "devices",
-    "category": "Website Design",
-    "image": "assets/images/projects/desktop-monitor.webp",
-    "imageAlt": "EasyProps website displayed inside a front-facing desktop monitor.",
-    "originalDesign": "assets/images/projects/easyprops-original.jpg",
-    "deviceScreen": {
-      "referenceWidth": 1536,
-      "referenceHeight": 1024,
-      "corners": [
-        [
-          188,
-          86
-        ],
-        [
-          1350,
-          86
-        ],
-        [
-          1350,
-          710
-        ],
-        [
-          188,
-          710
-        ]
-      ],
-      "sourceWidth": 936,
-      "sourceHeight": 7906
-    },
-    "website": "https://www.easyprops.com/"
-  },
-  {
-    "id": "mint-and-oak",
-    "brand": "Mint & Oak",
-    "title": "Mint & Oak — Everyday essentials. A little personality.",
-    "industry": "E-commerce & Fashion",
-    "discipline": "Website design",
-    "summary": "An expressive storefront where product photography, category navigation, and brand storytelling work together.",
-    "idea": "Give everyday products a distinctive brand presence while keeping the path into browsing and shopping easy to recognise.",
-    "direction": "A moody photographic hero pairs bold product messaging with green accents. Clear product categories, a visible shop action, and a lighter brand-story section balance atmosphere with usability.",
-    "outcome": "Product discovery, editorial brand character, and a clear invitation to shop.",
-    "scope": [
-      "E-commerce UI Design",
-      "Product Discovery",
-      "Art Direction"
-    ],
-    "sample": false,
-    "label": "Website design",
-    "art": "devices",
-    "category": "Website Design",
-    "image": "assets/images/projects/desktop-monitor.webp",
-    "imageAlt": "Mint & Oak website displayed inside a front-facing desktop monitor.",
-    "originalDesign": "assets/images/projects/mint-and-oak-original.jpg",
-    "deviceScreen": {
-      "referenceWidth": 1536,
-      "referenceHeight": 1024,
-      "corners": [
-        [
-          188,
-          86
-        ],
-        [
-          1350,
-          86
-        ],
-        [
-          1350,
-          710
-        ],
-        [
-          188,
-          710
-        ]
-      ],
-      "sourceWidth": 1248,
-      "sourceHeight": 5987
-    }
-  },
-  {
     "id": "muss-montessori",
     "brand": "Muss Montessori",
     "title": "Muss Montessori — A confident first step for parents.",
@@ -190,6 +47,149 @@
     }
   },
   {
+    "id": "mitgo",
+    "brand": "MitGo",
+    "title": "MitGo — Shared journeys. Open roads.",
+    "industry": "Shared Mobility",
+    "discipline": "Mobile app design",
+    "summary": "A shared-ride experience with distinct passenger and driver views, route discovery, and a visible booking-request overview.",
+    "idea": "Make it easy to recognise the two sides of a shared journey: finding a ride and offering seats on a planned route.",
+    "direction": "Swiss landscape photography, deep blue surfaces, and bright teal actions frame route inputs, ride cards, and driver responsibilities.",
+    "outcome": "Passenger search, driver publishing, and booking-request visibility.",
+    "scope": [
+      "Passenger Journey",
+      "Driver Dashboard",
+      "Route Discovery"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/mitgo-cover.png",
+    "imageAlt": "MitGo original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/mitgo-original.png",
+    "mobilePresentation": {
+      "sourceFile": "MitGo.png",
+      "sourceWidth": 1490,
+      "sourceHeight": 1333,
+      "sourceSha256": "f39bdfb44d6e0546e3d6087c951b4cbe7ab535d2f97e51a0747f75ff0c66ad66",
+      "device": "phone",
+      "background": "#e0eeed",
+      "ink": "#20534e",
+      "headline": "Shared journeys. Open roads.",
+      "index": 9,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Welcome to MitGo",
+          "rect": [
+            100,
+            100,
+            390,
+            844
+          ],
+          "viewportHeight": 844
+        },
+        {
+          "label": "Find a shared ride",
+          "rect": [
+            545,
+            100,
+            390,
+            955
+          ],
+          "viewportHeight": 844
+        },
+        {
+          "label": "Manage offered rides",
+          "rect": [
+            1000,
+            100,
+            390,
+            1133
+          ],
+          "viewportHeight": 844
+        }
+      ]
+    }
+  },
+  {
+    "id": "jungle-treasures",
+    "brand": "Jungle Treasures",
+    "title": "Jungle Treasures — Enter the jungle. Follow the adventure.",
+    "industry": "Adventure & Arcade Games",
+    "discipline": "Mobile game UI design",
+    "summary": "An adventure-game interface with a character-rich session lobby, a focused play view, and a scrollable offers area in a shared jungle world.",
+    "idea": "Carry a strong adventure identity from the first screen into play, while keeping session entry, movement controls, and offer discovery visually distinct.",
+    "direction": "A midnight blue setting, layered jungle artwork, luminous gold controls, and a recurring character connect the supplied screens. The offers view uses grouped cards to structure a longer content area.",
+    "outcome": "World-building consistency, clear play controls, and organised offer discovery.",
+    "scope": [
+      "Adventure Lobby",
+      "Gameplay HUD",
+      "Offer Discovery"
+    ],
+    "sample": false,
+    "label": "Mobile game UI",
+    "art": "mobile",
+    "category": "Games",
+    "image": "assets/images/projects/games/jungle-treasures-cover.png",
+    "imageAlt": "Jungle Treasures original game screens presented in portrait graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/games/jungle-treasures-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Jungle Nova.png",
+      "sourceWidth": 1473,
+      "sourceHeight": 1404,
+      "sourceSha256": "4626da21b82103ca160c70dc01f41e016e82275208cb2227ca2b6281111cccad",
+      "device": "phone",
+      "background": "#151c33",
+      "ink": "#fff0d3",
+      "glow": "#ae75d62b",
+      "headline": "Enter the jungle. Follow the adventure.",
+      "index": 4,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Enter Jungle Treasures",
+          "rect": [
+            100,
+            100,
+            390,
+            841
+          ],
+          "viewportHeight": 841
+        },
+        {
+          "label": "Adventure play view",
+          "rect": [
+            541,
+            100,
+            390,
+            841
+          ],
+          "viewportHeight": 841
+        },
+        {
+          "label": "Offers and partners",
+          "rect": [
+            982,
+            100,
+            391,
+            1204
+          ],
+          "viewportHeight": 846
+        }
+      ]
+    }
+  },
+  {
     "id": "hypp",
     "brand": "HYYPP",
     "title": "HYYPP — Where brands meet their next collaborators.",
@@ -234,289 +234,6 @@
       ],
       "sourceWidth": 1248,
       "sourceHeight": 4441
-    }
-  },
-  {
-    "id": "mississauga-convention-centre",
-    "brand": "Mississauga Convention Centre",
-    "title": "Mississauga Convention Centre — An invitation to celebrate.",
-    "industry": "Events & Hospitality",
-    "discipline": "Website design",
-    "summary": "An elegant venue website that turns atmosphere, space, and practical details into a considered introduction.",
-    "idea": "Help visitors picture an event at the venue while giving them useful information and an obvious way to explore further.",
-    "direction": "Large event photography, generous serif typography, warm ivory, and muted gold create a premium tone. Event navigation and structured venue facts balance emotion with practical information.",
-    "outcome": "Atmosphere, venue discovery, and a clear route towards an event enquiry.",
-    "scope": [
-      "Website UI Design",
-      "Hospitality Design",
-      "Visual Storytelling"
-    ],
-    "sample": false,
-    "label": "Website design",
-    "art": "devices",
-    "category": "Website Design",
-    "image": "assets/images/projects/desktop-monitor.webp",
-    "imageAlt": "Mississauga Convention Centre website displayed inside a front-facing desktop monitor.",
-    "originalDesign": "assets/images/projects/mississauga-convention-centre-original.jpg",
-    "deviceScreen": {
-      "referenceWidth": 1536,
-      "referenceHeight": 1024,
-      "corners": [
-        [
-          188,
-          86
-        ],
-        [
-          1350,
-          86
-        ],
-        [
-          1350,
-          710
-        ],
-        [
-          188,
-          710
-        ]
-      ],
-      "sourceWidth": 1248,
-      "sourceHeight": 7719
-    },
-    "website": "https://mississaugaconvention.com/"
-  },
-  {
-    "id": "dawdle",
-    "brand": "Dawdle",
-    "title": "Dawdle — The journey starts with possibility.",
-    "industry": "Travel & Tourism",
-    "discipline": "Website design",
-    "summary": "A lively travel website that makes discovery feel inviting, organised, and full of character.",
-    "idea": "Introduce the travel brand with a sense of possibility while keeping destinations, trip styles, and further discovery easy to find.",
-    "direction": "Bright travel imagery, orange luggage, illustrated details, and green calls to action give the page energy. Clear navigation and alternating content sections keep the story easy to follow.",
-    "outcome": "Travel inspiration, readable brand storytelling, and approachable destination discovery.",
-    "scope": [
-      "Website UI Design",
-      "Travel Discovery",
-      "Visual Storytelling"
-    ],
-    "sample": false,
-    "label": "Website design",
-    "art": "devices",
-    "category": "Website Design",
-    "image": "assets/images/projects/desktop-monitor.webp",
-    "imageAlt": "Dawdle website displayed inside a front-facing desktop monitor.",
-    "originalDesign": "assets/images/projects/dawdle-original.jpg",
-    "deviceScreen": {
-      "referenceWidth": 1536,
-      "referenceHeight": 1024,
-      "corners": [
-        [
-          188,
-          86
-        ],
-        [
-          1350,
-          86
-        ],
-        [
-          1350,
-          710
-        ],
-        [
-          188,
-          710
-        ]
-      ],
-      "sourceWidth": 1248,
-      "sourceHeight": 6423
-    }
-  },
-  {
-    "id": "sutraa-ai",
-    "brand": "SUTRAAai",
-    "title": "SUTRAAai — Complex services. A clear introduction.",
-    "industry": "Technology & Software",
-    "discipline": "Website design",
-    "summary": "A software-services website with a confident visual identity and a structured introduction to its offering.",
-    "idea": "Make a broad software-development proposition easier to understand and give prospective partners clear routes into the company’s services.",
-    "direction": "A low-poly character and blue accents introduce the technology theme. A structured service menu, strong headline hierarchy, and a visible meeting action support a clear business-facing presentation.",
-    "outcome": "Service discovery, confident positioning, and a visible next step for prospective partners.",
-    "scope": [
-      "Website UI Design",
-      "Service Navigation",
-      "Visual Hierarchy"
-    ],
-    "sample": false,
-    "label": "Website design",
-    "art": "devices",
-    "category": "Website Design",
-    "image": "assets/images/projects/desktop-monitor.webp",
-    "imageAlt": "SUTRAAai website displayed inside a front-facing desktop monitor.",
-    "originalDesign": "assets/images/projects/sutraa-ai-original.jpg",
-    "deviceScreen": {
-      "referenceWidth": 1536,
-      "referenceHeight": 1024,
-      "corners": [
-        [
-          188,
-          86
-        ],
-        [
-          1350,
-          86
-        ],
-        [
-          1350,
-          710
-        ],
-        [
-          188,
-          710
-        ]
-      ],
-      "sourceWidth": 1248,
-      "sourceHeight": 4969
-    }
-  },
-  {
-    "id": "pride-of-africa",
-    "brand": "Pride of Africa",
-    "title": "Pride of Africa — Culture at the heart of the brand.",
-    "industry": "Retail & Business Services",
-    "discipline": "Website design",
-    "summary": "A rich, illustrated website that connects cultural character with shopping and service discovery.",
-    "idea": "Bring the brand’s cultural identity into the first impression while making its retail and business-service paths easy to recognise.",
-    "direction": "Warm ochre, cultural patterning, and an expressive illustration give the page a strong identity. Distinct shopping and consultation actions lead into a clearly grouped business-services section.",
-    "outcome": "Cultural identity, distinct user journeys, and a memorable brand introduction.",
-    "scope": [
-      "Website UI Design",
-      "Brand Expression",
-      "Service Presentation"
-    ],
-    "sample": false,
-    "label": "Website design",
-    "art": "devices",
-    "category": "Website Design",
-    "image": "assets/images/projects/desktop-monitor.webp",
-    "imageAlt": "Pride of Africa website displayed inside a front-facing desktop monitor.",
-    "originalDesign": "assets/images/projects/pride-of-africa-original.jpg",
-    "deviceScreen": {
-      "referenceWidth": 1536,
-      "referenceHeight": 1024,
-      "corners": [
-        [
-          188,
-          86
-        ],
-        [
-          1350,
-          86
-        ],
-        [
-          1350,
-          710
-        ],
-        [
-          188,
-          710
-        ]
-      ],
-      "sourceWidth": 1248,
-      "sourceHeight": 5604
-    }
-  },
-  {
-    "id": "cuu-long-fish",
-    "brand": "Cuu Long Fish",
-    "title": "Cuu Long Fish — A business story with deeper roots.",
-    "industry": "Seafood & Aquaculture",
-    "discipline": "Website design",
-    "summary": "A corporate website that uses place, product, and clear navigation to introduce an aquaculture business.",
-    "idea": "Give visitors a clear introduction to the company and an organised way to explore products, company information, and contact options.",
-    "direction": "A wide aquatic landscape grounds the brand in its industry. Indigo navigation, a prominent company headline, and a structured introduction establish a clear corporate information hierarchy.",
-    "outcome": "Company positioning, industry context, and organised product and information discovery.",
-    "scope": [
-      "Website UI Design",
-      "Corporate Website",
-      "Content Hierarchy"
-    ],
-    "sample": false,
-    "label": "Website design",
-    "art": "devices",
-    "category": "Website Design",
-    "image": "assets/images/projects/desktop-monitor.webp",
-    "imageAlt": "Cuu Long Fish website displayed inside a front-facing desktop monitor.",
-    "originalDesign": "assets/images/projects/cuu-long-fish-original.jpg",
-    "deviceScreen": {
-      "referenceWidth": 1536,
-      "referenceHeight": 1024,
-      "corners": [
-        [
-          188,
-          86
-        ],
-        [
-          1350,
-          86
-        ],
-        [
-          1350,
-          710
-        ],
-        [
-          188,
-          710
-        ]
-      ],
-      "sourceWidth": 1248,
-      "sourceHeight": 5020
-    }
-  },
-  {
-    "id": "fairplay-giveaways",
-    "brand": "FairPlay Giveaways",
-    "title": "FairPlay Giveaways — Excitement with a clear next step.",
-    "industry": "Promotions & Membership",
-    "discipline": "Website design",
-    "summary": "A bold promotional website that pairs an energetic campaign hero with visible entry and membership information.",
-    "idea": "Make the promotional offer easy to understand while keeping entry actions, membership information, and supporting details visible.",
-    "direction": "High-contrast campaign typography, gold and blue accents, and a prominent entry action make the offer easy to scan. Structured information cards introduce the platform below the hero.",
-    "outcome": "Campaign clarity, visible participation actions, and a structured platform introduction.",
-    "scope": [
-      "Website UI Design",
-      "Campaign Landing Page",
-      "Visual Hierarchy"
-    ],
-    "sample": false,
-    "label": "Website design",
-    "art": "devices",
-    "category": "Website Design",
-    "image": "assets/images/projects/desktop-monitor.webp",
-    "imageAlt": "FairPlay Giveaways website displayed inside a front-facing desktop monitor.",
-    "originalDesign": "assets/images/projects/fairplay-giveaways-original.jpg",
-    "deviceScreen": {
-      "referenceWidth": 1536,
-      "referenceHeight": 1024,
-      "corners": [
-        [
-          188,
-          86
-        ],
-        [
-          1350,
-          86
-        ],
-        [
-          1350,
-          710
-        ],
-        [
-          188,
-          710
-        ]
-      ],
-      "sourceWidth": 1248,
-      "sourceHeight": 6880
     }
   },
   {
@@ -591,6 +308,125 @@
     }
   },
   {
+    "id": "bunny-trails",
+    "brand": "Bunny Trails",
+    "title": "Bunny Trails — A little care. A bigger adventure.",
+    "industry": "Casual & Character-led Games",
+    "discipline": "Mobile game UI design",
+    "summary": "A character-led casual-game interface that connects a welcoming lobby, pet-care actions, and a referral area through an expressive woodland world.",
+    "idea": "Give players a recognisable character to connect with and a clear visual route from starting a session to understanding the game’s care and progress screens.",
+    "direction": "Warm orange controls, dimensional lettering, a consistent woodland setting, and expressive bunny artwork carry the game identity across the lobby, care view, and referral screen.",
+    "outcome": "Character consistency, clear session entry, and readable care and progress controls.",
+    "scope": [
+      "Game Lobby",
+      "Character & Care UI",
+      "Progress & Referrals"
+    ],
+    "sample": false,
+    "label": "Mobile game UI",
+    "art": "mobile",
+    "category": "Games",
+    "image": "assets/images/projects/games/bunny-trails-cover.png",
+    "imageAlt": "Bunny Trails original game screens presented in portrait graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/games/bunny-trails-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Bunny Trails.png",
+      "sourceWidth": 1462,
+      "sourceHeight": 1041,
+      "sourceSha256": "9a18dd7754c016d600db02a73f4fd7092055f2ad58929d579d32469f6dd884e0",
+      "device": "phone",
+      "background": "#162b24",
+      "ink": "#fff3d9",
+      "glow": "#d8a14d28",
+      "headline": "A little care. A bigger adventure.",
+      "index": 1,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Welcome to Bunny Trails",
+          "rect": [
+            100,
+            100,
+            390,
+            841
+          ],
+          "viewportHeight": 841
+        },
+        {
+          "label": "Care and progress",
+          "rect": [
+            536,
+            100,
+            390,
+            841
+          ],
+          "viewportHeight": 841
+        },
+        {
+          "label": "Referral hub",
+          "rect": [
+            972,
+            100,
+            390,
+            841
+          ],
+          "viewportHeight": 841
+        }
+      ]
+    }
+  },
+  {
+    "id": "mint-and-oak",
+    "brand": "Mint & Oak",
+    "title": "Mint & Oak — Everyday essentials. A little personality.",
+    "industry": "E-commerce & Fashion",
+    "discipline": "Website design",
+    "summary": "An expressive storefront where product photography, category navigation, and brand storytelling work together.",
+    "idea": "Give everyday products a distinctive brand presence while keeping the path into browsing and shopping easy to recognise.",
+    "direction": "A moody photographic hero pairs bold product messaging with green accents. Clear product categories, a visible shop action, and a lighter brand-story section balance atmosphere with usability.",
+    "outcome": "Product discovery, editorial brand character, and a clear invitation to shop.",
+    "scope": [
+      "E-commerce UI Design",
+      "Product Discovery",
+      "Art Direction"
+    ],
+    "sample": false,
+    "label": "Website design",
+    "art": "devices",
+    "category": "Website Design",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "Mint & Oak website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/mint-and-oak-original.jpg",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          188,
+          86
+        ],
+        [
+          1350,
+          86
+        ],
+        [
+          1350,
+          710
+        ],
+        [
+          188,
+          710
+        ]
+      ],
+      "sourceWidth": 1248,
+      "sourceHeight": 5987
+    }
+  },
+  {
     "id": "bucket",
     "brand": "Bucket",
     "title": "Bucket — Good places. Great plans.",
@@ -662,137 +498,6 @@
     }
   },
   {
-    "id": "famlee",
-    "brand": "Famlee",
-    "title": "Famlee — Little moments. Kept close.",
-    "industry": "Social & Shared Memories",
-    "discipline": "Mobile app design",
-    "summary": "A photo-led social experience for browsing memories by date and opening the stories behind a shared moment.",
-    "idea": "Give personal photos and their context a clear home, with an easy route from a dated memory to its full post.",
-    "direction": "A calm off-white canvas, bold pink creation controls, a date-based timeline, and large photographs keep people and their memories at the centre.",
-    "outcome": "A visible memory timeline, expressive photo browsing, and focused post details.",
-    "scope": [
-      "Memory Timeline",
-      "Photo Stories",
-      "Social Interactions"
-    ],
-    "sample": false,
-    "label": "Mobile app UI",
-    "art": "mobile",
-    "category": "Mobile App",
-    "image": "assets/images/projects/mobile/famlee-cover.png",
-    "imageAlt": "Famlee original app screens presented in graphite smartphone frames.",
-    "originalDesign": "assets/images/projects/mobile/famlee-original.png",
-    "mobilePresentation": {
-      "sourceFile": "famlee.png",
-      "sourceWidth": 1031,
-      "sourceHeight": 1044,
-      "sourceSha256": "1773f645d3e3c5ea7eac7ab85bbf2704887d182a15010cbc34a5c1b8a88b2bd8",
-      "device": "phone",
-      "background": "#f4e6ec",
-      "ink": "#7c334d",
-      "headline": "Little moments. Kept close.",
-      "index": 3,
-      "coverScreens": [
-        0,
-        1
-      ],
-      "screens": [
-        {
-          "label": "Memory timeline",
-          "rect": [
-            100,
-            100,
-            390,
-            844
-          ],
-          "viewportHeight": 844
-        },
-        {
-          "label": "A shared moment",
-          "rect": [
-            541,
-            100,
-            390,
-            844
-          ],
-          "viewportHeight": 844
-        }
-      ]
-    }
-  },
-  {
-    "id": "hello-date",
-    "brand": "hello.date",
-    "title": "hello.date — A first hello. A new possibility.",
-    "industry": "Dating & Social Discovery",
-    "discipline": "Mobile app design",
-    "summary": "A dating interface that combines profile discovery, expressive interaction controls, and clearly grouped account preferences.",
-    "idea": "Make the transition from a first impression to a possible connection clear, while giving people visible control over their preferences.",
-    "direction": "Dark surfaces, vivid pink accents, immersive profile photography, and distinct settings groups balance personality with interface structure.",
-    "outcome": "Profile discovery, recognisable connection actions, and clear preference controls.",
-    "scope": [
-      "Onboarding",
-      "Profile Discovery",
-      "Account Preferences"
-    ],
-    "sample": false,
-    "label": "Mobile app UI",
-    "art": "mobile",
-    "category": "Mobile App",
-    "image": "assets/images/projects/mobile/hello-date-cover.png",
-    "imageAlt": "hello.date original app screens presented in graphite smartphone frames.",
-    "originalDesign": "assets/images/projects/mobile/hello-date-original.png",
-    "mobilePresentation": {
-      "sourceFile": "Hello.Date.png",
-      "sourceWidth": 1425,
-      "sourceHeight": 2665,
-      "sourceSha256": "2a3ddaada5394cbf3daa400b262b8fc8272d0e90d22cfb3e016f35063e3eca39",
-      "device": "phone",
-      "background": "#f6e2eb",
-      "ink": "#7d2349",
-      "headline": "A first hello. A new possibility.",
-      "index": 4,
-      "coverScreens": [
-        0,
-        1,
-        2
-      ],
-      "screens": [
-        {
-          "label": "A first hello",
-          "rect": [
-            100,
-            100,
-            375,
-            812
-          ],
-          "viewportHeight": 812
-        },
-        {
-          "label": "Discover profiles",
-          "rect": [
-            524,
-            100,
-            375,
-            812
-          ],
-          "viewportHeight": 812
-        },
-        {
-          "label": "Preferences and settings",
-          "rect": [
-            950,
-            100,
-            375,
-            2465
-          ],
-          "viewportHeight": 812
-        }
-      ]
-    }
-  },
-  {
     "id": "homeworth",
     "brand": "HomeWorth",
     "title": "HomeWorth — Property cases. Clearly in view.",
@@ -853,37 +558,86 @@
     }
   },
   {
-    "id": "hyppe",
-    "brand": "Hyppe",
-    "title": "Hyppe — Great brands. The right creators.",
-    "industry": "Creator Economy",
-    "discipline": "Mobile app design",
-    "summary": "A creator-collaboration interface for discovering campaigns, browsing opportunities, and exploring model bookings.",
-    "idea": "Make varied brand opportunities easier to browse and give creators a clear way to recognise relevant collaborations.",
-    "direction": "Charcoal surfaces, warm gold accents, generous editorial type, and image-led campaign cards give the marketplace a considered visual identity.",
-    "outcome": "Opportunity discovery, campaign categories, and model-booking presentation.",
+    "id": "easyprops",
+    "brand": "EasyProps",
+    "title": "EasyProps — A clearer way home.",
+    "industry": "Real Estate",
+    "discipline": "Website design",
+    "summary": "A property-discovery interface built around useful search, scannable listings, and an easier first step.",
+    "idea": "Make a large property offering easier to approach by putting location, property type, and search at the centre of the experience.",
+    "direction": "Indigo navigation anchors the page while a prominent search module, illustrated property categories, and consistent listing cards give visitors several clear ways to browse.",
+    "outcome": "Search clarity, comparable property information, and organised listing discovery.",
     "scope": [
-      "Creator Marketplace",
-      "Campaign Discovery",
-      "Booking Categories"
+      "Website UI Design",
+      "Property Search",
+      "Listing Design"
     ],
     "sample": false,
-    "label": "Mobile app UI",
+    "label": "Website design",
+    "art": "devices",
+    "category": "Website Design",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "EasyProps website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/easyprops-original.jpg",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          188,
+          86
+        ],
+        [
+          1350,
+          86
+        ],
+        [
+          1350,
+          710
+        ],
+        [
+          188,
+          710
+        ]
+      ],
+      "sourceWidth": 936,
+      "sourceHeight": 7906
+    },
+    "website": "https://www.easyprops.com/"
+  },
+  {
+    "id": "housie-game",
+    "brand": "Housie",
+    "title": "Housie — Every number. A shared moment.",
+    "industry": "Social Bingo & Party Games",
+    "discipline": "Mobile game UI design",
+    "summary": "A landscape social-housie interface with room discovery, a number-board play view, host interaction, and a celebratory results screen.",
+    "idea": "Make a social game easy to enter and follow by giving room selection, the active number board, and results their own clear visual roles.",
+    "direction": "A playful blue-to-violet palette, tactile lobby cards, a wide ticket board, and pink leaderboard highlights organise the supplied landscape screens without changing their proportions.",
+    "outcome": "Room selection, board readability, and a distinct results hierarchy.",
+    "scope": [
+      "Room Discovery",
+      "Landscape Gameplay",
+      "Results & Leaderboards"
+    ],
+    "sample": false,
+    "label": "Mobile game UI",
     "art": "mobile",
-    "category": "Mobile App",
-    "image": "assets/images/projects/mobile/hyppe-cover.png",
-    "imageAlt": "Hyppe original app screens presented in graphite smartphone frames.",
-    "originalDesign": "assets/images/projects/mobile/hyppe-original.png",
+    "category": "Games",
+    "image": "assets/images/projects/games/housie-game-cover.png",
+    "imageAlt": "Housie game screens in landscape graphite smartphone frames, with an enhanced room-selection screen.",
+    "originalDesign": "assets/images/projects/games/housie-game-original.png",
     "mobilePresentation": {
-      "sourceFile": "Hyppe.png",
-      "sourceWidth": 1604,
-      "sourceHeight": 1126,
-      "sourceSha256": "a35b188049443e9c1761e0c3771ffb643d8556e078c5832d05fcbec217b60e3a",
-      "device": "phone",
-      "background": "#f1e8d6",
-      "ink": "#725321",
-      "headline": "Great brands. The right creators.",
-      "index": 6,
+      "sourceFile": "Housie Game.png",
+      "sourceWidth": 2738,
+      "sourceHeight": 575,
+      "sourceSha256": "0b7158c00c5f2ce1ac5f830c52b9622eea515e23b7213b1ab5be82138f18da4b",
+      "device": "landscape-phone",
+      "background": "#eee7f8",
+      "ink": "#4c3564",
+      "glow": "#d19def30",
+      "headline": "Every number. A shared moment.",
+      "index": 2,
       "coverScreens": [
         0,
         1,
@@ -891,70 +645,77 @@
       ],
       "screens": [
         {
-          "label": "Creator introduction",
+          "label": "Choose a game room",
           "rect": [
             100,
             100,
-            428,
-            926
+            812,
+            375
           ],
-          "viewportHeight": 926
+          "viewportHeight": 375,
+          "enhancedSource": {
+            "image": "assets/images/projects/games/housie-lobby-enhanced.png",
+            "width": 1844,
+            "height": 853,
+            "sha256": "e87c096a668a8d97d9c1996e34461897577e29b4fcc59cbf2342b3fd3ef9ab15",
+            "method": "AI-assisted clarity and color enhancement; original supplied montage retained."
+          }
         },
         {
-          "label": "Discover opportunities",
+          "label": "Live housie board",
           "rect": [
-            588,
+            963,
             100,
-            428,
-            926
+            812,
+            375
           ],
-          "viewportHeight": 926
+          "viewportHeight": 375
         },
         {
-          "label": "Model bookings",
+          "label": "Results and leaderboard",
           "rect": [
-            1076,
+            1826,
             100,
-            428,
-            926
+            812,
+            375
           ],
-          "viewportHeight": 926
+          "viewportHeight": 375
         }
       ]
     }
   },
   {
-    "id": "klerdy",
-    "brand": "Klerdy",
-    "title": "Klerdy — Market signals. A clearer view.",
-    "industry": "Prediction Markets",
+    "id": "trustvault",
+    "brand": "Trustvault",
+    "title": "Trustvault — Your assets. A clearer outlook.",
+    "industry": "Digital Assets & Wallets",
     "discipline": "Mobile app design",
-    "summary": "A prediction-market interface that brings market browsing, probability displays, and a visible leaderboard into one dark visual system.",
-    "idea": "Give a dense market experience a clear hierarchy so people can distinguish categories, compare displayed probabilities, and explore rankings.",
-    "direction": "Electric green highlights, compact market cards, contrasting probability graphics, and a character-led introduction create a distinctive product language.",
-    "outcome": "Market scanning, probability hierarchy, and leaderboard presentation.",
+    "summary": "A digital-asset wallet interface with visible wallet options, token balances, and grouped account settings.",
+    "idea": "Give a technically dense product a clear starting point and an organised way to browse assets and manage account preferences.",
+    "direction": "Black surfaces, sharp lime accents, and carefully grouped token rows create a focused interface with clear primary actions.",
+    "outcome": "Wallet-option clarity, asset scanning, and organised settings.",
     "scope": [
-      "Market Browsing",
-      "Data Visualisation",
-      "Leaderboards"
+      "Wallet Onboarding",
+      "Token Dashboard",
+      "Account Settings"
     ],
     "sample": false,
     "label": "Mobile app UI",
     "art": "mobile",
     "category": "Mobile App",
-    "image": "assets/images/projects/mobile/klerdy-cover.png",
-    "imageAlt": "Klerdy original app screens presented in graphite smartphone frames.",
-    "originalDesign": "assets/images/projects/mobile/klerdy-original.png",
+    "image": "assets/images/projects/mobile/trustvault-cover.png",
+    "imageAlt": "Trustvault original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/trustvault-original.png",
     "mobilePresentation": {
-      "sourceFile": "Klerdy.png",
-      "sourceWidth": 1439,
-      "sourceHeight": 1450,
-      "sourceSha256": "b7bf2eb7b719250317ab669eb9330c41c10f983c5aa266daa9017efb7ceb6c03",
+      "sourceFile": "trustvault.png",
+      "sourceWidth": 1461,
+      "sourceHeight": 1026,
+      "sourceSha256": "8e8a62a1269a14b9417d1780298eb6a3644c30437a8134c5437b358e4100644b",
       "device": "phone",
-      "background": "#e2eee3",
-      "ink": "#244d32",
-      "headline": "Market signals. A clearer view.",
-      "index": 7,
+      "background": "#edf0da",
+      "ink": "#465125",
+      "headline": "Your assets. A clearer outlook.",
+      "index": 12,
       "coverScreens": [
         0,
         1,
@@ -962,189 +723,85 @@
       ],
       "screens": [
         {
-          "label": "Welcome to Klerdy",
+          "label": "Choose a wallet",
           "rect": [
             100,
-            100,
+            114,
             375,
             812
           ],
           "viewportHeight": 812
         },
         {
-          "label": "Browse markets",
+          "label": "Token overview",
           "rect": [
-            532,
+            543,
             100,
             375,
-            1250
+            826
           ],
           "viewportHeight": 812
         },
         {
-          "label": "Global leaderboard",
+          "label": "Wallet settings",
           "rect": [
-            964,
-            100,
-            375,
-            1109
+            987,
+            107,
+            374,
+            812
           ],
-          "viewportHeight": 812
+          "viewportHeight": 809
         }
       ]
     }
   },
   {
-    "id": "klub",
-    "brand": "Klub",
-    "title": "Klub — Find the night. Bring your people.",
-    "industry": "Nightlife & Events",
-    "discipline": "Mobile app design",
-    "summary": "A nightlife-booking journey that connects venue discovery, guest invitations, and a clear invitation confirmation.",
-    "idea": "Help a group move from choosing a place to inviting friends and understanding the next booking step.",
-    "direction": "Immersive nightlife photography, a dark map, and red-to-violet actions connect the atmosphere of an evening out with a practical group flow.",
-    "outcome": "Map-led discovery, guest selection, and invitation confirmation.",
+    "id": "mississauga-convention-centre",
+    "brand": "Mississauga Convention Centre",
+    "title": "Mississauga Convention Centre — An invitation to celebrate.",
+    "industry": "Events & Hospitality",
+    "discipline": "Website design",
+    "summary": "An elegant venue website that turns atmosphere, space, and practical details into a considered introduction.",
+    "idea": "Help visitors picture an event at the venue while giving them useful information and an obvious way to explore further.",
+    "direction": "Large event photography, generous serif typography, warm ivory, and muted gold create a premium tone. Event navigation and structured venue facts balance emotion with practical information.",
+    "outcome": "Atmosphere, venue discovery, and a clear route towards an event enquiry.",
     "scope": [
-      "Venue Maps",
-      "Guest Invitations",
-      "Booking Journey"
+      "Website UI Design",
+      "Hospitality Design",
+      "Visual Storytelling"
     ],
     "sample": false,
-    "label": "Mobile app UI",
-    "art": "mobile",
-    "category": "Mobile App",
-    "image": "assets/images/projects/mobile/klub-cover.png",
-    "imageAlt": "Klub original app screens presented in graphite smartphone frames.",
-    "originalDesign": "assets/images/projects/mobile/klub-original.png",
-    "mobilePresentation": {
-      "sourceFile": "Klub.png",
-      "sourceWidth": 1862,
-      "sourceHeight": 1012,
-      "sourceSha256": "a942abf4261d83d16ad567513253f46d8158823d7884e8d135a415eb40950bb4",
-      "device": "phone",
-      "background": "#eee4f0",
-      "ink": "#54345c",
-      "headline": "Find the night. Bring your people.",
-      "index": 8,
-      "coverScreens": [
-        0,
-        1,
-        3
+    "label": "Website design",
+    "art": "devices",
+    "category": "Website Design",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "Mississauga Convention Centre website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/mississauga-convention-centre-original.jpg",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          188,
+          86
+        ],
+        [
+          1350,
+          86
+        ],
+        [
+          1350,
+          710
+        ],
+        [
+          188,
+          710
+        ]
       ],
-      "screens": [
-        {
-          "label": "Start a night out",
-          "rect": [
-            100,
-            100,
-            375,
-            812
-          ],
-          "viewportHeight": 812
-        },
-        {
-          "label": "Find a venue",
-          "rect": [
-            529,
-            100,
-            375,
-            812
-          ],
-          "viewportHeight": 812
-        },
-        {
-          "label": "Invite friends",
-          "rect": [
-            958,
-            100,
-            375,
-            811
-          ],
-          "viewportHeight": 811
-        },
-        {
-          "label": "Invitations sent",
-          "rect": [
-            1387,
-            100,
-            375,
-            812
-          ],
-          "viewportHeight": 812
-        }
-      ]
-    }
-  },
-  {
-    "id": "mitgo",
-    "brand": "MitGo",
-    "title": "MitGo — Shared journeys. Open roads.",
-    "industry": "Shared Mobility",
-    "discipline": "Mobile app design",
-    "summary": "A shared-ride experience with distinct passenger and driver views, route discovery, and a visible booking-request overview.",
-    "idea": "Make it easy to recognise the two sides of a shared journey: finding a ride and offering seats on a planned route.",
-    "direction": "Swiss landscape photography, deep blue surfaces, and bright teal actions frame route inputs, ride cards, and driver responsibilities.",
-    "outcome": "Passenger search, driver publishing, and booking-request visibility.",
-    "scope": [
-      "Passenger Journey",
-      "Driver Dashboard",
-      "Route Discovery"
-    ],
-    "sample": false,
-    "label": "Mobile app UI",
-    "art": "mobile",
-    "category": "Mobile App",
-    "image": "assets/images/projects/mobile/mitgo-cover.png",
-    "imageAlt": "MitGo original app screens presented in graphite smartphone frames.",
-    "originalDesign": "assets/images/projects/mobile/mitgo-original.png",
-    "mobilePresentation": {
-      "sourceFile": "MitGo.png",
-      "sourceWidth": 1490,
-      "sourceHeight": 1333,
-      "sourceSha256": "f39bdfb44d6e0546e3d6087c951b4cbe7ab535d2f97e51a0747f75ff0c66ad66",
-      "device": "phone",
-      "background": "#e0eeed",
-      "ink": "#20534e",
-      "headline": "Shared journeys. Open roads.",
-      "index": 9,
-      "coverScreens": [
-        0,
-        1,
-        2
-      ],
-      "screens": [
-        {
-          "label": "Welcome to MitGo",
-          "rect": [
-            100,
-            100,
-            390,
-            844
-          ],
-          "viewportHeight": 844
-        },
-        {
-          "label": "Find a shared ride",
-          "rect": [
-            545,
-            100,
-            390,
-            955
-          ],
-          "viewportHeight": 844
-        },
-        {
-          "label": "Manage offered rides",
-          "rect": [
-            1000,
-            100,
-            390,
-            1133
-          ],
-          "viewportHeight": 844
-        }
-      ]
-    }
+      "sourceWidth": 1248,
+      "sourceHeight": 7719
+    },
+    "website": "https://mississaugaconvention.com/"
   },
   {
     "id": "pwr",
@@ -1225,6 +882,125 @@
           "viewportHeight": 812
         }
       ]
+    }
+  },
+  {
+    "id": "inu-poker",
+    "brand": "INU Poker",
+    "title": "INU Poker — At the table. In the moment.",
+    "industry": "Social Card Games",
+    "discipline": "Mobile game UI design",
+    "summary": "A poker-interface study bringing lobby choices, an immersive multiplayer table, and a player-statistics view into one visual system.",
+    "idea": "Keep the route from choosing a table to reading the current hand clear, while giving player information and table actions recognisable places.",
+    "direction": "Deep green environments, warm gold accents, character portraits, and high-contrast cards create a club-like atmosphere while separating table state, player identities, and available actions.",
+    "outcome": "Lobby hierarchy, table-state readability, and clearly grouped player statistics.",
+    "scope": [
+      "Table Selection",
+      "Multiplayer Table UI",
+      "Player Statistics"
+    ],
+    "sample": false,
+    "label": "Mobile game UI",
+    "art": "mobile",
+    "category": "Games",
+    "image": "assets/images/projects/games/inu-poker-cover.png",
+    "imageAlt": "INU Poker original game screens presented in portrait graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/games/inu-poker-original.png",
+    "mobilePresentation": {
+      "sourceFile": "INU Poker.png",
+      "sourceWidth": 1476,
+      "sourceHeight": 1044,
+      "sourceSha256": "a5790065940097f8d25ab2116c14af58a1e39467a35def87aea3f0cd795fee6e",
+      "device": "phone",
+      "background": "#142a27",
+      "ink": "#f9efd3",
+      "glow": "#b8c77c24",
+      "headline": "At the table. In the moment.",
+      "index": 3,
+      "coverScreens": [
+        0,
+        1,
+        2
+      ],
+      "screens": [
+        {
+          "label": "Choose a poker table",
+          "rect": [
+            100,
+            100,
+            390,
+            844
+          ],
+          "viewportHeight": 844
+        },
+        {
+          "label": "Multiplayer table",
+          "rect": [
+            543,
+            100,
+            390,
+            844
+          ],
+          "viewportHeight": 844
+        },
+        {
+          "label": "Player profile and statistics",
+          "rect": [
+            986,
+            100,
+            390,
+            844
+          ],
+          "viewportHeight": 844
+        }
+      ]
+    }
+  },
+  {
+    "id": "dawdle",
+    "brand": "Dawdle",
+    "title": "Dawdle — The journey starts with possibility.",
+    "industry": "Travel & Tourism",
+    "discipline": "Website design",
+    "summary": "A lively travel website that makes discovery feel inviting, organised, and full of character.",
+    "idea": "Introduce the travel brand with a sense of possibility while keeping destinations, trip styles, and further discovery easy to find.",
+    "direction": "Bright travel imagery, orange luggage, illustrated details, and green calls to action give the page energy. Clear navigation and alternating content sections keep the story easy to follow.",
+    "outcome": "Travel inspiration, readable brand storytelling, and approachable destination discovery.",
+    "scope": [
+      "Website UI Design",
+      "Travel Discovery",
+      "Visual Storytelling"
+    ],
+    "sample": false,
+    "label": "Website design",
+    "art": "devices",
+    "category": "Website Design",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "Dawdle website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/dawdle-original.jpg",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          188,
+          86
+        ],
+        [
+          1350,
+          86
+        ],
+        [
+          1350,
+          710
+        ],
+        [
+          188,
+          710
+        ]
+      ],
+      "sourceWidth": 1248,
+      "sourceHeight": 6423
     }
   },
   {
@@ -1309,37 +1085,85 @@
     }
   },
   {
-    "id": "trustvault",
-    "brand": "Trustvault",
-    "title": "Trustvault — Your assets. A clearer outlook.",
-    "industry": "Digital Assets & Wallets",
-    "discipline": "Mobile app design",
-    "summary": "A digital-asset wallet interface with visible wallet options, token balances, and grouped account settings.",
-    "idea": "Give a technically dense product a clear starting point and an organised way to browse assets and manage account preferences.",
-    "direction": "Black surfaces, sharp lime accents, and carefully grouped token rows create a focused interface with clear primary actions.",
-    "outcome": "Wallet-option clarity, asset scanning, and organised settings.",
+    "id": "devstree",
+    "brand": "DevsTree",
+    "title": "DevsTree — Technology, made approachable.",
+    "industry": "Technology & IT Services",
+    "discipline": "Website design",
+    "summary": "A technology-services website that brings a broad offering into one clear, confident brand story.",
+    "idea": "Help prospective partners understand the company’s technology offering and find a clear route to exploring the work or starting a conversation.",
+    "direction": "A sculptural robotic-hand hero establishes the technology theme. A restrained red accent, floating navigation, and a visible process section create structure around a broad service offering.",
+    "outcome": "Brand presence, service discovery, and a clear first point of contact.",
     "scope": [
-      "Wallet Onboarding",
-      "Token Dashboard",
-      "Account Settings"
+      "Website UI Design",
+      "Service Presentation",
+      "Visual Hierarchy"
+    ],
+    "sample": false,
+    "label": "Website design",
+    "art": "devices",
+    "category": "Website Design",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "DevsTree website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/devstree-original.jpg",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          188,
+          86
+        ],
+        [
+          1350,
+          86
+        ],
+        [
+          1350,
+          710
+        ],
+        [
+          188,
+          710
+        ]
+      ],
+      "sourceWidth": 1248,
+      "sourceHeight": 6011
+    },
+    "website": "https://www.devstree.com/"
+  },
+  {
+    "id": "hyppe",
+    "brand": "Hyppe",
+    "title": "Hyppe — Great brands. The right creators.",
+    "industry": "Creator Economy",
+    "discipline": "Mobile app design",
+    "summary": "A creator-collaboration interface for discovering campaigns, browsing opportunities, and exploring model bookings.",
+    "idea": "Make varied brand opportunities easier to browse and give creators a clear way to recognise relevant collaborations.",
+    "direction": "Charcoal surfaces, warm gold accents, generous editorial type, and image-led campaign cards give the marketplace a considered visual identity.",
+    "outcome": "Opportunity discovery, campaign categories, and model-booking presentation.",
+    "scope": [
+      "Creator Marketplace",
+      "Campaign Discovery",
+      "Booking Categories"
     ],
     "sample": false,
     "label": "Mobile app UI",
     "art": "mobile",
     "category": "Mobile App",
-    "image": "assets/images/projects/mobile/trustvault-cover.png",
-    "imageAlt": "Trustvault original app screens presented in graphite smartphone frames.",
-    "originalDesign": "assets/images/projects/mobile/trustvault-original.png",
+    "image": "assets/images/projects/mobile/hyppe-cover.png",
+    "imageAlt": "Hyppe original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/hyppe-original.png",
     "mobilePresentation": {
-      "sourceFile": "trustvault.png",
-      "sourceWidth": 1461,
-      "sourceHeight": 1026,
-      "sourceSha256": "8e8a62a1269a14b9417d1780298eb6a3644c30437a8134c5437b358e4100644b",
+      "sourceFile": "Hyppe.png",
+      "sourceWidth": 1604,
+      "sourceHeight": 1126,
+      "sourceSha256": "a35b188049443e9c1761e0c3771ffb643d8556e078c5832d05fcbec217b60e3a",
       "device": "phone",
-      "background": "#edf0da",
-      "ink": "#465125",
-      "headline": "Your assets. A clearer outlook.",
-      "index": 12,
+      "background": "#f1e8d6",
+      "ink": "#725321",
+      "headline": "Great brands. The right creators.",
+      "index": 6,
       "coverScreens": [
         0,
         1,
@@ -1347,36 +1171,211 @@
       ],
       "screens": [
         {
-          "label": "Choose a wallet",
+          "label": "Creator introduction",
           "rect": [
             100,
-            114,
-            375,
-            812
-          ],
-          "viewportHeight": 812
-        },
-        {
-          "label": "Token overview",
-          "rect": [
-            543,
             100,
-            375,
-            826
+            428,
+            926
           ],
-          "viewportHeight": 812
+          "viewportHeight": 926
         },
         {
-          "label": "Wallet settings",
+          "label": "Discover opportunities",
           "rect": [
-            987,
-            107,
-            374,
-            812
+            588,
+            100,
+            428,
+            926
           ],
-          "viewportHeight": 809
+          "viewportHeight": 926
+        },
+        {
+          "label": "Model bookings",
+          "rect": [
+            1076,
+            100,
+            428,
+            926
+          ],
+          "viewportHeight": 926
         }
       ]
+    }
+  },
+  {
+    "id": "sutraa-ai",
+    "brand": "SUTRAAai",
+    "title": "SUTRAAai — Complex services. A clear introduction.",
+    "industry": "Technology & Software",
+    "discipline": "Website design",
+    "summary": "A software-services website with a confident visual identity and a structured introduction to its offering.",
+    "idea": "Make a broad software-development proposition easier to understand and give prospective partners clear routes into the company’s services.",
+    "direction": "A low-poly character and blue accents introduce the technology theme. A structured service menu, strong headline hierarchy, and a visible meeting action support a clear business-facing presentation.",
+    "outcome": "Service discovery, confident positioning, and a visible next step for prospective partners.",
+    "scope": [
+      "Website UI Design",
+      "Service Navigation",
+      "Visual Hierarchy"
+    ],
+    "sample": false,
+    "label": "Website design",
+    "art": "devices",
+    "category": "Website Design",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "SUTRAAai website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/sutraa-ai-original.jpg",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          188,
+          86
+        ],
+        [
+          1350,
+          86
+        ],
+        [
+          1350,
+          710
+        ],
+        [
+          188,
+          710
+        ]
+      ],
+      "sourceWidth": 1248,
+      "sourceHeight": 4969
+    }
+  },
+  {
+    "id": "klub",
+    "brand": "Klub",
+    "title": "Klub — Find the night. Bring your people.",
+    "industry": "Nightlife & Events",
+    "discipline": "Mobile app design",
+    "summary": "A nightlife-booking journey that connects venue discovery, guest invitations, and a clear invitation confirmation.",
+    "idea": "Help a group move from choosing a place to inviting friends and understanding the next booking step.",
+    "direction": "Immersive nightlife photography, a dark map, and red-to-violet actions connect the atmosphere of an evening out with a practical group flow.",
+    "outcome": "Map-led discovery, guest selection, and invitation confirmation.",
+    "scope": [
+      "Venue Maps",
+      "Guest Invitations",
+      "Booking Journey"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/klub-cover.png",
+    "imageAlt": "Klub original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/klub-original.png",
+    "mobilePresentation": {
+      "sourceFile": "Klub.png",
+      "sourceWidth": 1862,
+      "sourceHeight": 1012,
+      "sourceSha256": "a942abf4261d83d16ad567513253f46d8158823d7884e8d135a415eb40950bb4",
+      "device": "phone",
+      "background": "#eee4f0",
+      "ink": "#54345c",
+      "headline": "Find the night. Bring your people.",
+      "index": 8,
+      "coverScreens": [
+        0,
+        1,
+        3
+      ],
+      "screens": [
+        {
+          "label": "Start a night out",
+          "rect": [
+            100,
+            100,
+            375,
+            812
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Find a venue",
+          "rect": [
+            529,
+            100,
+            375,
+            812
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Invite friends",
+          "rect": [
+            958,
+            100,
+            375,
+            811
+          ],
+          "viewportHeight": 811
+        },
+        {
+          "label": "Invitations sent",
+          "rect": [
+            1387,
+            100,
+            375,
+            812
+          ],
+          "viewportHeight": 812
+        }
+      ]
+    }
+  },
+  {
+    "id": "pride-of-africa",
+    "brand": "Pride of Africa",
+    "title": "Pride of Africa — Culture at the heart of the brand.",
+    "industry": "Retail & Business Services",
+    "discipline": "Website design",
+    "summary": "A rich, illustrated website that connects cultural character with shopping and service discovery.",
+    "idea": "Bring the brand’s cultural identity into the first impression while making its retail and business-service paths easy to recognise.",
+    "direction": "Warm ochre, cultural patterning, and an expressive illustration give the page a strong identity. Distinct shopping and consultation actions lead into a clearly grouped business-services section.",
+    "outcome": "Cultural identity, distinct user journeys, and a memorable brand introduction.",
+    "scope": [
+      "Website UI Design",
+      "Brand Expression",
+      "Service Presentation"
+    ],
+    "sample": false,
+    "label": "Website design",
+    "art": "devices",
+    "category": "Website Design",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "Pride of Africa website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/pride-of-africa-original.jpg",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          188,
+          86
+        ],
+        [
+          1350,
+          86
+        ],
+        [
+          1350,
+          710
+        ],
+        [
+          188,
+          710
+        ]
+      ],
+      "sourceWidth": 1248,
+      "sourceHeight": 5604
     }
   },
   {
@@ -1451,38 +1450,84 @@
     }
   },
   {
-    "id": "bunny-trails",
-    "brand": "Bunny Trails",
-    "title": "Bunny Trails — A little care. A bigger adventure.",
-    "industry": "Casual & Character-led Games",
-    "discipline": "Mobile game UI design",
-    "summary": "A character-led casual-game interface that connects a welcoming lobby, pet-care actions, and a referral area through an expressive woodland world.",
-    "idea": "Give players a recognisable character to connect with and a clear visual route from starting a session to understanding the game’s care and progress screens.",
-    "direction": "Warm orange controls, dimensional lettering, a consistent woodland setting, and expressive bunny artwork carry the game identity across the lobby, care view, and referral screen.",
-    "outcome": "Character consistency, clear session entry, and readable care and progress controls.",
+    "id": "fairplay-giveaways",
+    "brand": "FairPlay Giveaways",
+    "title": "FairPlay Giveaways — Excitement with a clear next step.",
+    "industry": "Promotions & Membership",
+    "discipline": "Website design",
+    "summary": "A bold promotional website that pairs an energetic campaign hero with visible entry and membership information.",
+    "idea": "Make the promotional offer easy to understand while keeping entry actions, membership information, and supporting details visible.",
+    "direction": "High-contrast campaign typography, gold and blue accents, and a prominent entry action make the offer easy to scan. Structured information cards introduce the platform below the hero.",
+    "outcome": "Campaign clarity, visible participation actions, and a structured platform introduction.",
     "scope": [
-      "Game Lobby",
-      "Character & Care UI",
-      "Progress & Referrals"
+      "Website UI Design",
+      "Campaign Landing Page",
+      "Visual Hierarchy"
     ],
     "sample": false,
-    "label": "Mobile game UI",
+    "label": "Website design",
+    "art": "devices",
+    "category": "Website Design",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "FairPlay Giveaways website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/fairplay-giveaways-original.jpg",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          188,
+          86
+        ],
+        [
+          1350,
+          86
+        ],
+        [
+          1350,
+          710
+        ],
+        [
+          188,
+          710
+        ]
+      ],
+      "sourceWidth": 1248,
+      "sourceHeight": 6880
+    }
+  },
+  {
+    "id": "klerdy",
+    "brand": "Klerdy",
+    "title": "Klerdy — Market signals. A clearer view.",
+    "industry": "Prediction Markets",
+    "discipline": "Mobile app design",
+    "summary": "A prediction-market interface that brings market browsing, probability displays, and a visible leaderboard into one dark visual system.",
+    "idea": "Give a dense market experience a clear hierarchy so people can distinguish categories, compare displayed probabilities, and explore rankings.",
+    "direction": "Electric green highlights, compact market cards, contrasting probability graphics, and a character-led introduction create a distinctive product language.",
+    "outcome": "Market scanning, probability hierarchy, and leaderboard presentation.",
+    "scope": [
+      "Market Browsing",
+      "Data Visualisation",
+      "Leaderboards"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
     "art": "mobile",
-    "category": "Games",
-    "image": "assets/images/projects/games/bunny-trails-cover.png",
-    "imageAlt": "Bunny Trails original game screens presented in portrait graphite smartphone frames.",
-    "originalDesign": "assets/images/projects/games/bunny-trails-original.png",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/klerdy-cover.png",
+    "imageAlt": "Klerdy original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/klerdy-original.png",
     "mobilePresentation": {
-      "sourceFile": "Bunny Trails.png",
-      "sourceWidth": 1462,
-      "sourceHeight": 1041,
-      "sourceSha256": "9a18dd7754c016d600db02a73f4fd7092055f2ad58929d579d32469f6dd884e0",
+      "sourceFile": "Klerdy.png",
+      "sourceWidth": 1439,
+      "sourceHeight": 1450,
+      "sourceSha256": "b7bf2eb7b719250317ab669eb9330c41c10f983c5aa266daa9017efb7ceb6c03",
       "device": "phone",
-      "background": "#162b24",
-      "ink": "#fff3d9",
-      "glow": "#d8a14d28",
-      "headline": "A little care. A bigger adventure.",
-      "index": 1,
+      "background": "#e2eee3",
+      "ink": "#244d32",
+      "headline": "Market signals. A clearer view.",
+      "index": 7,
       "coverScreens": [
         0,
         1,
@@ -1490,221 +1535,116 @@
       ],
       "screens": [
         {
-          "label": "Welcome to Bunny Trails",
+          "label": "Welcome to Klerdy",
           "rect": [
             100,
             100,
-            390,
-            841
+            375,
+            812
           ],
-          "viewportHeight": 841
+          "viewportHeight": 812
         },
         {
-          "label": "Care and progress",
+          "label": "Browse markets",
           "rect": [
-            536,
+            532,
             100,
-            390,
-            841
+            375,
+            1250
           ],
-          "viewportHeight": 841
+          "viewportHeight": 812
         },
         {
-          "label": "Referral hub",
+          "label": "Global leaderboard",
           "rect": [
-            972,
+            964,
             100,
-            390,
-            841
+            375,
+            1109
           ],
-          "viewportHeight": 841
+          "viewportHeight": 812
         }
       ]
     }
   },
   {
-    "id": "housie-game",
-    "brand": "Housie",
-    "title": "Housie — Every number. A shared moment.",
-    "industry": "Social Bingo & Party Games",
-    "discipline": "Mobile game UI design",
-    "summary": "A landscape social-housie interface with room discovery, a number-board play view, host interaction, and a celebratory results screen.",
-    "idea": "Make a social game easy to enter and follow by giving room selection, the active number board, and results their own clear visual roles.",
-    "direction": "A playful blue-to-violet palette, tactile lobby cards, a wide ticket board, and pink leaderboard highlights organise the supplied landscape screens without changing their proportions.",
-    "outcome": "Room selection, board readability, and a distinct results hierarchy.",
+    "id": "cuu-long-fish",
+    "brand": "Cuu Long Fish",
+    "title": "Cuu Long Fish — A business story with deeper roots.",
+    "industry": "Seafood & Aquaculture",
+    "discipline": "Website design",
+    "summary": "A corporate website that uses place, product, and clear navigation to introduce an aquaculture business.",
+    "idea": "Give visitors a clear introduction to the company and an organised way to explore products, company information, and contact options.",
+    "direction": "A wide aquatic landscape grounds the brand in its industry. Indigo navigation, a prominent company headline, and a structured introduction establish a clear corporate information hierarchy.",
+    "outcome": "Company positioning, industry context, and organised product and information discovery.",
     "scope": [
-      "Room Discovery",
-      "Landscape Gameplay",
-      "Results & Leaderboards"
+      "Website UI Design",
+      "Corporate Website",
+      "Content Hierarchy"
     ],
     "sample": false,
-    "label": "Mobile game UI",
-    "art": "mobile",
-    "category": "Games",
-    "image": "assets/images/projects/games/housie-game-cover.png",
-    "imageAlt": "Housie game screens in landscape graphite smartphone frames, with an enhanced room-selection screen.",
-    "originalDesign": "assets/images/projects/games/housie-game-original.png",
-    "mobilePresentation": {
-      "sourceFile": "Housie Game.png",
-      "sourceWidth": 2738,
-      "sourceHeight": 575,
-      "sourceSha256": "0b7158c00c5f2ce1ac5f830c52b9622eea515e23b7213b1ab5be82138f18da4b",
-      "device": "landscape-phone",
-      "background": "#eee7f8",
-      "ink": "#4c3564",
-      "glow": "#d19def30",
-      "headline": "Every number. A shared moment.",
-      "index": 2,
-      "coverScreens": [
-        0,
-        1,
-        2
+    "label": "Website design",
+    "art": "devices",
+    "category": "Website Design",
+    "image": "assets/images/projects/desktop-monitor.webp",
+    "imageAlt": "Cuu Long Fish website displayed inside a front-facing desktop monitor.",
+    "originalDesign": "assets/images/projects/cuu-long-fish-original.jpg",
+    "deviceScreen": {
+      "referenceWidth": 1536,
+      "referenceHeight": 1024,
+      "corners": [
+        [
+          188,
+          86
+        ],
+        [
+          1350,
+          86
+        ],
+        [
+          1350,
+          710
+        ],
+        [
+          188,
+          710
+        ]
       ],
-      "screens": [
-        {
-          "label": "Choose a game room",
-          "rect": [
-            100,
-            100,
-            812,
-            375
-          ],
-          "viewportHeight": 375,
-          "enhancedSource": {
-            "image": "assets/images/projects/games/housie-lobby-enhanced.png",
-            "width": 1844,
-            "height": 853,
-            "sha256": "e87c096a668a8d97d9c1996e34461897577e29b4fcc59cbf2342b3fd3ef9ab15",
-            "method": "AI-assisted clarity and color enhancement; original supplied montage retained."
-          }
-        },
-        {
-          "label": "Live housie board",
-          "rect": [
-            963,
-            100,
-            812,
-            375
-          ],
-          "viewportHeight": 375
-        },
-        {
-          "label": "Results and leaderboard",
-          "rect": [
-            1826,
-            100,
-            812,
-            375
-          ],
-          "viewportHeight": 375
-        }
-      ]
+      "sourceWidth": 1248,
+      "sourceHeight": 5020
     }
   },
   {
-    "id": "inu-poker",
-    "brand": "INU Poker",
-    "title": "INU Poker — At the table. In the moment.",
-    "industry": "Social Card Games",
-    "discipline": "Mobile game UI design",
-    "summary": "A poker-interface study bringing lobby choices, an immersive multiplayer table, and a player-statistics view into one visual system.",
-    "idea": "Keep the route from choosing a table to reading the current hand clear, while giving player information and table actions recognisable places.",
-    "direction": "Deep green environments, warm gold accents, character portraits, and high-contrast cards create a club-like atmosphere while separating table state, player identities, and available actions.",
-    "outcome": "Lobby hierarchy, table-state readability, and clearly grouped player statistics.",
+    "id": "hello-date",
+    "brand": "hello.date",
+    "title": "hello.date — A first hello. A new possibility.",
+    "industry": "Dating & Social Discovery",
+    "discipline": "Mobile app design",
+    "summary": "A dating interface that combines profile discovery, expressive interaction controls, and clearly grouped account preferences.",
+    "idea": "Make the transition from a first impression to a possible connection clear, while giving people visible control over their preferences.",
+    "direction": "Dark surfaces, vivid pink accents, immersive profile photography, and distinct settings groups balance personality with interface structure.",
+    "outcome": "Profile discovery, recognisable connection actions, and clear preference controls.",
     "scope": [
-      "Table Selection",
-      "Multiplayer Table UI",
-      "Player Statistics"
+      "Onboarding",
+      "Profile Discovery",
+      "Account Preferences"
     ],
     "sample": false,
-    "label": "Mobile game UI",
+    "label": "Mobile app UI",
     "art": "mobile",
-    "category": "Games",
-    "image": "assets/images/projects/games/inu-poker-cover.png",
-    "imageAlt": "INU Poker original game screens presented in portrait graphite smartphone frames.",
-    "originalDesign": "assets/images/projects/games/inu-poker-original.png",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/hello-date-cover.png",
+    "imageAlt": "hello.date original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/hello-date-original.png",
     "mobilePresentation": {
-      "sourceFile": "INU Poker.png",
-      "sourceWidth": 1476,
-      "sourceHeight": 1044,
-      "sourceSha256": "a5790065940097f8d25ab2116c14af58a1e39467a35def87aea3f0cd795fee6e",
+      "sourceFile": "Hello.Date.png",
+      "sourceWidth": 1425,
+      "sourceHeight": 2665,
+      "sourceSha256": "2a3ddaada5394cbf3daa400b262b8fc8272d0e90d22cfb3e016f35063e3eca39",
       "device": "phone",
-      "background": "#142a27",
-      "ink": "#f9efd3",
-      "glow": "#b8c77c24",
-      "headline": "At the table. In the moment.",
-      "index": 3,
-      "coverScreens": [
-        0,
-        1,
-        2
-      ],
-      "screens": [
-        {
-          "label": "Choose a poker table",
-          "rect": [
-            100,
-            100,
-            390,
-            844
-          ],
-          "viewportHeight": 844
-        },
-        {
-          "label": "Multiplayer table",
-          "rect": [
-            543,
-            100,
-            390,
-            844
-          ],
-          "viewportHeight": 844
-        },
-        {
-          "label": "Player profile and statistics",
-          "rect": [
-            986,
-            100,
-            390,
-            844
-          ],
-          "viewportHeight": 844
-        }
-      ]
-    }
-  },
-  {
-    "id": "jungle-treasures",
-    "brand": "Jungle Treasures",
-    "title": "Jungle Treasures — Enter the jungle. Follow the adventure.",
-    "industry": "Adventure & Arcade Games",
-    "discipline": "Mobile game UI design",
-    "summary": "An adventure-game interface with a character-rich session lobby, a focused play view, and a scrollable offers area in a shared jungle world.",
-    "idea": "Carry a strong adventure identity from the first screen into play, while keeping session entry, movement controls, and offer discovery visually distinct.",
-    "direction": "A midnight blue setting, layered jungle artwork, luminous gold controls, and a recurring character connect the supplied screens. The offers view uses grouped cards to structure a longer content area.",
-    "outcome": "World-building consistency, clear play controls, and organised offer discovery.",
-    "scope": [
-      "Adventure Lobby",
-      "Gameplay HUD",
-      "Offer Discovery"
-    ],
-    "sample": false,
-    "label": "Mobile game UI",
-    "art": "mobile",
-    "category": "Games",
-    "image": "assets/images/projects/games/jungle-treasures-cover.png",
-    "imageAlt": "Jungle Treasures original game screens presented in portrait graphite smartphone frames.",
-    "originalDesign": "assets/images/projects/games/jungle-treasures-original.png",
-    "mobilePresentation": {
-      "sourceFile": "Jungle Nova.png",
-      "sourceWidth": 1473,
-      "sourceHeight": 1404,
-      "sourceSha256": "4626da21b82103ca160c70dc01f41e016e82275208cb2227ca2b6281111cccad",
-      "device": "phone",
-      "background": "#151c33",
-      "ink": "#fff0d3",
-      "glow": "#ae75d62b",
-      "headline": "Enter the jungle. Follow the adventure.",
+      "background": "#f6e2eb",
+      "ink": "#7d2349",
+      "headline": "A first hello. A new possibility.",
       "index": 4,
       "coverScreens": [
         0,
@@ -1713,34 +1653,94 @@
       ],
       "screens": [
         {
-          "label": "Enter Jungle Treasures",
+          "label": "A first hello",
+          "rect": [
+            100,
+            100,
+            375,
+            812
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Discover profiles",
+          "rect": [
+            524,
+            100,
+            375,
+            812
+          ],
+          "viewportHeight": 812
+        },
+        {
+          "label": "Preferences and settings",
+          "rect": [
+            950,
+            100,
+            375,
+            2465
+          ],
+          "viewportHeight": 812
+        }
+      ]
+    }
+  },
+  {
+    "id": "famlee",
+    "brand": "Famlee",
+    "title": "Famlee — Little moments. Kept close.",
+    "industry": "Social & Shared Memories",
+    "discipline": "Mobile app design",
+    "summary": "A photo-led social experience for browsing memories by date and opening the stories behind a shared moment.",
+    "idea": "Give personal photos and their context a clear home, with an easy route from a dated memory to its full post.",
+    "direction": "A calm off-white canvas, bold pink creation controls, a date-based timeline, and large photographs keep people and their memories at the centre.",
+    "outcome": "A visible memory timeline, expressive photo browsing, and focused post details.",
+    "scope": [
+      "Memory Timeline",
+      "Photo Stories",
+      "Social Interactions"
+    ],
+    "sample": false,
+    "label": "Mobile app UI",
+    "art": "mobile",
+    "category": "Mobile App",
+    "image": "assets/images/projects/mobile/famlee-cover.png",
+    "imageAlt": "Famlee original app screens presented in graphite smartphone frames.",
+    "originalDesign": "assets/images/projects/mobile/famlee-original.png",
+    "mobilePresentation": {
+      "sourceFile": "famlee.png",
+      "sourceWidth": 1031,
+      "sourceHeight": 1044,
+      "sourceSha256": "1773f645d3e3c5ea7eac7ab85bbf2704887d182a15010cbc34a5c1b8a88b2bd8",
+      "device": "phone",
+      "background": "#f4e6ec",
+      "ink": "#7c334d",
+      "headline": "Little moments. Kept close.",
+      "index": 3,
+      "coverScreens": [
+        0,
+        1
+      ],
+      "screens": [
+        {
+          "label": "Memory timeline",
           "rect": [
             100,
             100,
             390,
-            841
+            844
           ],
-          "viewportHeight": 841
+          "viewportHeight": 844
         },
         {
-          "label": "Adventure play view",
+          "label": "A shared moment",
           "rect": [
             541,
             100,
             390,
-            841
+            844
           ],
-          "viewportHeight": 841
-        },
-        {
-          "label": "Offers and partners",
-          "rect": [
-            982,
-            100,
-            391,
-            1204
-          ],
-          "viewportHeight": 846
+          "viewportHeight": 844
         }
       ]
     }

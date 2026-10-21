@@ -22,7 +22,7 @@ The owner supplied `tinified (1).zip` containing eleven complete website-design 
 
 `assets/images/projects/desktop-monitor.webp` is a shared, lossless WebP studio photograph generated for this presentation. The front-facing desktop display uses the same geometry, lighting, and scale across all eleven projects. Each `<id>-original.jpg` is a byte-for-byte copy of its supplied JPEG. The browser displays that actual design inside the screen; website text is never generated or perspective-warped. The full-page link opens that same source image. Sharpness remains limited by the resolution and compression of the supplied originals.
 
-The website collection replaces the earlier demo catalog. The home page features DevsTree, Mint & Oak, and EasyProps. Thirteen additional app projects appear in the Mobile App tab; see [Mobile app presentation](mobile-app-presentation.md). Four mobile game projects appear in Games; see [Game presentation](game-presentation.md). Logo Design remains empty until matching work is supplied.
+The website collection replaces the earlier demo catalog. The home page features Muss Montessori alongside MitGo and Jungle Treasures to introduce web, app, and game design. Thirteen app projects appear in the Mobile App tab; see [Mobile app presentation](mobile-app-presentation.md). Four mobile game projects appear in Games; see [Game presentation](game-presentation.md). Logo Design remains empty until matching work is supplied. See [Portfolio curation](portfolio-curation.md) for the collection order.
 
 ## Content and layout
 
@@ -44,13 +44,13 @@ Mint & Oak, Muss Montessori, HYYPP, Dawdle, SUTRAAai, Pride of Africa, Cuu Long 
 
 ## Maintenance
 
-Edit `assets/data/portfolio-projects.json`, then run `python3 scripts/build.py`. Category must be one of the existing tab categories. Update home featured-card markup separately when changing featured projects. The standalone exporter embeds both covers and original-design links.
+Edit `assets/data/portfolio-projects.json`, then run `python3 scripts/build.py`. Category must be one of the existing tab categories. The array order determines the collection and filtered-category sequences. Edit `assets/data/featured-projects.json` to choose the three home projects; the build generates their cards and detail data together. The standalone exporter embeds both covers and original-design links.
 
 ## Scrolling device previews
 
 The original JPEG sits in a clipped, front-facing screen window in both server-rendered cards and project dialogs. The screen rectangle is left 188, top 86, right 1350, bottom 710 in a 1536 × 1024 reference frame. CSS percentages preserve alignment as the monitor resizes. The image keeps its natural aspect ratio; it is not stretched, rasterized through a canvas, or re-encoded. Without JavaScript or with reduced motion, the actual original page remains visible at the top.
 
-Only the webpage moves. All previews travel at one visible screenful every four seconds, with 1.2-second acceleration/deceleration ramps and 2.5-second holds at either end. Different page lengths therefore have different cycle durations but the same perceived speed. ResizeObserver measures fractional rendered dimensions to avoid gaps at the bottom of a page. Web Animations moves the image using a transform.
+Only the webpage moves. All previews travel at one visible screenful every two seconds, with acceleration/deceleration ramps capped at 0.5 seconds and 0.75-second holds at either end. This doubles the previous steady travel speed and reduces the waiting time before motion. Different page lengths therefore have different cycle durations but the same perceived speed. ResizeObserver measures fractional rendered dimensions to avoid gaps at the bottom of a page. Web Animations moves the image using a transform.
 
 The owner requested removal of the global and dialog Pause previews buttons. Hover/focus, offscreen previews, background tabs, and underlying cards while a project dialog is open still pause the relevant animation. Reduced-motion changes cancel animations and show static original designs. The removed control’s saved session preference no longer affects playback.
 

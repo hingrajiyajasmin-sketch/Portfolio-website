@@ -8,9 +8,9 @@
   const hoverCapable = matchMedia("(hover: hover)");
   const entries = new Map();
   const dialog = document.getElementById("project-dialog");
-  // One screenful every four seconds, regardless of project length or preview size.
-  const SECONDS_PER_SCREEN = 4;
-  const END_HOLD_SECONDS = 2.5;
+  // Two times the previous pace, with shorter holds before each direction change.
+  const SECONDS_PER_SCREEN = 2;
+  const END_HOLD_SECONDS = .75;
 
   function update(entry) {
     const active = entry.inView && !reduced.matches && !document.hidden &&
@@ -37,7 +37,7 @@
     entry.travel = travel;
     entry.speed = speed;
     // Short acceleration/deceleration ramps; the middle travels at a constant rate.
-    const ramp = Math.min(1.2, travel / speed / 3);
+    const ramp = Math.min(.5, travel / speed / 3);
     const rampDistance = speed * ramp / 2;
     const leg = travel / speed + ramp;
     const hold = END_HOLD_SECONDS;

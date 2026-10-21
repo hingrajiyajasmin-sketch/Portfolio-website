@@ -40,6 +40,42 @@ def artwork(project):
         return f'<div class="learn-preview"><div class="preview-head"><b>{brand}<i>✦</i></b><span>Stay curious.</span></div><h4>Your next<br>good beginning.</h4><div class="preview-books"><span></span><span></span><span></span></div><div class="preview-lesson"><span>01 / A LITTLE CURIOSITY</span><b>Learn something new today.</b><small>One thoughtful step at a time. ↗</small></div></div>'
     return f'<div class="travel-preview"><div class="preview-head"><b>{brand}<i>↗</i></b><span>Go a little further.</span></div><h4>Take the<br>scenic route.</h4><div class="preview-landscape"><span class="preview-sun"></span><i></i><b></b><span class="preview-road"></span></div><div class="preview-travel-label"><span>A fresh perspective.</span><b>Find your escape ↗</b></div></div>'
 
+def render_featured_projects(html, projects, featured_ids):
+    """Keep the home cards and their detail data in the same configured order."""
+    lookup = {project['id']: project for project in projects}
+    if len(featured_ids) != 3 or len(set(featured_ids)) != 3 or any(key not in lookup for key in featured_ids):
+        raise ValueError('Home features must contain three unique catalog project IDs.')
+    featured = [lookup[key] for key in featured_ids]
+    categories = {'Website Design': ('web', 'Web UI'), 'Mobile App': ('app', 'Mobile App UI'),
+                  'Games': ('game', 'Mobile Game UI')}
+    cards = []
+    for index, project in enumerate(featured):
+        e = lambda value: escape(str(value), quote=True)
+        kind, label = categories[project['category']]
+        headline = project['title'].partition(' — ')[2] or project['title']
+        if project.get('deviceScreen'):
+            art_class = 'portfolio-device-art'
+            preview = device_markup(project, 'portfolio-device-cover', project.get('imageAlt', ''))
+            badge = f'<span class="cover-index">{index + 1:02d} / WEBSITE DESIGN</span>'
+        elif project.get('mobilePresentation'):
+            art_class = 'portfolio-app-art'
+            preview = (f'<img class="portfolio-app-cover" src="{e(project["image"])}" '
+                       f'alt="{e(project.get("imageAlt", project["brand"]))}" width="1200" height="800" loading="lazy" decoding="async">')
+            badge = ''
+        else:
+            raise ValueError(f'Home project {project["id"]} has no supported presentation.')
+        featured_class = ' featured-project' if index == 0 else ''
+        cards.append(f'''<article class="project-card{featured_class} reveal" data-category="{kind}">
+              <div class="project-art {art_class}" data-device-project="{e(project['id'])}">{preview}<button class="project-preview" type="button" data-project="{e(project['id'])}" aria-label="Explore {e(project['brand'])} {label.lower()}"><span class="cover-action" aria-hidden="true">View<br>project {ARROW}</span></button>{badge}</div>
+              <div class="project-meta"><div><p class="project-type">{e(project['brand'])} / {label}</p><h3>{e(headline)}</h3><p>{e(project['summary'])}</p></div><button type="button" class="project-open" data-project="{e(project['id'])}" aria-label="Read {e(project['brand'])} project details">{ARROW}</button></div>
+            </article>''')
+    pattern = r'(<div class="project-grid">).*?(</div>\s*<div class="portfolio-cta\b)'
+    html, replacements = re.subn(pattern, lambda m: m[1] + '\n' + '\n'.join(cards) + '\n          ' + m[2], html, count=1, flags=re.S)
+    if replacements != 1:
+        raise ValueError('Home featured-project grid boundary was not found.')
+    return html, featured
+
+
 def render_catalog(html, root):
     projects = json.loads((root / 'assets/data/portfolio-projects.json').read_text())
     ids = [project['id'] for project in projects]
@@ -51,9 +87,7 @@ def render_catalog(html, root):
     filters = ['<button class="portfolio-filter is-selected" type="button" aria-pressed="true" data-category="all">All</button>']
     for category in categories:
         label = escape(category, quote=True)
-        count = sum(project['category'] == category for project in projects)
-        count_label = f' <span class="portfolio-filter-count">{count}</span>' if count else ''
-        filters.append(f'<button class="portfolio-filter" type="button" aria-pressed="false" data-category="{label}">{label}{count_label}</button>')
+        filters.append(f'<button class="portfolio-filter" type="button" aria-pressed="false" data-category="{label}">{label}</button>')
     cards = []
     for project in projects:
         e = lambda key: escape(str(project[key]), quote=True)

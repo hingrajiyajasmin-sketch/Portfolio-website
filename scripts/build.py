@@ -3,7 +3,7 @@ import json
 import re
 from pathlib import Path
 
-from portfolio_catalog import render_catalog
+from portfolio_catalog import render_catalog, render_featured_projects
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -30,10 +30,8 @@ def main():
         elif name == 'portfolio.html':
             html = render_catalog(html, ROOT)
         else:
-            featured_ids = set(re.findall(r'data-project="([^"]+)"', html))
-            featured = [project for project in projects if project['id'] in featured_ids]
-            if featured_ids != {project['id'] for project in featured}:
-                raise ValueError('A landing-page project is missing from the catalog.')
+            featured_ids = json.loads((ROOT / 'assets/data/featured-projects.json').read_text())
+            html, featured = render_featured_projects(html, projects, featured_ids)
             html = write_json_script(html, 'portfolio-catalog', featured)
             html = write_json_script(html, 'toolkit-data', toolkit)
         resume = ROOT / 'assets/documents/jasmin-hingrajiya-resume.pdf'

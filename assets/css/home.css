@@ -613,7 +613,7 @@
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0px, 1fr));
-  gap: 46px 30px;
+  gap: 46px 40px;
 }
 
 .project-card {
@@ -2544,3 +2544,7 @@
 
 .featured-project .portfolio-device-art { height: auto; aspect-ratio: 3 / 2; }
 .portfolio-device-art .cover-index { top: auto; right: auto; bottom: 14px; left: 14px; }
+
+/* App and game covers keep their complete, lossless device compositions. */
+.project-card .portfolio-app-art { height: auto; aspect-ratio: 3 / 2; background: #f6f6f3; }
+.portfolio-app-cover { display: block; width: 100%; height: 100%; object-fit: contain; }

@@ -21,7 +21,8 @@ assets/
     portfolio.js                Category filtering and pagination
     contact.js                  Form validation, message copy, and delivery settings
   data/
-    portfolio-projects.json      Editable project catalog
+    portfolio-projects.json      Editable project catalog in display order
+    featured-projects.json       Three home-page project IDs, in feature order
     toolkit.json                Sample software descriptions
     contact.json                Contact form email or submission endpoint
   fonts/                        Local DM Sans variable fonts and license
@@ -60,9 +61,9 @@ The gallery uses two columns on desktop and one on mobile. The catalog contains 
 
 The **Games** tab contains Bunny Trails, Housie, INU Poker, and Jungle Treasures, with 12 original interface screens. Housie keeps its supplied landscape orientation; the other games use portrait phone frames. Each has a lossless cover, a project-specific concept and visual direction, and access to every supplied screen. See `docs/game-presentation.md` for source details and artwork maintenance.
 
-The home page still features DevsTree, Mint & Oak, and EasyProps. The 11 website projects retain their front-facing desktop monitor presentation and supplied JPEG screens. These previews scroll at one visible screenful per four seconds, with hover/focus and offscreen pausing, and static original screens for reduced motion or disabled JavaScript. See `docs/portfolio-presentation.md` for their geometry and maintenance details. Logo Design remains empty until matching work is supplied.
+The home page features Muss Montessori (Web UI), MitGo (Mobile App UI), and Jungle Treasures (Mobile Game UI), configured in `assets/data/featured-projects.json`. The build generates each card and its matching detail data from the catalog; app/game features use their full device-framed covers and interactive screen galleries. The 11 website projects retain their front-facing desktop monitor presentation and supplied JPEG screens. These previews scroll at one visible screenful per two seconds, with 0.75-second end holds, hover/focus and offscreen pausing, and static original screens for reduced motion or disabled JavaScript. See `docs/portfolio-presentation.md` for geometry and maintenance details. Logo Design remains empty until matching work is supplied.
 
-All initially displays 12 projects, with Load more revealing the rest. Mobile App shows all 13 projects immediately; Website Design shows its 11 and Games shows its 4. Category filtering, reset, accessible project previews, and keyboard focus work together. Without JavaScript, all projects remain visible.
+Tabs show category names without number badges. All initially displays 12 curated projects across web, app, and game design, with Load more revealing the rest. Mobile App shows all 13 projects immediately; Website Design shows its 11 and Games shows its 4. The catalog's array order controls All and each filtered category; see `docs/portfolio-curation.md` for the editorial rationale and category sequences. Category filtering, reset, accessible project previews, and keyboard focus work together. Without JavaScript, all projects remain visible.
 
 Edit `assets/data/toolkit.json` and run the same command to refresh software descriptions. The toolkit remains a sample until the tool list is confirmed.
 
