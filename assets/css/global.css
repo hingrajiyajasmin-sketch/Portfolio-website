@@ -640,13 +640,6 @@ main section[id] { scroll-margin-top: 110px; }
 .catalog-card:hover .device-preview-frame > .catalog-image { transform: none; }
 .case-study-device-preview { position: relative; overflow: hidden; border-radius: 16px; margin-bottom: 24px; }
 .case-study-device-preview .case-study-image { margin: 0; border-radius: inherit; }
-.device-preview-toolbar { display: flex; justify-content: flex-end; margin-bottom: 24px; }
-.device-preview-toolbar[hidden] { display: none !important; }
-.device-motion-toggle { display: inline-flex; align-items: center; gap: 8px; min-height: 40px; padding: 8px 14px; border: 1px solid #e8dfd7; border-radius: 999px; background: #fff; color: #655c62; font-size: 14px; cursor: pointer; }
-.device-motion-toggle:hover { border-color: var(--button-accent); color: var(--button-accent); }
 @media (prefers-reduced-motion: reduce) { .device-scroll-content { transform: none !important; } }
 
 .case-study-top .project-type { margin-right: auto; }
-.case-study-top .device-motion-toggle { flex: 0 0 40px; justify-content: center; padding: 8px; }
-.case-study-top .device-motion-toggle span { display: none; }
-.device-motion-toggle[hidden] { display: none !important; }

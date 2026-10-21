@@ -11,11 +11,9 @@
   // One screenful every four seconds, regardless of project length or preview size.
   const SECONDS_PER_SCREEN = 4;
   const END_HOLD_SECONDS = 2.5;
-  let paused = false;
-  try { paused = sessionStorage.getItem("portfolio-previews-paused") === "true"; } catch { /* Storage is optional. */ }
 
   function update(entry) {
-    const active = entry.inView && !paused && !reduced.matches && !document.hidden &&
+    const active = entry.inView && !reduced.matches && !document.hidden &&
       (!dialog?.open || dialog.contains(entry.host));
     if (active && !entry.animation) measure(entry);
     if (!entry.animation) return;
@@ -100,32 +98,15 @@
   document.addEventListener("project-preview-open", ({detail}) => {
     const host = document.getElementById("case-study-device-preview");
     if (host) register(host, detail.project);
-    updateControls();
     updateAll();
   });
   dialog?.addEventListener("close", updateAll);
   document.addEventListener("visibilitychange", updateAll);
 
-  function updateControls() {
-    document.querySelectorAll(".device-preview-toolbar").forEach(toolbar => toolbar.hidden = reduced.matches);
-    document.querySelectorAll(".device-motion-toggle").forEach(button => {
-      button.hidden = reduced.matches || (button.closest("dialog") && dialog?.dataset.projectType === "mobile");
-      button.setAttribute("aria-label", paused ? "Play scrolling previews" : "Pause scrolling previews");
-      button.setAttribute("aria-pressed", String(paused));
-      button.querySelector("span").textContent = paused ? "Play previews" : "Pause previews";
-      button.querySelector("path").setAttribute("d", paused ? "M7 3v18l14-9z" : "M6 4h4v16H6zm8 0h4v16h-4z");
-    });
-  }
-  document.querySelectorAll(".device-motion-toggle").forEach(button => button.addEventListener("click", () => {
-    paused = !paused;
-    try { sessionStorage.setItem("portfolio-previews-paused", String(paused)); } catch { /* Continue without persistence. */ }
-    updateControls(); updateAll();
-  }));
   reduced.addEventListener("change", () => {
     if (reduced.matches) entries.forEach(entry => {
       entry.animation?.cancel(); entry.animation = null;
     });
-    updateControls(); updateAll();
+    updateAll();
   });
-  updateControls();
 })();

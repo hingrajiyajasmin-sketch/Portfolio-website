@@ -52,6 +52,6 @@ The original JPEG sits in a clipped, front-facing screen window in both server-r
 
 Only the webpage moves. All previews travel at one visible screenful every four seconds, with 1.2-second acceleration/deceleration ramps and 2.5-second holds at either end. Different page lengths therefore have different cycle durations but the same perceived speed. ResizeObserver measures fractional rendered dimensions to avoid gaps at the bottom of a page. Web Animations moves the image using a transform.
 
-Global and dialog controls pause/resume motion, with the preference retained for the browser session. Hover/focus, offscreen previews, background tabs, and underlying cards while a project dialog is open pause the relevant animation. Reduced-motion changes cancel animations and show static original designs.
+The owner requested removal of the global and dialog Pause previews buttons. Hover/focus, offscreen previews, background tabs, and underlying cards while a project dialog is open still pause the relevant animation. Reduced-motion changes cancel animations and show static original designs. The removed control’s saved session preference no longer affects playback.
 
 When replacing the monitor photograph, update the shared screen CSS rectangle and the catalog's deviceScreen metadata together. Keep each original paired with its correct project.
